@@ -1,0 +1,174 @@
+﻿Build1=Default,b4a.example
+File1=back.png
+File10=ic_share.png
+File11=icon_close.png
+File12=icon_close_grey.png
+File13=icon_delete.png
+File14=icon_save-blue.png
+File15=icon_save-white.png
+File16=icon_send.png
+File17=icons8_content_96px.png
+File18=icons8_content_96px_1.png
+File19=icons8_content_96px_2.png
+File2=close.png
+File20=icons8_content_96px_3.png
+File21=icons8_info_96px.png
+File22=icons8_moisture_96px.png
+File23=icons8_rain_2500px.png
+File24=icons8_rain_cloud_2500px.png
+File25=icons8_sent_500px.png
+File26=icons8_sleet_50px.png
+File27=icons8_sms_500px.png
+File28=icons8_thermometer_automation_2500px.png
+File29=icons8_thermometer_automation_2500px_1.png
+File3=close_24px.png
+File30=icons8-grid-50.png
+File31=icons8-search-480.png
+File32=left_50px.png
+File33=leftmenu.bal
+File34=mainmenu.bal
+File35=muli-black.ttf
+File36=muli-bold.ttf
+File37=muli-light.ttf
+File38=muli-medium.ttf
+File39=muli-regular.ttf
+File4=down_arrow.png
+File40=muli-semibold.ttf
+File41=next.png
+File42=opensans-regular.ttf
+File43=opensans-semibold.ttf
+File44=play_arrow_white_24.png
+File45=pngaaa.com-25409.png
+File46=search.png
+File47=share.png
+File48=splash.bal
+File49=stegocam_ico.png
+File5=forward_arrow_active.png
+File50=ubuntu-regular.ttf
+File51=up_arrow.png
+File6=forward_arrow_inactive.png
+File7=hamburger.png
+File8=ic_favorite.png
+File9=ic_favorite_white.png
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup15=Default Group
+FileGroup16=Default Group
+FileGroup17=Default Group
+FileGroup18=Default Group
+FileGroup19=Default Group
+FileGroup2=Default Group
+FileGroup20=Default Group
+FileGroup21=Default Group
+FileGroup22=Default Group
+FileGroup23=Default Group
+FileGroup24=Default Group
+FileGroup25=Default Group
+FileGroup26=Default Group
+FileGroup27=Default Group
+FileGroup28=Default Group
+FileGroup29=Default Group
+FileGroup3=Default Group
+FileGroup30=Default Group
+FileGroup31=Default Group
+FileGroup32=Default Group
+FileGroup33=Default Group
+FileGroup34=Default Group
+FileGroup35=Default Group
+FileGroup36=Default Group
+FileGroup37=Default Group
+FileGroup38=Default Group
+FileGroup39=Default Group
+FileGroup4=Default Group
+FileGroup40=Default Group
+FileGroup41=Default Group
+FileGroup42=Default Group
+FileGroup43=Default Group
+FileGroup44=Default Group
+FileGroup45=Default Group
+FileGroup46=Default Group
+FileGroup47=Default Group
+FileGroup48=Default Group
+FileGroup49=Default Group
+FileGroup5=Default Group
+FileGroup50=Default Group
+FileGroup51=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Default Group
+Library1=appcompat
+Library2=core
+Library3=javaobject
+Library4=phone
+Library5=slidingmenuwrapper
+Library6=xui
+Library7=b4xdrawer
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="31"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'CreateResourceFromFile(Macro, Themes.LightTheme)~\n~'End of default text.~\n~~\n~SetApplicationAttribute(android:theme, "@style/MyAppTheme")~\n~~\n~CreateResource(values, theme.xml,~\n~<resources>~\n~    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">~\n~        <item name="colorPrimary">#0098FF</item>~\n~        <item name="colorPrimaryDark">#007CF5</item>~\n~        <item name="colorAccent">#AAAA00</item>~\n~        <item name="windowNoTitle">true</item>~\n~        <item name="windowActionBar">false</item>~\n~    </style>~\n~</resources>~\n~)~\n~~\n~'********Permisions***************************************~\n~AddPermission("android.permission.WRITE_EXTERNAL_STORAGE")~\n~AddPermission("android.permission.READ_EXTERNAL_STORAGE")
+Module1=config
+Module2=leftmenu
+Module3=mainmenu
+Module4=Starter
+NumberOfFiles=51
+NumberOfLibraries=7
+NumberOfModules=4
+Version=12.2
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: StegoCam
+	#VersionCode: 1
+	#VersionName: 
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: unspecified
+	#CanInstallToExternalStorage: False
+#End Region
+
+	#Extends: android.support.v7.app.AppCompatActivity
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: False
+#End Region
+#BridgeLogger: True
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+	Private xui As XUI
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	Private imgIcon As B4XView
+	Dim splashTimer As Timer
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	Activity.LoadLayout("splash")
+	imgIcon.SetBitmap(xui.LoadBitmapResize(File.DirAssets, "stegocam_ico.png", imgIcon.Width, imgIcon.Height, True))
+	Sleep(3000)
+	StartActivity(mainmenu)
+	Activity.Finish
+'	
+'	splashTimer.Initialize("myTimer",3000)
+'	splashTimer.Enabled=True
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+Sub myTimer_tick
+	splashTimer.Enabled=False
+	Activity.Finish
+	StartActivity(mainmenu)
+End Sub

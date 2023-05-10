@@ -1,0 +1,530 @@
+--release
+--output
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects
+--lib
+C:\Android\platforms\android-33\android.jar
+C:\Android\tools\..\extras\b4a_local\unpacked-b4ashared-63810072328000\dex_v1\b4ashared.zip
+c:\android\tools\..\extras\b4a_local\unpacked-appcompat.androidx-63819274541952\jars\classes.zip
+c:\android\tools\..\extras\b4a_local\unpacked-slidingmenu-63819275306840\jars\slidingmenu.zip
+c:\android\tools\..\extras\b4a_remote\androidx\appcompat\appcompat\1.5.1\unpacked-appcompat-1.5.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\appcompat\appcompat-resources\1.5.1\unpacked-appcompat-resources-1.5.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\core\core\1.9.0\unpacked-core-1.9.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\core\core-ktx\1.9.0\unpacked-core-ktx-1.9.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\annotation\annotation-experimental\1.3.0\unpacked-annotation-experimental-1.3.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-runtime\2.5.1\unpacked-lifecycle-runtime-2.5.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\versionedparcelable\versionedparcelable\1.1.1\unpacked-versionedparcelable-1.1.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\vectordrawable\vectordrawable\1.1.0\unpacked-vectordrawable-1.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\vectordrawable\vectordrawable-animated\1.1.0\unpacked-vectordrawable-animated-1.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\interpolator\interpolator\1.0.0\unpacked-interpolator-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\activity\activity\1.6.1\unpacked-activity-1.6.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\activity\activity-ktx\1.6.1\unpacked-activity-ktx-1.6.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-runtime-ktx\2.5.1\unpacked-lifecycle-runtime-ktx-2.5.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-viewmodel-ktx\2.5.1\unpacked-lifecycle-viewmodel-ktx-2.5.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-viewmodel\2.5.1\unpacked-lifecycle-viewmodel-2.5.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-viewmodel-savedstate\2.5.1\unpacked-lifecycle-viewmodel-savedstate-2.5.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-livedata-core\2.5.1\unpacked-lifecycle-livedata-core-2.5.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\savedstate\savedstate\1.2.0\unpacked-savedstate-1.2.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\savedstate\savedstate-ktx\1.2.0\unpacked-savedstate-ktx-1.2.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\cursoradapter\cursoradapter\1.0.0\unpacked-cursoradapter-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\drawerlayout\drawerlayout\1.1.1\unpacked-drawerlayout-1.1.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\customview\customview\1.1.0\unpacked-customview-1.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\fragment\fragment\1.5.4\unpacked-fragment-1.5.4\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\loader\loader\1.1.0\unpacked-loader-1.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\viewpager\viewpager\1.0.0\unpacked-viewpager-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\emoji2\emoji2-views\1.2.0\unpacked-emoji2-views-1.2.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\emoji2\emoji2\1.2.0\unpacked-emoji2-1.2.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\emoji2\emoji2\1.2.0\unpacked-emoji2-1.2.0\jars\repackaged.zip
+c:\android\tools\..\extras\b4a_remote\androidx\startup\startup-runtime\1.1.1\unpacked-startup-runtime-1.1.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\emoji2\emoji2-views-helper\1.2.0\unpacked-emoji2-views-helper-1.2.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\arch\core\core-runtime\2.1.0\unpacked-core-runtime-2.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\legacy\legacy-support-v4\1.0.0\unpacked-legacy-support-v4-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\media\media\1.6.0\unpacked-media-1.6.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\legacy\legacy-support-core-utils\1.0.0\unpacked-legacy-support-core-utils-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\documentfile\documentfile\1.0.1\unpacked-documentfile-1.0.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\localbroadcastmanager\localbroadcastmanager\1.1.0\unpacked-localbroadcastmanager-1.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\print\print\1.0.0\unpacked-print-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\legacy\legacy-support-core-ui\1.0.0\unpacked-legacy-support-core-ui-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\coordinatorlayout\coordinatorlayout\1.2.0\unpacked-coordinatorlayout-1.2.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\slidingpanelayout\slidingpanelayout\1.2.0\unpacked-slidingpanelayout-1.2.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\swiperefreshlayout\swiperefreshlayout\1.1.0\unpacked-swiperefreshlayout-1.1.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\asynclayoutinflater\asynclayoutinflater\1.0.0\unpacked-asynclayoutinflater-1.0.0\jars\classes.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-appcompat-63810072328000\dex_v1\appcompat.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-core-63810072328000\dex_v1\core.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-javaobject-63810072328000\dex_v1\javaobject.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-phone-63810072330000\dex_v1\phone.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-slidingmenuwrapper-63818870133921\dex_v1\slidingmenuwrapper.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-xui-63810072330000\dex_v1\xui.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-kotlin-stdlib-1.6.10-63810072330000\dex_v1\kotlin-stdlib-1.6.10.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-viewsex-63810072330000\dex_v1\viewsex.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-remotelogger-63810072330000\dex_v1\remotelogger.zip
+c:\android\tools\..\extras\b4a_remote\androidx\annotation\annotation\1.5.0\annotation-1.5.0.zip
+c:\android\tools\..\extras\b4a_remote\androidx\arch\core\core-common\2.1.0\core-common-2.1.0.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-common\2.5.1\lifecycle-common-2.5.1.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-common-java8\2.5.1\lifecycle-common-java8-2.5.1.zip
+c:\android\tools\..\extras\b4a_remote\androidx\collection\collection\1.2.0\collection-1.2.0.zip
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\ktx\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\ktx\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\ktx\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\ktx\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\ktx\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\ktx\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\ktx\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\ktx\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\ktx\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\ktx\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\ktx\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\ktx\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\ktx\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\ktx\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\activity\ktx\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\annotation\experimental\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\annotation\experimental\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\annotation\experimental\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\annotation\experimental\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\annotation\experimental\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\annotation\experimental\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\annotation\experimental\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\annotation\experimental\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\annotation\experimental\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\annotation\experimental\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\annotation\experimental\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\annotation\experimental\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\annotation\experimental\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\annotation\experimental\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\annotation\experimental\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\resources\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\resources\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\resources\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\resources\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\resources\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\resources\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\resources\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\resources\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\resources\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\resources\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\resources\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\resources\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\resources\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\resources\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\appcompat\resources\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\coordinatorlayout\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\coordinatorlayout\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\coordinatorlayout\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\coordinatorlayout\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\coordinatorlayout\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\coordinatorlayout\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\coordinatorlayout\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\coordinatorlayout\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\coordinatorlayout\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\coordinatorlayout\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\coordinatorlayout\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\coordinatorlayout\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\coordinatorlayout\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\coordinatorlayout\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\coordinatorlayout\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\ktx\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\ktx\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\ktx\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\ktx\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\ktx\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\ktx\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\ktx\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\ktx\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\ktx\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\ktx\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\ktx\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\ktx\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\ktx\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\ktx\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\core\ktx\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\drawerlayout\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\drawerlayout\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\drawerlayout\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\drawerlayout\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\drawerlayout\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\drawerlayout\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\drawerlayout\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\drawerlayout\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\drawerlayout\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\drawerlayout\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\drawerlayout\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\drawerlayout\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\drawerlayout\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\drawerlayout\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\drawerlayout\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\viewsintegration\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\viewsintegration\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\viewsintegration\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\viewsintegration\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\viewsintegration\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\viewsintegration\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\viewsintegration\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\viewsintegration\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\viewsintegration\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\viewsintegration\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\viewsintegration\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\viewsintegration\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\viewsintegration\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\viewsintegration\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\viewsintegration\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\widget\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\widget\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\widget\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\widget\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\widget\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\widget\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\widget\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\widget\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\widget\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\widget\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\widget\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\widget\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\widget\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\widget\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\emoji2\widget\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\fragment\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\fragment\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\fragment\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\fragment\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\fragment\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\fragment\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\fragment\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\fragment\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\fragment\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\fragment\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\fragment\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\fragment\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\fragment\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\fragment\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\fragment\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\ktx\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\ktx\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\ktx\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\ktx\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\ktx\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\ktx\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\ktx\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\ktx\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\ktx\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\ktx\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\ktx\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\ktx\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\ktx\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\ktx\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\ktx\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\livedata\core\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\livedata\core\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\livedata\core\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\livedata\core\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\livedata\core\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\livedata\core\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\livedata\core\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\livedata\core\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\livedata\core\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\livedata\core\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\livedata\core\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\livedata\core\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\livedata\core\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\livedata\core\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\livedata\core\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\runtime\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\runtime\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\runtime\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\runtime\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\runtime\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\runtime\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\runtime\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\runtime\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\runtime\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\runtime\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\runtime\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\runtime\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\runtime\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\runtime\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\runtime\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\ktx\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\ktx\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\ktx\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\ktx\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\ktx\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\ktx\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\ktx\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\ktx\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\ktx\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\ktx\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\ktx\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\ktx\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\ktx\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\ktx\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\ktx\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\savedstate\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\savedstate\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\savedstate\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\savedstate\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\savedstate\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\savedstate\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\savedstate\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\savedstate\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\savedstate\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\savedstate\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\savedstate\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\savedstate\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\savedstate\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\savedstate\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\lifecycle\viewmodel\savedstate\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\localbroadcastmanager\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\localbroadcastmanager\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\localbroadcastmanager\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\localbroadcastmanager\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\localbroadcastmanager\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\localbroadcastmanager\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\localbroadcastmanager\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\localbroadcastmanager\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\localbroadcastmanager\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\localbroadcastmanager\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\localbroadcastmanager\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\localbroadcastmanager\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\localbroadcastmanager\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\localbroadcastmanager\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\localbroadcastmanager\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\media\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\media\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\media\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\media\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\media\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\media\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\media\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\media\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\media\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\media\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\media\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\media\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\media\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\media\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\media\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\ktx\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\ktx\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\ktx\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\ktx\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\ktx\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\ktx\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\ktx\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\ktx\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\ktx\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\ktx\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\ktx\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\ktx\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\ktx\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\ktx\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\savedstate\ktx\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\slidingpanelayout\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\slidingpanelayout\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\slidingpanelayout\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\slidingpanelayout\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\slidingpanelayout\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\slidingpanelayout\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\slidingpanelayout\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\slidingpanelayout\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\slidingpanelayout\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\slidingpanelayout\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\slidingpanelayout\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\slidingpanelayout\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\slidingpanelayout\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\slidingpanelayout\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\slidingpanelayout\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\startup\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\startup\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\startup\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\startup\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\startup\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\startup\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\startup\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\startup\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\startup\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\startup\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\startup\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\startup\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\startup\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\startup\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\startup\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\swiperefreshlayout\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\swiperefreshlayout\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\swiperefreshlayout\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\swiperefreshlayout\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\swiperefreshlayout\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\swiperefreshlayout\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\swiperefreshlayout\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\swiperefreshlayout\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\swiperefreshlayout\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\swiperefreshlayout\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\swiperefreshlayout\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\swiperefreshlayout\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\swiperefreshlayout\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\swiperefreshlayout\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\androidx\swiperefreshlayout\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\anywheresoftware\b4a\objects\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\anywheresoftware\b4a\objects\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\anywheresoftware\b4a\objects\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\anywheresoftware\b4a\objects\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\anywheresoftware\b4a\objects\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\anywheresoftware\b4a\objects\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\anywheresoftware\b4a\objects\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\anywheresoftware\b4a\objects\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\anywheresoftware\b4a\objects\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\anywheresoftware\b4a\objects\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\anywheresoftware\b4a\objects\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\anywheresoftware\b4a\objects\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\anywheresoftware\b4a\objects\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\anywheresoftware\b4a\objects\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\anywheresoftware\b4a\objects\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\b4xdrawer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\config.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\leftmenu$1.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\leftmenu$B4AMenuItemsClickListener.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\leftmenu$HandleKeyDelayed.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\leftmenu$ResumeMessage.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\leftmenu$WaitForLayout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\leftmenu.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\main$1.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\main$B4AMenuItemsClickListener.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\main$HandleKeyDelayed.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\main$ResumableSub_Activity_Create.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\main$ResumeMessage.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\main$WaitForLayout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\main.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\mainmenu$1.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\mainmenu$B4AMenuItemsClickListener.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\mainmenu$HandleKeyDelayed.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\mainmenu$ResumableSub_lb1Menu_Click.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\mainmenu$ResumableSub_lb2Menu_Click.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\mainmenu$ResumableSub_lb3Menu_Click.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\mainmenu$ResumeMessage.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\mainmenu$WaitForLayout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\mainmenu.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\R.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\starter$1.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\starter$2.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\starter$starter_BR.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\starter.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\designerscripts\LS_leftmenu.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\designerscripts\LS_mainmenu.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\b4a\example\designerscripts\LS_splash.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\com\jeremyfeinstein\slidingmenu\lib\R$anim.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\com\jeremyfeinstein\slidingmenu\lib\R$animator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\com\jeremyfeinstein\slidingmenu\lib\R$attr.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\com\jeremyfeinstein\slidingmenu\lib\R$bool.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\com\jeremyfeinstein\slidingmenu\lib\R$color.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\com\jeremyfeinstein\slidingmenu\lib\R$dimen.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\com\jeremyfeinstein\slidingmenu\lib\R$drawable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\com\jeremyfeinstein\slidingmenu\lib\R$id.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\com\jeremyfeinstein\slidingmenu\lib\R$integer.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\com\jeremyfeinstein\slidingmenu\lib\R$interpolator.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\com\jeremyfeinstein\slidingmenu\lib\R$layout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\com\jeremyfeinstein\slidingmenu\lib\R$string.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\com\jeremyfeinstein\slidingmenu\lib\R$style.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\com\jeremyfeinstein\slidingmenu\lib\R$styleable.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\com\jeremyfeinstein\slidingmenu\lib\R.dex
