@@ -9,9 +9,75 @@ Version=12.2
 Sub Process_Globals
 	'These global variables will be declared once when the application starts.
 	'These variables can be accessed from all modules.
-
+	Public show As Char = Chr(0xF06E)
+	Public hide As Char = Chr(0xF070)
+	Dim SharedPrefs As SharedPreferences
+	Dim userPin As String =""
+	Dim firstRun As Boolean=True
+	Dim question As String=""
+	Dim answer As String=""
 End Sub
 
+Sub getUserPin() As String
+	userPin=""
+	'Initialize SharedPreferences
+	SharedPrefs.Initialize("StegoCamPrefs")
+	'get set up pin
+	userPin = SharedPrefs.GetString("PIN","")
+	Return userPin
+End Sub
+
+
+Sub setUserPin(pin As String)
+	'Initialize SharedPreferences
+	SharedPrefs.Initialize("StegoCamPrefs")
+	'get set up pin
+	SharedPrefs.SaveString("PIN",pin)
+End Sub
+
+Sub saveSecurityQA(quest As String,ans As String)
+	'Initialize SharedPreferences
+	SharedPrefs.Initialize("StegoCamPrefs")
+	'get set up pin
+	SharedPrefs.SaveString("Question",quest)
+	SharedPrefs.SaveString("Answer",ans)
+End Sub
+
+
+Sub isFirstRun() As Boolean
+	firstRun=True
+	'Initialize SharedPreferences
+	SharedPrefs.Initialize("StegoCamPrefs")
+	
+	' Check if it's the first run
+	firstRun = SharedPrefs.GetBoolean("FirstRun", True)
+	
+	Return firstRun
+End Sub
+
+
+Sub getSecurityQuestion() As String
+	question=""
+	'Initialize SharedPreferences
+	SharedPrefs.Initialize("StegoCamPrefs")
+	
+	' get security question
+	question = SharedPrefs.GetBoolean("Question", True)
+	
+	Return question
+End Sub
+
+
+Sub getSecurityAnswer() As String
+	answer=""
+	'Initialize SharedPreferences
+	SharedPrefs.Initialize("StegoCamPrefs")
+	
+	' get security answer
+	answer = SharedPrefs.GetBoolean("Answer", True)
+	
+	Return answer
+End Sub
 
 Sub AjustImageView(Imv As ImageView, Dir As String, FileName As String)
 	Private bmp As Bitmap = LoadBitmap(Dir, FileName)

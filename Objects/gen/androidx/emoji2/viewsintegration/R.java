@@ -43,6 +43,13 @@ public final class R {
     public static final int fragment_open_enter=0x7f020004;
     public static final int fragment_open_exit=0x7f020005;
   }
+  public static final class array {
+    public static final int assume_strong_biometrics_models=0x7f030000;
+    public static final int crypto_fingerprint_fallback_prefixes=0x7f030001;
+    public static final int crypto_fingerprint_fallback_vendors=0x7f030002;
+    public static final int delay_showing_prompt_models=0x7f030003;
+    public static final int hide_fingerprint_instantly_prefixes=0x7f030004;
+  }
   public static final class attr {
     /**
      * <p>May be a reference to another resource, in the form
@@ -50,21 +57,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionBarDivider=0x7f030000;
+    public static final int actionBarDivider=0x7f040000;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionBarItemBackground=0x7f030001;
+    public static final int actionBarItemBackground=0x7f040001;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionBarPopupTheme=0x7f030002;
+    public static final int actionBarPopupTheme=0x7f040002;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -80,84 +87,84 @@ public final class R {
      * <tr><td>wrap_content</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int actionBarSize=0x7f030003;
+    public static final int actionBarSize=0x7f040003;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionBarSplitStyle=0x7f030004;
+    public static final int actionBarSplitStyle=0x7f040004;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionBarStyle=0x7f030005;
+    public static final int actionBarStyle=0x7f040005;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionBarTabBarStyle=0x7f030006;
+    public static final int actionBarTabBarStyle=0x7f040006;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionBarTabStyle=0x7f030007;
+    public static final int actionBarTabStyle=0x7f040007;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionBarTabTextStyle=0x7f030008;
+    public static final int actionBarTabTextStyle=0x7f040008;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionBarTheme=0x7f030009;
+    public static final int actionBarTheme=0x7f040009;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionBarWidgetTheme=0x7f03000a;
+    public static final int actionBarWidgetTheme=0x7f04000a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionButtonStyle=0x7f03000b;
+    public static final int actionButtonStyle=0x7f04000b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionDropDownStyle=0x7f03000c;
+    public static final int actionDropDownStyle=0x7f04000c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionLayout=0x7f03000d;
+    public static final int actionLayout=0x7f04000d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionMenuTextAppearance=0x7f03000e;
+    public static final int actionMenuTextAppearance=0x7f04000e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -167,176 +174,176 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int actionMenuTextColor=0x7f03000f;
+    public static final int actionMenuTextColor=0x7f04000f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionModeBackground=0x7f030010;
+    public static final int actionModeBackground=0x7f040010;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionModeCloseButtonStyle=0x7f030011;
+    public static final int actionModeCloseButtonStyle=0x7f040011;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int actionModeCloseContentDescription=0x7f030012;
+    public static final int actionModeCloseContentDescription=0x7f040012;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionModeCloseDrawable=0x7f030013;
+    public static final int actionModeCloseDrawable=0x7f040013;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionModeCopyDrawable=0x7f030014;
+    public static final int actionModeCopyDrawable=0x7f040014;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionModeCutDrawable=0x7f030015;
+    public static final int actionModeCutDrawable=0x7f040015;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionModeFindDrawable=0x7f030016;
+    public static final int actionModeFindDrawable=0x7f040016;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionModePasteDrawable=0x7f030017;
+    public static final int actionModePasteDrawable=0x7f040017;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionModePopupWindowStyle=0x7f030018;
+    public static final int actionModePopupWindowStyle=0x7f040018;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionModeSelectAllDrawable=0x7f030019;
+    public static final int actionModeSelectAllDrawable=0x7f040019;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionModeShareDrawable=0x7f03001a;
+    public static final int actionModeShareDrawable=0x7f04001a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionModeSplitBackground=0x7f03001b;
+    public static final int actionModeSplitBackground=0x7f04001b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionModeStyle=0x7f03001c;
+    public static final int actionModeStyle=0x7f04001c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionModeTheme=0x7f03001d;
+    public static final int actionModeTheme=0x7f04001d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionModeWebSearchDrawable=0x7f03001e;
+    public static final int actionModeWebSearchDrawable=0x7f04001e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionOverflowButtonStyle=0x7f03001f;
+    public static final int actionOverflowButtonStyle=0x7f04001f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int actionOverflowMenuStyle=0x7f030020;
+    public static final int actionOverflowMenuStyle=0x7f040020;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int actionProviderClass=0x7f030021;
+    public static final int actionProviderClass=0x7f040021;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int actionViewClass=0x7f030022;
+    public static final int actionViewClass=0x7f040022;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int activityChooserViewStyle=0x7f030023;
+    public static final int activityChooserViewStyle=0x7f040023;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int alertDialogButtonGroupStyle=0x7f030024;
+    public static final int alertDialogButtonGroupStyle=0x7f040024;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int alertDialogCenterButtons=0x7f030025;
+    public static final int alertDialogCenterButtons=0x7f040025;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int alertDialogStyle=0x7f030026;
+    public static final int alertDialogStyle=0x7f040026;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int alertDialogTheme=0x7f030027;
+    public static final int alertDialogTheme=0x7f040027;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int allowStacking=0x7f030028;
+    public static final int allowStacking=0x7f040028;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int alpha=0x7f030029;
+    public static final int alpha=0x7f040029;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -352,7 +359,7 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      */
-    public static final int alphabeticModifiers=0x7f03002a;
+    public static final int alphabeticModifiers=0x7f04002a;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -360,7 +367,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int arrowHeadLength=0x7f03002b;
+    public static final int arrowHeadLength=0x7f04002b;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -368,14 +375,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int arrowShaftLength=0x7f03002c;
+    public static final int arrowShaftLength=0x7f04002c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int autoCompleteTextViewStyle=0x7f03002d;
+    public static final int autoCompleteTextViewStyle=0x7f04002d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -383,7 +390,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int autoSizeMaxTextSize=0x7f03002e;
+    public static final int autoSizeMaxTextSize=0x7f04002e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -391,14 +398,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int autoSizeMinTextSize=0x7f03002f;
+    public static final int autoSizeMinTextSize=0x7f04002f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int autoSizePresetSizes=0x7f030030;
+    public static final int autoSizePresetSizes=0x7f040030;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -406,7 +413,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int autoSizeStepGranularity=0x7f030031;
+    public static final int autoSizeStepGranularity=0x7f040031;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -419,24 +426,14 @@ public final class R {
      * container.</td></tr>
      * </table>
      */
-    public static final int autoSizeTextType=0x7f030032;
+    public static final int autoSizeTextType=0x7f040032;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int background=0x7f030033;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int backgroundSplit=0x7f030034;
+    public static final int background=0x7f040033;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -446,13 +443,23 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int backgroundStacked=0x7f030035;
+    public static final int backgroundSplit=0x7f040034;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int backgroundStacked=0x7f040035;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int backgroundTint=0x7f030036;
+    public static final int backgroundTint=0x7f040036;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -473,7 +480,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int backgroundTintMode=0x7f030037;
+    public static final int backgroundTintMode=0x7f040037;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -481,7 +488,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int barLength=0x7f030038;
+    public static final int barLength=0x7f040038;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -489,11 +496,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int behindOffset=0x7f030039;
+    public static final int behindOffset=0x7f040039;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int behindScrollScale=0x7f03003a;
+    public static final int behindScrollScale=0x7f04003a;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -501,56 +508,56 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int behindWidth=0x7f03003b;
+    public static final int behindWidth=0x7f04003b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int borderlessButtonStyle=0x7f03003c;
+    public static final int borderlessButtonStyle=0x7f04003c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonBarButtonStyle=0x7f03003d;
+    public static final int buttonBarButtonStyle=0x7f04003d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonBarNegativeButtonStyle=0x7f03003e;
+    public static final int buttonBarNegativeButtonStyle=0x7f04003e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonBarNeutralButtonStyle=0x7f03003f;
+    public static final int buttonBarNeutralButtonStyle=0x7f04003f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonBarPositiveButtonStyle=0x7f030040;
+    public static final int buttonBarPositiveButtonStyle=0x7f040040;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonBarStyle=0x7f030041;
+    public static final int buttonBarStyle=0x7f040041;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonCompat=0x7f030042;
+    public static final int buttonCompat=0x7f040042;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -563,7 +570,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      */
-    public static final int buttonGravity=0x7f030043;
+    public static final int buttonGravity=0x7f040043;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -571,34 +578,34 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int buttonIconDimen=0x7f030044;
+    public static final int buttonIconDimen=0x7f040044;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonPanelSideLayout=0x7f030045;
+    public static final int buttonPanelSideLayout=0x7f040045;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonStyle=0x7f030046;
+    public static final int buttonStyle=0x7f040046;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonStyleSmall=0x7f030047;
+    public static final int buttonStyleSmall=0x7f040047;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int buttonTint=0x7f030048;
+    public static final int buttonTint=0x7f040048;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -619,20 +626,20 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int buttonTintMode=0x7f030049;
+    public static final int buttonTintMode=0x7f040049;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int checkMarkCompat=0x7f03004a;
+    public static final int checkMarkCompat=0x7f04004a;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int checkMarkTint=0x7f03004b;
+    public static final int checkMarkTint=0x7f04004b;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -653,89 +660,89 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int checkMarkTintMode=0x7f03004c;
+    public static final int checkMarkTintMode=0x7f04004c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int checkboxStyle=0x7f03004d;
+    public static final int checkboxStyle=0x7f04004d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int checkedTextViewStyle=0x7f03004e;
+    public static final int checkedTextViewStyle=0x7f04004e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int closeIcon=0x7f03004f;
+    public static final int closeIcon=0x7f04004f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int closeItemLayout=0x7f030050;
+    public static final int closeItemLayout=0x7f040050;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int collapseContentDescription=0x7f030051;
+    public static final int collapseContentDescription=0x7f040051;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int collapseIcon=0x7f030052;
+    public static final int collapseIcon=0x7f040052;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int color=0x7f030053;
+    public static final int color=0x7f040053;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorAccent=0x7f030054;
+    public static final int colorAccent=0x7f040054;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorBackgroundFloating=0x7f030055;
+    public static final int colorBackgroundFloating=0x7f040055;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorButtonNormal=0x7f030056;
+    public static final int colorButtonNormal=0x7f040056;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlActivated=0x7f030057;
+    public static final int colorControlActivated=0x7f040057;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlHighlight=0x7f030058;
+    public static final int colorControlHighlight=0x7f040058;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlNormal=0x7f030059;
+    public static final int colorControlNormal=0x7f040059;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -745,37 +752,37 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorError=0x7f03005a;
+    public static final int colorError=0x7f04005a;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorPrimary=0x7f03005b;
+    public static final int colorPrimary=0x7f04005b;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorPrimaryDark=0x7f03005c;
+    public static final int colorPrimaryDark=0x7f04005c;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorSwitchThumbNormal=0x7f03005d;
+    public static final int colorSwitchThumbNormal=0x7f04005d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int commitIcon=0x7f03005e;
+    public static final int commitIcon=0x7f04005e;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int contentDescription=0x7f03005f;
+    public static final int contentDescription=0x7f04005f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -783,7 +790,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetEnd=0x7f030060;
+    public static final int contentInsetEnd=0x7f040060;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -791,7 +798,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetEndWithActions=0x7f030061;
+    public static final int contentInsetEndWithActions=0x7f040061;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -799,7 +806,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetLeft=0x7f030062;
+    public static final int contentInsetLeft=0x7f040062;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -807,7 +814,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetRight=0x7f030063;
+    public static final int contentInsetRight=0x7f040063;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -815,7 +822,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetStart=0x7f030064;
+    public static final int contentInsetStart=0x7f040064;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -823,33 +830,33 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetStartWithNavigation=0x7f030065;
+    public static final int contentInsetStartWithNavigation=0x7f040065;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int controlBackground=0x7f030066;
+    public static final int controlBackground=0x7f040066;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int coordinatorLayoutStyle=0x7f030067;
+    public static final int coordinatorLayoutStyle=0x7f040067;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int customNavigationLayout=0x7f030068;
+    public static final int customNavigationLayout=0x7f040068;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int defaultQueryHint=0x7f030069;
+    public static final int defaultQueryHint=0x7f040069;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -857,7 +864,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dialogCornerRadius=0x7f03006a;
+    public static final int dialogCornerRadius=0x7f04006a;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -865,14 +872,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dialogPreferredPadding=0x7f03006b;
+    public static final int dialogPreferredPadding=0x7f04006b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dialogTheme=0x7f03006c;
+    public static final int dialogTheme=0x7f04006c;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -889,21 +896,21 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int displayOptions=0x7f03006d;
+    public static final int displayOptions=0x7f04006d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int divider=0x7f03006e;
+    public static final int divider=0x7f04006e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dividerHorizontal=0x7f03006f;
+    public static final int dividerHorizontal=0x7f04006f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -911,42 +918,42 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dividerPadding=0x7f030070;
+    public static final int dividerPadding=0x7f040070;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dividerVertical=0x7f030071;
+    public static final int dividerVertical=0x7f040071;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawableBottomCompat=0x7f030072;
+    public static final int drawableBottomCompat=0x7f040072;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawableEndCompat=0x7f030073;
+    public static final int drawableEndCompat=0x7f040073;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawableLeftCompat=0x7f030074;
+    public static final int drawableLeftCompat=0x7f040074;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawableRightCompat=0x7f030075;
+    public static final int drawableRightCompat=0x7f040075;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -954,20 +961,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int drawableSize=0x7f030076;
+    public static final int drawableSize=0x7f040076;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawableStartCompat=0x7f030077;
+    public static final int drawableStartCompat=0x7f040077;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int drawableTint=0x7f030078;
+    public static final int drawableTint=0x7f040078;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -988,35 +995,35 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int drawableTintMode=0x7f030079;
+    public static final int drawableTintMode=0x7f040079;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawableTopCompat=0x7f03007a;
+    public static final int drawableTopCompat=0x7f04007a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawerArrowStyle=0x7f03007b;
+    public static final int drawerArrowStyle=0x7f04007b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawerLayoutStyle=0x7f03007c;
+    public static final int drawerLayoutStyle=0x7f04007c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dropDownListViewStyle=0x7f03007d;
+    public static final int dropDownListViewStyle=0x7f04007d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1024,14 +1031,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dropdownListPreferredItemHeight=0x7f03007e;
+    public static final int dropdownListPreferredItemHeight=0x7f04007e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int editTextBackground=0x7f03007f;
+    public static final int editTextBackground=0x7f04007f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1041,14 +1048,14 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int editTextColor=0x7f030080;
+    public static final int editTextColor=0x7f040080;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int editTextStyle=0x7f030081;
+    public static final int editTextStyle=0x7f040081;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1056,12 +1063,12 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int elevation=0x7f030082;
+    public static final int elevation=0x7f040082;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int emojiCompatEnabled=0x7f030083;
+    public static final int emojiCompatEnabled=0x7f040083;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1076,23 +1083,23 @@ public final class R {
      * system.</td></tr>
      * </table>
      */
-    public static final int emojiReplaceStrategy=0x7f030084;
+    public static final int emojiReplaceStrategy=0x7f040084;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int expandActivityOverflowButtonDrawable=0x7f030085;
+    public static final int expandActivityOverflowButtonDrawable=0x7f040085;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int fadeDegree=0x7f030086;
+    public static final int fadeDegree=0x7f040086;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int fadeEnabled=0x7f030087;
+    public static final int fadeEnabled=0x7f040087;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1100,31 +1107,31 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int firstBaselineToTopHeight=0x7f030088;
+    public static final int firstBaselineToTopHeight=0x7f040088;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int font=0x7f030089;
+    public static final int font=0x7f040089;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontFamily=0x7f03008a;
+    public static final int fontFamily=0x7f04008a;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderAuthority=0x7f03008b;
+    public static final int fontProviderAuthority=0x7f04008b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int fontProviderCerts=0x7f03008c;
+    public static final int fontProviderCerts=0x7f04008c;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1144,7 +1151,7 @@ public final class R {
      * default typeface will be used instead.</td></tr>
      * </table>
      */
-    public static final int fontProviderFetchStrategy=0x7f03008d;
+    public static final int fontProviderFetchStrategy=0x7f04008d;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      * <p>Must be one of the following constant values.</p>
@@ -1157,22 +1164,22 @@ public final class R {
      * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      */
-    public static final int fontProviderFetchTimeout=0x7f03008e;
+    public static final int fontProviderFetchTimeout=0x7f04008e;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderPackage=0x7f03008f;
+    public static final int fontProviderPackage=0x7f04008f;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderQuery=0x7f030090;
+    public static final int fontProviderQuery=0x7f040090;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderSystemFontFamily=0x7f030091;
+    public static final int fontProviderSystemFontFamily=0x7f040091;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1184,16 +1191,16 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fontStyle=0x7f030092;
+    public static final int fontStyle=0x7f040092;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontVariationSettings=0x7f030093;
+    public static final int fontVariationSettings=0x7f040093;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int fontWeight=0x7f030094;
+    public static final int fontWeight=0x7f040094;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1201,14 +1208,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int gapBetweenBars=0x7f030095;
+    public static final int gapBetweenBars=0x7f040095;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int goIcon=0x7f030096;
+    public static final int goIcon=0x7f040096;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1216,39 +1223,39 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int height=0x7f030097;
+    public static final int height=0x7f040097;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int hideOnContentScroll=0x7f030098;
+    public static final int hideOnContentScroll=0x7f040098;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int homeAsUpIndicator=0x7f030099;
+    public static final int homeAsUpIndicator=0x7f040099;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int homeLayout=0x7f03009a;
+    public static final int homeLayout=0x7f04009a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int icon=0x7f03009b;
+    public static final int icon=0x7f04009b;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int iconTint=0x7f03009c;
+    public static final int iconTint=0x7f04009c;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1269,36 +1276,36 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int iconTintMode=0x7f03009d;
+    public static final int iconTintMode=0x7f04009d;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int iconifiedByDefault=0x7f03009e;
+    public static final int iconifiedByDefault=0x7f04009e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int imageButtonStyle=0x7f03009f;
+    public static final int imageButtonStyle=0x7f04009f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int indeterminateProgressStyle=0x7f0300a0;
+    public static final int indeterminateProgressStyle=0x7f0400a0;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int initialActivityCount=0x7f0300a1;
+    public static final int initialActivityCount=0x7f0400a1;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int isLightTheme=0x7f0300a2;
+    public static final int isLightTheme=0x7f0400a2;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1306,7 +1313,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int itemPadding=0x7f0300a3;
+    public static final int itemPadding=0x7f0400a3;
     /**
      * A reference to an array of integers representing the
      * locations of horizontal keylines in dp from the starting edge.
@@ -1318,11 +1325,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int keylines=0x7f0300a4;
+    public static final int keylines=0x7f0400a4;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int lStar=0x7f0300a5;
+    public static final int lStar=0x7f0400a5;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1330,14 +1337,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int lastBaselineToBottomHeight=0x7f0300a6;
+    public static final int lastBaselineToBottomHeight=0x7f0400a6;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout=0x7f0300a7;
+    public static final int layout=0x7f0400a7;
     /**
      * The id of an anchor view that this view should position relative to.
      * <p>May be a reference to another resource, in the form
@@ -1345,7 +1352,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout_anchor=0x7f0300a8;
+    public static final int layout_anchor=0x7f0400a8;
     /**
      * Specifies how an object should position relative to an anchor, on both the X and Y axes,
      * within its parent's bounds.
@@ -1377,14 +1384,14 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      */
-    public static final int layout_anchorGravity=0x7f0300a9;
+    public static final int layout_anchorGravity=0x7f0400a9;
     /**
      * The class name of a Behavior class defining special runtime behavior
      * for this child view.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int layout_behavior=0x7f0300aa;
+    public static final int layout_behavior=0x7f0400aa;
     /**
      * Specifies how this view dodges the inset edges of the CoordinatorLayout.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -1403,7 +1410,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
      * </table>
      */
-    public static final int layout_dodgeInsetEdges=0x7f0300ab;
+    public static final int layout_dodgeInsetEdges=0x7f0400ab;
     /**
      * Specifies how this view insets the CoordinatorLayout and make some other views
      * dodge it.
@@ -1422,14 +1429,14 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
      * </table>
      */
-    public static final int layout_insetEdge=0x7f0300ac;
+    public static final int layout_insetEdge=0x7f0400ac;
     /**
      * The index of a keyline this view should position relative to.
      * android:layout_gravity will affect how the view aligns to the
      * specified keyline.
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_keyline=0x7f0300ad;
+    public static final int layout_keyline=0x7f0400ad;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1437,63 +1444,63 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int lineHeight=0x7f0300ae;
+    public static final int lineHeight=0x7f0400ae;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listChoiceBackgroundIndicator=0x7f0300af;
+    public static final int listChoiceBackgroundIndicator=0x7f0400af;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listChoiceIndicatorMultipleAnimated=0x7f0300b0;
+    public static final int listChoiceIndicatorMultipleAnimated=0x7f0400b0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listChoiceIndicatorSingleAnimated=0x7f0300b1;
+    public static final int listChoiceIndicatorSingleAnimated=0x7f0400b1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listDividerAlertDialog=0x7f0300b2;
+    public static final int listDividerAlertDialog=0x7f0400b2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listItemLayout=0x7f0300b3;
+    public static final int listItemLayout=0x7f0400b3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listLayout=0x7f0300b4;
+    public static final int listLayout=0x7f0400b4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listMenuViewStyle=0x7f0300b5;
+    public static final int listMenuViewStyle=0x7f0400b5;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listPopupWindowStyle=0x7f0300b6;
+    public static final int listPopupWindowStyle=0x7f0400b6;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1501,7 +1508,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeight=0x7f0300b7;
+    public static final int listPreferredItemHeight=0x7f0400b7;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1509,7 +1516,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeightLarge=0x7f0300b8;
+    public static final int listPreferredItemHeightLarge=0x7f0400b8;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1517,7 +1524,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeightSmall=0x7f0300b9;
+    public static final int listPreferredItemHeightSmall=0x7f0400b9;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1525,7 +1532,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingEnd=0x7f0300ba;
+    public static final int listPreferredItemPaddingEnd=0x7f0400ba;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1533,7 +1540,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingLeft=0x7f0300bb;
+    public static final int listPreferredItemPaddingLeft=0x7f0400bb;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1541,7 +1548,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingRight=0x7f0300bc;
+    public static final int listPreferredItemPaddingRight=0x7f0400bc;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1549,19 +1556,19 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingStart=0x7f0300bd;
+    public static final int listPreferredItemPaddingStart=0x7f0400bd;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int logo=0x7f0300be;
+    public static final int logo=0x7f0400be;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int logoDescription=0x7f0300bf;
+    public static final int logoDescription=0x7f0400bf;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1569,23 +1576,23 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int maxButtonHeight=0x7f0300c0;
+    public static final int maxButtonHeight=0x7f0400c0;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int maxEmojiCount=0x7f0300c1;
+    public static final int maxEmojiCount=0x7f0400c1;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int measureWithLargestChild=0x7f0300c2;
+    public static final int measureWithLargestChild=0x7f0400c2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int menu=0x7f0300c3;
+    public static final int menu=0x7f0400c3;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1597,26 +1604,26 @@ public final class R {
      * <tr><td>right</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int mode=0x7f0300c4;
+    public static final int mode=0x7f0400c4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int multiChoiceItemLayout=0x7f0300c5;
+    public static final int multiChoiceItemLayout=0x7f0400c5;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int navigationContentDescription=0x7f0300c6;
+    public static final int navigationContentDescription=0x7f0400c6;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int navigationIcon=0x7f0300c7;
+    public static final int navigationIcon=0x7f0400c7;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1629,14 +1636,14 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td>The action bar will use a series of horizontal tabs for navigation.</td></tr>
      * </table>
      */
-    public static final int navigationMode=0x7f0300c8;
+    public static final int navigationMode=0x7f0400c8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int nestedScrollViewStyle=0x7f0300c9;
+    public static final int nestedScrollViewStyle=0x7f0400c9;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1652,12 +1659,12 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      */
-    public static final int numericModifiers=0x7f0300ca;
+    public static final int numericModifiers=0x7f0400ca;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int overlapAnchor=0x7f0300cb;
+    public static final int overlapAnchor=0x7f0400cb;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1665,7 +1672,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingBottomNoButtons=0x7f0300cc;
+    public static final int paddingBottomNoButtons=0x7f0400cc;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1673,7 +1680,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingEnd=0x7f0300cd;
+    public static final int paddingEnd=0x7f0400cd;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1681,7 +1688,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingStart=0x7f0300ce;
+    public static final int paddingStart=0x7f0400ce;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1689,21 +1696,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingTopNoTitle=0x7f0300cf;
+    public static final int paddingTopNoTitle=0x7f0400cf;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int panelBackground=0x7f0300d0;
+    public static final int panelBackground=0x7f0400d0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int panelMenuListTheme=0x7f0300d1;
+    public static final int panelMenuListTheme=0x7f0400d1;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1711,33 +1718,33 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int panelMenuListWidth=0x7f0300d2;
+    public static final int panelMenuListWidth=0x7f0400d2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int popupMenuStyle=0x7f0300d3;
+    public static final int popupMenuStyle=0x7f0400d3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int popupTheme=0x7f0300d4;
+    public static final int popupTheme=0x7f0400d4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int popupWindowStyle=0x7f0300d5;
+    public static final int popupWindowStyle=0x7f0400d5;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int preserveIconSpacing=0x7f0300d6;
+    public static final int preserveIconSpacing=0x7f0400d6;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1745,122 +1752,122 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int progressBarPadding=0x7f0300d7;
+    public static final int progressBarPadding=0x7f0400d7;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int progressBarStyle=0x7f0300d8;
+    public static final int progressBarStyle=0x7f0400d8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int queryBackground=0x7f0300d9;
+    public static final int queryBackground=0x7f0400d9;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int queryHint=0x7f0300da;
+    public static final int queryHint=0x7f0400da;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int queryPatterns=0x7f0300db;
+    public static final int queryPatterns=0x7f0400db;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int radioButtonStyle=0x7f0300dc;
+    public static final int radioButtonStyle=0x7f0400dc;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyle=0x7f0300dd;
+    public static final int ratingBarStyle=0x7f0400dd;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyleIndicator=0x7f0300de;
+    public static final int ratingBarStyleIndicator=0x7f0400de;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyleSmall=0x7f0300df;
+    public static final int ratingBarStyleSmall=0x7f0400df;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchHintIcon=0x7f0300e0;
+    public static final int searchHintIcon=0x7f0400e0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchIcon=0x7f0300e1;
+    public static final int searchIcon=0x7f0400e1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchViewStyle=0x7f0300e2;
+    public static final int searchViewStyle=0x7f0400e2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int seekBarStyle=0x7f0300e3;
+    public static final int seekBarStyle=0x7f0400e3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int selectableItemBackground=0x7f0300e4;
+    public static final int selectableItemBackground=0x7f0400e4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int selectableItemBackgroundBorderless=0x7f0300e5;
+    public static final int selectableItemBackgroundBorderless=0x7f0400e5;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int selectorDrawable=0x7f0300e6;
+    public static final int selectorDrawable=0x7f0400e6;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int selectorEnabled=0x7f0300e7;
+    public static final int selectorEnabled=0x7f0400e7;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int shadowDrawable=0x7f0300e8;
+    public static final int shadowDrawable=0x7f0400e8;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1868,12 +1875,12 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int shadowWidth=0x7f0300e9;
+    public static final int shadowWidth=0x7f0400e9;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int shortcutMatchRequired=0x7f0300ea;
+    public static final int shortcutMatchRequired=0x7f0400ea;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1897,7 +1904,7 @@ public final class R {
      * label with it even if it has an icon representation.</td></tr>
      * </table>
      */
-    public static final int showAsAction=0x7f0300eb;
+    public static final int showAsAction=0x7f0400eb;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1911,60 +1918,60 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int showDividers=0x7f0300ec;
+    public static final int showDividers=0x7f0400ec;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int showText=0x7f0300ed;
+    public static final int showText=0x7f0400ed;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int showTitle=0x7f0300ee;
+    public static final int showTitle=0x7f0400ee;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int singleChoiceItemLayout=0x7f0300ef;
+    public static final int singleChoiceItemLayout=0x7f0400ef;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int spinBars=0x7f0300f0;
+    public static final int spinBars=0x7f0400f0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int spinnerDropDownItemStyle=0x7f0300f1;
+    public static final int spinnerDropDownItemStyle=0x7f0400f1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int spinnerStyle=0x7f0300f2;
+    public static final int spinnerStyle=0x7f0400f2;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int splitTrack=0x7f0300f3;
+    public static final int splitTrack=0x7f0400f3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int srcCompat=0x7f0300f4;
+    public static final int srcCompat=0x7f0400f4;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int state_above_anchor=0x7f0300f5;
+    public static final int state_above_anchor=0x7f0400f5;
     /**
      * Drawable to display behind the status bar when the view is set to draw behind it.
      * <p>May be a reference to another resource, in the form
@@ -1975,60 +1982,60 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int statusBarBackground=0x7f0300f6;
+    public static final int statusBarBackground=0x7f0400f6;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subMenuArrow=0x7f0300f7;
+    public static final int subMenuArrow=0x7f0400f7;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int submitBackground=0x7f0300f8;
+    public static final int submitBackground=0x7f0400f8;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int subtitle=0x7f0300f9;
+    public static final int subtitle=0x7f0400f9;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subtitleTextAppearance=0x7f0300fa;
+    public static final int subtitleTextAppearance=0x7f0400fa;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int subtitleTextColor=0x7f0300fb;
+    public static final int subtitleTextColor=0x7f0400fb;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subtitleTextStyle=0x7f0300fc;
+    public static final int subtitleTextStyle=0x7f0400fc;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int suggestionRowLayout=0x7f0300fd;
+    public static final int suggestionRowLayout=0x7f0400fd;
     /**
      * Background color for SwipeRefreshLayout progress spinner.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int swipeRefreshLayoutProgressSpinnerBackgroundColor=0x7f0300fe;
+    public static final int swipeRefreshLayoutProgressSpinnerBackgroundColor=0x7f0400fe;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2036,7 +2043,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int switchMinWidth=0x7f0300ff;
+    public static final int switchMinWidth=0x7f0400ff;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2044,21 +2051,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int switchPadding=0x7f030100;
+    public static final int switchPadding=0x7f040100;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int switchStyle=0x7f030101;
+    public static final int switchStyle=0x7f040101;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int switchTextAppearance=0x7f030102;
+    public static final int switchTextAppearance=0x7f040102;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2067,73 +2074,63 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int textAllCaps=0x7f030103;
+    public static final int textAllCaps=0x7f040103;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceLargePopupMenu=0x7f030104;
+    public static final int textAppearanceLargePopupMenu=0x7f040104;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItem=0x7f030105;
+    public static final int textAppearanceListItem=0x7f040105;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItemSecondary=0x7f030106;
+    public static final int textAppearanceListItemSecondary=0x7f040106;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItemSmall=0x7f030107;
+    public static final int textAppearanceListItemSmall=0x7f040107;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearancePopupMenuHeader=0x7f030108;
+    public static final int textAppearancePopupMenuHeader=0x7f040108;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSearchResultSubtitle=0x7f030109;
+    public static final int textAppearanceSearchResultSubtitle=0x7f040109;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSearchResultTitle=0x7f03010a;
+    public static final int textAppearanceSearchResultTitle=0x7f04010a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSmallPopupMenu=0x7f03010b;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int textColorAlertDialogListItem=0x7f03010c;
+    public static final int textAppearanceSmallPopupMenu=0x7f04010b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2143,19 +2140,29 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int textColorSearchUrl=0x7f03010d;
+    public static final int textColorAlertDialogListItem=0x7f04010c;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int textColorSearchUrl=0x7f04010d;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int textLocale=0x7f03010e;
+    public static final int textLocale=0x7f04010e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int theme=0x7f03010f;
+    public static final int theme=0x7f04010f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2163,7 +2170,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int thickness=0x7f030110;
+    public static final int thickness=0x7f040110;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2171,13 +2178,13 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int thumbTextPadding=0x7f030111;
+    public static final int thumbTextPadding=0x7f040111;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int thumbTint=0x7f030112;
+    public static final int thumbTint=0x7f040112;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2198,20 +2205,20 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int thumbTintMode=0x7f030113;
+    public static final int thumbTintMode=0x7f040113;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tickMark=0x7f030114;
+    public static final int tickMark=0x7f040114;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tickMarkTint=0x7f030115;
+    public static final int tickMarkTint=0x7f040115;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2232,13 +2239,13 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int tickMarkTintMode=0x7f030116;
+    public static final int tickMarkTintMode=0x7f040116;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tint=0x7f030117;
+    public static final int tint=0x7f040117;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2259,12 +2266,12 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int tintMode=0x7f030118;
+    public static final int tintMode=0x7f040118;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int title=0x7f030119;
+    public static final int title=0x7f040119;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2272,7 +2279,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMargin=0x7f03011a;
+    public static final int titleMargin=0x7f04011a;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2280,7 +2287,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginBottom=0x7f03011b;
+    public static final int titleMarginBottom=0x7f04011b;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2288,7 +2295,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginEnd=0x7f03011c;
+    public static final int titleMarginEnd=0x7f04011c;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2296,7 +2303,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginStart=0x7f03011d;
+    public static final int titleMarginStart=0x7f04011d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2304,7 +2311,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginTop=0x7f03011e;
+    public static final int titleMarginTop=0x7f04011e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2312,41 +2319,41 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMargins=0x7f03011f;
+    public static final int titleMargins=0x7f04011f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int titleTextAppearance=0x7f030120;
+    public static final int titleTextAppearance=0x7f040120;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int titleTextColor=0x7f030121;
+    public static final int titleTextColor=0x7f040121;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int titleTextStyle=0x7f030122;
+    public static final int titleTextStyle=0x7f040122;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int toolbarNavigationButtonStyle=0x7f030123;
+    public static final int toolbarNavigationButtonStyle=0x7f040123;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int toolbarStyle=0x7f030124;
+    public static final int toolbarStyle=0x7f040124;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2356,19 +2363,19 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tooltipForegroundColor=0x7f030125;
+    public static final int tooltipForegroundColor=0x7f040125;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tooltipFrameBackground=0x7f030126;
+    public static final int tooltipFrameBackground=0x7f040126;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int tooltipText=0x7f030127;
+    public static final int tooltipText=0x7f040127;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2381,7 +2388,7 @@ public final class R {
      * <tr><td>none</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int touchModeAbove=0x7f030128;
+    public static final int touchModeAbove=0x7f040128;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2394,20 +2401,20 @@ public final class R {
      * <tr><td>none</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int touchModeBehind=0x7f030129;
+    public static final int touchModeBehind=0x7f040129;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int track=0x7f03012a;
+    public static final int track=0x7f04012a;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int trackTint=0x7f03012b;
+    public static final int trackTint=0x7f04012b;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2428,52 +2435,52 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int trackTintMode=0x7f03012c;
+    public static final int trackTintMode=0x7f04012c;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int ttcIndex=0x7f03012d;
+    public static final int ttcIndex=0x7f04012d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int viewAbove=0x7f03012e;
+    public static final int viewAbove=0x7f04012e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int viewBehind=0x7f03012f;
+    public static final int viewBehind=0x7f04012f;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int viewInflaterClass=0x7f030130;
+    public static final int viewInflaterClass=0x7f040130;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int voiceIcon=0x7f030131;
+    public static final int voiceIcon=0x7f040131;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBar=0x7f030132;
+    public static final int windowActionBar=0x7f040132;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBarOverlay=0x7f030133;
+    public static final int windowActionBarOverlay=0x7f040133;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionModeOverlay=0x7f030134;
+    public static final int windowActionModeOverlay=0x7f040134;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2485,7 +2492,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMajor=0x7f030135;
+    public static final int windowFixedHeightMajor=0x7f040135;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2497,7 +2504,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMinor=0x7f030136;
+    public static final int windowFixedHeightMinor=0x7f040136;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2509,7 +2516,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMajor=0x7f030137;
+    public static final int windowFixedWidthMajor=0x7f040137;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2521,7 +2528,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMinor=0x7f030138;
+    public static final int windowFixedWidthMinor=0x7f040138;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2533,7 +2540,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMajor=0x7f030139;
+    public static final int windowMinWidthMajor=0x7f040139;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2545,998 +2552,1019 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMinor=0x7f03013a;
+    public static final int windowMinWidthMinor=0x7f04013a;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowNoTitle=0x7f03013b;
+    public static final int windowNoTitle=0x7f04013b;
   }
   public static final class bool {
-    public static final int abc_action_bar_embed_tabs=0x7f040000;
-    public static final int abc_config_actionMenuItemAllCaps=0x7f040001;
+    public static final int abc_action_bar_embed_tabs=0x7f050000;
+    public static final int abc_config_actionMenuItemAllCaps=0x7f050001;
   }
   public static final class color {
-    public static final int abc_background_cache_hint_selector_material_dark=0x7f050000;
-    public static final int abc_background_cache_hint_selector_material_light=0x7f050001;
-    public static final int abc_btn_colored_borderless_text_material=0x7f050002;
-    public static final int abc_btn_colored_text_material=0x7f050003;
-    public static final int abc_color_highlight_material=0x7f050004;
-    public static final int abc_decor_view_status_guard=0x7f050005;
-    public static final int abc_decor_view_status_guard_light=0x7f050006;
-    public static final int abc_hint_foreground_material_dark=0x7f050007;
-    public static final int abc_hint_foreground_material_light=0x7f050008;
-    public static final int abc_primary_text_disable_only_material_dark=0x7f050009;
-    public static final int abc_primary_text_disable_only_material_light=0x7f05000a;
-    public static final int abc_primary_text_material_dark=0x7f05000b;
-    public static final int abc_primary_text_material_light=0x7f05000c;
-    public static final int abc_search_url_text=0x7f05000d;
-    public static final int abc_search_url_text_normal=0x7f05000e;
-    public static final int abc_search_url_text_pressed=0x7f05000f;
-    public static final int abc_search_url_text_selected=0x7f050010;
-    public static final int abc_secondary_text_material_dark=0x7f050011;
-    public static final int abc_secondary_text_material_light=0x7f050012;
-    public static final int abc_tint_btn_checkable=0x7f050013;
-    public static final int abc_tint_default=0x7f050014;
-    public static final int abc_tint_edittext=0x7f050015;
-    public static final int abc_tint_seek_thumb=0x7f050016;
-    public static final int abc_tint_spinner=0x7f050017;
-    public static final int abc_tint_switch_track=0x7f050018;
-    public static final int accent_material_dark=0x7f050019;
-    public static final int accent_material_light=0x7f05001a;
-    public static final int androidx_core_ripple_material_light=0x7f05001b;
-    public static final int androidx_core_secondary_text_default_material_light=0x7f05001c;
-    public static final int background_floating_material_dark=0x7f05001d;
-    public static final int background_floating_material_light=0x7f05001e;
-    public static final int background_material_dark=0x7f05001f;
-    public static final int background_material_light=0x7f050020;
-    public static final int bright_foreground_disabled_material_dark=0x7f050021;
-    public static final int bright_foreground_disabled_material_light=0x7f050022;
-    public static final int bright_foreground_inverse_material_dark=0x7f050023;
-    public static final int bright_foreground_inverse_material_light=0x7f050024;
-    public static final int bright_foreground_material_dark=0x7f050025;
-    public static final int bright_foreground_material_light=0x7f050026;
-    public static final int button_material_dark=0x7f050027;
-    public static final int button_material_light=0x7f050028;
-    public static final int dim_foreground_disabled_material_dark=0x7f050029;
-    public static final int dim_foreground_disabled_material_light=0x7f05002a;
-    public static final int dim_foreground_material_dark=0x7f05002b;
-    public static final int dim_foreground_material_light=0x7f05002c;
-    public static final int error_color_material_dark=0x7f05002d;
-    public static final int error_color_material_light=0x7f05002e;
-    public static final int foreground_material_dark=0x7f05002f;
-    public static final int foreground_material_light=0x7f050030;
-    public static final int highlighted_text_material_dark=0x7f050031;
-    public static final int highlighted_text_material_light=0x7f050032;
-    public static final int material_blue_grey_800=0x7f050033;
-    public static final int material_blue_grey_900=0x7f050034;
-    public static final int material_blue_grey_950=0x7f050035;
-    public static final int material_deep_teal_200=0x7f050036;
-    public static final int material_deep_teal_500=0x7f050037;
-    public static final int material_grey_100=0x7f050038;
-    public static final int material_grey_300=0x7f050039;
-    public static final int material_grey_50=0x7f05003a;
-    public static final int material_grey_600=0x7f05003b;
-    public static final int material_grey_800=0x7f05003c;
-    public static final int material_grey_850=0x7f05003d;
-    public static final int material_grey_900=0x7f05003e;
-    public static final int notification_action_color_filter=0x7f05003f;
-    public static final int notification_icon_bg_color=0x7f050040;
-    public static final int notification_material_background_media_default_color=0x7f050041;
-    public static final int primary_dark_material_dark=0x7f050042;
-    public static final int primary_dark_material_light=0x7f050043;
-    public static final int primary_material_dark=0x7f050044;
-    public static final int primary_material_light=0x7f050045;
-    public static final int primary_text_default_material_dark=0x7f050046;
-    public static final int primary_text_default_material_light=0x7f050047;
-    public static final int primary_text_disabled_material_dark=0x7f050048;
-    public static final int primary_text_disabled_material_light=0x7f050049;
-    public static final int ripple_material_dark=0x7f05004a;
-    public static final int ripple_material_light=0x7f05004b;
-    public static final int secondary_text_default_material_dark=0x7f05004c;
-    public static final int secondary_text_default_material_light=0x7f05004d;
-    public static final int secondary_text_disabled_material_dark=0x7f05004e;
-    public static final int secondary_text_disabled_material_light=0x7f05004f;
-    public static final int switch_thumb_disabled_material_dark=0x7f050050;
-    public static final int switch_thumb_disabled_material_light=0x7f050051;
-    public static final int switch_thumb_material_dark=0x7f050052;
-    public static final int switch_thumb_material_light=0x7f050053;
-    public static final int switch_thumb_normal_material_dark=0x7f050054;
-    public static final int switch_thumb_normal_material_light=0x7f050055;
-    public static final int tooltip_background_dark=0x7f050056;
-    public static final int tooltip_background_light=0x7f050057;
+    public static final int abc_background_cache_hint_selector_material_dark=0x7f060000;
+    public static final int abc_background_cache_hint_selector_material_light=0x7f060001;
+    public static final int abc_btn_colored_borderless_text_material=0x7f060002;
+    public static final int abc_btn_colored_text_material=0x7f060003;
+    public static final int abc_color_highlight_material=0x7f060004;
+    public static final int abc_decor_view_status_guard=0x7f060005;
+    public static final int abc_decor_view_status_guard_light=0x7f060006;
+    public static final int abc_hint_foreground_material_dark=0x7f060007;
+    public static final int abc_hint_foreground_material_light=0x7f060008;
+    public static final int abc_primary_text_disable_only_material_dark=0x7f060009;
+    public static final int abc_primary_text_disable_only_material_light=0x7f06000a;
+    public static final int abc_primary_text_material_dark=0x7f06000b;
+    public static final int abc_primary_text_material_light=0x7f06000c;
+    public static final int abc_search_url_text=0x7f06000d;
+    public static final int abc_search_url_text_normal=0x7f06000e;
+    public static final int abc_search_url_text_pressed=0x7f06000f;
+    public static final int abc_search_url_text_selected=0x7f060010;
+    public static final int abc_secondary_text_material_dark=0x7f060011;
+    public static final int abc_secondary_text_material_light=0x7f060012;
+    public static final int abc_tint_btn_checkable=0x7f060013;
+    public static final int abc_tint_default=0x7f060014;
+    public static final int abc_tint_edittext=0x7f060015;
+    public static final int abc_tint_seek_thumb=0x7f060016;
+    public static final int abc_tint_spinner=0x7f060017;
+    public static final int abc_tint_switch_track=0x7f060018;
+    public static final int accent_material_dark=0x7f060019;
+    public static final int accent_material_light=0x7f06001a;
+    public static final int androidx_core_ripple_material_light=0x7f06001b;
+    public static final int androidx_core_secondary_text_default_material_light=0x7f06001c;
+    public static final int background_floating_material_dark=0x7f06001d;
+    public static final int background_floating_material_light=0x7f06001e;
+    public static final int background_material_dark=0x7f06001f;
+    public static final int background_material_light=0x7f060020;
+    public static final int biometric_error_color=0x7f060021;
+    public static final int bright_foreground_disabled_material_dark=0x7f060022;
+    public static final int bright_foreground_disabled_material_light=0x7f060023;
+    public static final int bright_foreground_inverse_material_dark=0x7f060024;
+    public static final int bright_foreground_inverse_material_light=0x7f060025;
+    public static final int bright_foreground_material_dark=0x7f060026;
+    public static final int bright_foreground_material_light=0x7f060027;
+    public static final int button_material_dark=0x7f060028;
+    public static final int button_material_light=0x7f060029;
+    public static final int dim_foreground_disabled_material_dark=0x7f06002a;
+    public static final int dim_foreground_disabled_material_light=0x7f06002b;
+    public static final int dim_foreground_material_dark=0x7f06002c;
+    public static final int dim_foreground_material_light=0x7f06002d;
+    public static final int error_color_material_dark=0x7f06002e;
+    public static final int error_color_material_light=0x7f06002f;
+    public static final int foreground_material_dark=0x7f060030;
+    public static final int foreground_material_light=0x7f060031;
+    public static final int highlighted_text_material_dark=0x7f060032;
+    public static final int highlighted_text_material_light=0x7f060033;
+    public static final int material_blue_grey_800=0x7f060034;
+    public static final int material_blue_grey_900=0x7f060035;
+    public static final int material_blue_grey_950=0x7f060036;
+    public static final int material_deep_teal_200=0x7f060037;
+    public static final int material_deep_teal_500=0x7f060038;
+    public static final int material_grey_100=0x7f060039;
+    public static final int material_grey_300=0x7f06003a;
+    public static final int material_grey_50=0x7f06003b;
+    public static final int material_grey_600=0x7f06003c;
+    public static final int material_grey_800=0x7f06003d;
+    public static final int material_grey_850=0x7f06003e;
+    public static final int material_grey_900=0x7f06003f;
+    public static final int notification_action_color_filter=0x7f060040;
+    public static final int notification_icon_bg_color=0x7f060041;
+    public static final int notification_material_background_media_default_color=0x7f060042;
+    public static final int primary_dark_material_dark=0x7f060043;
+    public static final int primary_dark_material_light=0x7f060044;
+    public static final int primary_material_dark=0x7f060045;
+    public static final int primary_material_light=0x7f060046;
+    public static final int primary_text_default_material_dark=0x7f060047;
+    public static final int primary_text_default_material_light=0x7f060048;
+    public static final int primary_text_disabled_material_dark=0x7f060049;
+    public static final int primary_text_disabled_material_light=0x7f06004a;
+    public static final int ripple_material_dark=0x7f06004b;
+    public static final int ripple_material_light=0x7f06004c;
+    public static final int secondary_text_default_material_dark=0x7f06004d;
+    public static final int secondary_text_default_material_light=0x7f06004e;
+    public static final int secondary_text_disabled_material_dark=0x7f06004f;
+    public static final int secondary_text_disabled_material_light=0x7f060050;
+    public static final int switch_thumb_disabled_material_dark=0x7f060051;
+    public static final int switch_thumb_disabled_material_light=0x7f060052;
+    public static final int switch_thumb_material_dark=0x7f060053;
+    public static final int switch_thumb_material_light=0x7f060054;
+    public static final int switch_thumb_normal_material_dark=0x7f060055;
+    public static final int switch_thumb_normal_material_light=0x7f060056;
+    public static final int tooltip_background_dark=0x7f060057;
+    public static final int tooltip_background_light=0x7f060058;
   }
   public static final class dimen {
-    public static final int abc_action_bar_content_inset_material=0x7f060000;
-    public static final int abc_action_bar_content_inset_with_nav=0x7f060001;
-    public static final int abc_action_bar_default_height_material=0x7f060002;
-    public static final int abc_action_bar_default_padding_end_material=0x7f060003;
-    public static final int abc_action_bar_default_padding_start_material=0x7f060004;
-    public static final int abc_action_bar_elevation_material=0x7f060005;
-    public static final int abc_action_bar_icon_vertical_padding_material=0x7f060006;
-    public static final int abc_action_bar_overflow_padding_end_material=0x7f060007;
-    public static final int abc_action_bar_overflow_padding_start_material=0x7f060008;
-    public static final int abc_action_bar_stacked_max_height=0x7f060009;
-    public static final int abc_action_bar_stacked_tab_max_width=0x7f06000a;
-    public static final int abc_action_bar_subtitle_bottom_margin_material=0x7f06000b;
-    public static final int abc_action_bar_subtitle_top_margin_material=0x7f06000c;
-    public static final int abc_action_button_min_height_material=0x7f06000d;
-    public static final int abc_action_button_min_width_material=0x7f06000e;
-    public static final int abc_action_button_min_width_overflow_material=0x7f06000f;
-    public static final int abc_alert_dialog_button_bar_height=0x7f060010;
-    public static final int abc_alert_dialog_button_dimen=0x7f060011;
-    public static final int abc_button_inset_horizontal_material=0x7f060012;
-    public static final int abc_button_inset_vertical_material=0x7f060013;
-    public static final int abc_button_padding_horizontal_material=0x7f060014;
-    public static final int abc_button_padding_vertical_material=0x7f060015;
-    public static final int abc_cascading_menus_min_smallest_width=0x7f060016;
-    public static final int abc_config_prefDialogWidth=0x7f060017;
-    public static final int abc_control_corner_material=0x7f060018;
-    public static final int abc_control_inset_material=0x7f060019;
-    public static final int abc_control_padding_material=0x7f06001a;
-    public static final int abc_dialog_corner_radius_material=0x7f06001b;
-    public static final int abc_dialog_fixed_height_major=0x7f06001c;
-    public static final int abc_dialog_fixed_height_minor=0x7f06001d;
-    public static final int abc_dialog_fixed_width_major=0x7f06001e;
-    public static final int abc_dialog_fixed_width_minor=0x7f06001f;
-    public static final int abc_dialog_list_padding_bottom_no_buttons=0x7f060020;
-    public static final int abc_dialog_list_padding_top_no_title=0x7f060021;
-    public static final int abc_dialog_min_width_major=0x7f060022;
-    public static final int abc_dialog_min_width_minor=0x7f060023;
-    public static final int abc_dialog_padding_material=0x7f060024;
-    public static final int abc_dialog_padding_top_material=0x7f060025;
-    public static final int abc_dialog_title_divider_material=0x7f060026;
-    public static final int abc_disabled_alpha_material_dark=0x7f060027;
-    public static final int abc_disabled_alpha_material_light=0x7f060028;
-    public static final int abc_dropdownitem_icon_width=0x7f060029;
-    public static final int abc_dropdownitem_text_padding_left=0x7f06002a;
-    public static final int abc_dropdownitem_text_padding_right=0x7f06002b;
-    public static final int abc_edit_text_inset_bottom_material=0x7f06002c;
-    public static final int abc_edit_text_inset_horizontal_material=0x7f06002d;
-    public static final int abc_edit_text_inset_top_material=0x7f06002e;
-    public static final int abc_floating_window_z=0x7f06002f;
-    public static final int abc_list_item_height_large_material=0x7f060030;
-    public static final int abc_list_item_height_material=0x7f060031;
-    public static final int abc_list_item_height_small_material=0x7f060032;
-    public static final int abc_list_item_padding_horizontal_material=0x7f060033;
-    public static final int abc_panel_menu_list_width=0x7f060034;
-    public static final int abc_progress_bar_height_material=0x7f060035;
-    public static final int abc_search_view_preferred_height=0x7f060036;
-    public static final int abc_search_view_preferred_width=0x7f060037;
-    public static final int abc_seekbar_track_background_height_material=0x7f060038;
-    public static final int abc_seekbar_track_progress_height_material=0x7f060039;
-    public static final int abc_select_dialog_padding_start_material=0x7f06003a;
-    public static final int abc_star_big=0x7f06003b;
-    public static final int abc_star_medium=0x7f06003c;
-    public static final int abc_star_small=0x7f06003d;
-    public static final int abc_switch_padding=0x7f06003e;
-    public static final int abc_text_size_body_1_material=0x7f06003f;
-    public static final int abc_text_size_body_2_material=0x7f060040;
-    public static final int abc_text_size_button_material=0x7f060041;
-    public static final int abc_text_size_caption_material=0x7f060042;
-    public static final int abc_text_size_display_1_material=0x7f060043;
-    public static final int abc_text_size_display_2_material=0x7f060044;
-    public static final int abc_text_size_display_3_material=0x7f060045;
-    public static final int abc_text_size_display_4_material=0x7f060046;
-    public static final int abc_text_size_headline_material=0x7f060047;
-    public static final int abc_text_size_large_material=0x7f060048;
-    public static final int abc_text_size_medium_material=0x7f060049;
-    public static final int abc_text_size_menu_header_material=0x7f06004a;
-    public static final int abc_text_size_menu_material=0x7f06004b;
-    public static final int abc_text_size_small_material=0x7f06004c;
-    public static final int abc_text_size_subhead_material=0x7f06004d;
-    public static final int abc_text_size_subtitle_material_toolbar=0x7f06004e;
-    public static final int abc_text_size_title_material=0x7f06004f;
-    public static final int abc_text_size_title_material_toolbar=0x7f060050;
-    public static final int compat_button_inset_horizontal_material=0x7f060051;
-    public static final int compat_button_inset_vertical_material=0x7f060052;
-    public static final int compat_button_padding_horizontal_material=0x7f060053;
-    public static final int compat_button_padding_vertical_material=0x7f060054;
-    public static final int compat_control_corner_material=0x7f060055;
-    public static final int compat_notification_large_icon_max_height=0x7f060056;
-    public static final int compat_notification_large_icon_max_width=0x7f060057;
-    public static final int def_drawer_elevation=0x7f060058;
-    public static final int disabled_alpha_material_dark=0x7f060059;
-    public static final int disabled_alpha_material_light=0x7f06005a;
-    public static final int highlight_alpha_material_colored=0x7f06005b;
-    public static final int highlight_alpha_material_dark=0x7f06005c;
-    public static final int highlight_alpha_material_light=0x7f06005d;
-    public static final int hint_alpha_material_dark=0x7f06005e;
-    public static final int hint_alpha_material_light=0x7f06005f;
-    public static final int hint_pressed_alpha_material_dark=0x7f060060;
-    public static final int hint_pressed_alpha_material_light=0x7f060061;
-    public static final int notification_action_icon_size=0x7f060062;
-    public static final int notification_action_text_size=0x7f060063;
-    public static final int notification_big_circle_margin=0x7f060064;
-    public static final int notification_content_margin_start=0x7f060065;
-    public static final int notification_large_icon_height=0x7f060066;
-    public static final int notification_large_icon_width=0x7f060067;
-    public static final int notification_main_column_padding_top=0x7f060068;
-    public static final int notification_media_narrow_margin=0x7f060069;
-    public static final int notification_right_icon_size=0x7f06006a;
-    public static final int notification_right_side_padding_top=0x7f06006b;
-    public static final int notification_small_icon_background_padding=0x7f06006c;
-    public static final int notification_small_icon_size_as_large=0x7f06006d;
-    public static final int notification_subtext_size=0x7f06006e;
-    public static final int notification_top_pad=0x7f06006f;
-    public static final int notification_top_pad_large_text=0x7f060070;
-    public static final int tooltip_corner_radius=0x7f060071;
-    public static final int tooltip_horizontal_padding=0x7f060072;
-    public static final int tooltip_margin=0x7f060073;
-    public static final int tooltip_precise_anchor_extra_offset=0x7f060074;
-    public static final int tooltip_precise_anchor_threshold=0x7f060075;
-    public static final int tooltip_vertical_padding=0x7f060076;
-    public static final int tooltip_y_offset_non_touch=0x7f060077;
-    public static final int tooltip_y_offset_touch=0x7f060078;
+    public static final int abc_action_bar_content_inset_material=0x7f070000;
+    public static final int abc_action_bar_content_inset_with_nav=0x7f070001;
+    public static final int abc_action_bar_default_height_material=0x7f070002;
+    public static final int abc_action_bar_default_padding_end_material=0x7f070003;
+    public static final int abc_action_bar_default_padding_start_material=0x7f070004;
+    public static final int abc_action_bar_elevation_material=0x7f070005;
+    public static final int abc_action_bar_icon_vertical_padding_material=0x7f070006;
+    public static final int abc_action_bar_overflow_padding_end_material=0x7f070007;
+    public static final int abc_action_bar_overflow_padding_start_material=0x7f070008;
+    public static final int abc_action_bar_stacked_max_height=0x7f070009;
+    public static final int abc_action_bar_stacked_tab_max_width=0x7f07000a;
+    public static final int abc_action_bar_subtitle_bottom_margin_material=0x7f07000b;
+    public static final int abc_action_bar_subtitle_top_margin_material=0x7f07000c;
+    public static final int abc_action_button_min_height_material=0x7f07000d;
+    public static final int abc_action_button_min_width_material=0x7f07000e;
+    public static final int abc_action_button_min_width_overflow_material=0x7f07000f;
+    public static final int abc_alert_dialog_button_bar_height=0x7f070010;
+    public static final int abc_alert_dialog_button_dimen=0x7f070011;
+    public static final int abc_button_inset_horizontal_material=0x7f070012;
+    public static final int abc_button_inset_vertical_material=0x7f070013;
+    public static final int abc_button_padding_horizontal_material=0x7f070014;
+    public static final int abc_button_padding_vertical_material=0x7f070015;
+    public static final int abc_cascading_menus_min_smallest_width=0x7f070016;
+    public static final int abc_config_prefDialogWidth=0x7f070017;
+    public static final int abc_control_corner_material=0x7f070018;
+    public static final int abc_control_inset_material=0x7f070019;
+    public static final int abc_control_padding_material=0x7f07001a;
+    public static final int abc_dialog_corner_radius_material=0x7f07001b;
+    public static final int abc_dialog_fixed_height_major=0x7f07001c;
+    public static final int abc_dialog_fixed_height_minor=0x7f07001d;
+    public static final int abc_dialog_fixed_width_major=0x7f07001e;
+    public static final int abc_dialog_fixed_width_minor=0x7f07001f;
+    public static final int abc_dialog_list_padding_bottom_no_buttons=0x7f070020;
+    public static final int abc_dialog_list_padding_top_no_title=0x7f070021;
+    public static final int abc_dialog_min_width_major=0x7f070022;
+    public static final int abc_dialog_min_width_minor=0x7f070023;
+    public static final int abc_dialog_padding_material=0x7f070024;
+    public static final int abc_dialog_padding_top_material=0x7f070025;
+    public static final int abc_dialog_title_divider_material=0x7f070026;
+    public static final int abc_disabled_alpha_material_dark=0x7f070027;
+    public static final int abc_disabled_alpha_material_light=0x7f070028;
+    public static final int abc_dropdownitem_icon_width=0x7f070029;
+    public static final int abc_dropdownitem_text_padding_left=0x7f07002a;
+    public static final int abc_dropdownitem_text_padding_right=0x7f07002b;
+    public static final int abc_edit_text_inset_bottom_material=0x7f07002c;
+    public static final int abc_edit_text_inset_horizontal_material=0x7f07002d;
+    public static final int abc_edit_text_inset_top_material=0x7f07002e;
+    public static final int abc_floating_window_z=0x7f07002f;
+    public static final int abc_list_item_height_large_material=0x7f070030;
+    public static final int abc_list_item_height_material=0x7f070031;
+    public static final int abc_list_item_height_small_material=0x7f070032;
+    public static final int abc_list_item_padding_horizontal_material=0x7f070033;
+    public static final int abc_panel_menu_list_width=0x7f070034;
+    public static final int abc_progress_bar_height_material=0x7f070035;
+    public static final int abc_search_view_preferred_height=0x7f070036;
+    public static final int abc_search_view_preferred_width=0x7f070037;
+    public static final int abc_seekbar_track_background_height_material=0x7f070038;
+    public static final int abc_seekbar_track_progress_height_material=0x7f070039;
+    public static final int abc_select_dialog_padding_start_material=0x7f07003a;
+    public static final int abc_star_big=0x7f07003b;
+    public static final int abc_star_medium=0x7f07003c;
+    public static final int abc_star_small=0x7f07003d;
+    public static final int abc_switch_padding=0x7f07003e;
+    public static final int abc_text_size_body_1_material=0x7f07003f;
+    public static final int abc_text_size_body_2_material=0x7f070040;
+    public static final int abc_text_size_button_material=0x7f070041;
+    public static final int abc_text_size_caption_material=0x7f070042;
+    public static final int abc_text_size_display_1_material=0x7f070043;
+    public static final int abc_text_size_display_2_material=0x7f070044;
+    public static final int abc_text_size_display_3_material=0x7f070045;
+    public static final int abc_text_size_display_4_material=0x7f070046;
+    public static final int abc_text_size_headline_material=0x7f070047;
+    public static final int abc_text_size_large_material=0x7f070048;
+    public static final int abc_text_size_medium_material=0x7f070049;
+    public static final int abc_text_size_menu_header_material=0x7f07004a;
+    public static final int abc_text_size_menu_material=0x7f07004b;
+    public static final int abc_text_size_small_material=0x7f07004c;
+    public static final int abc_text_size_subhead_material=0x7f07004d;
+    public static final int abc_text_size_subtitle_material_toolbar=0x7f07004e;
+    public static final int abc_text_size_title_material=0x7f07004f;
+    public static final int abc_text_size_title_material_toolbar=0x7f070050;
+    public static final int compat_button_inset_horizontal_material=0x7f070051;
+    public static final int compat_button_inset_vertical_material=0x7f070052;
+    public static final int compat_button_padding_horizontal_material=0x7f070053;
+    public static final int compat_button_padding_vertical_material=0x7f070054;
+    public static final int compat_control_corner_material=0x7f070055;
+    public static final int compat_notification_large_icon_max_height=0x7f070056;
+    public static final int compat_notification_large_icon_max_width=0x7f070057;
+    public static final int def_drawer_elevation=0x7f070058;
+    public static final int disabled_alpha_material_dark=0x7f070059;
+    public static final int disabled_alpha_material_light=0x7f07005a;
+    public static final int fingerprint_icon_size=0x7f07005b;
+    public static final int highlight_alpha_material_colored=0x7f07005c;
+    public static final int highlight_alpha_material_dark=0x7f07005d;
+    public static final int highlight_alpha_material_light=0x7f07005e;
+    public static final int hint_alpha_material_dark=0x7f07005f;
+    public static final int hint_alpha_material_light=0x7f070060;
+    public static final int hint_pressed_alpha_material_dark=0x7f070061;
+    public static final int hint_pressed_alpha_material_light=0x7f070062;
+    public static final int notification_action_icon_size=0x7f070063;
+    public static final int notification_action_text_size=0x7f070064;
+    public static final int notification_big_circle_margin=0x7f070065;
+    public static final int notification_content_margin_start=0x7f070066;
+    public static final int notification_large_icon_height=0x7f070067;
+    public static final int notification_large_icon_width=0x7f070068;
+    public static final int notification_main_column_padding_top=0x7f070069;
+    public static final int notification_media_narrow_margin=0x7f07006a;
+    public static final int notification_right_icon_size=0x7f07006b;
+    public static final int notification_right_side_padding_top=0x7f07006c;
+    public static final int notification_small_icon_background_padding=0x7f07006d;
+    public static final int notification_small_icon_size_as_large=0x7f07006e;
+    public static final int notification_subtext_size=0x7f07006f;
+    public static final int notification_top_pad=0x7f070070;
+    public static final int notification_top_pad_large_text=0x7f070071;
+    public static final int tooltip_corner_radius=0x7f070072;
+    public static final int tooltip_horizontal_padding=0x7f070073;
+    public static final int tooltip_margin=0x7f070074;
+    public static final int tooltip_precise_anchor_extra_offset=0x7f070075;
+    public static final int tooltip_precise_anchor_threshold=0x7f070076;
+    public static final int tooltip_vertical_padding=0x7f070077;
+    public static final int tooltip_y_offset_non_touch=0x7f070078;
+    public static final int tooltip_y_offset_touch=0x7f070079;
   }
   public static final class drawable {
-    public static final int abc_ab_share_pack_mtrl_alpha=0x7f070000;
-    public static final int abc_action_bar_item_background_material=0x7f070001;
-    public static final int abc_btn_borderless_material=0x7f070002;
-    public static final int abc_btn_check_material=0x7f070003;
-    public static final int abc_btn_check_material_anim=0x7f070004;
-    public static final int abc_btn_check_to_on_mtrl_000=0x7f070005;
-    public static final int abc_btn_check_to_on_mtrl_015=0x7f070006;
-    public static final int abc_btn_colored_material=0x7f070007;
-    public static final int abc_btn_default_mtrl_shape=0x7f070008;
-    public static final int abc_btn_radio_material=0x7f070009;
-    public static final int abc_btn_radio_material_anim=0x7f07000a;
-    public static final int abc_btn_radio_to_on_mtrl_000=0x7f07000b;
-    public static final int abc_btn_radio_to_on_mtrl_015=0x7f07000c;
-    public static final int abc_btn_switch_to_on_mtrl_00001=0x7f07000d;
-    public static final int abc_btn_switch_to_on_mtrl_00012=0x7f07000e;
-    public static final int abc_cab_background_internal_bg=0x7f07000f;
-    public static final int abc_cab_background_top_material=0x7f070010;
-    public static final int abc_cab_background_top_mtrl_alpha=0x7f070011;
-    public static final int abc_control_background_material=0x7f070012;
-    public static final int abc_dialog_material_background=0x7f070013;
-    public static final int abc_edit_text_material=0x7f070014;
-    public static final int abc_ic_ab_back_material=0x7f070015;
-    public static final int abc_ic_arrow_drop_right_black_24dp=0x7f070016;
-    public static final int abc_ic_clear_material=0x7f070017;
-    public static final int abc_ic_commit_search_api_mtrl_alpha=0x7f070018;
-    public static final int abc_ic_go_search_api_material=0x7f070019;
-    public static final int abc_ic_menu_copy_mtrl_am_alpha=0x7f07001a;
-    public static final int abc_ic_menu_cut_mtrl_alpha=0x7f07001b;
-    public static final int abc_ic_menu_overflow_material=0x7f07001c;
-    public static final int abc_ic_menu_paste_mtrl_am_alpha=0x7f07001d;
-    public static final int abc_ic_menu_selectall_mtrl_alpha=0x7f07001e;
-    public static final int abc_ic_menu_share_mtrl_alpha=0x7f07001f;
-    public static final int abc_ic_search_api_material=0x7f070020;
-    public static final int abc_ic_voice_search_api_material=0x7f070021;
-    public static final int abc_item_background_holo_dark=0x7f070022;
-    public static final int abc_item_background_holo_light=0x7f070023;
-    public static final int abc_list_divider_material=0x7f070024;
-    public static final int abc_list_divider_mtrl_alpha=0x7f070025;
-    public static final int abc_list_focused_holo=0x7f070026;
-    public static final int abc_list_longpressed_holo=0x7f070027;
-    public static final int abc_list_pressed_holo_dark=0x7f070028;
-    public static final int abc_list_pressed_holo_light=0x7f070029;
-    public static final int abc_list_selector_background_transition_holo_dark=0x7f07002a;
-    public static final int abc_list_selector_background_transition_holo_light=0x7f07002b;
-    public static final int abc_list_selector_disabled_holo_dark=0x7f07002c;
-    public static final int abc_list_selector_disabled_holo_light=0x7f07002d;
-    public static final int abc_list_selector_holo_dark=0x7f07002e;
-    public static final int abc_list_selector_holo_light=0x7f07002f;
-    public static final int abc_menu_hardkey_panel_mtrl_mult=0x7f070030;
-    public static final int abc_popup_background_mtrl_mult=0x7f070031;
-    public static final int abc_ratingbar_indicator_material=0x7f070032;
-    public static final int abc_ratingbar_material=0x7f070033;
-    public static final int abc_ratingbar_small_material=0x7f070034;
-    public static final int abc_scrubber_control_off_mtrl_alpha=0x7f070035;
-    public static final int abc_scrubber_control_to_pressed_mtrl_000=0x7f070036;
-    public static final int abc_scrubber_control_to_pressed_mtrl_005=0x7f070037;
-    public static final int abc_scrubber_primary_mtrl_alpha=0x7f070038;
-    public static final int abc_scrubber_track_mtrl_alpha=0x7f070039;
-    public static final int abc_seekbar_thumb_material=0x7f07003a;
-    public static final int abc_seekbar_tick_mark_material=0x7f07003b;
-    public static final int abc_seekbar_track_material=0x7f07003c;
-    public static final int abc_spinner_mtrl_am_alpha=0x7f07003d;
-    public static final int abc_spinner_textfield_background_material=0x7f07003e;
-    public static final int abc_star_black_48dp=0x7f07003f;
-    public static final int abc_star_half_black_48dp=0x7f070040;
-    public static final int abc_switch_thumb_material=0x7f070041;
-    public static final int abc_switch_track_mtrl_alpha=0x7f070042;
-    public static final int abc_tab_indicator_material=0x7f070043;
-    public static final int abc_tab_indicator_mtrl_alpha=0x7f070044;
-    public static final int abc_text_cursor_material=0x7f070045;
-    public static final int abc_text_select_handle_left_mtrl=0x7f070046;
-    public static final int abc_text_select_handle_middle_mtrl=0x7f070047;
-    public static final int abc_text_select_handle_right_mtrl=0x7f070048;
-    public static final int abc_textfield_activated_mtrl_alpha=0x7f070049;
-    public static final int abc_textfield_default_mtrl_alpha=0x7f07004a;
-    public static final int abc_textfield_search_activated_mtrl_alpha=0x7f07004b;
-    public static final int abc_textfield_search_default_mtrl_alpha=0x7f07004c;
-    public static final int abc_textfield_search_material=0x7f07004d;
-    public static final int abc_vector_test=0x7f07004e;
-    public static final int btn_checkbox_checked_mtrl=0x7f07004f;
-    public static final int btn_checkbox_checked_to_unchecked_mtrl_animation=0x7f070050;
-    public static final int btn_checkbox_unchecked_mtrl=0x7f070051;
-    public static final int btn_checkbox_unchecked_to_checked_mtrl_animation=0x7f070052;
-    public static final int btn_radio_off_mtrl=0x7f070053;
-    public static final int btn_radio_off_to_on_mtrl_animation=0x7f070054;
-    public static final int btn_radio_on_mtrl=0x7f070055;
-    public static final int btn_radio_on_to_off_mtrl_animation=0x7f070056;
-    public static final int icon=0x7f070057;
-    public static final int notification_action_background=0x7f070058;
-    public static final int notification_bg=0x7f070059;
-    public static final int notification_bg_low=0x7f07005a;
-    public static final int notification_bg_low_normal=0x7f07005b;
-    public static final int notification_bg_low_pressed=0x7f07005c;
-    public static final int notification_bg_normal=0x7f07005d;
-    public static final int notification_bg_normal_pressed=0x7f07005e;
-    public static final int notification_icon_background=0x7f07005f;
-    public static final int notification_template_icon_bg=0x7f070060;
-    public static final int notification_template_icon_low_bg=0x7f070061;
-    public static final int notification_tile_bg=0x7f070062;
-    public static final int notify_panel_notification_icon_bg=0x7f070063;
-    public static final int test_level_drawable=0x7f070064;
-    public static final int tooltip_frame_dark=0x7f070065;
-    public static final int tooltip_frame_light=0x7f070066;
+    public static final int abc_ab_share_pack_mtrl_alpha=0x7f080000;
+    public static final int abc_action_bar_item_background_material=0x7f080001;
+    public static final int abc_btn_borderless_material=0x7f080002;
+    public static final int abc_btn_check_material=0x7f080003;
+    public static final int abc_btn_check_material_anim=0x7f080004;
+    public static final int abc_btn_check_to_on_mtrl_000=0x7f080005;
+    public static final int abc_btn_check_to_on_mtrl_015=0x7f080006;
+    public static final int abc_btn_colored_material=0x7f080007;
+    public static final int abc_btn_default_mtrl_shape=0x7f080008;
+    public static final int abc_btn_radio_material=0x7f080009;
+    public static final int abc_btn_radio_material_anim=0x7f08000a;
+    public static final int abc_btn_radio_to_on_mtrl_000=0x7f08000b;
+    public static final int abc_btn_radio_to_on_mtrl_015=0x7f08000c;
+    public static final int abc_btn_switch_to_on_mtrl_00001=0x7f08000d;
+    public static final int abc_btn_switch_to_on_mtrl_00012=0x7f08000e;
+    public static final int abc_cab_background_internal_bg=0x7f08000f;
+    public static final int abc_cab_background_top_material=0x7f080010;
+    public static final int abc_cab_background_top_mtrl_alpha=0x7f080011;
+    public static final int abc_control_background_material=0x7f080012;
+    public static final int abc_dialog_material_background=0x7f080013;
+    public static final int abc_edit_text_material=0x7f080014;
+    public static final int abc_ic_ab_back_material=0x7f080015;
+    public static final int abc_ic_arrow_drop_right_black_24dp=0x7f080016;
+    public static final int abc_ic_clear_material=0x7f080017;
+    public static final int abc_ic_commit_search_api_mtrl_alpha=0x7f080018;
+    public static final int abc_ic_go_search_api_material=0x7f080019;
+    public static final int abc_ic_menu_copy_mtrl_am_alpha=0x7f08001a;
+    public static final int abc_ic_menu_cut_mtrl_alpha=0x7f08001b;
+    public static final int abc_ic_menu_overflow_material=0x7f08001c;
+    public static final int abc_ic_menu_paste_mtrl_am_alpha=0x7f08001d;
+    public static final int abc_ic_menu_selectall_mtrl_alpha=0x7f08001e;
+    public static final int abc_ic_menu_share_mtrl_alpha=0x7f08001f;
+    public static final int abc_ic_search_api_material=0x7f080020;
+    public static final int abc_ic_voice_search_api_material=0x7f080021;
+    public static final int abc_item_background_holo_dark=0x7f080022;
+    public static final int abc_item_background_holo_light=0x7f080023;
+    public static final int abc_list_divider_material=0x7f080024;
+    public static final int abc_list_divider_mtrl_alpha=0x7f080025;
+    public static final int abc_list_focused_holo=0x7f080026;
+    public static final int abc_list_longpressed_holo=0x7f080027;
+    public static final int abc_list_pressed_holo_dark=0x7f080028;
+    public static final int abc_list_pressed_holo_light=0x7f080029;
+    public static final int abc_list_selector_background_transition_holo_dark=0x7f08002a;
+    public static final int abc_list_selector_background_transition_holo_light=0x7f08002b;
+    public static final int abc_list_selector_disabled_holo_dark=0x7f08002c;
+    public static final int abc_list_selector_disabled_holo_light=0x7f08002d;
+    public static final int abc_list_selector_holo_dark=0x7f08002e;
+    public static final int abc_list_selector_holo_light=0x7f08002f;
+    public static final int abc_menu_hardkey_panel_mtrl_mult=0x7f080030;
+    public static final int abc_popup_background_mtrl_mult=0x7f080031;
+    public static final int abc_ratingbar_indicator_material=0x7f080032;
+    public static final int abc_ratingbar_material=0x7f080033;
+    public static final int abc_ratingbar_small_material=0x7f080034;
+    public static final int abc_scrubber_control_off_mtrl_alpha=0x7f080035;
+    public static final int abc_scrubber_control_to_pressed_mtrl_000=0x7f080036;
+    public static final int abc_scrubber_control_to_pressed_mtrl_005=0x7f080037;
+    public static final int abc_scrubber_primary_mtrl_alpha=0x7f080038;
+    public static final int abc_scrubber_track_mtrl_alpha=0x7f080039;
+    public static final int abc_seekbar_thumb_material=0x7f08003a;
+    public static final int abc_seekbar_tick_mark_material=0x7f08003b;
+    public static final int abc_seekbar_track_material=0x7f08003c;
+    public static final int abc_spinner_mtrl_am_alpha=0x7f08003d;
+    public static final int abc_spinner_textfield_background_material=0x7f08003e;
+    public static final int abc_star_black_48dp=0x7f08003f;
+    public static final int abc_star_half_black_48dp=0x7f080040;
+    public static final int abc_switch_thumb_material=0x7f080041;
+    public static final int abc_switch_track_mtrl_alpha=0x7f080042;
+    public static final int abc_tab_indicator_material=0x7f080043;
+    public static final int abc_tab_indicator_mtrl_alpha=0x7f080044;
+    public static final int abc_text_cursor_material=0x7f080045;
+    public static final int abc_text_select_handle_left_mtrl=0x7f080046;
+    public static final int abc_text_select_handle_middle_mtrl=0x7f080047;
+    public static final int abc_text_select_handle_right_mtrl=0x7f080048;
+    public static final int abc_textfield_activated_mtrl_alpha=0x7f080049;
+    public static final int abc_textfield_default_mtrl_alpha=0x7f08004a;
+    public static final int abc_textfield_search_activated_mtrl_alpha=0x7f08004b;
+    public static final int abc_textfield_search_default_mtrl_alpha=0x7f08004c;
+    public static final int abc_textfield_search_material=0x7f08004d;
+    public static final int abc_vector_test=0x7f08004e;
+    public static final int btn_checkbox_checked_mtrl=0x7f08004f;
+    public static final int btn_checkbox_checked_to_unchecked_mtrl_animation=0x7f080050;
+    public static final int btn_checkbox_unchecked_mtrl=0x7f080051;
+    public static final int btn_checkbox_unchecked_to_checked_mtrl_animation=0x7f080052;
+    public static final int btn_radio_off_mtrl=0x7f080053;
+    public static final int btn_radio_off_to_on_mtrl_animation=0x7f080054;
+    public static final int btn_radio_on_mtrl=0x7f080055;
+    public static final int btn_radio_on_to_off_mtrl_animation=0x7f080056;
+    public static final int fingerprint_dialog_error=0x7f080057;
+    public static final int fingerprint_dialog_fp_icon=0x7f080058;
+    public static final int icon=0x7f080059;
+    public static final int notification_action_background=0x7f08005a;
+    public static final int notification_bg=0x7f08005b;
+    public static final int notification_bg_low=0x7f08005c;
+    public static final int notification_bg_low_normal=0x7f08005d;
+    public static final int notification_bg_low_pressed=0x7f08005e;
+    public static final int notification_bg_normal=0x7f08005f;
+    public static final int notification_bg_normal_pressed=0x7f080060;
+    public static final int notification_icon_background=0x7f080061;
+    public static final int notification_template_icon_bg=0x7f080062;
+    public static final int notification_template_icon_low_bg=0x7f080063;
+    public static final int notification_tile_bg=0x7f080064;
+    public static final int notify_panel_notification_icon_bg=0x7f080065;
+    public static final int test_level_drawable=0x7f080066;
+    public static final int tooltip_frame_dark=0x7f080067;
+    public static final int tooltip_frame_light=0x7f080068;
   }
   public static final class id {
-    public static final int ALT=0x7f080000;
-    public static final int CTRL=0x7f080001;
-    public static final int FUNCTION=0x7f080002;
-    public static final int META=0x7f080003;
-    public static final int SHIFT=0x7f080004;
-    public static final int SYM=0x7f080005;
-    public static final int accessibility_action_clickable_span=0x7f080006;
-    public static final int accessibility_custom_action_0=0x7f080007;
-    public static final int accessibility_custom_action_1=0x7f080008;
-    public static final int accessibility_custom_action_10=0x7f080009;
-    public static final int accessibility_custom_action_11=0x7f08000a;
-    public static final int accessibility_custom_action_12=0x7f08000b;
-    public static final int accessibility_custom_action_13=0x7f08000c;
-    public static final int accessibility_custom_action_14=0x7f08000d;
-    public static final int accessibility_custom_action_15=0x7f08000e;
-    public static final int accessibility_custom_action_16=0x7f08000f;
-    public static final int accessibility_custom_action_17=0x7f080010;
-    public static final int accessibility_custom_action_18=0x7f080011;
-    public static final int accessibility_custom_action_19=0x7f080012;
-    public static final int accessibility_custom_action_2=0x7f080013;
-    public static final int accessibility_custom_action_20=0x7f080014;
-    public static final int accessibility_custom_action_21=0x7f080015;
-    public static final int accessibility_custom_action_22=0x7f080016;
-    public static final int accessibility_custom_action_23=0x7f080017;
-    public static final int accessibility_custom_action_24=0x7f080018;
-    public static final int accessibility_custom_action_25=0x7f080019;
-    public static final int accessibility_custom_action_26=0x7f08001a;
-    public static final int accessibility_custom_action_27=0x7f08001b;
-    public static final int accessibility_custom_action_28=0x7f08001c;
-    public static final int accessibility_custom_action_29=0x7f08001d;
-    public static final int accessibility_custom_action_3=0x7f08001e;
-    public static final int accessibility_custom_action_30=0x7f08001f;
-    public static final int accessibility_custom_action_31=0x7f080020;
-    public static final int accessibility_custom_action_4=0x7f080021;
-    public static final int accessibility_custom_action_5=0x7f080022;
-    public static final int accessibility_custom_action_6=0x7f080023;
-    public static final int accessibility_custom_action_7=0x7f080024;
-    public static final int accessibility_custom_action_8=0x7f080025;
-    public static final int accessibility_custom_action_9=0x7f080026;
-    public static final int action0=0x7f080027;
-    public static final int action_bar=0x7f080028;
-    public static final int action_bar_activity_content=0x7f080029;
-    public static final int action_bar_container=0x7f08002a;
-    public static final int action_bar_root=0x7f08002b;
-    public static final int action_bar_spinner=0x7f08002c;
-    public static final int action_bar_subtitle=0x7f08002d;
-    public static final int action_bar_title=0x7f08002e;
-    public static final int action_container=0x7f08002f;
-    public static final int action_context_bar=0x7f080030;
-    public static final int action_divider=0x7f080031;
-    public static final int action_image=0x7f080032;
-    public static final int action_menu_divider=0x7f080033;
-    public static final int action_menu_presenter=0x7f080034;
-    public static final int action_mode_bar=0x7f080035;
-    public static final int action_mode_bar_stub=0x7f080036;
-    public static final int action_mode_close_button=0x7f080037;
-    public static final int action_text=0x7f080038;
-    public static final int actions=0x7f080039;
-    public static final int activity_chooser_view_content=0x7f08003a;
-    public static final int add=0x7f08003b;
-    public static final int alertTitle=0x7f08003c;
-    public static final int all=0x7f08003d;
-    public static final int always=0x7f08003e;
-    public static final int async=0x7f08003f;
-    public static final int beginning=0x7f080040;
-    public static final int blocking=0x7f080041;
-    public static final int bottom=0x7f080042;
-    public static final int buttonPanel=0x7f080043;
-    public static final int cancel_action=0x7f080044;
-    public static final int center=0x7f080045;
-    public static final int center_horizontal=0x7f080046;
-    public static final int center_vertical=0x7f080047;
-    public static final int checkbox=0x7f080048;
-    public static final int checked=0x7f080049;
-    public static final int chronometer=0x7f08004a;
-    public static final int clip_horizontal=0x7f08004b;
-    public static final int clip_vertical=0x7f08004c;
-    public static final int collapseActionView=0x7f08004d;
-    public static final int content=0x7f08004e;
-    public static final int contentPanel=0x7f08004f;
-    public static final int custom=0x7f080050;
-    public static final int customPanel=0x7f080051;
-    public static final int decor_content_parent=0x7f080052;
-    public static final int defaultStrategy=0x7f080053;
-    public static final int default_activity_button=0x7f080054;
-    public static final int dialog_button=0x7f080055;
-    public static final int disableHome=0x7f080056;
-    public static final int edit_query=0x7f080057;
-    public static final int end=0x7f080058;
-    public static final int end_padder=0x7f080059;
-    public static final int expand_activities_button=0x7f08005a;
-    public static final int expanded_menu=0x7f08005b;
-    public static final int fill=0x7f08005c;
-    public static final int fill_horizontal=0x7f08005d;
-    public static final int fill_vertical=0x7f08005e;
-    public static final int forever=0x7f08005f;
-    public static final int fragment_container_view_tag=0x7f080060;
-    public static final int fullscreen=0x7f080061;
-    public static final int group_divider=0x7f080062;
-    public static final int home=0x7f080063;
-    public static final int homeAsUp=0x7f080064;
-    public static final int icon=0x7f080065;
-    public static final int icon_group=0x7f080066;
-    public static final int ifRoom=0x7f080067;
-    public static final int image=0x7f080068;
-    public static final int info=0x7f080069;
-    public static final int inputExtractAccessories=0x7f08006a;
-    public static final int inputExtractAction=0x7f08006b;
-    public static final int italic=0x7f08006c;
-    public static final int left=0x7f08006d;
-    public static final int line1=0x7f08006e;
-    public static final int line3=0x7f08006f;
-    public static final int listMode=0x7f080070;
-    public static final int list_item=0x7f080071;
-    public static final int margin=0x7f080072;
-    public static final int media_actions=0x7f080073;
-    public static final int media_controller_compat_view_tag=0x7f080074;
-    public static final int message=0x7f080075;
-    public static final int middle=0x7f080076;
-    public static final int multiply=0x7f080077;
-    public static final int never=0x7f080078;
-    public static final int nonExistent=0x7f080079;
-    public static final int none=0x7f08007a;
-    public static final int normal=0x7f08007b;
-    public static final int notification_background=0x7f08007c;
-    public static final int notification_main_column=0x7f08007d;
-    public static final int notification_main_column_container=0x7f08007e;
-    public static final int off=0x7f08007f;
-    public static final int on=0x7f080080;
-    public static final int parentPanel=0x7f080081;
-    public static final int progress_circular=0x7f080082;
-    public static final int progress_horizontal=0x7f080083;
-    public static final int radio=0x7f080084;
-    public static final int right=0x7f080085;
-    public static final int right_icon=0x7f080086;
-    public static final int right_side=0x7f080087;
-    public static final int screen=0x7f080088;
-    public static final int scrollIndicatorDown=0x7f080089;
-    public static final int scrollIndicatorUp=0x7f08008a;
-    public static final int scrollView=0x7f08008b;
-    public static final int search_badge=0x7f08008c;
-    public static final int search_bar=0x7f08008d;
-    public static final int search_button=0x7f08008e;
-    public static final int search_close_btn=0x7f08008f;
-    public static final int search_edit_frame=0x7f080090;
-    public static final int search_go_btn=0x7f080091;
-    public static final int search_mag_icon=0x7f080092;
-    public static final int search_plate=0x7f080093;
-    public static final int search_src_text=0x7f080094;
-    public static final int search_voice_btn=0x7f080095;
-    public static final int select_dialog_listview=0x7f080096;
-    public static final int selected_view=0x7f080097;
-    public static final int shortcut=0x7f080098;
-    public static final int showCustom=0x7f080099;
-    public static final int showHome=0x7f08009a;
-    public static final int showTitle=0x7f08009b;
-    public static final int slidingmenumain=0x7f08009c;
-    public static final int spacer=0x7f08009d;
-    public static final int special_effects_controller_view_tag=0x7f08009e;
-    public static final int split_action_bar=0x7f08009f;
-    public static final int src_atop=0x7f0800a0;
-    public static final int src_in=0x7f0800a1;
-    public static final int src_over=0x7f0800a2;
-    public static final int start=0x7f0800a3;
-    public static final int status_bar_latest_event_content=0x7f0800a4;
-    public static final int submenuarrow=0x7f0800a5;
-    public static final int submit_area=0x7f0800a6;
-    public static final int tabMode=0x7f0800a7;
-    public static final int tag_accessibility_actions=0x7f0800a8;
-    public static final int tag_accessibility_clickable_spans=0x7f0800a9;
-    public static final int tag_accessibility_heading=0x7f0800aa;
-    public static final int tag_accessibility_pane_title=0x7f0800ab;
-    public static final int tag_on_apply_window_listener=0x7f0800ac;
-    public static final int tag_on_receive_content_listener=0x7f0800ad;
-    public static final int tag_on_receive_content_mime_types=0x7f0800ae;
-    public static final int tag_screen_reader_focusable=0x7f0800af;
-    public static final int tag_state_description=0x7f0800b0;
-    public static final int tag_transition_group=0x7f0800b1;
-    public static final int tag_unhandled_key_event_manager=0x7f0800b2;
-    public static final int tag_unhandled_key_listeners=0x7f0800b3;
-    public static final int tag_window_insets_animation_callback=0x7f0800b4;
-    public static final int text=0x7f0800b5;
-    public static final int text2=0x7f0800b6;
-    public static final int textSpacerNoButtons=0x7f0800b7;
-    public static final int textSpacerNoTitle=0x7f0800b8;
-    public static final int time=0x7f0800b9;
-    public static final int title=0x7f0800ba;
-    public static final int titleDividerNoCustom=0x7f0800bb;
-    public static final int title_template=0x7f0800bc;
-    public static final int top=0x7f0800bd;
-    public static final int topPanel=0x7f0800be;
-    public static final int unchecked=0x7f0800bf;
-    public static final int uniform=0x7f0800c0;
-    public static final int up=0x7f0800c1;
-    public static final int useLogo=0x7f0800c2;
-    public static final int view_tree_lifecycle_owner=0x7f0800c3;
-    public static final int view_tree_on_back_pressed_dispatcher_owner=0x7f0800c4;
-    public static final int view_tree_saved_state_registry_owner=0x7f0800c5;
-    public static final int view_tree_view_model_store_owner=0x7f0800c6;
-    public static final int visible_removing_fragment_view_tag=0x7f0800c7;
-    public static final int withText=0x7f0800c8;
-    public static final int wrap_content=0x7f0800c9;
+    public static final int ALT=0x7f090000;
+    public static final int CTRL=0x7f090001;
+    public static final int FUNCTION=0x7f090002;
+    public static final int META=0x7f090003;
+    public static final int SHIFT=0x7f090004;
+    public static final int SYM=0x7f090005;
+    public static final int accessibility_action_clickable_span=0x7f090006;
+    public static final int accessibility_custom_action_0=0x7f090007;
+    public static final int accessibility_custom_action_1=0x7f090008;
+    public static final int accessibility_custom_action_10=0x7f090009;
+    public static final int accessibility_custom_action_11=0x7f09000a;
+    public static final int accessibility_custom_action_12=0x7f09000b;
+    public static final int accessibility_custom_action_13=0x7f09000c;
+    public static final int accessibility_custom_action_14=0x7f09000d;
+    public static final int accessibility_custom_action_15=0x7f09000e;
+    public static final int accessibility_custom_action_16=0x7f09000f;
+    public static final int accessibility_custom_action_17=0x7f090010;
+    public static final int accessibility_custom_action_18=0x7f090011;
+    public static final int accessibility_custom_action_19=0x7f090012;
+    public static final int accessibility_custom_action_2=0x7f090013;
+    public static final int accessibility_custom_action_20=0x7f090014;
+    public static final int accessibility_custom_action_21=0x7f090015;
+    public static final int accessibility_custom_action_22=0x7f090016;
+    public static final int accessibility_custom_action_23=0x7f090017;
+    public static final int accessibility_custom_action_24=0x7f090018;
+    public static final int accessibility_custom_action_25=0x7f090019;
+    public static final int accessibility_custom_action_26=0x7f09001a;
+    public static final int accessibility_custom_action_27=0x7f09001b;
+    public static final int accessibility_custom_action_28=0x7f09001c;
+    public static final int accessibility_custom_action_29=0x7f09001d;
+    public static final int accessibility_custom_action_3=0x7f09001e;
+    public static final int accessibility_custom_action_30=0x7f09001f;
+    public static final int accessibility_custom_action_31=0x7f090020;
+    public static final int accessibility_custom_action_4=0x7f090021;
+    public static final int accessibility_custom_action_5=0x7f090022;
+    public static final int accessibility_custom_action_6=0x7f090023;
+    public static final int accessibility_custom_action_7=0x7f090024;
+    public static final int accessibility_custom_action_8=0x7f090025;
+    public static final int accessibility_custom_action_9=0x7f090026;
+    public static final int action0=0x7f090027;
+    public static final int action_bar=0x7f090028;
+    public static final int action_bar_activity_content=0x7f090029;
+    public static final int action_bar_container=0x7f09002a;
+    public static final int action_bar_root=0x7f09002b;
+    public static final int action_bar_spinner=0x7f09002c;
+    public static final int action_bar_subtitle=0x7f09002d;
+    public static final int action_bar_title=0x7f09002e;
+    public static final int action_container=0x7f09002f;
+    public static final int action_context_bar=0x7f090030;
+    public static final int action_divider=0x7f090031;
+    public static final int action_image=0x7f090032;
+    public static final int action_menu_divider=0x7f090033;
+    public static final int action_menu_presenter=0x7f090034;
+    public static final int action_mode_bar=0x7f090035;
+    public static final int action_mode_bar_stub=0x7f090036;
+    public static final int action_mode_close_button=0x7f090037;
+    public static final int action_text=0x7f090038;
+    public static final int actions=0x7f090039;
+    public static final int activity_chooser_view_content=0x7f09003a;
+    public static final int add=0x7f09003b;
+    public static final int alertTitle=0x7f09003c;
+    public static final int all=0x7f09003d;
+    public static final int always=0x7f09003e;
+    public static final int async=0x7f09003f;
+    public static final int beginning=0x7f090040;
+    public static final int blocking=0x7f090041;
+    public static final int bottom=0x7f090042;
+    public static final int buttonPanel=0x7f090043;
+    public static final int cancel_action=0x7f090044;
+    public static final int center=0x7f090045;
+    public static final int center_horizontal=0x7f090046;
+    public static final int center_vertical=0x7f090047;
+    public static final int checkbox=0x7f090048;
+    public static final int checked=0x7f090049;
+    public static final int chronometer=0x7f09004a;
+    public static final int clip_horizontal=0x7f09004b;
+    public static final int clip_vertical=0x7f09004c;
+    public static final int collapseActionView=0x7f09004d;
+    public static final int content=0x7f09004e;
+    public static final int contentPanel=0x7f09004f;
+    public static final int custom=0x7f090050;
+    public static final int customPanel=0x7f090051;
+    public static final int decor_content_parent=0x7f090052;
+    public static final int defaultStrategy=0x7f090053;
+    public static final int default_activity_button=0x7f090054;
+    public static final int dialog_button=0x7f090055;
+    public static final int disableHome=0x7f090056;
+    public static final int edit_query=0x7f090057;
+    public static final int end=0x7f090058;
+    public static final int end_padder=0x7f090059;
+    public static final int expand_activities_button=0x7f09005a;
+    public static final int expanded_menu=0x7f09005b;
+    public static final int fill=0x7f09005c;
+    public static final int fill_horizontal=0x7f09005d;
+    public static final int fill_vertical=0x7f09005e;
+    public static final int fingerprint_description=0x7f09005f;
+    public static final int fingerprint_error=0x7f090060;
+    public static final int fingerprint_icon=0x7f090061;
+    public static final int fingerprint_subtitle=0x7f090062;
+    public static final int forever=0x7f090063;
+    public static final int fragment_container_view_tag=0x7f090064;
+    public static final int fullscreen=0x7f090065;
+    public static final int group_divider=0x7f090066;
+    public static final int home=0x7f090067;
+    public static final int homeAsUp=0x7f090068;
+    public static final int icon=0x7f090069;
+    public static final int icon_group=0x7f09006a;
+    public static final int ifRoom=0x7f09006b;
+    public static final int image=0x7f09006c;
+    public static final int info=0x7f09006d;
+    public static final int inputExtractAccessories=0x7f09006e;
+    public static final int inputExtractAction=0x7f09006f;
+    public static final int italic=0x7f090070;
+    public static final int left=0x7f090071;
+    public static final int line1=0x7f090072;
+    public static final int line3=0x7f090073;
+    public static final int listMode=0x7f090074;
+    public static final int list_item=0x7f090075;
+    public static final int margin=0x7f090076;
+    public static final int media_actions=0x7f090077;
+    public static final int media_controller_compat_view_tag=0x7f090078;
+    public static final int message=0x7f090079;
+    public static final int middle=0x7f09007a;
+    public static final int multiply=0x7f09007b;
+    public static final int never=0x7f09007c;
+    public static final int nonExistent=0x7f09007d;
+    public static final int none=0x7f09007e;
+    public static final int normal=0x7f09007f;
+    public static final int notification_background=0x7f090080;
+    public static final int notification_main_column=0x7f090081;
+    public static final int notification_main_column_container=0x7f090082;
+    public static final int off=0x7f090083;
+    public static final int on=0x7f090084;
+    public static final int parentPanel=0x7f090085;
+    public static final int progress_circular=0x7f090086;
+    public static final int progress_horizontal=0x7f090087;
+    public static final int radio=0x7f090088;
+    public static final int right=0x7f090089;
+    public static final int right_icon=0x7f09008a;
+    public static final int right_side=0x7f09008b;
+    public static final int screen=0x7f09008c;
+    public static final int scrollIndicatorDown=0x7f09008d;
+    public static final int scrollIndicatorUp=0x7f09008e;
+    public static final int scrollView=0x7f09008f;
+    public static final int search_badge=0x7f090090;
+    public static final int search_bar=0x7f090091;
+    public static final int search_button=0x7f090092;
+    public static final int search_close_btn=0x7f090093;
+    public static final int search_edit_frame=0x7f090094;
+    public static final int search_go_btn=0x7f090095;
+    public static final int search_mag_icon=0x7f090096;
+    public static final int search_plate=0x7f090097;
+    public static final int search_src_text=0x7f090098;
+    public static final int search_voice_btn=0x7f090099;
+    public static final int select_dialog_listview=0x7f09009a;
+    public static final int selected_view=0x7f09009b;
+    public static final int shortcut=0x7f09009c;
+    public static final int showCustom=0x7f09009d;
+    public static final int showHome=0x7f09009e;
+    public static final int showTitle=0x7f09009f;
+    public static final int slidingmenumain=0x7f0900a0;
+    public static final int spacer=0x7f0900a1;
+    public static final int special_effects_controller_view_tag=0x7f0900a2;
+    public static final int split_action_bar=0x7f0900a3;
+    public static final int src_atop=0x7f0900a4;
+    public static final int src_in=0x7f0900a5;
+    public static final int src_over=0x7f0900a6;
+    public static final int start=0x7f0900a7;
+    public static final int status_bar_latest_event_content=0x7f0900a8;
+    public static final int submenuarrow=0x7f0900a9;
+    public static final int submit_area=0x7f0900aa;
+    public static final int tabMode=0x7f0900ab;
+    public static final int tag_accessibility_actions=0x7f0900ac;
+    public static final int tag_accessibility_clickable_spans=0x7f0900ad;
+    public static final int tag_accessibility_heading=0x7f0900ae;
+    public static final int tag_accessibility_pane_title=0x7f0900af;
+    public static final int tag_on_apply_window_listener=0x7f0900b0;
+    public static final int tag_on_receive_content_listener=0x7f0900b1;
+    public static final int tag_on_receive_content_mime_types=0x7f0900b2;
+    public static final int tag_screen_reader_focusable=0x7f0900b3;
+    public static final int tag_state_description=0x7f0900b4;
+    public static final int tag_transition_group=0x7f0900b5;
+    public static final int tag_unhandled_key_event_manager=0x7f0900b6;
+    public static final int tag_unhandled_key_listeners=0x7f0900b7;
+    public static final int tag_window_insets_animation_callback=0x7f0900b8;
+    public static final int text=0x7f0900b9;
+    public static final int text2=0x7f0900ba;
+    public static final int textSpacerNoButtons=0x7f0900bb;
+    public static final int textSpacerNoTitle=0x7f0900bc;
+    public static final int time=0x7f0900bd;
+    public static final int title=0x7f0900be;
+    public static final int titleDividerNoCustom=0x7f0900bf;
+    public static final int title_template=0x7f0900c0;
+    public static final int top=0x7f0900c1;
+    public static final int topPanel=0x7f0900c2;
+    public static final int unchecked=0x7f0900c3;
+    public static final int uniform=0x7f0900c4;
+    public static final int up=0x7f0900c5;
+    public static final int useLogo=0x7f0900c6;
+    public static final int view_tree_lifecycle_owner=0x7f0900c7;
+    public static final int view_tree_on_back_pressed_dispatcher_owner=0x7f0900c8;
+    public static final int view_tree_saved_state_registry_owner=0x7f0900c9;
+    public static final int view_tree_view_model_store_owner=0x7f0900ca;
+    public static final int visible_removing_fragment_view_tag=0x7f0900cb;
+    public static final int withText=0x7f0900cc;
+    public static final int wrap_content=0x7f0900cd;
   }
   public static final class integer {
-    public static final int abc_config_activityDefaultDur=0x7f090000;
-    public static final int abc_config_activityShortDur=0x7f090001;
-    public static final int cancel_button_image_alpha=0x7f090002;
-    public static final int config_tooltipAnimTime=0x7f090003;
-    public static final int status_bar_notification_info_maxnum=0x7f090004;
+    public static final int abc_config_activityDefaultDur=0x7f0a0000;
+    public static final int abc_config_activityShortDur=0x7f0a0001;
+    public static final int cancel_button_image_alpha=0x7f0a0002;
+    public static final int config_tooltipAnimTime=0x7f0a0003;
+    public static final int status_bar_notification_info_maxnum=0x7f0a0004;
   }
   public static final class interpolator {
-    public static final int btn_checkbox_checked_mtrl_animation_interpolator_0=0x7f0a0000;
-    public static final int btn_checkbox_checked_mtrl_animation_interpolator_1=0x7f0a0001;
-    public static final int btn_checkbox_unchecked_mtrl_animation_interpolator_0=0x7f0a0002;
-    public static final int btn_checkbox_unchecked_mtrl_animation_interpolator_1=0x7f0a0003;
-    public static final int btn_radio_to_off_mtrl_animation_interpolator_0=0x7f0a0004;
-    public static final int btn_radio_to_on_mtrl_animation_interpolator_0=0x7f0a0005;
-    public static final int fast_out_slow_in=0x7f0a0006;
+    public static final int btn_checkbox_checked_mtrl_animation_interpolator_0=0x7f0b0000;
+    public static final int btn_checkbox_checked_mtrl_animation_interpolator_1=0x7f0b0001;
+    public static final int btn_checkbox_unchecked_mtrl_animation_interpolator_0=0x7f0b0002;
+    public static final int btn_checkbox_unchecked_mtrl_animation_interpolator_1=0x7f0b0003;
+    public static final int btn_radio_to_off_mtrl_animation_interpolator_0=0x7f0b0004;
+    public static final int btn_radio_to_on_mtrl_animation_interpolator_0=0x7f0b0005;
+    public static final int fast_out_slow_in=0x7f0b0006;
   }
   public static final class layout {
-    public static final int abc_action_bar_title_item=0x7f0b0000;
-    public static final int abc_action_bar_up_container=0x7f0b0001;
-    public static final int abc_action_menu_item_layout=0x7f0b0002;
-    public static final int abc_action_menu_layout=0x7f0b0003;
-    public static final int abc_action_mode_bar=0x7f0b0004;
-    public static final int abc_action_mode_close_item_material=0x7f0b0005;
-    public static final int abc_activity_chooser_view=0x7f0b0006;
-    public static final int abc_activity_chooser_view_list_item=0x7f0b0007;
-    public static final int abc_alert_dialog_button_bar_material=0x7f0b0008;
-    public static final int abc_alert_dialog_material=0x7f0b0009;
-    public static final int abc_alert_dialog_title_material=0x7f0b000a;
-    public static final int abc_cascading_menu_item_layout=0x7f0b000b;
-    public static final int abc_dialog_title_material=0x7f0b000c;
-    public static final int abc_expanded_menu_layout=0x7f0b000d;
-    public static final int abc_list_menu_item_checkbox=0x7f0b000e;
-    public static final int abc_list_menu_item_icon=0x7f0b000f;
-    public static final int abc_list_menu_item_layout=0x7f0b0010;
-    public static final int abc_list_menu_item_radio=0x7f0b0011;
-    public static final int abc_popup_menu_header_item_layout=0x7f0b0012;
-    public static final int abc_popup_menu_item_layout=0x7f0b0013;
-    public static final int abc_screen_content_include=0x7f0b0014;
-    public static final int abc_screen_simple=0x7f0b0015;
-    public static final int abc_screen_simple_overlay_action_mode=0x7f0b0016;
-    public static final int abc_screen_toolbar=0x7f0b0017;
-    public static final int abc_search_dropdown_item_icons_2line=0x7f0b0018;
-    public static final int abc_search_view=0x7f0b0019;
-    public static final int abc_select_dialog_material=0x7f0b001a;
-    public static final int abc_tooltip=0x7f0b001b;
-    public static final int ac_spinner_row_layout=0x7f0b001c;
-    public static final int custom_dialog=0x7f0b001d;
-    public static final int input_method_extract_view=0x7f0b001e;
-    public static final int notification_action=0x7f0b001f;
-    public static final int notification_action_tombstone=0x7f0b0020;
-    public static final int notification_media_action=0x7f0b0021;
-    public static final int notification_media_cancel_action=0x7f0b0022;
-    public static final int notification_template_big_media=0x7f0b0023;
-    public static final int notification_template_big_media_custom=0x7f0b0024;
-    public static final int notification_template_big_media_narrow=0x7f0b0025;
-    public static final int notification_template_big_media_narrow_custom=0x7f0b0026;
-    public static final int notification_template_custom_big=0x7f0b0027;
-    public static final int notification_template_icon_group=0x7f0b0028;
-    public static final int notification_template_lines_media=0x7f0b0029;
-    public static final int notification_template_media=0x7f0b002a;
-    public static final int notification_template_media_custom=0x7f0b002b;
-    public static final int notification_template_part_chronometer=0x7f0b002c;
-    public static final int notification_template_part_time=0x7f0b002d;
-    public static final int select_dialog_item_material=0x7f0b002e;
-    public static final int select_dialog_multichoice_material=0x7f0b002f;
-    public static final int select_dialog_singlechoice_material=0x7f0b0030;
-    public static final int slidingmenumain=0x7f0b0031;
-    public static final int support_simple_spinner_dropdown_item=0x7f0b0032;
+    public static final int abc_action_bar_title_item=0x7f0c0000;
+    public static final int abc_action_bar_up_container=0x7f0c0001;
+    public static final int abc_action_menu_item_layout=0x7f0c0002;
+    public static final int abc_action_menu_layout=0x7f0c0003;
+    public static final int abc_action_mode_bar=0x7f0c0004;
+    public static final int abc_action_mode_close_item_material=0x7f0c0005;
+    public static final int abc_activity_chooser_view=0x7f0c0006;
+    public static final int abc_activity_chooser_view_list_item=0x7f0c0007;
+    public static final int abc_alert_dialog_button_bar_material=0x7f0c0008;
+    public static final int abc_alert_dialog_material=0x7f0c0009;
+    public static final int abc_alert_dialog_title_material=0x7f0c000a;
+    public static final int abc_cascading_menu_item_layout=0x7f0c000b;
+    public static final int abc_dialog_title_material=0x7f0c000c;
+    public static final int abc_expanded_menu_layout=0x7f0c000d;
+    public static final int abc_list_menu_item_checkbox=0x7f0c000e;
+    public static final int abc_list_menu_item_icon=0x7f0c000f;
+    public static final int abc_list_menu_item_layout=0x7f0c0010;
+    public static final int abc_list_menu_item_radio=0x7f0c0011;
+    public static final int abc_popup_menu_header_item_layout=0x7f0c0012;
+    public static final int abc_popup_menu_item_layout=0x7f0c0013;
+    public static final int abc_screen_content_include=0x7f0c0014;
+    public static final int abc_screen_simple=0x7f0c0015;
+    public static final int abc_screen_simple_overlay_action_mode=0x7f0c0016;
+    public static final int abc_screen_toolbar=0x7f0c0017;
+    public static final int abc_search_dropdown_item_icons_2line=0x7f0c0018;
+    public static final int abc_search_view=0x7f0c0019;
+    public static final int abc_select_dialog_material=0x7f0c001a;
+    public static final int abc_tooltip=0x7f0c001b;
+    public static final int ac_spinner_row_layout=0x7f0c001c;
+    public static final int custom_dialog=0x7f0c001d;
+    public static final int fingerprint_dialog_layout=0x7f0c001e;
+    public static final int input_method_extract_view=0x7f0c001f;
+    public static final int notification_action=0x7f0c0020;
+    public static final int notification_action_tombstone=0x7f0c0021;
+    public static final int notification_media_action=0x7f0c0022;
+    public static final int notification_media_cancel_action=0x7f0c0023;
+    public static final int notification_template_big_media=0x7f0c0024;
+    public static final int notification_template_big_media_custom=0x7f0c0025;
+    public static final int notification_template_big_media_narrow=0x7f0c0026;
+    public static final int notification_template_big_media_narrow_custom=0x7f0c0027;
+    public static final int notification_template_custom_big=0x7f0c0028;
+    public static final int notification_template_icon_group=0x7f0c0029;
+    public static final int notification_template_lines_media=0x7f0c002a;
+    public static final int notification_template_media=0x7f0c002b;
+    public static final int notification_template_media_custom=0x7f0c002c;
+    public static final int notification_template_part_chronometer=0x7f0c002d;
+    public static final int notification_template_part_time=0x7f0c002e;
+    public static final int select_dialog_item_material=0x7f0c002f;
+    public static final int select_dialog_multichoice_material=0x7f0c0030;
+    public static final int select_dialog_singlechoice_material=0x7f0c0031;
+    public static final int slidingmenumain=0x7f0c0032;
+    public static final int support_simple_spinner_dropdown_item=0x7f0c0033;
   }
   public static final class string {
-    public static final int abc_action_bar_home_description=0x7f0c0000;
-    public static final int abc_action_bar_up_description=0x7f0c0001;
-    public static final int abc_action_menu_overflow_description=0x7f0c0002;
-    public static final int abc_action_mode_done=0x7f0c0003;
-    public static final int abc_activity_chooser_view_see_all=0x7f0c0004;
-    public static final int abc_activitychooserview_choose_application=0x7f0c0005;
-    public static final int abc_capital_off=0x7f0c0006;
-    public static final int abc_capital_on=0x7f0c0007;
-    public static final int abc_menu_alt_shortcut_label=0x7f0c0008;
-    public static final int abc_menu_ctrl_shortcut_label=0x7f0c0009;
-    public static final int abc_menu_delete_shortcut_label=0x7f0c000a;
-    public static final int abc_menu_enter_shortcut_label=0x7f0c000b;
-    public static final int abc_menu_function_shortcut_label=0x7f0c000c;
-    public static final int abc_menu_meta_shortcut_label=0x7f0c000d;
-    public static final int abc_menu_shift_shortcut_label=0x7f0c000e;
-    public static final int abc_menu_space_shortcut_label=0x7f0c000f;
-    public static final int abc_menu_sym_shortcut_label=0x7f0c0010;
-    public static final int abc_prepend_shortcut_label=0x7f0c0011;
-    public static final int abc_search_hint=0x7f0c0012;
-    public static final int abc_searchview_description_clear=0x7f0c0013;
-    public static final int abc_searchview_description_query=0x7f0c0014;
-    public static final int abc_searchview_description_search=0x7f0c0015;
-    public static final int abc_searchview_description_submit=0x7f0c0016;
-    public static final int abc_searchview_description_voice=0x7f0c0017;
-    public static final int abc_shareactionprovider_share_with=0x7f0c0018;
-    public static final int abc_shareactionprovider_share_with_application=0x7f0c0019;
-    public static final int abc_toolbar_collapse_description=0x7f0c001a;
-    public static final int androidx_startup=0x7f0c001b;
-    public static final int search_menu_title=0x7f0c001c;
-    public static final int status_bar_notification_info_overflow=0x7f0c001d;
+    public static final int abc_action_bar_home_description=0x7f0d0000;
+    public static final int abc_action_bar_up_description=0x7f0d0001;
+    public static final int abc_action_menu_overflow_description=0x7f0d0002;
+    public static final int abc_action_mode_done=0x7f0d0003;
+    public static final int abc_activity_chooser_view_see_all=0x7f0d0004;
+    public static final int abc_activitychooserview_choose_application=0x7f0d0005;
+    public static final int abc_capital_off=0x7f0d0006;
+    public static final int abc_capital_on=0x7f0d0007;
+    public static final int abc_menu_alt_shortcut_label=0x7f0d0008;
+    public static final int abc_menu_ctrl_shortcut_label=0x7f0d0009;
+    public static final int abc_menu_delete_shortcut_label=0x7f0d000a;
+    public static final int abc_menu_enter_shortcut_label=0x7f0d000b;
+    public static final int abc_menu_function_shortcut_label=0x7f0d000c;
+    public static final int abc_menu_meta_shortcut_label=0x7f0d000d;
+    public static final int abc_menu_shift_shortcut_label=0x7f0d000e;
+    public static final int abc_menu_space_shortcut_label=0x7f0d000f;
+    public static final int abc_menu_sym_shortcut_label=0x7f0d0010;
+    public static final int abc_prepend_shortcut_label=0x7f0d0011;
+    public static final int abc_search_hint=0x7f0d0012;
+    public static final int abc_searchview_description_clear=0x7f0d0013;
+    public static final int abc_searchview_description_query=0x7f0d0014;
+    public static final int abc_searchview_description_search=0x7f0d0015;
+    public static final int abc_searchview_description_submit=0x7f0d0016;
+    public static final int abc_searchview_description_voice=0x7f0d0017;
+    public static final int abc_shareactionprovider_share_with=0x7f0d0018;
+    public static final int abc_shareactionprovider_share_with_application=0x7f0d0019;
+    public static final int abc_toolbar_collapse_description=0x7f0d001a;
+    public static final int androidx_startup=0x7f0d001b;
+    public static final int confirm_device_credential_password=0x7f0d001c;
+    public static final int default_error_msg=0x7f0d001d;
+    public static final int fingerprint_dialog_touch_sensor=0x7f0d001e;
+    public static final int fingerprint_error_hw_not_available=0x7f0d001f;
+    public static final int fingerprint_error_hw_not_present=0x7f0d0020;
+    public static final int fingerprint_error_lockout=0x7f0d0021;
+    public static final int fingerprint_error_no_fingerprints=0x7f0d0022;
+    public static final int fingerprint_error_user_canceled=0x7f0d0023;
+    public static final int fingerprint_not_recognized=0x7f0d0024;
+    public static final int generic_error_no_device_credential=0x7f0d0025;
+    public static final int generic_error_no_keyguard=0x7f0d0026;
+    public static final int generic_error_user_canceled=0x7f0d0027;
+    public static final int search_menu_title=0x7f0d0028;
+    public static final int status_bar_notification_info_overflow=0x7f0d0029;
   }
   public static final class style {
-    public static final int AlertDialog_AppCompat=0x7f0d0000;
-    public static final int AlertDialog_AppCompat_Light=0x7f0d0001;
-    public static final int Animation_AppCompat_Dialog=0x7f0d0002;
-    public static final int Animation_AppCompat_DropDownUp=0x7f0d0003;
-    public static final int Animation_AppCompat_Tooltip=0x7f0d0004;
-    public static final int Base_AlertDialog_AppCompat=0x7f0d0005;
-    public static final int Base_AlertDialog_AppCompat_Light=0x7f0d0006;
-    public static final int Base_Animation_AppCompat_Dialog=0x7f0d0007;
-    public static final int Base_Animation_AppCompat_DropDownUp=0x7f0d0008;
-    public static final int Base_Animation_AppCompat_Tooltip=0x7f0d0009;
-    public static final int Base_DialogWindowTitle_AppCompat=0x7f0d000a;
-    public static final int Base_DialogWindowTitleBackground_AppCompat=0x7f0d000b;
-    public static final int Base_TextAppearance_AppCompat=0x7f0d000c;
-    public static final int Base_TextAppearance_AppCompat_Body1=0x7f0d000d;
-    public static final int Base_TextAppearance_AppCompat_Body2=0x7f0d000e;
-    public static final int Base_TextAppearance_AppCompat_Button=0x7f0d000f;
-    public static final int Base_TextAppearance_AppCompat_Caption=0x7f0d0010;
-    public static final int Base_TextAppearance_AppCompat_Display1=0x7f0d0011;
-    public static final int Base_TextAppearance_AppCompat_Display2=0x7f0d0012;
-    public static final int Base_TextAppearance_AppCompat_Display3=0x7f0d0013;
-    public static final int Base_TextAppearance_AppCompat_Display4=0x7f0d0014;
-    public static final int Base_TextAppearance_AppCompat_Headline=0x7f0d0015;
-    public static final int Base_TextAppearance_AppCompat_Inverse=0x7f0d0016;
-    public static final int Base_TextAppearance_AppCompat_Large=0x7f0d0017;
-    public static final int Base_TextAppearance_AppCompat_Large_Inverse=0x7f0d0018;
-    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0d0019;
-    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0d001a;
-    public static final int Base_TextAppearance_AppCompat_Medium=0x7f0d001b;
-    public static final int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f0d001c;
-    public static final int Base_TextAppearance_AppCompat_Menu=0x7f0d001d;
-    public static final int Base_TextAppearance_AppCompat_SearchResult=0x7f0d001e;
-    public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0d001f;
-    public static final int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f0d0020;
-    public static final int Base_TextAppearance_AppCompat_Small=0x7f0d0021;
-    public static final int Base_TextAppearance_AppCompat_Small_Inverse=0x7f0d0022;
-    public static final int Base_TextAppearance_AppCompat_Subhead=0x7f0d0023;
-    public static final int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f0d0024;
-    public static final int Base_TextAppearance_AppCompat_Title=0x7f0d0025;
-    public static final int Base_TextAppearance_AppCompat_Title_Inverse=0x7f0d0026;
-    public static final int Base_TextAppearance_AppCompat_Tooltip=0x7f0d0027;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0d0028;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0d0029;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0d002a;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0d002b;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0d002c;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0d002d;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0d002e;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button=0x7f0d002f;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0d0030;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button_Colored=0x7f0d0031;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0d0032;
-    public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0d0033;
-    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0d0034;
-    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0d0035;
-    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0d0036;
-    public static final int Base_TextAppearance_AppCompat_Widget_Switch=0x7f0d0037;
-    public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0d0038;
-    public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0d0039;
-    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0d003a;
-    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0d003b;
-    public static final int Base_Theme_AppCompat=0x7f0d003c;
-    public static final int Base_Theme_AppCompat_CompactMenu=0x7f0d003d;
-    public static final int Base_Theme_AppCompat_Dialog=0x7f0d003e;
-    public static final int Base_Theme_AppCompat_Dialog_Alert=0x7f0d003f;
-    public static final int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0d0040;
-    public static final int Base_Theme_AppCompat_Dialog_MinWidth=0x7f0d0041;
-    public static final int Base_Theme_AppCompat_DialogWhenLarge=0x7f0d0042;
-    public static final int Base_Theme_AppCompat_Light=0x7f0d0043;
-    public static final int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0d0044;
-    public static final int Base_Theme_AppCompat_Light_Dialog=0x7f0d0045;
-    public static final int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f0d0046;
-    public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0d0047;
-    public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f0d0048;
-    public static final int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f0d0049;
-    public static final int Base_ThemeOverlay_AppCompat=0x7f0d004a;
-    public static final int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0d004b;
-    public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0d004c;
-    public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0d004d;
-    public static final int Base_ThemeOverlay_AppCompat_Dialog=0x7f0d004e;
-    public static final int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f0d004f;
-    public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0d0050;
-    public static final int Base_V21_Theme_AppCompat=0x7f0d0051;
-    public static final int Base_V21_Theme_AppCompat_Dialog=0x7f0d0052;
-    public static final int Base_V21_Theme_AppCompat_Light=0x7f0d0053;
-    public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0d0054;
-    public static final int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f0d0055;
-    public static final int Base_V22_Theme_AppCompat=0x7f0d0056;
-    public static final int Base_V22_Theme_AppCompat_Light=0x7f0d0057;
-    public static final int Base_V23_Theme_AppCompat=0x7f0d0058;
-    public static final int Base_V23_Theme_AppCompat_Light=0x7f0d0059;
-    public static final int Base_V26_Theme_AppCompat=0x7f0d005a;
-    public static final int Base_V26_Theme_AppCompat_Light=0x7f0d005b;
-    public static final int Base_V26_Widget_AppCompat_Toolbar=0x7f0d005c;
-    public static final int Base_V28_Theme_AppCompat=0x7f0d005d;
-    public static final int Base_V28_Theme_AppCompat_Light=0x7f0d005e;
-    public static final int Base_V7_Theme_AppCompat=0x7f0d005f;
-    public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0d0060;
-    public static final int Base_V7_Theme_AppCompat_Light=0x7f0d0061;
-    public static final int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0d0062;
-    public static final int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0d0063;
-    public static final int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0d0064;
-    public static final int Base_V7_Widget_AppCompat_EditText=0x7f0d0065;
-    public static final int Base_V7_Widget_AppCompat_Toolbar=0x7f0d0066;
-    public static final int Base_Widget_AppCompat_ActionBar=0x7f0d0067;
-    public static final int Base_Widget_AppCompat_ActionBar_Solid=0x7f0d0068;
-    public static final int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0d0069;
-    public static final int Base_Widget_AppCompat_ActionBar_TabText=0x7f0d006a;
-    public static final int Base_Widget_AppCompat_ActionBar_TabView=0x7f0d006b;
-    public static final int Base_Widget_AppCompat_ActionButton=0x7f0d006c;
-    public static final int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f0d006d;
-    public static final int Base_Widget_AppCompat_ActionButton_Overflow=0x7f0d006e;
-    public static final int Base_Widget_AppCompat_ActionMode=0x7f0d006f;
-    public static final int Base_Widget_AppCompat_ActivityChooserView=0x7f0d0070;
-    public static final int Base_Widget_AppCompat_AutoCompleteTextView=0x7f0d0071;
-    public static final int Base_Widget_AppCompat_Button=0x7f0d0072;
-    public static final int Base_Widget_AppCompat_Button_Borderless=0x7f0d0073;
-    public static final int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f0d0074;
-    public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0d0075;
-    public static final int Base_Widget_AppCompat_Button_Colored=0x7f0d0076;
-    public static final int Base_Widget_AppCompat_Button_Small=0x7f0d0077;
-    public static final int Base_Widget_AppCompat_ButtonBar=0x7f0d0078;
-    public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0d0079;
-    public static final int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f0d007a;
-    public static final int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f0d007b;
-    public static final int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0d007c;
-    public static final int Base_Widget_AppCompat_DrawerArrowToggle=0x7f0d007d;
-    public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0d007e;
-    public static final int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f0d007f;
-    public static final int Base_Widget_AppCompat_EditText=0x7f0d0080;
-    public static final int Base_Widget_AppCompat_ImageButton=0x7f0d0081;
-    public static final int Base_Widget_AppCompat_Light_ActionBar=0x7f0d0082;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0d0083;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0d0084;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f0d0085;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0d0086;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f0d0087;
-    public static final int Base_Widget_AppCompat_Light_PopupMenu=0x7f0d0088;
-    public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0d0089;
-    public static final int Base_Widget_AppCompat_ListMenuView=0x7f0d008a;
-    public static final int Base_Widget_AppCompat_ListPopupWindow=0x7f0d008b;
-    public static final int Base_Widget_AppCompat_ListView=0x7f0d008c;
-    public static final int Base_Widget_AppCompat_ListView_DropDown=0x7f0d008d;
-    public static final int Base_Widget_AppCompat_ListView_Menu=0x7f0d008e;
-    public static final int Base_Widget_AppCompat_PopupMenu=0x7f0d008f;
-    public static final int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f0d0090;
-    public static final int Base_Widget_AppCompat_PopupWindow=0x7f0d0091;
-    public static final int Base_Widget_AppCompat_ProgressBar=0x7f0d0092;
-    public static final int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f0d0093;
-    public static final int Base_Widget_AppCompat_RatingBar=0x7f0d0094;
-    public static final int Base_Widget_AppCompat_RatingBar_Indicator=0x7f0d0095;
-    public static final int Base_Widget_AppCompat_RatingBar_Small=0x7f0d0096;
-    public static final int Base_Widget_AppCompat_SearchView=0x7f0d0097;
-    public static final int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0d0098;
-    public static final int Base_Widget_AppCompat_SeekBar=0x7f0d0099;
-    public static final int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0d009a;
-    public static final int Base_Widget_AppCompat_Spinner=0x7f0d009b;
-    public static final int Base_Widget_AppCompat_Spinner_Underlined=0x7f0d009c;
-    public static final int Base_Widget_AppCompat_TextView=0x7f0d009d;
-    public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f0d009e;
-    public static final int Base_Widget_AppCompat_Toolbar=0x7f0d009f;
-    public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0d00a0;
-    public static final int MyAppTheme=0x7f0d00a1;
-    public static final int Platform_AppCompat=0x7f0d00a2;
-    public static final int Platform_AppCompat_Light=0x7f0d00a3;
-    public static final int Platform_ThemeOverlay_AppCompat=0x7f0d00a4;
-    public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f0d00a5;
-    public static final int Platform_ThemeOverlay_AppCompat_Light=0x7f0d00a6;
-    public static final int Platform_V21_AppCompat=0x7f0d00a7;
-    public static final int Platform_V21_AppCompat_Light=0x7f0d00a8;
-    public static final int Platform_V25_AppCompat=0x7f0d00a9;
-    public static final int Platform_V25_AppCompat_Light=0x7f0d00aa;
-    public static final int Platform_Widget_AppCompat_Spinner=0x7f0d00ab;
-    public static final int RtlOverlay_DialogWindowTitle_AppCompat=0x7f0d00ac;
-    public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0d00ad;
-    public static final int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f0d00ae;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0d00af;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0d00b0;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut=0x7f0d00b1;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow=0x7f0d00b2;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0d00b3;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title=0x7f0d00b4;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0d00b5;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0d00b6;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0d00b7;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0d00b8;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0d00b9;
-    public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0d00ba;
-    public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0d00bb;
-    public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0d00bc;
-    public static final int TextAppearance_AppCompat=0x7f0d00bd;
-    public static final int TextAppearance_AppCompat_Body1=0x7f0d00be;
-    public static final int TextAppearance_AppCompat_Body2=0x7f0d00bf;
-    public static final int TextAppearance_AppCompat_Button=0x7f0d00c0;
-    public static final int TextAppearance_AppCompat_Caption=0x7f0d00c1;
-    public static final int TextAppearance_AppCompat_Display1=0x7f0d00c2;
-    public static final int TextAppearance_AppCompat_Display2=0x7f0d00c3;
-    public static final int TextAppearance_AppCompat_Display3=0x7f0d00c4;
-    public static final int TextAppearance_AppCompat_Display4=0x7f0d00c5;
-    public static final int TextAppearance_AppCompat_Headline=0x7f0d00c6;
-    public static final int TextAppearance_AppCompat_Inverse=0x7f0d00c7;
-    public static final int TextAppearance_AppCompat_Large=0x7f0d00c8;
-    public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0d00c9;
-    public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0d00ca;
-    public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0d00cb;
-    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0d00cc;
-    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0d00cd;
-    public static final int TextAppearance_AppCompat_Medium=0x7f0d00ce;
-    public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0d00cf;
-    public static final int TextAppearance_AppCompat_Menu=0x7f0d00d0;
-    public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0d00d1;
-    public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0d00d2;
-    public static final int TextAppearance_AppCompat_Small=0x7f0d00d3;
-    public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0d00d4;
-    public static final int TextAppearance_AppCompat_Subhead=0x7f0d00d5;
-    public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0d00d6;
-    public static final int TextAppearance_AppCompat_Title=0x7f0d00d7;
-    public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0d00d8;
-    public static final int TextAppearance_AppCompat_Tooltip=0x7f0d00d9;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0d00da;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0d00db;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0d00dc;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0d00dd;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0d00de;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0d00df;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0d00e0;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0d00e1;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0d00e2;
-    public static final int TextAppearance_AppCompat_Widget_Button=0x7f0d00e3;
-    public static final int TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0d00e4;
-    public static final int TextAppearance_AppCompat_Widget_Button_Colored=0x7f0d00e5;
-    public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0d00e6;
-    public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0d00e7;
-    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0d00e8;
-    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0d00e9;
-    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0d00ea;
-    public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0d00eb;
-    public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0d00ec;
-    public static final int TextAppearance_Compat_Notification=0x7f0d00ed;
-    public static final int TextAppearance_Compat_Notification_Info=0x7f0d00ee;
-    public static final int TextAppearance_Compat_Notification_Info_Media=0x7f0d00ef;
-    public static final int TextAppearance_Compat_Notification_Line2=0x7f0d00f0;
-    public static final int TextAppearance_Compat_Notification_Line2_Media=0x7f0d00f1;
-    public static final int TextAppearance_Compat_Notification_Media=0x7f0d00f2;
-    public static final int TextAppearance_Compat_Notification_Time=0x7f0d00f3;
-    public static final int TextAppearance_Compat_Notification_Time_Media=0x7f0d00f4;
-    public static final int TextAppearance_Compat_Notification_Title=0x7f0d00f5;
-    public static final int TextAppearance_Compat_Notification_Title_Media=0x7f0d00f6;
-    public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0d00f7;
-    public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0d00f8;
-    public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0d00f9;
-    public static final int Theme_AppCompat=0x7f0d00fa;
-    public static final int Theme_AppCompat_CompactMenu=0x7f0d00fb;
-    public static final int Theme_AppCompat_DayNight=0x7f0d00fc;
-    public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f0d00fd;
-    public static final int Theme_AppCompat_DayNight_Dialog=0x7f0d00fe;
-    public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f0d00ff;
-    public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f0d0100;
-    public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f0d0101;
-    public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f0d0102;
-    public static final int Theme_AppCompat_Dialog=0x7f0d0103;
-    public static final int Theme_AppCompat_Dialog_Alert=0x7f0d0104;
-    public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0d0105;
-    public static final int Theme_AppCompat_DialogWhenLarge=0x7f0d0106;
-    public static final int Theme_AppCompat_Empty=0x7f0d0107;
-    public static final int Theme_AppCompat_Light=0x7f0d0108;
-    public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0d0109;
-    public static final int Theme_AppCompat_Light_Dialog=0x7f0d010a;
-    public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0d010b;
-    public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0d010c;
-    public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0d010d;
-    public static final int Theme_AppCompat_Light_NoActionBar=0x7f0d010e;
-    public static final int Theme_AppCompat_NoActionBar=0x7f0d010f;
-    public static final int ThemeOverlay_AppCompat=0x7f0d0110;
-    public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0d0111;
-    public static final int ThemeOverlay_AppCompat_Dark=0x7f0d0112;
-    public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0d0113;
-    public static final int ThemeOverlay_AppCompat_DayNight=0x7f0d0114;
-    public static final int ThemeOverlay_AppCompat_DayNight_ActionBar=0x7f0d0115;
-    public static final int ThemeOverlay_AppCompat_Dialog=0x7f0d0116;
-    public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f0d0117;
-    public static final int ThemeOverlay_AppCompat_Light=0x7f0d0118;
-    public static final int Widget_AppCompat_ActionBar=0x7f0d0119;
-    public static final int Widget_AppCompat_ActionBar_Solid=0x7f0d011a;
-    public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0d011b;
-    public static final int Widget_AppCompat_ActionBar_TabText=0x7f0d011c;
-    public static final int Widget_AppCompat_ActionBar_TabView=0x7f0d011d;
-    public static final int Widget_AppCompat_ActionButton=0x7f0d011e;
-    public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0d011f;
-    public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0d0120;
-    public static final int Widget_AppCompat_ActionMode=0x7f0d0121;
-    public static final int Widget_AppCompat_ActivityChooserView=0x7f0d0122;
-    public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0d0123;
-    public static final int Widget_AppCompat_Button=0x7f0d0124;
-    public static final int Widget_AppCompat_Button_Borderless=0x7f0d0125;
-    public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f0d0126;
-    public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0d0127;
-    public static final int Widget_AppCompat_Button_Colored=0x7f0d0128;
-    public static final int Widget_AppCompat_Button_Small=0x7f0d0129;
-    public static final int Widget_AppCompat_ButtonBar=0x7f0d012a;
-    public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f0d012b;
-    public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f0d012c;
-    public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f0d012d;
-    public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0d012e;
-    public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0d012f;
-    public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0d0130;
-    public static final int Widget_AppCompat_EditText=0x7f0d0131;
-    public static final int Widget_AppCompat_ImageButton=0x7f0d0132;
-    public static final int Widget_AppCompat_Light_ActionBar=0x7f0d0133;
-    public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0d0134;
-    public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0d0135;
-    public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0d0136;
-    public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0d0137;
-    public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0d0138;
-    public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0d0139;
-    public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0d013a;
-    public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0d013b;
-    public static final int Widget_AppCompat_Light_ActionButton=0x7f0d013c;
-    public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0d013d;
-    public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0d013e;
-    public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0d013f;
-    public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0d0140;
-    public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0d0141;
-    public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0d0142;
-    public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0d0143;
-    public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0d0144;
-    public static final int Widget_AppCompat_Light_PopupMenu=0x7f0d0145;
-    public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0d0146;
-    public static final int Widget_AppCompat_Light_SearchView=0x7f0d0147;
-    public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0d0148;
-    public static final int Widget_AppCompat_ListMenuView=0x7f0d0149;
-    public static final int Widget_AppCompat_ListPopupWindow=0x7f0d014a;
-    public static final int Widget_AppCompat_ListView=0x7f0d014b;
-    public static final int Widget_AppCompat_ListView_DropDown=0x7f0d014c;
-    public static final int Widget_AppCompat_ListView_Menu=0x7f0d014d;
-    public static final int Widget_AppCompat_PopupMenu=0x7f0d014e;
-    public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0d014f;
-    public static final int Widget_AppCompat_PopupWindow=0x7f0d0150;
-    public static final int Widget_AppCompat_ProgressBar=0x7f0d0151;
-    public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0d0152;
-    public static final int Widget_AppCompat_RatingBar=0x7f0d0153;
-    public static final int Widget_AppCompat_RatingBar_Indicator=0x7f0d0154;
-    public static final int Widget_AppCompat_RatingBar_Small=0x7f0d0155;
-    public static final int Widget_AppCompat_SearchView=0x7f0d0156;
-    public static final int Widget_AppCompat_SearchView_ActionBar=0x7f0d0157;
-    public static final int Widget_AppCompat_SeekBar=0x7f0d0158;
-    public static final int Widget_AppCompat_SeekBar_Discrete=0x7f0d0159;
-    public static final int Widget_AppCompat_Spinner=0x7f0d015a;
-    public static final int Widget_AppCompat_Spinner_DropDown=0x7f0d015b;
-    public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0d015c;
-    public static final int Widget_AppCompat_Spinner_Underlined=0x7f0d015d;
-    public static final int Widget_AppCompat_TextView=0x7f0d015e;
-    public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f0d015f;
-    public static final int Widget_AppCompat_Toolbar=0x7f0d0160;
-    public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0d0161;
-    public static final int Widget_Compat_NotificationActionContainer=0x7f0d0162;
-    public static final int Widget_Compat_NotificationActionText=0x7f0d0163;
-    public static final int Widget_Support_CoordinatorLayout=0x7f0d0164;
+    public static final int AlertDialog_AppCompat=0x7f0e0000;
+    public static final int AlertDialog_AppCompat_Light=0x7f0e0001;
+    public static final int Animation_AppCompat_Dialog=0x7f0e0002;
+    public static final int Animation_AppCompat_DropDownUp=0x7f0e0003;
+    public static final int Animation_AppCompat_Tooltip=0x7f0e0004;
+    public static final int Base_AlertDialog_AppCompat=0x7f0e0005;
+    public static final int Base_AlertDialog_AppCompat_Light=0x7f0e0006;
+    public static final int Base_Animation_AppCompat_Dialog=0x7f0e0007;
+    public static final int Base_Animation_AppCompat_DropDownUp=0x7f0e0008;
+    public static final int Base_Animation_AppCompat_Tooltip=0x7f0e0009;
+    public static final int Base_DialogWindowTitle_AppCompat=0x7f0e000a;
+    public static final int Base_DialogWindowTitleBackground_AppCompat=0x7f0e000b;
+    public static final int Base_TextAppearance_AppCompat=0x7f0e000c;
+    public static final int Base_TextAppearance_AppCompat_Body1=0x7f0e000d;
+    public static final int Base_TextAppearance_AppCompat_Body2=0x7f0e000e;
+    public static final int Base_TextAppearance_AppCompat_Button=0x7f0e000f;
+    public static final int Base_TextAppearance_AppCompat_Caption=0x7f0e0010;
+    public static final int Base_TextAppearance_AppCompat_Display1=0x7f0e0011;
+    public static final int Base_TextAppearance_AppCompat_Display2=0x7f0e0012;
+    public static final int Base_TextAppearance_AppCompat_Display3=0x7f0e0013;
+    public static final int Base_TextAppearance_AppCompat_Display4=0x7f0e0014;
+    public static final int Base_TextAppearance_AppCompat_Headline=0x7f0e0015;
+    public static final int Base_TextAppearance_AppCompat_Inverse=0x7f0e0016;
+    public static final int Base_TextAppearance_AppCompat_Large=0x7f0e0017;
+    public static final int Base_TextAppearance_AppCompat_Large_Inverse=0x7f0e0018;
+    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0e0019;
+    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0e001a;
+    public static final int Base_TextAppearance_AppCompat_Medium=0x7f0e001b;
+    public static final int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f0e001c;
+    public static final int Base_TextAppearance_AppCompat_Menu=0x7f0e001d;
+    public static final int Base_TextAppearance_AppCompat_SearchResult=0x7f0e001e;
+    public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0e001f;
+    public static final int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f0e0020;
+    public static final int Base_TextAppearance_AppCompat_Small=0x7f0e0021;
+    public static final int Base_TextAppearance_AppCompat_Small_Inverse=0x7f0e0022;
+    public static final int Base_TextAppearance_AppCompat_Subhead=0x7f0e0023;
+    public static final int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f0e0024;
+    public static final int Base_TextAppearance_AppCompat_Title=0x7f0e0025;
+    public static final int Base_TextAppearance_AppCompat_Title_Inverse=0x7f0e0026;
+    public static final int Base_TextAppearance_AppCompat_Tooltip=0x7f0e0027;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0e0028;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0e0029;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0e002a;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0e002b;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0e002c;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0e002d;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0e002e;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button=0x7f0e002f;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0e0030;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button_Colored=0x7f0e0031;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0e0032;
+    public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0e0033;
+    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0e0034;
+    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0e0035;
+    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0e0036;
+    public static final int Base_TextAppearance_AppCompat_Widget_Switch=0x7f0e0037;
+    public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0e0038;
+    public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0e0039;
+    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0e003a;
+    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0e003b;
+    public static final int Base_Theme_AppCompat=0x7f0e003c;
+    public static final int Base_Theme_AppCompat_CompactMenu=0x7f0e003d;
+    public static final int Base_Theme_AppCompat_Dialog=0x7f0e003e;
+    public static final int Base_Theme_AppCompat_Dialog_Alert=0x7f0e003f;
+    public static final int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0e0040;
+    public static final int Base_Theme_AppCompat_Dialog_MinWidth=0x7f0e0041;
+    public static final int Base_Theme_AppCompat_DialogWhenLarge=0x7f0e0042;
+    public static final int Base_Theme_AppCompat_Light=0x7f0e0043;
+    public static final int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0e0044;
+    public static final int Base_Theme_AppCompat_Light_Dialog=0x7f0e0045;
+    public static final int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f0e0046;
+    public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0e0047;
+    public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f0e0048;
+    public static final int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f0e0049;
+    public static final int Base_ThemeOverlay_AppCompat=0x7f0e004a;
+    public static final int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0e004b;
+    public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0e004c;
+    public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0e004d;
+    public static final int Base_ThemeOverlay_AppCompat_Dialog=0x7f0e004e;
+    public static final int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f0e004f;
+    public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0e0050;
+    public static final int Base_V21_Theme_AppCompat=0x7f0e0051;
+    public static final int Base_V21_Theme_AppCompat_Dialog=0x7f0e0052;
+    public static final int Base_V21_Theme_AppCompat_Light=0x7f0e0053;
+    public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0e0054;
+    public static final int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f0e0055;
+    public static final int Base_V22_Theme_AppCompat=0x7f0e0056;
+    public static final int Base_V22_Theme_AppCompat_Light=0x7f0e0057;
+    public static final int Base_V23_Theme_AppCompat=0x7f0e0058;
+    public static final int Base_V23_Theme_AppCompat_Light=0x7f0e0059;
+    public static final int Base_V26_Theme_AppCompat=0x7f0e005a;
+    public static final int Base_V26_Theme_AppCompat_Light=0x7f0e005b;
+    public static final int Base_V26_Widget_AppCompat_Toolbar=0x7f0e005c;
+    public static final int Base_V28_Theme_AppCompat=0x7f0e005d;
+    public static final int Base_V28_Theme_AppCompat_Light=0x7f0e005e;
+    public static final int Base_V7_Theme_AppCompat=0x7f0e005f;
+    public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0e0060;
+    public static final int Base_V7_Theme_AppCompat_Light=0x7f0e0061;
+    public static final int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0e0062;
+    public static final int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0e0063;
+    public static final int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0e0064;
+    public static final int Base_V7_Widget_AppCompat_EditText=0x7f0e0065;
+    public static final int Base_V7_Widget_AppCompat_Toolbar=0x7f0e0066;
+    public static final int Base_Widget_AppCompat_ActionBar=0x7f0e0067;
+    public static final int Base_Widget_AppCompat_ActionBar_Solid=0x7f0e0068;
+    public static final int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0e0069;
+    public static final int Base_Widget_AppCompat_ActionBar_TabText=0x7f0e006a;
+    public static final int Base_Widget_AppCompat_ActionBar_TabView=0x7f0e006b;
+    public static final int Base_Widget_AppCompat_ActionButton=0x7f0e006c;
+    public static final int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f0e006d;
+    public static final int Base_Widget_AppCompat_ActionButton_Overflow=0x7f0e006e;
+    public static final int Base_Widget_AppCompat_ActionMode=0x7f0e006f;
+    public static final int Base_Widget_AppCompat_ActivityChooserView=0x7f0e0070;
+    public static final int Base_Widget_AppCompat_AutoCompleteTextView=0x7f0e0071;
+    public static final int Base_Widget_AppCompat_Button=0x7f0e0072;
+    public static final int Base_Widget_AppCompat_Button_Borderless=0x7f0e0073;
+    public static final int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f0e0074;
+    public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0e0075;
+    public static final int Base_Widget_AppCompat_Button_Colored=0x7f0e0076;
+    public static final int Base_Widget_AppCompat_Button_Small=0x7f0e0077;
+    public static final int Base_Widget_AppCompat_ButtonBar=0x7f0e0078;
+    public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0e0079;
+    public static final int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f0e007a;
+    public static final int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f0e007b;
+    public static final int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0e007c;
+    public static final int Base_Widget_AppCompat_DrawerArrowToggle=0x7f0e007d;
+    public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0e007e;
+    public static final int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f0e007f;
+    public static final int Base_Widget_AppCompat_EditText=0x7f0e0080;
+    public static final int Base_Widget_AppCompat_ImageButton=0x7f0e0081;
+    public static final int Base_Widget_AppCompat_Light_ActionBar=0x7f0e0082;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0e0083;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0e0084;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f0e0085;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0e0086;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f0e0087;
+    public static final int Base_Widget_AppCompat_Light_PopupMenu=0x7f0e0088;
+    public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0e0089;
+    public static final int Base_Widget_AppCompat_ListMenuView=0x7f0e008a;
+    public static final int Base_Widget_AppCompat_ListPopupWindow=0x7f0e008b;
+    public static final int Base_Widget_AppCompat_ListView=0x7f0e008c;
+    public static final int Base_Widget_AppCompat_ListView_DropDown=0x7f0e008d;
+    public static final int Base_Widget_AppCompat_ListView_Menu=0x7f0e008e;
+    public static final int Base_Widget_AppCompat_PopupMenu=0x7f0e008f;
+    public static final int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f0e0090;
+    public static final int Base_Widget_AppCompat_PopupWindow=0x7f0e0091;
+    public static final int Base_Widget_AppCompat_ProgressBar=0x7f0e0092;
+    public static final int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f0e0093;
+    public static final int Base_Widget_AppCompat_RatingBar=0x7f0e0094;
+    public static final int Base_Widget_AppCompat_RatingBar_Indicator=0x7f0e0095;
+    public static final int Base_Widget_AppCompat_RatingBar_Small=0x7f0e0096;
+    public static final int Base_Widget_AppCompat_SearchView=0x7f0e0097;
+    public static final int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0e0098;
+    public static final int Base_Widget_AppCompat_SeekBar=0x7f0e0099;
+    public static final int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0e009a;
+    public static final int Base_Widget_AppCompat_Spinner=0x7f0e009b;
+    public static final int Base_Widget_AppCompat_Spinner_Underlined=0x7f0e009c;
+    public static final int Base_Widget_AppCompat_TextView=0x7f0e009d;
+    public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f0e009e;
+    public static final int Base_Widget_AppCompat_Toolbar=0x7f0e009f;
+    public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0e00a0;
+    public static final int MyAppTheme=0x7f0e00a1;
+    public static final int Platform_AppCompat=0x7f0e00a2;
+    public static final int Platform_AppCompat_Light=0x7f0e00a3;
+    public static final int Platform_ThemeOverlay_AppCompat=0x7f0e00a4;
+    public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f0e00a5;
+    public static final int Platform_ThemeOverlay_AppCompat_Light=0x7f0e00a6;
+    public static final int Platform_V21_AppCompat=0x7f0e00a7;
+    public static final int Platform_V21_AppCompat_Light=0x7f0e00a8;
+    public static final int Platform_V25_AppCompat=0x7f0e00a9;
+    public static final int Platform_V25_AppCompat_Light=0x7f0e00aa;
+    public static final int Platform_Widget_AppCompat_Spinner=0x7f0e00ab;
+    public static final int RtlOverlay_DialogWindowTitle_AppCompat=0x7f0e00ac;
+    public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0e00ad;
+    public static final int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f0e00ae;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0e00af;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0e00b0;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut=0x7f0e00b1;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow=0x7f0e00b2;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0e00b3;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title=0x7f0e00b4;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0e00b5;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0e00b6;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0e00b7;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0e00b8;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0e00b9;
+    public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0e00ba;
+    public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0e00bb;
+    public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0e00bc;
+    public static final int TextAppearance_AppCompat=0x7f0e00bd;
+    public static final int TextAppearance_AppCompat_Body1=0x7f0e00be;
+    public static final int TextAppearance_AppCompat_Body2=0x7f0e00bf;
+    public static final int TextAppearance_AppCompat_Button=0x7f0e00c0;
+    public static final int TextAppearance_AppCompat_Caption=0x7f0e00c1;
+    public static final int TextAppearance_AppCompat_Display1=0x7f0e00c2;
+    public static final int TextAppearance_AppCompat_Display2=0x7f0e00c3;
+    public static final int TextAppearance_AppCompat_Display3=0x7f0e00c4;
+    public static final int TextAppearance_AppCompat_Display4=0x7f0e00c5;
+    public static final int TextAppearance_AppCompat_Headline=0x7f0e00c6;
+    public static final int TextAppearance_AppCompat_Inverse=0x7f0e00c7;
+    public static final int TextAppearance_AppCompat_Large=0x7f0e00c8;
+    public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0e00c9;
+    public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0e00ca;
+    public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0e00cb;
+    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0e00cc;
+    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0e00cd;
+    public static final int TextAppearance_AppCompat_Medium=0x7f0e00ce;
+    public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0e00cf;
+    public static final int TextAppearance_AppCompat_Menu=0x7f0e00d0;
+    public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0e00d1;
+    public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0e00d2;
+    public static final int TextAppearance_AppCompat_Small=0x7f0e00d3;
+    public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0e00d4;
+    public static final int TextAppearance_AppCompat_Subhead=0x7f0e00d5;
+    public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0e00d6;
+    public static final int TextAppearance_AppCompat_Title=0x7f0e00d7;
+    public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0e00d8;
+    public static final int TextAppearance_AppCompat_Tooltip=0x7f0e00d9;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0e00da;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0e00db;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0e00dc;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0e00dd;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0e00de;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0e00df;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0e00e0;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0e00e1;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0e00e2;
+    public static final int TextAppearance_AppCompat_Widget_Button=0x7f0e00e3;
+    public static final int TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0e00e4;
+    public static final int TextAppearance_AppCompat_Widget_Button_Colored=0x7f0e00e5;
+    public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0e00e6;
+    public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0e00e7;
+    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0e00e8;
+    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0e00e9;
+    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0e00ea;
+    public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0e00eb;
+    public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0e00ec;
+    public static final int TextAppearance_Compat_Notification=0x7f0e00ed;
+    public static final int TextAppearance_Compat_Notification_Info=0x7f0e00ee;
+    public static final int TextAppearance_Compat_Notification_Info_Media=0x7f0e00ef;
+    public static final int TextAppearance_Compat_Notification_Line2=0x7f0e00f0;
+    public static final int TextAppearance_Compat_Notification_Line2_Media=0x7f0e00f1;
+    public static final int TextAppearance_Compat_Notification_Media=0x7f0e00f2;
+    public static final int TextAppearance_Compat_Notification_Time=0x7f0e00f3;
+    public static final int TextAppearance_Compat_Notification_Time_Media=0x7f0e00f4;
+    public static final int TextAppearance_Compat_Notification_Title=0x7f0e00f5;
+    public static final int TextAppearance_Compat_Notification_Title_Media=0x7f0e00f6;
+    public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0e00f7;
+    public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0e00f8;
+    public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0e00f9;
+    public static final int Theme_AppCompat=0x7f0e00fa;
+    public static final int Theme_AppCompat_CompactMenu=0x7f0e00fb;
+    public static final int Theme_AppCompat_DayNight=0x7f0e00fc;
+    public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f0e00fd;
+    public static final int Theme_AppCompat_DayNight_Dialog=0x7f0e00fe;
+    public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f0e00ff;
+    public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f0e0100;
+    public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f0e0101;
+    public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f0e0102;
+    public static final int Theme_AppCompat_Dialog=0x7f0e0103;
+    public static final int Theme_AppCompat_Dialog_Alert=0x7f0e0104;
+    public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0e0105;
+    public static final int Theme_AppCompat_DialogWhenLarge=0x7f0e0106;
+    public static final int Theme_AppCompat_Empty=0x7f0e0107;
+    public static final int Theme_AppCompat_Light=0x7f0e0108;
+    public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0e0109;
+    public static final int Theme_AppCompat_Light_Dialog=0x7f0e010a;
+    public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0e010b;
+    public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0e010c;
+    public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0e010d;
+    public static final int Theme_AppCompat_Light_NoActionBar=0x7f0e010e;
+    public static final int Theme_AppCompat_NoActionBar=0x7f0e010f;
+    public static final int ThemeOverlay_AppCompat=0x7f0e0110;
+    public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0e0111;
+    public static final int ThemeOverlay_AppCompat_Dark=0x7f0e0112;
+    public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0e0113;
+    public static final int ThemeOverlay_AppCompat_DayNight=0x7f0e0114;
+    public static final int ThemeOverlay_AppCompat_DayNight_ActionBar=0x7f0e0115;
+    public static final int ThemeOverlay_AppCompat_Dialog=0x7f0e0116;
+    public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f0e0117;
+    public static final int ThemeOverlay_AppCompat_Light=0x7f0e0118;
+    public static final int Widget_AppCompat_ActionBar=0x7f0e0119;
+    public static final int Widget_AppCompat_ActionBar_Solid=0x7f0e011a;
+    public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0e011b;
+    public static final int Widget_AppCompat_ActionBar_TabText=0x7f0e011c;
+    public static final int Widget_AppCompat_ActionBar_TabView=0x7f0e011d;
+    public static final int Widget_AppCompat_ActionButton=0x7f0e011e;
+    public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0e011f;
+    public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0e0120;
+    public static final int Widget_AppCompat_ActionMode=0x7f0e0121;
+    public static final int Widget_AppCompat_ActivityChooserView=0x7f0e0122;
+    public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0e0123;
+    public static final int Widget_AppCompat_Button=0x7f0e0124;
+    public static final int Widget_AppCompat_Button_Borderless=0x7f0e0125;
+    public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f0e0126;
+    public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0e0127;
+    public static final int Widget_AppCompat_Button_Colored=0x7f0e0128;
+    public static final int Widget_AppCompat_Button_Small=0x7f0e0129;
+    public static final int Widget_AppCompat_ButtonBar=0x7f0e012a;
+    public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f0e012b;
+    public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f0e012c;
+    public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f0e012d;
+    public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0e012e;
+    public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0e012f;
+    public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0e0130;
+    public static final int Widget_AppCompat_EditText=0x7f0e0131;
+    public static final int Widget_AppCompat_ImageButton=0x7f0e0132;
+    public static final int Widget_AppCompat_Light_ActionBar=0x7f0e0133;
+    public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0e0134;
+    public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0e0135;
+    public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0e0136;
+    public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0e0137;
+    public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0e0138;
+    public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0e0139;
+    public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0e013a;
+    public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0e013b;
+    public static final int Widget_AppCompat_Light_ActionButton=0x7f0e013c;
+    public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0e013d;
+    public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0e013e;
+    public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0e013f;
+    public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0e0140;
+    public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0e0141;
+    public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0e0142;
+    public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0e0143;
+    public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0e0144;
+    public static final int Widget_AppCompat_Light_PopupMenu=0x7f0e0145;
+    public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0e0146;
+    public static final int Widget_AppCompat_Light_SearchView=0x7f0e0147;
+    public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0e0148;
+    public static final int Widget_AppCompat_ListMenuView=0x7f0e0149;
+    public static final int Widget_AppCompat_ListPopupWindow=0x7f0e014a;
+    public static final int Widget_AppCompat_ListView=0x7f0e014b;
+    public static final int Widget_AppCompat_ListView_DropDown=0x7f0e014c;
+    public static final int Widget_AppCompat_ListView_Menu=0x7f0e014d;
+    public static final int Widget_AppCompat_PopupMenu=0x7f0e014e;
+    public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0e014f;
+    public static final int Widget_AppCompat_PopupWindow=0x7f0e0150;
+    public static final int Widget_AppCompat_ProgressBar=0x7f0e0151;
+    public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0e0152;
+    public static final int Widget_AppCompat_RatingBar=0x7f0e0153;
+    public static final int Widget_AppCompat_RatingBar_Indicator=0x7f0e0154;
+    public static final int Widget_AppCompat_RatingBar_Small=0x7f0e0155;
+    public static final int Widget_AppCompat_SearchView=0x7f0e0156;
+    public static final int Widget_AppCompat_SearchView_ActionBar=0x7f0e0157;
+    public static final int Widget_AppCompat_SeekBar=0x7f0e0158;
+    public static final int Widget_AppCompat_SeekBar_Discrete=0x7f0e0159;
+    public static final int Widget_AppCompat_Spinner=0x7f0e015a;
+    public static final int Widget_AppCompat_Spinner_DropDown=0x7f0e015b;
+    public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0e015c;
+    public static final int Widget_AppCompat_Spinner_Underlined=0x7f0e015d;
+    public static final int Widget_AppCompat_TextView=0x7f0e015e;
+    public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f0e015f;
+    public static final int Widget_AppCompat_Toolbar=0x7f0e0160;
+    public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0e0161;
+    public static final int Widget_Compat_NotificationActionContainer=0x7f0e0162;
+    public static final int Widget_Compat_NotificationActionText=0x7f0e0163;
+    public static final int Widget_Support_CoordinatorLayout=0x7f0e0164;
   }
   public static final class styleable {
     /**
@@ -3546,35 +3574,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background b4a.example:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit b4a.example:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked b4a.example:backgroundStacked}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd b4a.example:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions b4a.example:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft b4a.example:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight b4a.example:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart b4a.example:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation b4a.example:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout b4a.example:customNavigationLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions b4a.example:displayOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_divider b4a.example:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation b4a.example:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_height b4a.example:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll b4a.example:hideOnContentScroll}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator b4a.example:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout b4a.example:homeLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_icon b4a.example:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle b4a.example:indeterminateProgressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding b4a.example:itemPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_logo b4a.example:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode b4a.example:navigationMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme b4a.example:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding b4a.example:progressBarPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle b4a.example:progressBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle b4a.example:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle b4a.example:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_title b4a.example:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle b4a.example:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_background ng.dsoftlab.stegocam:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit ng.dsoftlab.stegocam:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked ng.dsoftlab.stegocam:backgroundStacked}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd ng.dsoftlab.stegocam:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions ng.dsoftlab.stegocam:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft ng.dsoftlab.stegocam:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight ng.dsoftlab.stegocam:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart ng.dsoftlab.stegocam:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation ng.dsoftlab.stegocam:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout ng.dsoftlab.stegocam:customNavigationLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions ng.dsoftlab.stegocam:displayOptions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_divider ng.dsoftlab.stegocam:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation ng.dsoftlab.stegocam:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_height ng.dsoftlab.stegocam:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll ng.dsoftlab.stegocam:hideOnContentScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator ng.dsoftlab.stegocam:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout ng.dsoftlab.stegocam:homeLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_icon ng.dsoftlab.stegocam:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle ng.dsoftlab.stegocam:indeterminateProgressStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding ng.dsoftlab.stegocam:itemPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_logo ng.dsoftlab.stegocam:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode ng.dsoftlab.stegocam:navigationMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme ng.dsoftlab.stegocam:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding ng.dsoftlab.stegocam:progressBarPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle ng.dsoftlab.stegocam:progressBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle ng.dsoftlab.stegocam:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle ng.dsoftlab.stegocam:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_title ng.dsoftlab.stegocam:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle ng.dsoftlab.stegocam:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -3607,17 +3635,17 @@ public final class R {
      * @see #ActionBar_titleTextStyle
      */
     public static final int[] ActionBar={
-      0x7f030033, 0x7f030034, 0x7f030035, 0x7f030060, 
-      0x7f030061, 0x7f030062, 0x7f030063, 0x7f030064, 
-      0x7f030065, 0x7f030068, 0x7f03006d, 0x7f03006e, 
-      0x7f030082, 0x7f030097, 0x7f030098, 0x7f030099, 
-      0x7f03009a, 0x7f03009b, 0x7f0300a0, 0x7f0300a3, 
-      0x7f0300be, 0x7f0300c8, 0x7f0300d4, 0x7f0300d7, 
-      0x7f0300d8, 0x7f0300f9, 0x7f0300fc, 0x7f030119, 
-      0x7f030122
+      0x7f040033, 0x7f040034, 0x7f040035, 0x7f040060, 
+      0x7f040061, 0x7f040062, 0x7f040063, 0x7f040064, 
+      0x7f040065, 0x7f040068, 0x7f04006d, 0x7f04006e, 
+      0x7f040082, 0x7f040097, 0x7f040098, 0x7f040099, 
+      0x7f04009a, 0x7f04009b, 0x7f0400a0, 0x7f0400a3, 
+      0x7f0400be, 0x7f0400c8, 0x7f0400d4, 0x7f0400d7, 
+      0x7f0400d8, 0x7f0400f9, 0x7f0400fc, 0x7f040119, 
+      0x7f040122
     };
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#background}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#background}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3625,11 +3653,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:background
+     * @attr name ng.dsoftlab.stegocam:background
      */
     public static final int ActionBar_background=0;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3640,11 +3668,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:backgroundSplit
+     * @attr name ng.dsoftlab.stegocam:backgroundSplit
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#backgroundStacked}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#backgroundStacked}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3655,11 +3683,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:backgroundStacked
+     * @attr name ng.dsoftlab.stegocam:backgroundStacked
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3668,11 +3696,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:contentInsetEnd
+     * @attr name ng.dsoftlab.stegocam:contentInsetEnd
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3681,11 +3709,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:contentInsetEndWithActions
+     * @attr name ng.dsoftlab.stegocam:contentInsetEndWithActions
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3694,11 +3722,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:contentInsetLeft
+     * @attr name ng.dsoftlab.stegocam:contentInsetLeft
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3707,11 +3735,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:contentInsetRight
+     * @attr name ng.dsoftlab.stegocam:contentInsetRight
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3720,11 +3748,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:contentInsetStart
+     * @attr name ng.dsoftlab.stegocam:contentInsetStart
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3733,11 +3761,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:contentInsetStartWithNavigation
+     * @attr name ng.dsoftlab.stegocam:contentInsetStartWithNavigation
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#customNavigationLayout}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#customNavigationLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3745,11 +3773,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:customNavigationLayout
+     * @attr name ng.dsoftlab.stegocam:customNavigationLayout
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#displayOptions}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#displayOptions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -3767,11 +3795,11 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name b4a.example:displayOptions
+     * @attr name ng.dsoftlab.stegocam:displayOptions
      */
     public static final int ActionBar_displayOptions=10;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#divider}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#divider}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3779,11 +3807,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:divider
+     * @attr name ng.dsoftlab.stegocam:divider
      */
     public static final int ActionBar_divider=11;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#elevation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3792,11 +3820,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:elevation
+     * @attr name ng.dsoftlab.stegocam:elevation
      */
     public static final int ActionBar_elevation=12;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#height}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#height}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3805,21 +3833,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:height
+     * @attr name ng.dsoftlab.stegocam:height
      */
     public static final int ActionBar_height=13;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#hideOnContentScroll}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#hideOnContentScroll}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:hideOnContentScroll
+     * @attr name ng.dsoftlab.stegocam:hideOnContentScroll
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3827,11 +3855,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:homeAsUpIndicator
+     * @attr name ng.dsoftlab.stegocam:homeAsUpIndicator
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#homeLayout}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#homeLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3839,11 +3867,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:homeLayout
+     * @attr name ng.dsoftlab.stegocam:homeLayout
      */
     public static final int ActionBar_homeLayout=16;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#icon}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#icon}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3851,11 +3879,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:icon
+     * @attr name ng.dsoftlab.stegocam:icon
      */
     public static final int ActionBar_icon=17;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#indeterminateProgressStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#indeterminateProgressStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3863,11 +3891,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:indeterminateProgressStyle
+     * @attr name ng.dsoftlab.stegocam:indeterminateProgressStyle
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#itemPadding}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#itemPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3876,11 +3904,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:itemPadding
+     * @attr name ng.dsoftlab.stegocam:itemPadding
      */
     public static final int ActionBar_itemPadding=19;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#logo}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#logo}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3888,11 +3916,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:logo
+     * @attr name ng.dsoftlab.stegocam:logo
      */
     public static final int ActionBar_logo=20;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#navigationMode}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#navigationMode}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -3906,11 +3934,11 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td>The action bar will use a series of horizontal tabs for navigation.</td></tr>
      * </table>
      *
-     * @attr name b4a.example:navigationMode
+     * @attr name ng.dsoftlab.stegocam:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#popupTheme}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3918,11 +3946,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:popupTheme
+     * @attr name ng.dsoftlab.stegocam:popupTheme
      */
     public static final int ActionBar_popupTheme=22;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#progressBarPadding}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#progressBarPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3931,11 +3959,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:progressBarPadding
+     * @attr name ng.dsoftlab.stegocam:progressBarPadding
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#progressBarStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#progressBarStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3943,21 +3971,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:progressBarStyle
+     * @attr name ng.dsoftlab.stegocam:progressBarStyle
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#subtitle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:subtitle
+     * @attr name ng.dsoftlab.stegocam:subtitle
      */
     public static final int ActionBar_subtitle=25;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3965,21 +3993,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:subtitleTextStyle
+     * @attr name ng.dsoftlab.stegocam:subtitleTextStyle
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#title}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#title}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:title
+     * @attr name ng.dsoftlab.stegocam:title
      */
     public static final int ActionBar_title=27;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3987,7 +4015,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:titleTextStyle
+     * @attr name ng.dsoftlab.stegocam:titleTextStyle
      */
     public static final int ActionBar_titleTextStyle=28;
     /**
@@ -4069,12 +4097,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background b4a.example:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit b4a.example:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout b4a.example:closeItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_height b4a.example:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle b4a.example:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle b4a.example:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_background ng.dsoftlab.stegocam:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit ng.dsoftlab.stegocam:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout ng.dsoftlab.stegocam:closeItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_height ng.dsoftlab.stegocam:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle ng.dsoftlab.stegocam:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle ng.dsoftlab.stegocam:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -4084,11 +4112,11 @@ public final class R {
      * @see #ActionMode_titleTextStyle
      */
     public static final int[] ActionMode={
-      0x7f030033, 0x7f030034, 0x7f030050, 0x7f030097, 
-      0x7f0300fc, 0x7f030122
+      0x7f040033, 0x7f040034, 0x7f040050, 0x7f040097, 
+      0x7f0400fc, 0x7f040122
     };
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#background}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#background}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4096,11 +4124,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:background
+     * @attr name ng.dsoftlab.stegocam:background
      */
     public static final int ActionMode_background=0;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4111,11 +4139,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:backgroundSplit
+     * @attr name ng.dsoftlab.stegocam:backgroundSplit
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#closeItemLayout}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#closeItemLayout}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4123,11 +4151,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:closeItemLayout
+     * @attr name ng.dsoftlab.stegocam:closeItemLayout
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#height}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#height}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4136,11 +4164,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:height
+     * @attr name ng.dsoftlab.stegocam:height
      */
     public static final int ActionMode_height=3;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4148,11 +4176,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:subtitleTextStyle
+     * @attr name ng.dsoftlab.stegocam:subtitleTextStyle
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4160,7 +4188,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:titleTextStyle
+     * @attr name ng.dsoftlab.stegocam:titleTextStyle
      */
     public static final int ActionMode_titleTextStyle=5;
     /**
@@ -4170,17 +4198,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable b4a.example:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount b4a.example:initialActivityCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable ng.dsoftlab.stegocam:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount ng.dsoftlab.stegocam:initialActivityCount}</code></td><td></td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
      */
     public static final int[] ActivityChooserView={
-      0x7f030085, 0x7f0300a1
+      0x7f040085, 0x7f0400a1
     };
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#expandActivityOverflowButtonDrawable}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#expandActivityOverflowButtonDrawable}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4188,17 +4216,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:expandActivityOverflowButtonDrawable
+     * @attr name ng.dsoftlab.stegocam:expandActivityOverflowButtonDrawable
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#initialActivityCount}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#initialActivityCount}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:initialActivityCount
+     * @attr name ng.dsoftlab.stegocam:initialActivityCount
      */
     public static final int ActivityChooserView_initialActivityCount=1;
     /**
@@ -4209,13 +4237,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonIconDimen b4a.example:buttonIconDimen}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout b4a.example:buttonPanelSideLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listItemLayout b4a.example:listItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listLayout b4a.example:listLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout b4a.example:multiChoiceItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_showTitle b4a.example:showTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout b4a.example:singleChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonIconDimen ng.dsoftlab.stegocam:buttonIconDimen}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout ng.dsoftlab.stegocam:buttonPanelSideLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listItemLayout ng.dsoftlab.stegocam:listItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listLayout ng.dsoftlab.stegocam:listLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout ng.dsoftlab.stegocam:multiChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_showTitle ng.dsoftlab.stegocam:showTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout ng.dsoftlab.stegocam:singleChoiceItemLayout}</code></td><td></td></tr>
      * </table>
      * @see #AlertDialog_android_layout
      * @see #AlertDialog_buttonIconDimen
@@ -4227,8 +4255,8 @@ public final class R {
      * @see #AlertDialog_singleChoiceItemLayout
      */
     public static final int[] AlertDialog={
-      0x010100f2, 0x7f030044, 0x7f030045, 0x7f0300b3, 
-      0x7f0300b4, 0x7f0300c5, 0x7f0300ee, 0x7f0300ef
+      0x010100f2, 0x7f040044, 0x7f040045, 0x7f0400b3, 
+      0x7f0400b4, 0x7f0400c5, 0x7f0400ee, 0x7f0400ef
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout}
@@ -4243,7 +4271,7 @@ public final class R {
      */
     public static final int AlertDialog_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#buttonIconDimen}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#buttonIconDimen}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4252,11 +4280,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:buttonIconDimen
+     * @attr name ng.dsoftlab.stegocam:buttonIconDimen
      */
     public static final int AlertDialog_buttonIconDimen=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#buttonPanelSideLayout}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#buttonPanelSideLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4264,11 +4292,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:buttonPanelSideLayout
+     * @attr name ng.dsoftlab.stegocam:buttonPanelSideLayout
      */
     public static final int AlertDialog_buttonPanelSideLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#listItemLayout}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#listItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4276,11 +4304,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:listItemLayout
+     * @attr name ng.dsoftlab.stegocam:listItemLayout
      */
     public static final int AlertDialog_listItemLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#listLayout}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#listLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4288,11 +4316,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:listLayout
+     * @attr name ng.dsoftlab.stegocam:listLayout
      */
     public static final int AlertDialog_listLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#multiChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#multiChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4300,21 +4328,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:multiChoiceItemLayout
+     * @attr name ng.dsoftlab.stegocam:multiChoiceItemLayout
      */
     public static final int AlertDialog_multiChoiceItemLayout=5;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#showTitle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#showTitle}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:showTitle
+     * @attr name ng.dsoftlab.stegocam:showTitle
      */
     public static final int AlertDialog_showTitle=6;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#singleChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#singleChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4322,7 +4350,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:singleChoiceItemLayout
+     * @attr name ng.dsoftlab.stegocam:singleChoiceItemLayout
      */
     public static final int AlertDialog_singleChoiceItemLayout=7;
     /**
@@ -4524,9 +4552,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat b4a.example:srcCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint b4a.example:tint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode b4a.example:tintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat ng.dsoftlab.stegocam:srcCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint ng.dsoftlab.stegocam:tint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode ng.dsoftlab.stegocam:tintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -4534,7 +4562,7 @@ public final class R {
      * @see #AppCompatImageView_tintMode
      */
     public static final int[] AppCompatImageView={
-      0x01010119, 0x7f0300f4, 0x7f030117, 0x7f030118
+      0x01010119, 0x7f0400f4, 0x7f040117, 0x7f040118
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#src}
@@ -4552,7 +4580,7 @@ public final class R {
      */
     public static final int AppCompatImageView_android_src=0;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#srcCompat}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#srcCompat}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4560,22 +4588,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:srcCompat
+     * @attr name ng.dsoftlab.stegocam:srcCompat
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#tint}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#tint}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:tint
+     * @attr name ng.dsoftlab.stegocam:tint
      */
     public static final int AppCompatImageView_tint=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#tintMode}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#tintMode}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -4597,7 +4625,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name b4a.example:tintMode
+     * @attr name ng.dsoftlab.stegocam:tintMode
      */
     public static final int AppCompatImageView_tintMode=3;
     /**
@@ -4608,9 +4636,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark b4a.example:tickMark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint b4a.example:tickMarkTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode b4a.example:tickMarkTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark ng.dsoftlab.stegocam:tickMark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint ng.dsoftlab.stegocam:tickMarkTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode ng.dsoftlab.stegocam:tickMarkTintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -4618,7 +4646,7 @@ public final class R {
      * @see #AppCompatSeekBar_tickMarkTintMode
      */
     public static final int[] AppCompatSeekBar={
-      0x01010142, 0x7f030114, 0x7f030115, 0x7f030116
+      0x01010142, 0x7f040114, 0x7f040115, 0x7f040116
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#thumb}
@@ -4633,7 +4661,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_android_thumb=0;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#tickMark}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#tickMark}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4641,22 +4669,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:tickMark
+     * @attr name ng.dsoftlab.stegocam:tickMark
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#tickMarkTint}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#tickMarkTint}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:tickMarkTint
+     * @attr name ng.dsoftlab.stegocam:tickMarkTint
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#tickMarkTintMode}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#tickMarkTintMode}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -4678,7 +4706,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name b4a.example:tickMarkTintMode
+     * @attr name ng.dsoftlab.stegocam:tickMarkTintMode
      */
     public static final int AppCompatSeekBar_tickMarkTintMode=3;
     /**
@@ -4818,27 +4846,27 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize b4a.example:autoSizeMaxTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize b4a.example:autoSizeMinTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes b4a.example:autoSizePresetSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity b4a.example:autoSizeStepGranularity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType b4a.example:autoSizeTextType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableBottomCompat b4a.example:drawableBottomCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableEndCompat b4a.example:drawableEndCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableLeftCompat b4a.example:drawableLeftCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableRightCompat b4a.example:drawableRightCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableStartCompat b4a.example:drawableStartCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableTint b4a.example:drawableTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableTintMode b4a.example:drawableTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableTopCompat b4a.example:drawableTopCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_emojiCompatEnabled b4a.example:emojiCompatEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight b4a.example:firstBaselineToTopHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily b4a.example:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontVariationSettings b4a.example:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight b4a.example:lastBaselineToBottomHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lineHeight b4a.example:lineHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps b4a.example:textAllCaps}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textLocale b4a.example:textLocale}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize ng.dsoftlab.stegocam:autoSizeMaxTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize ng.dsoftlab.stegocam:autoSizeMinTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes ng.dsoftlab.stegocam:autoSizePresetSizes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity ng.dsoftlab.stegocam:autoSizeStepGranularity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType ng.dsoftlab.stegocam:autoSizeTextType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableBottomCompat ng.dsoftlab.stegocam:drawableBottomCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableEndCompat ng.dsoftlab.stegocam:drawableEndCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableLeftCompat ng.dsoftlab.stegocam:drawableLeftCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableRightCompat ng.dsoftlab.stegocam:drawableRightCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableStartCompat ng.dsoftlab.stegocam:drawableStartCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableTint ng.dsoftlab.stegocam:drawableTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableTintMode ng.dsoftlab.stegocam:drawableTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableTopCompat ng.dsoftlab.stegocam:drawableTopCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_emojiCompatEnabled ng.dsoftlab.stegocam:emojiCompatEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight ng.dsoftlab.stegocam:firstBaselineToTopHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily ng.dsoftlab.stegocam:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontVariationSettings ng.dsoftlab.stegocam:fontVariationSettings}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight ng.dsoftlab.stegocam:lastBaselineToBottomHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lineHeight ng.dsoftlab.stegocam:lineHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps ng.dsoftlab.stegocam:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textLocale ng.dsoftlab.stegocam:textLocale}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_autoSizeMaxTextSize
@@ -4864,12 +4892,12 @@ public final class R {
      * @see #AppCompatTextView_textLocale
      */
     public static final int[] AppCompatTextView={
-      0x01010034, 0x7f03002e, 0x7f03002f, 0x7f030030, 
-      0x7f030031, 0x7f030032, 0x7f030072, 0x7f030073, 
-      0x7f030074, 0x7f030075, 0x7f030077, 0x7f030078, 
-      0x7f030079, 0x7f03007a, 0x7f030083, 0x7f030088, 
-      0x7f03008a, 0x7f030093, 0x7f0300a6, 0x7f0300ae, 
-      0x7f030103, 0x7f03010e
+      0x01010034, 0x7f04002e, 0x7f04002f, 0x7f040030, 
+      0x7f040031, 0x7f040032, 0x7f040072, 0x7f040073, 
+      0x7f040074, 0x7f040075, 0x7f040077, 0x7f040078, 
+      0x7f040079, 0x7f04007a, 0x7f040083, 0x7f040088, 
+      0x7f04008a, 0x7f040093, 0x7f0400a6, 0x7f0400ae, 
+      0x7f040103, 0x7f04010e
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
@@ -4884,7 +4912,7 @@ public final class R {
      */
     public static final int AppCompatTextView_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#autoSizeMaxTextSize}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#autoSizeMaxTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4893,11 +4921,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:autoSizeMaxTextSize
+     * @attr name ng.dsoftlab.stegocam:autoSizeMaxTextSize
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#autoSizeMinTextSize}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#autoSizeMinTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4906,11 +4934,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:autoSizeMinTextSize
+     * @attr name ng.dsoftlab.stegocam:autoSizeMinTextSize
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#autoSizePresetSizes}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#autoSizePresetSizes}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4918,11 +4946,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:autoSizePresetSizes
+     * @attr name ng.dsoftlab.stegocam:autoSizePresetSizes
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#autoSizeStepGranularity}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#autoSizeStepGranularity}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4931,11 +4959,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:autoSizeStepGranularity
+     * @attr name ng.dsoftlab.stegocam:autoSizeStepGranularity
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#autoSizeTextType}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#autoSizeTextType}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -4949,11 +4977,11 @@ public final class R {
      * container.</td></tr>
      * </table>
      *
-     * @attr name b4a.example:autoSizeTextType
+     * @attr name ng.dsoftlab.stegocam:autoSizeTextType
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#drawableBottomCompat}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#drawableBottomCompat}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4961,11 +4989,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:drawableBottomCompat
+     * @attr name ng.dsoftlab.stegocam:drawableBottomCompat
      */
     public static final int AppCompatTextView_drawableBottomCompat=6;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#drawableEndCompat}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#drawableEndCompat}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4973,11 +5001,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:drawableEndCompat
+     * @attr name ng.dsoftlab.stegocam:drawableEndCompat
      */
     public static final int AppCompatTextView_drawableEndCompat=7;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#drawableLeftCompat}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#drawableLeftCompat}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4985,11 +5013,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:drawableLeftCompat
+     * @attr name ng.dsoftlab.stegocam:drawableLeftCompat
      */
     public static final int AppCompatTextView_drawableLeftCompat=8;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#drawableRightCompat}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#drawableRightCompat}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4997,11 +5025,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:drawableRightCompat
+     * @attr name ng.dsoftlab.stegocam:drawableRightCompat
      */
     public static final int AppCompatTextView_drawableRightCompat=9;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#drawableStartCompat}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#drawableStartCompat}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5009,22 +5037,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:drawableStartCompat
+     * @attr name ng.dsoftlab.stegocam:drawableStartCompat
      */
     public static final int AppCompatTextView_drawableStartCompat=10;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#drawableTint}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#drawableTint}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:drawableTint
+     * @attr name ng.dsoftlab.stegocam:drawableTint
      */
     public static final int AppCompatTextView_drawableTint=11;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#drawableTintMode}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#drawableTintMode}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -5046,11 +5074,11 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name b4a.example:drawableTintMode
+     * @attr name ng.dsoftlab.stegocam:drawableTintMode
      */
     public static final int AppCompatTextView_drawableTintMode=12;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#drawableTopCompat}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#drawableTopCompat}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5058,21 +5086,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:drawableTopCompat
+     * @attr name ng.dsoftlab.stegocam:drawableTopCompat
      */
     public static final int AppCompatTextView_drawableTopCompat=13;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#emojiCompatEnabled}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#emojiCompatEnabled}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:emojiCompatEnabled
+     * @attr name ng.dsoftlab.stegocam:emojiCompatEnabled
      */
     public static final int AppCompatTextView_emojiCompatEnabled=14;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#firstBaselineToTopHeight}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#firstBaselineToTopHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5081,31 +5109,31 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:firstBaselineToTopHeight
+     * @attr name ng.dsoftlab.stegocam:firstBaselineToTopHeight
      */
     public static final int AppCompatTextView_firstBaselineToTopHeight=15;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fontFamily}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:fontFamily
+     * @attr name ng.dsoftlab.stegocam:fontFamily
      */
     public static final int AppCompatTextView_fontFamily=16;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fontVariationSettings}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fontVariationSettings}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:fontVariationSettings
+     * @attr name ng.dsoftlab.stegocam:fontVariationSettings
      */
     public static final int AppCompatTextView_fontVariationSettings=17;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#lastBaselineToBottomHeight}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#lastBaselineToBottomHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5114,11 +5142,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:lastBaselineToBottomHeight
+     * @attr name ng.dsoftlab.stegocam:lastBaselineToBottomHeight
      */
     public static final int AppCompatTextView_lastBaselineToBottomHeight=18;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#lineHeight}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#lineHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5127,11 +5155,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:lineHeight
+     * @attr name ng.dsoftlab.stegocam:lineHeight
      */
     public static final int AppCompatTextView_lineHeight=19;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5141,17 +5169,17 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:textAllCaps
+     * @attr name ng.dsoftlab.stegocam:textAllCaps
      */
     public static final int AppCompatTextView_textAllCaps=20;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#textLocale}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#textLocale}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:textLocale
+     * @attr name ng.dsoftlab.stegocam:textLocale
      */
     public static final int AppCompatTextView_textLocale=21;
     /**
@@ -5163,131 +5191,131 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider b4a.example:actionBarDivider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground b4a.example:actionBarItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme b4a.example:actionBarPopupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize b4a.example:actionBarSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle b4a.example:actionBarSplitStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle b4a.example:actionBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle b4a.example:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle b4a.example:actionBarTabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle b4a.example:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme b4a.example:actionBarTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme b4a.example:actionBarWidgetTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle b4a.example:actionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle b4a.example:actionDropDownStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance b4a.example:actionMenuTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor b4a.example:actionMenuTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground b4a.example:actionModeBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle b4a.example:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseContentDescription b4a.example:actionModeCloseContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable b4a.example:actionModeCloseDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable b4a.example:actionModeCopyDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable b4a.example:actionModeCutDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable b4a.example:actionModeFindDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable b4a.example:actionModePasteDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle b4a.example:actionModePopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable b4a.example:actionModeSelectAllDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable b4a.example:actionModeShareDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground b4a.example:actionModeSplitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle b4a.example:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeTheme b4a.example:actionModeTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable b4a.example:actionModeWebSearchDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle b4a.example:actionOverflowButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle b4a.example:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle b4a.example:activityChooserViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle b4a.example:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons b4a.example:alertDialogCenterButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle b4a.example:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme b4a.example:alertDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle b4a.example:autoCompleteTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle b4a.example:borderlessButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle b4a.example:buttonBarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle b4a.example:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle b4a.example:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle b4a.example:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle b4a.example:buttonBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle b4a.example:buttonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall b4a.example:buttonStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle b4a.example:checkboxStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle b4a.example:checkedTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent b4a.example:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating b4a.example:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal b4a.example:colorButtonNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated b4a.example:colorControlActivated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight b4a.example:colorControlHighlight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal b4a.example:colorControlNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError b4a.example:colorError}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary b4a.example:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark b4a.example:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal b4a.example:colorSwitchThumbNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground b4a.example:controlBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius b4a.example:dialogCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding b4a.example:dialogPreferredPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme b4a.example:dialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal b4a.example:dividerHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical b4a.example:dividerVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle b4a.example:dropDownListViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight b4a.example:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground b4a.example:editTextBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor b4a.example:editTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle b4a.example:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator b4a.example:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle b4a.example:imageButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator b4a.example:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceIndicatorMultipleAnimated b4a.example:listChoiceIndicatorMultipleAnimated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceIndicatorSingleAnimated b4a.example:listChoiceIndicatorSingleAnimated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog b4a.example:listDividerAlertDialog}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle b4a.example:listMenuViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle b4a.example:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight b4a.example:listPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge b4a.example:listPreferredItemHeightLarge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall b4a.example:listPreferredItemHeightSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingEnd b4a.example:listPreferredItemPaddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft b4a.example:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight b4a.example:listPreferredItemPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingStart b4a.example:listPreferredItemPaddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground b4a.example:panelBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme b4a.example:panelMenuListTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth b4a.example:panelMenuListWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle b4a.example:popupMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle b4a.example:popupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle b4a.example:radioButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle b4a.example:ratingBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator b4a.example:ratingBarStyleIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall b4a.example:ratingBarStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle b4a.example:searchViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle b4a.example:seekBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground b4a.example:selectableItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless b4a.example:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle b4a.example:spinnerDropDownItemStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle b4a.example:spinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle b4a.example:switchStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu b4a.example:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem b4a.example:textAppearanceListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary b4a.example:textAppearanceListItemSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall b4a.example:textAppearanceListItemSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader b4a.example:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle b4a.example:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle b4a.example:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu b4a.example:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem b4a.example:textColorAlertDialogListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl b4a.example:textColorSearchUrl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle b4a.example:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle b4a.example:toolbarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor b4a.example:tooltipForegroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground b4a.example:tooltipFrameBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass b4a.example:viewInflaterClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar b4a.example:windowActionBar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay b4a.example:windowActionBarOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay b4a.example:windowActionModeOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor b4a.example:windowFixedHeightMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor b4a.example:windowFixedHeightMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor b4a.example:windowFixedWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor b4a.example:windowFixedWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor b4a.example:windowMinWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor b4a.example:windowMinWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle b4a.example:windowNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider ng.dsoftlab.stegocam:actionBarDivider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground ng.dsoftlab.stegocam:actionBarItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme ng.dsoftlab.stegocam:actionBarPopupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize ng.dsoftlab.stegocam:actionBarSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle ng.dsoftlab.stegocam:actionBarSplitStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle ng.dsoftlab.stegocam:actionBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle ng.dsoftlab.stegocam:actionBarTabBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle ng.dsoftlab.stegocam:actionBarTabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle ng.dsoftlab.stegocam:actionBarTabTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme ng.dsoftlab.stegocam:actionBarTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme ng.dsoftlab.stegocam:actionBarWidgetTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle ng.dsoftlab.stegocam:actionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle ng.dsoftlab.stegocam:actionDropDownStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance ng.dsoftlab.stegocam:actionMenuTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor ng.dsoftlab.stegocam:actionMenuTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground ng.dsoftlab.stegocam:actionModeBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle ng.dsoftlab.stegocam:actionModeCloseButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseContentDescription ng.dsoftlab.stegocam:actionModeCloseContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable ng.dsoftlab.stegocam:actionModeCloseDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable ng.dsoftlab.stegocam:actionModeCopyDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable ng.dsoftlab.stegocam:actionModeCutDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable ng.dsoftlab.stegocam:actionModeFindDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable ng.dsoftlab.stegocam:actionModePasteDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle ng.dsoftlab.stegocam:actionModePopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable ng.dsoftlab.stegocam:actionModeSelectAllDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable ng.dsoftlab.stegocam:actionModeShareDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground ng.dsoftlab.stegocam:actionModeSplitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle ng.dsoftlab.stegocam:actionModeStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeTheme ng.dsoftlab.stegocam:actionModeTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable ng.dsoftlab.stegocam:actionModeWebSearchDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle ng.dsoftlab.stegocam:actionOverflowButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle ng.dsoftlab.stegocam:actionOverflowMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle ng.dsoftlab.stegocam:activityChooserViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle ng.dsoftlab.stegocam:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons ng.dsoftlab.stegocam:alertDialogCenterButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle ng.dsoftlab.stegocam:alertDialogStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme ng.dsoftlab.stegocam:alertDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle ng.dsoftlab.stegocam:autoCompleteTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle ng.dsoftlab.stegocam:borderlessButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle ng.dsoftlab.stegocam:buttonBarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle ng.dsoftlab.stegocam:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle ng.dsoftlab.stegocam:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle ng.dsoftlab.stegocam:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle ng.dsoftlab.stegocam:buttonBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle ng.dsoftlab.stegocam:buttonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall ng.dsoftlab.stegocam:buttonStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle ng.dsoftlab.stegocam:checkboxStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle ng.dsoftlab.stegocam:checkedTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent ng.dsoftlab.stegocam:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating ng.dsoftlab.stegocam:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal ng.dsoftlab.stegocam:colorButtonNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated ng.dsoftlab.stegocam:colorControlActivated}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight ng.dsoftlab.stegocam:colorControlHighlight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal ng.dsoftlab.stegocam:colorControlNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError ng.dsoftlab.stegocam:colorError}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary ng.dsoftlab.stegocam:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark ng.dsoftlab.stegocam:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal ng.dsoftlab.stegocam:colorSwitchThumbNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground ng.dsoftlab.stegocam:controlBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius ng.dsoftlab.stegocam:dialogCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding ng.dsoftlab.stegocam:dialogPreferredPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme ng.dsoftlab.stegocam:dialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal ng.dsoftlab.stegocam:dividerHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical ng.dsoftlab.stegocam:dividerVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle ng.dsoftlab.stegocam:dropDownListViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight ng.dsoftlab.stegocam:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground ng.dsoftlab.stegocam:editTextBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor ng.dsoftlab.stegocam:editTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle ng.dsoftlab.stegocam:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator ng.dsoftlab.stegocam:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle ng.dsoftlab.stegocam:imageButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator ng.dsoftlab.stegocam:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceIndicatorMultipleAnimated ng.dsoftlab.stegocam:listChoiceIndicatorMultipleAnimated}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceIndicatorSingleAnimated ng.dsoftlab.stegocam:listChoiceIndicatorSingleAnimated}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog ng.dsoftlab.stegocam:listDividerAlertDialog}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle ng.dsoftlab.stegocam:listMenuViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle ng.dsoftlab.stegocam:listPopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight ng.dsoftlab.stegocam:listPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge ng.dsoftlab.stegocam:listPreferredItemHeightLarge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall ng.dsoftlab.stegocam:listPreferredItemHeightSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingEnd ng.dsoftlab.stegocam:listPreferredItemPaddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft ng.dsoftlab.stegocam:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight ng.dsoftlab.stegocam:listPreferredItemPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingStart ng.dsoftlab.stegocam:listPreferredItemPaddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground ng.dsoftlab.stegocam:panelBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme ng.dsoftlab.stegocam:panelMenuListTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth ng.dsoftlab.stegocam:panelMenuListWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle ng.dsoftlab.stegocam:popupMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle ng.dsoftlab.stegocam:popupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle ng.dsoftlab.stegocam:radioButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle ng.dsoftlab.stegocam:ratingBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator ng.dsoftlab.stegocam:ratingBarStyleIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall ng.dsoftlab.stegocam:ratingBarStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle ng.dsoftlab.stegocam:searchViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle ng.dsoftlab.stegocam:seekBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground ng.dsoftlab.stegocam:selectableItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless ng.dsoftlab.stegocam:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle ng.dsoftlab.stegocam:spinnerDropDownItemStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle ng.dsoftlab.stegocam:spinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle ng.dsoftlab.stegocam:switchStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu ng.dsoftlab.stegocam:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem ng.dsoftlab.stegocam:textAppearanceListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary ng.dsoftlab.stegocam:textAppearanceListItemSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall ng.dsoftlab.stegocam:textAppearanceListItemSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader ng.dsoftlab.stegocam:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle ng.dsoftlab.stegocam:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle ng.dsoftlab.stegocam:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu ng.dsoftlab.stegocam:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem ng.dsoftlab.stegocam:textColorAlertDialogListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl ng.dsoftlab.stegocam:textColorSearchUrl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle ng.dsoftlab.stegocam:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle ng.dsoftlab.stegocam:toolbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor ng.dsoftlab.stegocam:tooltipForegroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground ng.dsoftlab.stegocam:tooltipFrameBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass ng.dsoftlab.stegocam:viewInflaterClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar ng.dsoftlab.stegocam:windowActionBar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay ng.dsoftlab.stegocam:windowActionBarOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay ng.dsoftlab.stegocam:windowActionModeOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor ng.dsoftlab.stegocam:windowFixedHeightMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor ng.dsoftlab.stegocam:windowFixedHeightMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor ng.dsoftlab.stegocam:windowFixedWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor ng.dsoftlab.stegocam:windowFixedWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor ng.dsoftlab.stegocam:windowMinWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor ng.dsoftlab.stegocam:windowMinWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle ng.dsoftlab.stegocam:windowNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -5418,38 +5446,38 @@ public final class R {
      * @see #AppCompatTheme_windowNoTitle
      */
     public static final int[] AppCompatTheme={
-      0x01010057, 0x010100ae, 0x7f030000, 0x7f030001, 
-      0x7f030002, 0x7f030003, 0x7f030004, 0x7f030005, 
-      0x7f030006, 0x7f030007, 0x7f030008, 0x7f030009, 
-      0x7f03000a, 0x7f03000b, 0x7f03000c, 0x7f03000e, 
-      0x7f03000f, 0x7f030010, 0x7f030011, 0x7f030012, 
-      0x7f030013, 0x7f030014, 0x7f030015, 0x7f030016, 
-      0x7f030017, 0x7f030018, 0x7f030019, 0x7f03001a, 
-      0x7f03001b, 0x7f03001c, 0x7f03001d, 0x7f03001e, 
-      0x7f03001f, 0x7f030020, 0x7f030023, 0x7f030024, 
-      0x7f030025, 0x7f030026, 0x7f030027, 0x7f03002d, 
-      0x7f03003c, 0x7f03003d, 0x7f03003e, 0x7f03003f, 
-      0x7f030040, 0x7f030041, 0x7f030046, 0x7f030047, 
-      0x7f03004d, 0x7f03004e, 0x7f030054, 0x7f030055, 
-      0x7f030056, 0x7f030057, 0x7f030058, 0x7f030059, 
-      0x7f03005a, 0x7f03005b, 0x7f03005c, 0x7f03005d, 
-      0x7f030066, 0x7f03006a, 0x7f03006b, 0x7f03006c, 
-      0x7f03006f, 0x7f030071, 0x7f03007d, 0x7f03007e, 
-      0x7f03007f, 0x7f030080, 0x7f030081, 0x7f030099, 
-      0x7f03009f, 0x7f0300af, 0x7f0300b0, 0x7f0300b1, 
-      0x7f0300b2, 0x7f0300b5, 0x7f0300b6, 0x7f0300b7, 
-      0x7f0300b8, 0x7f0300b9, 0x7f0300ba, 0x7f0300bb, 
-      0x7f0300bc, 0x7f0300bd, 0x7f0300d0, 0x7f0300d1, 
-      0x7f0300d2, 0x7f0300d3, 0x7f0300d5, 0x7f0300dc, 
-      0x7f0300dd, 0x7f0300de, 0x7f0300df, 0x7f0300e2, 
-      0x7f0300e3, 0x7f0300e4, 0x7f0300e5, 0x7f0300f1, 
-      0x7f0300f2, 0x7f030101, 0x7f030104, 0x7f030105, 
-      0x7f030106, 0x7f030107, 0x7f030108, 0x7f030109, 
-      0x7f03010a, 0x7f03010b, 0x7f03010c, 0x7f03010d, 
-      0x7f030123, 0x7f030124, 0x7f030125, 0x7f030126, 
-      0x7f030130, 0x7f030132, 0x7f030133, 0x7f030134, 
-      0x7f030135, 0x7f030136, 0x7f030137, 0x7f030138, 
-      0x7f030139, 0x7f03013a, 0x7f03013b
+      0x01010057, 0x010100ae, 0x7f040000, 0x7f040001, 
+      0x7f040002, 0x7f040003, 0x7f040004, 0x7f040005, 
+      0x7f040006, 0x7f040007, 0x7f040008, 0x7f040009, 
+      0x7f04000a, 0x7f04000b, 0x7f04000c, 0x7f04000e, 
+      0x7f04000f, 0x7f040010, 0x7f040011, 0x7f040012, 
+      0x7f040013, 0x7f040014, 0x7f040015, 0x7f040016, 
+      0x7f040017, 0x7f040018, 0x7f040019, 0x7f04001a, 
+      0x7f04001b, 0x7f04001c, 0x7f04001d, 0x7f04001e, 
+      0x7f04001f, 0x7f040020, 0x7f040023, 0x7f040024, 
+      0x7f040025, 0x7f040026, 0x7f040027, 0x7f04002d, 
+      0x7f04003c, 0x7f04003d, 0x7f04003e, 0x7f04003f, 
+      0x7f040040, 0x7f040041, 0x7f040046, 0x7f040047, 
+      0x7f04004d, 0x7f04004e, 0x7f040054, 0x7f040055, 
+      0x7f040056, 0x7f040057, 0x7f040058, 0x7f040059, 
+      0x7f04005a, 0x7f04005b, 0x7f04005c, 0x7f04005d, 
+      0x7f040066, 0x7f04006a, 0x7f04006b, 0x7f04006c, 
+      0x7f04006f, 0x7f040071, 0x7f04007d, 0x7f04007e, 
+      0x7f04007f, 0x7f040080, 0x7f040081, 0x7f040099, 
+      0x7f04009f, 0x7f0400af, 0x7f0400b0, 0x7f0400b1, 
+      0x7f0400b2, 0x7f0400b5, 0x7f0400b6, 0x7f0400b7, 
+      0x7f0400b8, 0x7f0400b9, 0x7f0400ba, 0x7f0400bb, 
+      0x7f0400bc, 0x7f0400bd, 0x7f0400d0, 0x7f0400d1, 
+      0x7f0400d2, 0x7f0400d3, 0x7f0400d5, 0x7f0400dc, 
+      0x7f0400dd, 0x7f0400de, 0x7f0400df, 0x7f0400e2, 
+      0x7f0400e3, 0x7f0400e4, 0x7f0400e5, 0x7f0400f1, 
+      0x7f0400f2, 0x7f040101, 0x7f040104, 0x7f040105, 
+      0x7f040106, 0x7f040107, 0x7f040108, 0x7f040109, 
+      0x7f04010a, 0x7f04010b, 0x7f04010c, 0x7f04010d, 
+      0x7f040123, 0x7f040124, 0x7f040125, 0x7f040126, 
+      0x7f040130, 0x7f040132, 0x7f040133, 0x7f040134, 
+      0x7f040135, 0x7f040136, 0x7f040137, 0x7f040138, 
+      0x7f040139, 0x7f04013a, 0x7f04013b
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#windowIsFloating}
@@ -5474,7 +5502,7 @@ public final class R {
      */
     public static final int AppCompatTheme_android_windowAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionBarDivider}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionBarDivider}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5482,11 +5510,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionBarDivider
+     * @attr name ng.dsoftlab.stegocam:actionBarDivider
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionBarItemBackground}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionBarItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5494,11 +5522,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionBarItemBackground
+     * @attr name ng.dsoftlab.stegocam:actionBarItemBackground
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionBarPopupTheme}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionBarPopupTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5506,11 +5534,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionBarPopupTheme
+     * @attr name ng.dsoftlab.stegocam:actionBarPopupTheme
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionBarSize}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionBarSize}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5527,11 +5555,11 @@ public final class R {
      * <tr><td>wrap_content</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name b4a.example:actionBarSize
+     * @attr name ng.dsoftlab.stegocam:actionBarSize
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionBarSplitStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionBarSplitStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5539,11 +5567,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionBarSplitStyle
+     * @attr name ng.dsoftlab.stegocam:actionBarSplitStyle
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionBarStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5551,11 +5579,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionBarStyle
+     * @attr name ng.dsoftlab.stegocam:actionBarStyle
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionBarTabBarStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionBarTabBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5563,11 +5591,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionBarTabBarStyle
+     * @attr name ng.dsoftlab.stegocam:actionBarTabBarStyle
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionBarTabStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionBarTabStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5575,11 +5603,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionBarTabStyle
+     * @attr name ng.dsoftlab.stegocam:actionBarTabStyle
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionBarTabTextStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionBarTabTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5587,11 +5615,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionBarTabTextStyle
+     * @attr name ng.dsoftlab.stegocam:actionBarTabTextStyle
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionBarTheme}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionBarTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5599,11 +5627,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionBarTheme
+     * @attr name ng.dsoftlab.stegocam:actionBarTheme
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionBarWidgetTheme}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionBarWidgetTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5611,11 +5639,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionBarWidgetTheme
+     * @attr name ng.dsoftlab.stegocam:actionBarWidgetTheme
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionButtonStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5623,11 +5651,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionButtonStyle
+     * @attr name ng.dsoftlab.stegocam:actionButtonStyle
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionDropDownStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionDropDownStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5635,11 +5663,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionDropDownStyle
+     * @attr name ng.dsoftlab.stegocam:actionDropDownStyle
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionMenuTextAppearance}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionMenuTextAppearance}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5647,11 +5675,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionMenuTextAppearance
+     * @attr name ng.dsoftlab.stegocam:actionMenuTextAppearance
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionMenuTextColor}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionMenuTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5662,11 +5690,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:actionMenuTextColor
+     * @attr name ng.dsoftlab.stegocam:actionMenuTextColor
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionModeBackground}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionModeBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5674,11 +5702,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionModeBackground
+     * @attr name ng.dsoftlab.stegocam:actionModeBackground
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionModeCloseButtonStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionModeCloseButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5686,21 +5714,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionModeCloseButtonStyle
+     * @attr name ng.dsoftlab.stegocam:actionModeCloseButtonStyle
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionModeCloseContentDescription}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionModeCloseContentDescription}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:actionModeCloseContentDescription
+     * @attr name ng.dsoftlab.stegocam:actionModeCloseContentDescription
      */
     public static final int AppCompatTheme_actionModeCloseContentDescription=19;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionModeCloseDrawable}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionModeCloseDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5708,11 +5736,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionModeCloseDrawable
+     * @attr name ng.dsoftlab.stegocam:actionModeCloseDrawable
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=20;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionModeCopyDrawable}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionModeCopyDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5720,11 +5748,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionModeCopyDrawable
+     * @attr name ng.dsoftlab.stegocam:actionModeCopyDrawable
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=21;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionModeCutDrawable}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionModeCutDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5732,11 +5760,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionModeCutDrawable
+     * @attr name ng.dsoftlab.stegocam:actionModeCutDrawable
      */
     public static final int AppCompatTheme_actionModeCutDrawable=22;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionModeFindDrawable}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionModeFindDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5744,11 +5772,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionModeFindDrawable
+     * @attr name ng.dsoftlab.stegocam:actionModeFindDrawable
      */
     public static final int AppCompatTheme_actionModeFindDrawable=23;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionModePasteDrawable}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionModePasteDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5756,11 +5784,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionModePasteDrawable
+     * @attr name ng.dsoftlab.stegocam:actionModePasteDrawable
      */
     public static final int AppCompatTheme_actionModePasteDrawable=24;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionModePopupWindowStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionModePopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5768,11 +5796,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionModePopupWindowStyle
+     * @attr name ng.dsoftlab.stegocam:actionModePopupWindowStyle
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=25;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionModeSelectAllDrawable}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionModeSelectAllDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5780,11 +5808,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionModeSelectAllDrawable
+     * @attr name ng.dsoftlab.stegocam:actionModeSelectAllDrawable
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=26;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionModeShareDrawable}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionModeShareDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5792,11 +5820,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionModeShareDrawable
+     * @attr name ng.dsoftlab.stegocam:actionModeShareDrawable
      */
     public static final int AppCompatTheme_actionModeShareDrawable=27;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionModeSplitBackground}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionModeSplitBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5804,11 +5832,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionModeSplitBackground
+     * @attr name ng.dsoftlab.stegocam:actionModeSplitBackground
      */
     public static final int AppCompatTheme_actionModeSplitBackground=28;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionModeStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionModeStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5816,11 +5844,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionModeStyle
+     * @attr name ng.dsoftlab.stegocam:actionModeStyle
      */
     public static final int AppCompatTheme_actionModeStyle=29;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionModeTheme}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionModeTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5828,11 +5856,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionModeTheme
+     * @attr name ng.dsoftlab.stegocam:actionModeTheme
      */
     public static final int AppCompatTheme_actionModeTheme=30;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionModeWebSearchDrawable}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionModeWebSearchDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5840,11 +5868,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionModeWebSearchDrawable
+     * @attr name ng.dsoftlab.stegocam:actionModeWebSearchDrawable
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=31;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionOverflowButtonStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionOverflowButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5852,11 +5880,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionOverflowButtonStyle
+     * @attr name ng.dsoftlab.stegocam:actionOverflowButtonStyle
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionOverflowMenuStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionOverflowMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5864,11 +5892,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionOverflowMenuStyle
+     * @attr name ng.dsoftlab.stegocam:actionOverflowMenuStyle
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=33;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#activityChooserViewStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#activityChooserViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5876,11 +5904,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:activityChooserViewStyle
+     * @attr name ng.dsoftlab.stegocam:activityChooserViewStyle
      */
     public static final int AppCompatTheme_activityChooserViewStyle=34;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#alertDialogButtonGroupStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#alertDialogButtonGroupStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5888,21 +5916,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:alertDialogButtonGroupStyle
+     * @attr name ng.dsoftlab.stegocam:alertDialogButtonGroupStyle
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#alertDialogCenterButtons}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#alertDialogCenterButtons}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:alertDialogCenterButtons
+     * @attr name ng.dsoftlab.stegocam:alertDialogCenterButtons
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=36;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#alertDialogStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#alertDialogStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5910,11 +5938,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:alertDialogStyle
+     * @attr name ng.dsoftlab.stegocam:alertDialogStyle
      */
     public static final int AppCompatTheme_alertDialogStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#alertDialogTheme}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#alertDialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5922,11 +5950,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:alertDialogTheme
+     * @attr name ng.dsoftlab.stegocam:alertDialogTheme
      */
     public static final int AppCompatTheme_alertDialogTheme=38;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#autoCompleteTextViewStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#autoCompleteTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5934,11 +5962,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:autoCompleteTextViewStyle
+     * @attr name ng.dsoftlab.stegocam:autoCompleteTextViewStyle
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=39;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#borderlessButtonStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#borderlessButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5946,11 +5974,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:borderlessButtonStyle
+     * @attr name ng.dsoftlab.stegocam:borderlessButtonStyle
      */
     public static final int AppCompatTheme_borderlessButtonStyle=40;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#buttonBarButtonStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#buttonBarButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5958,11 +5986,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:buttonBarButtonStyle
+     * @attr name ng.dsoftlab.stegocam:buttonBarButtonStyle
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=41;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#buttonBarNegativeButtonStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#buttonBarNegativeButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5970,11 +5998,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:buttonBarNegativeButtonStyle
+     * @attr name ng.dsoftlab.stegocam:buttonBarNegativeButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=42;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#buttonBarNeutralButtonStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#buttonBarNeutralButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5982,11 +6010,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:buttonBarNeutralButtonStyle
+     * @attr name ng.dsoftlab.stegocam:buttonBarNeutralButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=43;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#buttonBarPositiveButtonStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#buttonBarPositiveButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5994,11 +6022,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:buttonBarPositiveButtonStyle
+     * @attr name ng.dsoftlab.stegocam:buttonBarPositiveButtonStyle
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#buttonBarStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#buttonBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6006,11 +6034,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:buttonBarStyle
+     * @attr name ng.dsoftlab.stegocam:buttonBarStyle
      */
     public static final int AppCompatTheme_buttonBarStyle=45;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#buttonStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#buttonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6018,11 +6046,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:buttonStyle
+     * @attr name ng.dsoftlab.stegocam:buttonStyle
      */
     public static final int AppCompatTheme_buttonStyle=46;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#buttonStyleSmall}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#buttonStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6030,11 +6058,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:buttonStyleSmall
+     * @attr name ng.dsoftlab.stegocam:buttonStyleSmall
      */
     public static final int AppCompatTheme_buttonStyleSmall=47;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#checkboxStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#checkboxStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6042,11 +6070,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:checkboxStyle
+     * @attr name ng.dsoftlab.stegocam:checkboxStyle
      */
     public static final int AppCompatTheme_checkboxStyle=48;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#checkedTextViewStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#checkedTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6054,77 +6082,77 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:checkedTextViewStyle
+     * @attr name ng.dsoftlab.stegocam:checkedTextViewStyle
      */
     public static final int AppCompatTheme_checkedTextViewStyle=49;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#colorAccent}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:colorAccent
+     * @attr name ng.dsoftlab.stegocam:colorAccent
      */
     public static final int AppCompatTheme_colorAccent=50;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:colorBackgroundFloating
+     * @attr name ng.dsoftlab.stegocam:colorBackgroundFloating
      */
     public static final int AppCompatTheme_colorBackgroundFloating=51;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#colorButtonNormal}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#colorButtonNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:colorButtonNormal
+     * @attr name ng.dsoftlab.stegocam:colorButtonNormal
      */
     public static final int AppCompatTheme_colorButtonNormal=52;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#colorControlActivated}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#colorControlActivated}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:colorControlActivated
+     * @attr name ng.dsoftlab.stegocam:colorControlActivated
      */
     public static final int AppCompatTheme_colorControlActivated=53;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#colorControlHighlight}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#colorControlHighlight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:colorControlHighlight
+     * @attr name ng.dsoftlab.stegocam:colorControlHighlight
      */
     public static final int AppCompatTheme_colorControlHighlight=54;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#colorControlNormal}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#colorControlNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:colorControlNormal
+     * @attr name ng.dsoftlab.stegocam:colorControlNormal
      */
     public static final int AppCompatTheme_colorControlNormal=55;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#colorError}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#colorError}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6135,44 +6163,44 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:colorError
+     * @attr name ng.dsoftlab.stegocam:colorError
      */
     public static final int AppCompatTheme_colorError=56;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:colorPrimary
+     * @attr name ng.dsoftlab.stegocam:colorPrimary
      */
     public static final int AppCompatTheme_colorPrimary=57;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:colorPrimaryDark
+     * @attr name ng.dsoftlab.stegocam:colorPrimaryDark
      */
     public static final int AppCompatTheme_colorPrimaryDark=58;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#colorSwitchThumbNormal}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#colorSwitchThumbNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:colorSwitchThumbNormal
+     * @attr name ng.dsoftlab.stegocam:colorSwitchThumbNormal
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=59;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#controlBackground}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#controlBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6180,11 +6208,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:controlBackground
+     * @attr name ng.dsoftlab.stegocam:controlBackground
      */
     public static final int AppCompatTheme_controlBackground=60;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#dialogCornerRadius}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#dialogCornerRadius}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6193,11 +6221,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:dialogCornerRadius
+     * @attr name ng.dsoftlab.stegocam:dialogCornerRadius
      */
     public static final int AppCompatTheme_dialogCornerRadius=61;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#dialogPreferredPadding}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#dialogPreferredPadding}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6206,11 +6234,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:dialogPreferredPadding
+     * @attr name ng.dsoftlab.stegocam:dialogPreferredPadding
      */
     public static final int AppCompatTheme_dialogPreferredPadding=62;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#dialogTheme}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#dialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6218,11 +6246,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:dialogTheme
+     * @attr name ng.dsoftlab.stegocam:dialogTheme
      */
     public static final int AppCompatTheme_dialogTheme=63;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#dividerHorizontal}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#dividerHorizontal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6230,11 +6258,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:dividerHorizontal
+     * @attr name ng.dsoftlab.stegocam:dividerHorizontal
      */
     public static final int AppCompatTheme_dividerHorizontal=64;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#dividerVertical}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#dividerVertical}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6242,11 +6270,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:dividerVertical
+     * @attr name ng.dsoftlab.stegocam:dividerVertical
      */
     public static final int AppCompatTheme_dividerVertical=65;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#dropDownListViewStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#dropDownListViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6254,11 +6282,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:dropDownListViewStyle
+     * @attr name ng.dsoftlab.stegocam:dropDownListViewStyle
      */
     public static final int AppCompatTheme_dropDownListViewStyle=66;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#dropdownListPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#dropdownListPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6267,11 +6295,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:dropdownListPreferredItemHeight
+     * @attr name ng.dsoftlab.stegocam:dropdownListPreferredItemHeight
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=67;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#editTextBackground}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#editTextBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6279,11 +6307,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:editTextBackground
+     * @attr name ng.dsoftlab.stegocam:editTextBackground
      */
     public static final int AppCompatTheme_editTextBackground=68;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#editTextColor}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#editTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6294,11 +6322,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:editTextColor
+     * @attr name ng.dsoftlab.stegocam:editTextColor
      */
     public static final int AppCompatTheme_editTextColor=69;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6306,11 +6334,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:editTextStyle
+     * @attr name ng.dsoftlab.stegocam:editTextStyle
      */
     public static final int AppCompatTheme_editTextStyle=70;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6318,11 +6346,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:homeAsUpIndicator
+     * @attr name ng.dsoftlab.stegocam:homeAsUpIndicator
      */
     public static final int AppCompatTheme_homeAsUpIndicator=71;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#imageButtonStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#imageButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6330,11 +6358,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:imageButtonStyle
+     * @attr name ng.dsoftlab.stegocam:imageButtonStyle
      */
     public static final int AppCompatTheme_imageButtonStyle=72;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#listChoiceBackgroundIndicator}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#listChoiceBackgroundIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6342,11 +6370,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:listChoiceBackgroundIndicator
+     * @attr name ng.dsoftlab.stegocam:listChoiceBackgroundIndicator
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=73;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#listChoiceIndicatorMultipleAnimated}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#listChoiceIndicatorMultipleAnimated}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6354,11 +6382,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:listChoiceIndicatorMultipleAnimated
+     * @attr name ng.dsoftlab.stegocam:listChoiceIndicatorMultipleAnimated
      */
     public static final int AppCompatTheme_listChoiceIndicatorMultipleAnimated=74;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#listChoiceIndicatorSingleAnimated}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#listChoiceIndicatorSingleAnimated}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6366,11 +6394,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:listChoiceIndicatorSingleAnimated
+     * @attr name ng.dsoftlab.stegocam:listChoiceIndicatorSingleAnimated
      */
     public static final int AppCompatTheme_listChoiceIndicatorSingleAnimated=75;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#listDividerAlertDialog}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#listDividerAlertDialog}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6378,11 +6406,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:listDividerAlertDialog
+     * @attr name ng.dsoftlab.stegocam:listDividerAlertDialog
      */
     public static final int AppCompatTheme_listDividerAlertDialog=76;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#listMenuViewStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#listMenuViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6390,11 +6418,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:listMenuViewStyle
+     * @attr name ng.dsoftlab.stegocam:listMenuViewStyle
      */
     public static final int AppCompatTheme_listMenuViewStyle=77;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#listPopupWindowStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#listPopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6402,11 +6430,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:listPopupWindowStyle
+     * @attr name ng.dsoftlab.stegocam:listPopupWindowStyle
      */
     public static final int AppCompatTheme_listPopupWindowStyle=78;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#listPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#listPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6415,11 +6443,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:listPreferredItemHeight
+     * @attr name ng.dsoftlab.stegocam:listPreferredItemHeight
      */
     public static final int AppCompatTheme_listPreferredItemHeight=79;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#listPreferredItemHeightLarge}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#listPreferredItemHeightLarge}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6428,11 +6456,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:listPreferredItemHeightLarge
+     * @attr name ng.dsoftlab.stegocam:listPreferredItemHeightLarge
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=80;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#listPreferredItemHeightSmall}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#listPreferredItemHeightSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6441,11 +6469,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:listPreferredItemHeightSmall
+     * @attr name ng.dsoftlab.stegocam:listPreferredItemHeightSmall
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=81;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#listPreferredItemPaddingEnd}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#listPreferredItemPaddingEnd}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6454,11 +6482,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:listPreferredItemPaddingEnd
+     * @attr name ng.dsoftlab.stegocam:listPreferredItemPaddingEnd
      */
     public static final int AppCompatTheme_listPreferredItemPaddingEnd=82;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#listPreferredItemPaddingLeft}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#listPreferredItemPaddingLeft}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6467,11 +6495,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:listPreferredItemPaddingLeft
+     * @attr name ng.dsoftlab.stegocam:listPreferredItemPaddingLeft
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=83;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#listPreferredItemPaddingRight}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#listPreferredItemPaddingRight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6480,11 +6508,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:listPreferredItemPaddingRight
+     * @attr name ng.dsoftlab.stegocam:listPreferredItemPaddingRight
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=84;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#listPreferredItemPaddingStart}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#listPreferredItemPaddingStart}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6493,11 +6521,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:listPreferredItemPaddingStart
+     * @attr name ng.dsoftlab.stegocam:listPreferredItemPaddingStart
      */
     public static final int AppCompatTheme_listPreferredItemPaddingStart=85;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#panelBackground}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#panelBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6505,11 +6533,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:panelBackground
+     * @attr name ng.dsoftlab.stegocam:panelBackground
      */
     public static final int AppCompatTheme_panelBackground=86;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#panelMenuListTheme}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#panelMenuListTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6517,11 +6545,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:panelMenuListTheme
+     * @attr name ng.dsoftlab.stegocam:panelMenuListTheme
      */
     public static final int AppCompatTheme_panelMenuListTheme=87;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#panelMenuListWidth}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#panelMenuListWidth}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6530,11 +6558,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:panelMenuListWidth
+     * @attr name ng.dsoftlab.stegocam:panelMenuListWidth
      */
     public static final int AppCompatTheme_panelMenuListWidth=88;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#popupMenuStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#popupMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6542,11 +6570,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:popupMenuStyle
+     * @attr name ng.dsoftlab.stegocam:popupMenuStyle
      */
     public static final int AppCompatTheme_popupMenuStyle=89;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#popupWindowStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#popupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6554,11 +6582,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:popupWindowStyle
+     * @attr name ng.dsoftlab.stegocam:popupWindowStyle
      */
     public static final int AppCompatTheme_popupWindowStyle=90;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#radioButtonStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#radioButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6566,11 +6594,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:radioButtonStyle
+     * @attr name ng.dsoftlab.stegocam:radioButtonStyle
      */
     public static final int AppCompatTheme_radioButtonStyle=91;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#ratingBarStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#ratingBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6578,11 +6606,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:ratingBarStyle
+     * @attr name ng.dsoftlab.stegocam:ratingBarStyle
      */
     public static final int AppCompatTheme_ratingBarStyle=92;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#ratingBarStyleIndicator}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#ratingBarStyleIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6590,11 +6618,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:ratingBarStyleIndicator
+     * @attr name ng.dsoftlab.stegocam:ratingBarStyleIndicator
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=93;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#ratingBarStyleSmall}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#ratingBarStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6602,11 +6630,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:ratingBarStyleSmall
+     * @attr name ng.dsoftlab.stegocam:ratingBarStyleSmall
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=94;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#searchViewStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#searchViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6614,11 +6642,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:searchViewStyle
+     * @attr name ng.dsoftlab.stegocam:searchViewStyle
      */
     public static final int AppCompatTheme_searchViewStyle=95;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#seekBarStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#seekBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6626,11 +6654,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:seekBarStyle
+     * @attr name ng.dsoftlab.stegocam:seekBarStyle
      */
     public static final int AppCompatTheme_seekBarStyle=96;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#selectableItemBackground}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#selectableItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6638,11 +6666,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:selectableItemBackground
+     * @attr name ng.dsoftlab.stegocam:selectableItemBackground
      */
     public static final int AppCompatTheme_selectableItemBackground=97;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#selectableItemBackgroundBorderless}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#selectableItemBackgroundBorderless}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6650,11 +6678,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:selectableItemBackgroundBorderless
+     * @attr name ng.dsoftlab.stegocam:selectableItemBackgroundBorderless
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=98;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#spinnerDropDownItemStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#spinnerDropDownItemStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6662,11 +6690,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:spinnerDropDownItemStyle
+     * @attr name ng.dsoftlab.stegocam:spinnerDropDownItemStyle
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=99;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#spinnerStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#spinnerStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6674,11 +6702,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:spinnerStyle
+     * @attr name ng.dsoftlab.stegocam:spinnerStyle
      */
     public static final int AppCompatTheme_spinnerStyle=100;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#switchStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#switchStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6686,11 +6714,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:switchStyle
+     * @attr name ng.dsoftlab.stegocam:switchStyle
      */
     public static final int AppCompatTheme_switchStyle=101;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#textAppearanceLargePopupMenu}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#textAppearanceLargePopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6698,11 +6726,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:textAppearanceLargePopupMenu
+     * @attr name ng.dsoftlab.stegocam:textAppearanceLargePopupMenu
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=102;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#textAppearanceListItem}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#textAppearanceListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6710,11 +6738,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:textAppearanceListItem
+     * @attr name ng.dsoftlab.stegocam:textAppearanceListItem
      */
     public static final int AppCompatTheme_textAppearanceListItem=103;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#textAppearanceListItemSecondary}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#textAppearanceListItemSecondary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6722,11 +6750,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:textAppearanceListItemSecondary
+     * @attr name ng.dsoftlab.stegocam:textAppearanceListItemSecondary
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=104;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#textAppearanceListItemSmall}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#textAppearanceListItemSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6734,11 +6762,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:textAppearanceListItemSmall
+     * @attr name ng.dsoftlab.stegocam:textAppearanceListItemSmall
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=105;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#textAppearancePopupMenuHeader}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#textAppearancePopupMenuHeader}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6746,11 +6774,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:textAppearancePopupMenuHeader
+     * @attr name ng.dsoftlab.stegocam:textAppearancePopupMenuHeader
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=106;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#textAppearanceSearchResultSubtitle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#textAppearanceSearchResultSubtitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6758,11 +6786,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:textAppearanceSearchResultSubtitle
+     * @attr name ng.dsoftlab.stegocam:textAppearanceSearchResultSubtitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=107;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#textAppearanceSearchResultTitle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#textAppearanceSearchResultTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6770,11 +6798,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:textAppearanceSearchResultTitle
+     * @attr name ng.dsoftlab.stegocam:textAppearanceSearchResultTitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=108;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#textAppearanceSmallPopupMenu}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#textAppearanceSmallPopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6782,11 +6810,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:textAppearanceSmallPopupMenu
+     * @attr name ng.dsoftlab.stegocam:textAppearanceSmallPopupMenu
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=109;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#textColorAlertDialogListItem}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#textColorAlertDialogListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6797,11 +6825,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:textColorAlertDialogListItem
+     * @attr name ng.dsoftlab.stegocam:textColorAlertDialogListItem
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=110;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#textColorSearchUrl}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#textColorSearchUrl}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6812,11 +6840,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:textColorSearchUrl
+     * @attr name ng.dsoftlab.stegocam:textColorSearchUrl
      */
     public static final int AppCompatTheme_textColorSearchUrl=111;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#toolbarNavigationButtonStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#toolbarNavigationButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6824,11 +6852,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:toolbarNavigationButtonStyle
+     * @attr name ng.dsoftlab.stegocam:toolbarNavigationButtonStyle
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=112;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#toolbarStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#toolbarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6836,11 +6864,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:toolbarStyle
+     * @attr name ng.dsoftlab.stegocam:toolbarStyle
      */
     public static final int AppCompatTheme_toolbarStyle=113;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#tooltipForegroundColor}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#tooltipForegroundColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6851,11 +6879,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:tooltipForegroundColor
+     * @attr name ng.dsoftlab.stegocam:tooltipForegroundColor
      */
     public static final int AppCompatTheme_tooltipForegroundColor=114;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#tooltipFrameBackground}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#tooltipFrameBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6863,51 +6891,51 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:tooltipFrameBackground
+     * @attr name ng.dsoftlab.stegocam:tooltipFrameBackground
      */
     public static final int AppCompatTheme_tooltipFrameBackground=115;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#viewInflaterClass}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#viewInflaterClass}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:viewInflaterClass
+     * @attr name ng.dsoftlab.stegocam:viewInflaterClass
      */
     public static final int AppCompatTheme_viewInflaterClass=116;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#windowActionBar}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#windowActionBar}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:windowActionBar
+     * @attr name ng.dsoftlab.stegocam:windowActionBar
      */
     public static final int AppCompatTheme_windowActionBar=117;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#windowActionBarOverlay}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#windowActionBarOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:windowActionBarOverlay
+     * @attr name ng.dsoftlab.stegocam:windowActionBarOverlay
      */
     public static final int AppCompatTheme_windowActionBarOverlay=118;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#windowActionModeOverlay}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#windowActionModeOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:windowActionModeOverlay
+     * @attr name ng.dsoftlab.stegocam:windowActionModeOverlay
      */
     public static final int AppCompatTheme_windowActionModeOverlay=119;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#windowFixedHeightMajor}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#windowFixedHeightMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6920,11 +6948,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name b4a.example:windowFixedHeightMajor
+     * @attr name ng.dsoftlab.stegocam:windowFixedHeightMajor
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=120;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#windowFixedHeightMinor}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#windowFixedHeightMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6937,11 +6965,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name b4a.example:windowFixedHeightMinor
+     * @attr name ng.dsoftlab.stegocam:windowFixedHeightMinor
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=121;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#windowFixedWidthMajor}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#windowFixedWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6954,11 +6982,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name b4a.example:windowFixedWidthMajor
+     * @attr name ng.dsoftlab.stegocam:windowFixedWidthMajor
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=122;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#windowFixedWidthMinor}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#windowFixedWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6971,11 +6999,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name b4a.example:windowFixedWidthMinor
+     * @attr name ng.dsoftlab.stegocam:windowFixedWidthMinor
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=123;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#windowMinWidthMajor}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#windowMinWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6988,11 +7016,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name b4a.example:windowMinWidthMajor
+     * @attr name ng.dsoftlab.stegocam:windowMinWidthMajor
      */
     public static final int AppCompatTheme_windowMinWidthMajor=124;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#windowMinWidthMinor}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#windowMinWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7005,17 +7033,17 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name b4a.example:windowMinWidthMinor
+     * @attr name ng.dsoftlab.stegocam:windowMinWidthMinor
      */
     public static final int AppCompatTheme_windowMinWidthMinor=125;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#windowNoTitle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#windowNoTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:windowNoTitle
+     * @attr name ng.dsoftlab.stegocam:windowNoTitle
      */
     public static final int AppCompatTheme_windowNoTitle=126;
     /**
@@ -7025,21 +7053,21 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking b4a.example:allowStacking}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking ng.dsoftlab.stegocam:allowStacking}</code></td><td></td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
      */
     public static final int[] ButtonBarLayout={
-      0x7f030028
+      0x7f040028
     };
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#allowStacking}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#allowStacking}
      * attribute's value can be found in the {@link #ButtonBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:allowStacking
+     * @attr name ng.dsoftlab.stegocam:allowStacking
      */
     public static final int ButtonBarLayout_allowStacking=0;
     /**
@@ -7049,17 +7077,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #Capability_queryPatterns b4a.example:queryPatterns}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Capability_shortcutMatchRequired b4a.example:shortcutMatchRequired}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Capability_queryPatterns ng.dsoftlab.stegocam:queryPatterns}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Capability_shortcutMatchRequired ng.dsoftlab.stegocam:shortcutMatchRequired}</code></td><td></td></tr>
      * </table>
      * @see #Capability_queryPatterns
      * @see #Capability_shortcutMatchRequired
      */
     public static final int[] Capability={
-      0x7f0300db, 0x7f0300ea
+      0x7f0400db, 0x7f0400ea
     };
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#queryPatterns}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#queryPatterns}
      * attribute's value can be found in the {@link #Capability} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7067,17 +7095,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:queryPatterns
+     * @attr name ng.dsoftlab.stegocam:queryPatterns
      */
     public static final int Capability_queryPatterns=0;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#shortcutMatchRequired}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#shortcutMatchRequired}
      * attribute's value can be found in the {@link #Capability} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:shortcutMatchRequired
+     * @attr name ng.dsoftlab.stegocam:shortcutMatchRequired
      */
     public static final int Capability_shortcutMatchRequired=1;
     /**
@@ -7088,9 +7116,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CheckedTextView_android_checkMark android:checkMark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CheckedTextView_checkMarkCompat b4a.example:checkMarkCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CheckedTextView_checkMarkTint b4a.example:checkMarkTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CheckedTextView_checkMarkTintMode b4a.example:checkMarkTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CheckedTextView_checkMarkCompat ng.dsoftlab.stegocam:checkMarkCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CheckedTextView_checkMarkTint ng.dsoftlab.stegocam:checkMarkTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CheckedTextView_checkMarkTintMode ng.dsoftlab.stegocam:checkMarkTintMode}</code></td><td></td></tr>
      * </table>
      * @see #CheckedTextView_android_checkMark
      * @see #CheckedTextView_checkMarkCompat
@@ -7098,7 +7126,7 @@ public final class R {
      * @see #CheckedTextView_checkMarkTintMode
      */
     public static final int[] CheckedTextView={
-      0x01010108, 0x7f03004a, 0x7f03004b, 0x7f03004c
+      0x01010108, 0x7f04004a, 0x7f04004b, 0x7f04004c
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#checkMark}
@@ -7113,7 +7141,7 @@ public final class R {
      */
     public static final int CheckedTextView_android_checkMark=0;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#checkMarkCompat}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#checkMarkCompat}
      * attribute's value can be found in the {@link #CheckedTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7121,22 +7149,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:checkMarkCompat
+     * @attr name ng.dsoftlab.stegocam:checkMarkCompat
      */
     public static final int CheckedTextView_checkMarkCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#checkMarkTint}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#checkMarkTint}
      * attribute's value can be found in the {@link #CheckedTextView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:checkMarkTint
+     * @attr name ng.dsoftlab.stegocam:checkMarkTint
      */
     public static final int CheckedTextView_checkMarkTint=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#checkMarkTintMode}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#checkMarkTintMode}
      * attribute's value can be found in the {@link #CheckedTextView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7158,7 +7186,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name b4a.example:checkMarkTintMode
+     * @attr name ng.dsoftlab.stegocam:checkMarkTintMode
      */
     public static final int CheckedTextView_checkMarkTintMode=3;
     /**
@@ -7171,8 +7199,8 @@ public final class R {
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_lStar android:lStar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha b4a.example:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_lStar b4a.example:lStar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha ng.dsoftlab.stegocam:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_lStar ng.dsoftlab.stegocam:lStar}</code></td><td></td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -7181,8 +7209,8 @@ public final class R {
      * @see #ColorStateListItem_lStar
      */
     public static final int[] ColorStateListItem={
-      0x010101a5, 0x0101031f, 0x01010647, 0x7f030029, 
-      0x7f0300a5
+      0x010101a5, 0x0101031f, 0x01010647, 0x7f040029, 
+      0x7f0400a5
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#color}
@@ -7214,21 +7242,21 @@ public final class R {
      */
     public static final int ColorStateListItem_android_lStar=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#alpha}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#alpha}
      * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name b4a.example:alpha
+     * @attr name ng.dsoftlab.stegocam:alpha
      */
     public static final int ColorStateListItem_alpha=3;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#lStar}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#lStar}
      * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name b4a.example:lStar
+     * @attr name ng.dsoftlab.stegocam:lStar
      */
     public static final int ColorStateListItem_lStar=4;
     /**
@@ -7239,9 +7267,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonCompat b4a.example:buttonCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint b4a.example:buttonTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode b4a.example:buttonTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonCompat ng.dsoftlab.stegocam:buttonCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint ng.dsoftlab.stegocam:buttonTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode ng.dsoftlab.stegocam:buttonTintMode}</code></td><td></td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonCompat
@@ -7249,7 +7277,7 @@ public final class R {
      * @see #CompoundButton_buttonTintMode
      */
     public static final int[] CompoundButton={
-      0x01010107, 0x7f030042, 0x7f030048, 0x7f030049
+      0x01010107, 0x7f040042, 0x7f040048, 0x7f040049
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#button}
@@ -7264,7 +7292,7 @@ public final class R {
      */
     public static final int CompoundButton_android_button=0;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#buttonCompat}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#buttonCompat}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7272,22 +7300,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:buttonCompat
+     * @attr name ng.dsoftlab.stegocam:buttonCompat
      */
     public static final int CompoundButton_buttonCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#buttonTint}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#buttonTint}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:buttonTint
+     * @attr name ng.dsoftlab.stegocam:buttonTint
      */
     public static final int CompoundButton_buttonTint=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#buttonTintMode}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#buttonTintMode}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7309,7 +7337,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name b4a.example:buttonTintMode
+     * @attr name ng.dsoftlab.stegocam:buttonTintMode
      */
     public static final int CompoundButton_buttonTintMode=3;
     /**
@@ -7319,15 +7347,15 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines b4a.example:keylines}</code></td><td>A reference to an array of integers representing the
+     * <tr><td><code>{@link #CoordinatorLayout_keylines ng.dsoftlab.stegocam:keylines}</code></td><td>A reference to an array of integers representing the
      * locations of horizontal keylines in dp from the starting edge.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground b4a.example:statusBarBackground}</code></td><td>Drawable to display behind the status bar when the view is set to draw behind it.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground ng.dsoftlab.stegocam:statusBarBackground}</code></td><td>Drawable to display behind the status bar when the view is set to draw behind it.</td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
      */
     public static final int[] CoordinatorLayout={
-      0x7f0300a4, 0x7f0300f6
+      0x7f0400a4, 0x7f0400f6
     };
     /**
      * <p>
@@ -7343,7 +7371,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:keylines
+     * @attr name ng.dsoftlab.stegocam:keylines
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
@@ -7359,7 +7387,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:statusBarBackground
+     * @attr name ng.dsoftlab.stegocam:statusBarBackground
      */
     public static final int CoordinatorLayout_statusBarBackground=1;
     /**
@@ -7370,15 +7398,15 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor b4a.example:layout_anchor}</code></td><td>The id of an anchor view that this view should position relative to.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity b4a.example:layout_anchorGravity}</code></td><td>Specifies how an object should position relative to an anchor, on both the X and Y axes,
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor ng.dsoftlab.stegocam:layout_anchor}</code></td><td>The id of an anchor view that this view should position relative to.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity ng.dsoftlab.stegocam:layout_anchorGravity}</code></td><td>Specifies how an object should position relative to an anchor, on both the X and Y axes,
      * within its parent's bounds.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior b4a.example:layout_behavior}</code></td><td>The class name of a Behavior class defining special runtime behavior
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior ng.dsoftlab.stegocam:layout_behavior}</code></td><td>The class name of a Behavior class defining special runtime behavior
      * for this child view.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges b4a.example:layout_dodgeInsetEdges}</code></td><td>Specifies how this view dodges the inset edges of the CoordinatorLayout.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge b4a.example:layout_insetEdge}</code></td><td>Specifies how this view insets the CoordinatorLayout and make some other views
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges ng.dsoftlab.stegocam:layout_dodgeInsetEdges}</code></td><td>Specifies how this view dodges the inset edges of the CoordinatorLayout.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge ng.dsoftlab.stegocam:layout_insetEdge}</code></td><td>Specifies how this view insets the CoordinatorLayout and make some other views
      * dodge it.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline b4a.example:layout_keyline}</code></td><td>The index of a keyline this view should position relative to.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline ng.dsoftlab.stegocam:layout_keyline}</code></td><td>The index of a keyline this view should position relative to.</td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -7389,8 +7417,8 @@ public final class R {
      * @see #CoordinatorLayout_Layout_layout_keyline
      */
     public static final int[] CoordinatorLayout_Layout={
-      0x010100b3, 0x7f0300a8, 0x7f0300a9, 0x7f0300aa, 
-      0x7f0300ab, 0x7f0300ac, 0x7f0300ad
+      0x010100b3, 0x7f0400a8, 0x7f0400a9, 0x7f0400aa, 
+      0x7f0400ab, 0x7f0400ac, 0x7f0400ad
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
@@ -7431,7 +7459,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:layout_anchor
+     * @attr name ng.dsoftlab.stegocam:layout_anchor
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
@@ -7468,7 +7496,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      *
-     * @attr name b4a.example:layout_anchorGravity
+     * @attr name ng.dsoftlab.stegocam:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
@@ -7480,7 +7508,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:layout_behavior
+     * @attr name ng.dsoftlab.stegocam:layout_behavior
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
@@ -7504,7 +7532,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
      * </table>
      *
-     * @attr name b4a.example:layout_dodgeInsetEdges
+     * @attr name ng.dsoftlab.stegocam:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
@@ -7528,7 +7556,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
      * </table>
      *
-     * @attr name b4a.example:layout_insetEdge
+     * @attr name ng.dsoftlab.stegocam:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
@@ -7540,7 +7568,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name b4a.example:layout_keyline
+     * @attr name ng.dsoftlab.stegocam:layout_keyline
      */
     public static final int CoordinatorLayout_Layout_layout_keyline=6;
     /**
@@ -7550,14 +7578,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength b4a.example:arrowHeadLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength b4a.example:arrowShaftLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength b4a.example:barLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color b4a.example:color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize b4a.example:drawableSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars b4a.example:gapBetweenBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars b4a.example:spinBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness b4a.example:thickness}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength ng.dsoftlab.stegocam:arrowHeadLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength ng.dsoftlab.stegocam:arrowShaftLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength ng.dsoftlab.stegocam:barLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color ng.dsoftlab.stegocam:color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize ng.dsoftlab.stegocam:drawableSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars ng.dsoftlab.stegocam:gapBetweenBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars ng.dsoftlab.stegocam:spinBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness ng.dsoftlab.stegocam:thickness}</code></td><td></td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -7569,11 +7597,11 @@ public final class R {
      * @see #DrawerArrowToggle_thickness
      */
     public static final int[] DrawerArrowToggle={
-      0x7f03002b, 0x7f03002c, 0x7f030038, 0x7f030053, 
-      0x7f030076, 0x7f030095, 0x7f0300f0, 0x7f030110
+      0x7f04002b, 0x7f04002c, 0x7f040038, 0x7f040053, 
+      0x7f040076, 0x7f040095, 0x7f0400f0, 0x7f040110
     };
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#arrowHeadLength}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#arrowHeadLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7582,11 +7610,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:arrowHeadLength
+     * @attr name ng.dsoftlab.stegocam:arrowHeadLength
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#arrowShaftLength}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#arrowShaftLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7595,11 +7623,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:arrowShaftLength
+     * @attr name ng.dsoftlab.stegocam:arrowShaftLength
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#barLength}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#barLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7608,22 +7636,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:barLength
+     * @attr name ng.dsoftlab.stegocam:barLength
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#color}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#color}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:color
+     * @attr name ng.dsoftlab.stegocam:color
      */
     public static final int DrawerArrowToggle_color=3;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#drawableSize}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#drawableSize}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7632,11 +7660,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:drawableSize
+     * @attr name ng.dsoftlab.stegocam:drawableSize
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#gapBetweenBars}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#gapBetweenBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7645,21 +7673,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:gapBetweenBars
+     * @attr name ng.dsoftlab.stegocam:gapBetweenBars
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#spinBars}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#spinBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:spinBars
+     * @attr name ng.dsoftlab.stegocam:spinBars
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#thickness}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#thickness}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7668,7 +7696,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:thickness
+     * @attr name ng.dsoftlab.stegocam:thickness
      */
     public static final int DrawerArrowToggle_thickness=7;
     /**
@@ -7678,12 +7706,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerLayout_elevation b4a.example:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerLayout_elevation ng.dsoftlab.stegocam:elevation}</code></td><td></td></tr>
      * </table>
      * @see #DrawerLayout_elevation
      */
     public static final int[] DrawerLayout={
-      0x7f030082
+      0x7f040082
     };
     /**
      * <p>
@@ -7696,7 +7724,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:elevation
+     * @attr name ng.dsoftlab.stegocam:elevation
      */
     public static final int DrawerLayout_elevation=0;
     /**
@@ -7706,20 +7734,20 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #EmojiEditText_maxEmojiCount b4a.example:maxEmojiCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #EmojiEditText_maxEmojiCount ng.dsoftlab.stegocam:maxEmojiCount}</code></td><td></td></tr>
      * </table>
      * @see #EmojiEditText_maxEmojiCount
      */
     public static final int[] EmojiEditText={
-      0x7f0300c1
+      0x7f0400c1
     };
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#maxEmojiCount}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#maxEmojiCount}
      * attribute's value can be found in the {@link #EmojiEditText} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name b4a.example:maxEmojiCount
+     * @attr name ng.dsoftlab.stegocam:maxEmojiCount
      */
     public static final int EmojiEditText_maxEmojiCount=0;
     /**
@@ -7729,15 +7757,15 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #EmojiExtractTextLayout_emojiReplaceStrategy b4a.example:emojiReplaceStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #EmojiExtractTextLayout_emojiReplaceStrategy ng.dsoftlab.stegocam:emojiReplaceStrategy}</code></td><td></td></tr>
      * </table>
      * @see #EmojiExtractTextLayout_emojiReplaceStrategy
      */
     public static final int[] EmojiExtractTextLayout={
-      0x7f030084
+      0x7f040084
     };
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#emojiReplaceStrategy}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#emojiReplaceStrategy}
      * attribute's value can be found in the {@link #EmojiExtractTextLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7753,7 +7781,7 @@ public final class R {
      * system.</td></tr>
      * </table>
      *
-     * @attr name b4a.example:emojiReplaceStrategy
+     * @attr name ng.dsoftlab.stegocam:emojiReplaceStrategy
      */
     public static final int EmojiExtractTextLayout_emojiReplaceStrategy=0;
     /**
@@ -7763,13 +7791,13 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority b4a.example:fontProviderAuthority}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts b4a.example:fontProviderCerts}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy b4a.example:fontProviderFetchStrategy}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout b4a.example:fontProviderFetchTimeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage b4a.example:fontProviderPackage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery b4a.example:fontProviderQuery}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderSystemFontFamily b4a.example:fontProviderSystemFontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority ng.dsoftlab.stegocam:fontProviderAuthority}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts ng.dsoftlab.stegocam:fontProviderCerts}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy ng.dsoftlab.stegocam:fontProviderFetchStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout ng.dsoftlab.stegocam:fontProviderFetchTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage ng.dsoftlab.stegocam:fontProviderPackage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery ng.dsoftlab.stegocam:fontProviderQuery}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderSystemFontFamily ng.dsoftlab.stegocam:fontProviderSystemFontFamily}</code></td><td></td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -7780,21 +7808,21 @@ public final class R {
      * @see #FontFamily_fontProviderSystemFontFamily
      */
     public static final int[] FontFamily={
-      0x7f03008b, 0x7f03008c, 0x7f03008d, 0x7f03008e, 
-      0x7f03008f, 0x7f030090, 0x7f030091
+      0x7f04008b, 0x7f04008c, 0x7f04008d, 0x7f04008e, 
+      0x7f04008f, 0x7f040090, 0x7f040091
     };
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fontProviderAuthority}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fontProviderAuthority}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:fontProviderAuthority
+     * @attr name ng.dsoftlab.stegocam:fontProviderAuthority
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fontProviderCerts}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fontProviderCerts}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7802,11 +7830,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:fontProviderCerts
+     * @attr name ng.dsoftlab.stegocam:fontProviderCerts
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fontProviderFetchStrategy}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fontProviderFetchStrategy}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7827,11 +7855,11 @@ public final class R {
      * default typeface will be used instead.</td></tr>
      * </table>
      *
-     * @attr name b4a.example:fontProviderFetchStrategy
+     * @attr name ng.dsoftlab.stegocam:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fontProviderFetchTimeout}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fontProviderFetchTimeout}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -7845,37 +7873,37 @@ public final class R {
      * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      *
-     * @attr name b4a.example:fontProviderFetchTimeout
+     * @attr name ng.dsoftlab.stegocam:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fontProviderPackage}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fontProviderPackage}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:fontProviderPackage
+     * @attr name ng.dsoftlab.stegocam:fontProviderPackage
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fontProviderQuery}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fontProviderQuery}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:fontProviderQuery
+     * @attr name ng.dsoftlab.stegocam:fontProviderQuery
      */
     public static final int FontFamily_fontProviderQuery=5;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fontProviderSystemFontFamily}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fontProviderSystemFontFamily}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:fontProviderSystemFontFamily
+     * @attr name ng.dsoftlab.stegocam:fontProviderSystemFontFamily
      */
     public static final int FontFamily_fontProviderSystemFontFamily=6;
     /**
@@ -7890,11 +7918,11 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_ttcIndex android:ttcIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontVariationSettings android:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font b4a.example:font}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle b4a.example:fontStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings b4a.example:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight b4a.example:fontWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_ttcIndex b4a.example:ttcIndex}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font ng.dsoftlab.stegocam:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle ng.dsoftlab.stegocam:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings ng.dsoftlab.stegocam:fontVariationSettings}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight ng.dsoftlab.stegocam:fontWeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_ttcIndex ng.dsoftlab.stegocam:ttcIndex}</code></td><td></td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -7909,8 +7937,8 @@ public final class R {
      */
     public static final int[] FontFamilyFont={
       0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 
-      0x01010570, 0x7f030089, 0x7f030092, 0x7f030093, 
-      0x7f030094, 0x7f03012d
+      0x01010570, 0x7f040089, 0x7f040092, 0x7f040093, 
+      0x7f040094, 0x7f04012d
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#font}
@@ -7970,7 +7998,7 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontVariationSettings=4;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#font}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#font}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7978,11 +8006,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:font
+     * @attr name ng.dsoftlab.stegocam:font
      */
     public static final int FontFamilyFont_font=5;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fontStyle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fontStyle}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7995,35 +8023,35 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name b4a.example:fontStyle
+     * @attr name ng.dsoftlab.stegocam:fontStyle
      */
     public static final int FontFamilyFont_fontStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fontVariationSettings}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fontVariationSettings}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:fontVariationSettings
+     * @attr name ng.dsoftlab.stegocam:fontVariationSettings
      */
     public static final int FontFamilyFont_fontVariationSettings=7;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fontWeight}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fontWeight}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name b4a.example:fontWeight
+     * @attr name ng.dsoftlab.stegocam:fontWeight
      */
     public static final int FontFamilyFont_fontWeight=8;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#ttcIndex}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#ttcIndex}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name b4a.example:ttcIndex
+     * @attr name ng.dsoftlab.stegocam:ttcIndex
      */
     public static final int FontFamilyFont_ttcIndex=9;
     /**
@@ -8348,10 +8376,10 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider b4a.example:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding b4a.example:dividerPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild b4a.example:measureWithLargestChild}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers b4a.example:showDividers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_divider ng.dsoftlab.stegocam:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding ng.dsoftlab.stegocam:dividerPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild ng.dsoftlab.stegocam:measureWithLargestChild}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers ng.dsoftlab.stegocam:showDividers}</code></td><td></td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -8365,8 +8393,8 @@ public final class R {
      */
     public static final int[] LinearLayoutCompat={
       0x010100af, 0x010100c4, 0x01010126, 0x01010127, 
-      0x01010128, 0x7f03006e, 0x7f030070, 0x7f0300c2, 
-      0x7f0300ec
+      0x01010128, 0x7f04006e, 0x7f040070, 0x7f0400c2, 
+      0x7f0400ec
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#gravity}
@@ -8443,7 +8471,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_weightSum=4;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#divider}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#divider}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8451,11 +8479,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:divider
+     * @attr name ng.dsoftlab.stegocam:divider
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#dividerPadding}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#dividerPadding}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8464,21 +8492,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:dividerPadding
+     * @attr name ng.dsoftlab.stegocam:dividerPadding
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#measureWithLargestChild}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#measureWithLargestChild}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:measureWithLargestChild
+     * @attr name ng.dsoftlab.stegocam:measureWithLargestChild
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#showDividers}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#showDividers}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -8493,7 +8521,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name b4a.example:showDividers
+     * @attr name ng.dsoftlab.stegocam:showDividers
      */
     public static final int LinearLayoutCompat_showDividers=8;
     /**
@@ -8765,16 +8793,16 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout b4a.example:actionLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass b4a.example:actionProviderClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass b4a.example:actionViewClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers b4a.example:alphabeticModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription b4a.example:contentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint b4a.example:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode b4a.example:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers b4a.example:numericModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction b4a.example:showAsAction}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText b4a.example:tooltipText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionLayout ng.dsoftlab.stegocam:actionLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass ng.dsoftlab.stegocam:actionProviderClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionViewClass ng.dsoftlab.stegocam:actionViewClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers ng.dsoftlab.stegocam:alphabeticModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription ng.dsoftlab.stegocam:contentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint ng.dsoftlab.stegocam:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode ng.dsoftlab.stegocam:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers ng.dsoftlab.stegocam:numericModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction ng.dsoftlab.stegocam:showAsAction}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText ng.dsoftlab.stegocam:tooltipText}</code></td><td></td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -8804,9 +8832,9 @@ public final class R {
       0x01010002, 0x0101000e, 0x010100d0, 0x01010106, 
       0x01010194, 0x010101de, 0x010101df, 0x010101e1, 
       0x010101e2, 0x010101e3, 0x010101e4, 0x010101e5, 
-      0x0101026f, 0x7f03000d, 0x7f030021, 0x7f030022, 
-      0x7f03002a, 0x7f03005f, 0x7f03009c, 0x7f03009d, 
-      0x7f0300ca, 0x7f0300eb, 0x7f030127
+      0x0101026f, 0x7f04000d, 0x7f040021, 0x7f040022, 
+      0x7f04002a, 0x7f04005f, 0x7f04009c, 0x7f04009d, 
+      0x7f0400ca, 0x7f0400eb, 0x7f040127
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#icon}
@@ -8951,7 +8979,7 @@ public final class R {
      */
     public static final int MenuItem_android_onClick=12;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionLayout}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionLayout}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8959,31 +8987,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:actionLayout
+     * @attr name ng.dsoftlab.stegocam:actionLayout
      */
     public static final int MenuItem_actionLayout=13;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionProviderClass}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionProviderClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:actionProviderClass
+     * @attr name ng.dsoftlab.stegocam:actionProviderClass
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#actionViewClass}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#actionViewClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:actionViewClass
+     * @attr name ng.dsoftlab.stegocam:actionViewClass
      */
     public static final int MenuItem_actionViewClass=15;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#alphabeticModifiers}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#alphabeticModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -9000,32 +9028,32 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name b4a.example:alphabeticModifiers
+     * @attr name ng.dsoftlab.stegocam:alphabeticModifiers
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#contentDescription}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#contentDescription}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:contentDescription
+     * @attr name ng.dsoftlab.stegocam:contentDescription
      */
     public static final int MenuItem_contentDescription=17;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#iconTint}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:iconTint
+     * @attr name ng.dsoftlab.stegocam:iconTint
      */
     public static final int MenuItem_iconTint=18;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9047,11 +9075,11 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name b4a.example:iconTintMode
+     * @attr name ng.dsoftlab.stegocam:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#numericModifiers}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#numericModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -9068,11 +9096,11 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name b4a.example:numericModifiers
+     * @attr name ng.dsoftlab.stegocam:numericModifiers
      */
     public static final int MenuItem_numericModifiers=20;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#showAsAction}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#showAsAction}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -9097,17 +9125,17 @@ public final class R {
      * label with it even if it has an icon representation.</td></tr>
      * </table>
      *
-     * @attr name b4a.example:showAsAction
+     * @attr name ng.dsoftlab.stegocam:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#tooltipText}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#tooltipText}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:tooltipText
+     * @attr name ng.dsoftlab.stegocam:tooltipText
      */
     public static final int MenuItem_tooltipText=22;
     /**
@@ -9124,8 +9152,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing b4a.example:preserveIconSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow b4a.example:subMenuArrow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing ng.dsoftlab.stegocam:preserveIconSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow ng.dsoftlab.stegocam:subMenuArrow}</code></td><td></td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -9139,8 +9167,8 @@ public final class R {
      */
     public static final int[] MenuView={
       0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e, 
-      0x0101012f, 0x01010130, 0x01010131, 0x7f0300d6, 
-      0x7f0300f7
+      0x0101012f, 0x01010130, 0x01010131, 0x7f0400d6, 
+      0x7f0400f7
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#windowAnimationStyle}
@@ -9230,17 +9258,17 @@ public final class R {
      */
     public static final int MenuView_android_itemIconDisabledAlpha=6;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#preserveIconSpacing}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#preserveIconSpacing}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:preserveIconSpacing
+     * @attr name ng.dsoftlab.stegocam:preserveIconSpacing
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#subMenuArrow}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#subMenuArrow}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9248,7 +9276,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:subMenuArrow
+     * @attr name ng.dsoftlab.stegocam:subMenuArrow
      */
     public static final int MenuView_subMenuArrow=8;
     /**
@@ -9260,14 +9288,14 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor b4a.example:overlapAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor ng.dsoftlab.stegocam:overlapAnchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
      * @see #PopupWindow_overlapAnchor
      */
     public static final int[] PopupWindow={
-      0x01010176, 0x010102c9, 0x7f0300cb
+      0x01010176, 0x010102c9, 0x7f0400cb
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#popupBackground}
@@ -9297,13 +9325,13 @@ public final class R {
      */
     public static final int PopupWindow_android_popupAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#overlapAnchor}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#overlapAnchor}
      * attribute's value can be found in the {@link #PopupWindow} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:overlapAnchor
+     * @attr name ng.dsoftlab.stegocam:overlapAnchor
      */
     public static final int PopupWindow_overlapAnchor=2;
     /**
@@ -9313,21 +9341,21 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor b4a.example:state_above_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor ng.dsoftlab.stegocam:state_above_anchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
     public static final int[] PopupWindowBackgroundState={
-      0x7f0300f5
+      0x7f0400f5
     };
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#state_above_anchor}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#state_above_anchor}
      * attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:state_above_anchor
+     * @attr name ng.dsoftlab.stegocam:state_above_anchor
      */
     public static final int PopupWindowBackgroundState_state_above_anchor=0;
     /**
@@ -9337,17 +9365,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons b4a.example:paddingBottomNoButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle b4a.example:paddingTopNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons ng.dsoftlab.stegocam:paddingBottomNoButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle ng.dsoftlab.stegocam:paddingTopNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
      */
     public static final int[] RecycleListView={
-      0x7f0300cc, 0x7f0300cf
+      0x7f0400cc, 0x7f0400cf
     };
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#paddingBottomNoButtons}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#paddingBottomNoButtons}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9356,11 +9384,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:paddingBottomNoButtons
+     * @attr name ng.dsoftlab.stegocam:paddingBottomNoButtons
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#paddingTopNoTitle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#paddingTopNoTitle}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9369,7 +9397,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:paddingTopNoTitle
+     * @attr name ng.dsoftlab.stegocam:paddingTopNoTitle
      */
     public static final int RecycleListView_paddingTopNoTitle=1;
     /**
@@ -9383,19 +9411,19 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon b4a.example:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon b4a.example:commitIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint b4a.example:defaultQueryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon b4a.example:goIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault b4a.example:iconifiedByDefault}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_layout b4a.example:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground b4a.example:queryBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint b4a.example:queryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon b4a.example:searchHintIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon b4a.example:searchIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground b4a.example:submitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout b4a.example:suggestionRowLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon b4a.example:voiceIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon ng.dsoftlab.stegocam:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon ng.dsoftlab.stegocam:commitIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint ng.dsoftlab.stegocam:defaultQueryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon ng.dsoftlab.stegocam:goIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault ng.dsoftlab.stegocam:iconifiedByDefault}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_layout ng.dsoftlab.stegocam:layout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground ng.dsoftlab.stegocam:queryBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint ng.dsoftlab.stegocam:queryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon ng.dsoftlab.stegocam:searchHintIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon ng.dsoftlab.stegocam:searchIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground ng.dsoftlab.stegocam:submitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout ng.dsoftlab.stegocam:suggestionRowLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon ng.dsoftlab.stegocam:voiceIcon}</code></td><td></td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -9417,10 +9445,10 @@ public final class R {
      */
     public static final int[] SearchView={
       0x010100da, 0x0101011f, 0x01010220, 0x01010264, 
-      0x7f03004f, 0x7f03005e, 0x7f030069, 0x7f030096, 
-      0x7f03009e, 0x7f0300a7, 0x7f0300d9, 0x7f0300da, 
-      0x7f0300e0, 0x7f0300e1, 0x7f0300f8, 0x7f0300fd, 
-      0x7f030131
+      0x7f04004f, 0x7f04005e, 0x7f040069, 0x7f040096, 
+      0x7f04009e, 0x7f0400a7, 0x7f0400d9, 0x7f0400da, 
+      0x7f0400e0, 0x7f0400e1, 0x7f0400f8, 0x7f0400fd, 
+      0x7f040131
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#focusable}
@@ -9534,7 +9562,7 @@ public final class R {
      */
     public static final int SearchView_android_imeOptions=3;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#closeIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9542,11 +9570,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:closeIcon
+     * @attr name ng.dsoftlab.stegocam:closeIcon
      */
     public static final int SearchView_closeIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#commitIcon}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#commitIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9554,21 +9582,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:commitIcon
+     * @attr name ng.dsoftlab.stegocam:commitIcon
      */
     public static final int SearchView_commitIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#defaultQueryHint}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#defaultQueryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:defaultQueryHint
+     * @attr name ng.dsoftlab.stegocam:defaultQueryHint
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#goIcon}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#goIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9576,21 +9604,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:goIcon
+     * @attr name ng.dsoftlab.stegocam:goIcon
      */
     public static final int SearchView_goIcon=7;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#iconifiedByDefault}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#iconifiedByDefault}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:iconifiedByDefault
+     * @attr name ng.dsoftlab.stegocam:iconifiedByDefault
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#layout}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#layout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9598,11 +9626,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:layout
+     * @attr name ng.dsoftlab.stegocam:layout
      */
     public static final int SearchView_layout=9;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#queryBackground}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#queryBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9610,21 +9638,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:queryBackground
+     * @attr name ng.dsoftlab.stegocam:queryBackground
      */
     public static final int SearchView_queryBackground=10;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#queryHint}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#queryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:queryHint
+     * @attr name ng.dsoftlab.stegocam:queryHint
      */
     public static final int SearchView_queryHint=11;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#searchHintIcon}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#searchHintIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9632,11 +9660,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:searchHintIcon
+     * @attr name ng.dsoftlab.stegocam:searchHintIcon
      */
     public static final int SearchView_searchHintIcon=12;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#searchIcon}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#searchIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9644,11 +9672,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:searchIcon
+     * @attr name ng.dsoftlab.stegocam:searchIcon
      */
     public static final int SearchView_searchIcon=13;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#submitBackground}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#submitBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9656,11 +9684,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:submitBackground
+     * @attr name ng.dsoftlab.stegocam:submitBackground
      */
     public static final int SearchView_submitBackground=14;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#suggestionRowLayout}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#suggestionRowLayout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9668,11 +9696,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:suggestionRowLayout
+     * @attr name ng.dsoftlab.stegocam:suggestionRowLayout
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#voiceIcon}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#voiceIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9680,7 +9708,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:voiceIcon
+     * @attr name ng.dsoftlab.stegocam:voiceIcon
      */
     public static final int SearchView_voiceIcon=16;
     /**
@@ -9690,20 +9718,20 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SlidingMenu_behindOffset b4a.example:behindOffset}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SlidingMenu_behindScrollScale b4a.example:behindScrollScale}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SlidingMenu_behindWidth b4a.example:behindWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SlidingMenu_fadeDegree b4a.example:fadeDegree}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SlidingMenu_fadeEnabled b4a.example:fadeEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SlidingMenu_mode b4a.example:mode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SlidingMenu_selectorDrawable b4a.example:selectorDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SlidingMenu_selectorEnabled b4a.example:selectorEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SlidingMenu_shadowDrawable b4a.example:shadowDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SlidingMenu_shadowWidth b4a.example:shadowWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SlidingMenu_touchModeAbove b4a.example:touchModeAbove}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SlidingMenu_touchModeBehind b4a.example:touchModeBehind}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SlidingMenu_viewAbove b4a.example:viewAbove}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SlidingMenu_viewBehind b4a.example:viewBehind}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SlidingMenu_behindOffset ng.dsoftlab.stegocam:behindOffset}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SlidingMenu_behindScrollScale ng.dsoftlab.stegocam:behindScrollScale}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SlidingMenu_behindWidth ng.dsoftlab.stegocam:behindWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SlidingMenu_fadeDegree ng.dsoftlab.stegocam:fadeDegree}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SlidingMenu_fadeEnabled ng.dsoftlab.stegocam:fadeEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SlidingMenu_mode ng.dsoftlab.stegocam:mode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SlidingMenu_selectorDrawable ng.dsoftlab.stegocam:selectorDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SlidingMenu_selectorEnabled ng.dsoftlab.stegocam:selectorEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SlidingMenu_shadowDrawable ng.dsoftlab.stegocam:shadowDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SlidingMenu_shadowWidth ng.dsoftlab.stegocam:shadowWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SlidingMenu_touchModeAbove ng.dsoftlab.stegocam:touchModeAbove}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SlidingMenu_touchModeBehind ng.dsoftlab.stegocam:touchModeBehind}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SlidingMenu_viewAbove ng.dsoftlab.stegocam:viewAbove}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SlidingMenu_viewBehind ng.dsoftlab.stegocam:viewBehind}</code></td><td></td></tr>
      * </table>
      * @see #SlidingMenu_behindOffset
      * @see #SlidingMenu_behindScrollScale
@@ -9721,13 +9749,13 @@ public final class R {
      * @see #SlidingMenu_viewBehind
      */
     public static final int[] SlidingMenu={
-      0x7f030039, 0x7f03003a, 0x7f03003b, 0x7f030086, 
-      0x7f030087, 0x7f0300c4, 0x7f0300e6, 0x7f0300e7, 
-      0x7f0300e8, 0x7f0300e9, 0x7f030128, 0x7f030129, 
-      0x7f03012e, 0x7f03012f
+      0x7f040039, 0x7f04003a, 0x7f04003b, 0x7f040086, 
+      0x7f040087, 0x7f0400c4, 0x7f0400e6, 0x7f0400e7, 
+      0x7f0400e8, 0x7f0400e9, 0x7f040128, 0x7f040129, 
+      0x7f04012e, 0x7f04012f
     };
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#behindOffset}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#behindOffset}
      * attribute's value can be found in the {@link #SlidingMenu} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9736,20 +9764,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:behindOffset
+     * @attr name ng.dsoftlab.stegocam:behindOffset
      */
     public static final int SlidingMenu_behindOffset=0;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#behindScrollScale}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#behindScrollScale}
      * attribute's value can be found in the {@link #SlidingMenu} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name b4a.example:behindScrollScale
+     * @attr name ng.dsoftlab.stegocam:behindScrollScale
      */
     public static final int SlidingMenu_behindScrollScale=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#behindWidth}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#behindWidth}
      * attribute's value can be found in the {@link #SlidingMenu} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9758,30 +9786,30 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:behindWidth
+     * @attr name ng.dsoftlab.stegocam:behindWidth
      */
     public static final int SlidingMenu_behindWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fadeDegree}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fadeDegree}
      * attribute's value can be found in the {@link #SlidingMenu} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name b4a.example:fadeDegree
+     * @attr name ng.dsoftlab.stegocam:fadeDegree
      */
     public static final int SlidingMenu_fadeDegree=3;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fadeEnabled}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fadeEnabled}
      * attribute's value can be found in the {@link #SlidingMenu} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:fadeEnabled
+     * @attr name ng.dsoftlab.stegocam:fadeEnabled
      */
     public static final int SlidingMenu_fadeEnabled=4;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#mode}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#mode}
      * attribute's value can be found in the {@link #SlidingMenu} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9794,11 +9822,11 @@ public final class R {
      * <tr><td>right</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name b4a.example:mode
+     * @attr name ng.dsoftlab.stegocam:mode
      */
     public static final int SlidingMenu_mode=5;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#selectorDrawable}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#selectorDrawable}
      * attribute's value can be found in the {@link #SlidingMenu} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9806,21 +9834,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:selectorDrawable
+     * @attr name ng.dsoftlab.stegocam:selectorDrawable
      */
     public static final int SlidingMenu_selectorDrawable=6;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#selectorEnabled}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#selectorEnabled}
      * attribute's value can be found in the {@link #SlidingMenu} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:selectorEnabled
+     * @attr name ng.dsoftlab.stegocam:selectorEnabled
      */
     public static final int SlidingMenu_selectorEnabled=7;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#shadowDrawable}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#shadowDrawable}
      * attribute's value can be found in the {@link #SlidingMenu} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9828,11 +9856,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:shadowDrawable
+     * @attr name ng.dsoftlab.stegocam:shadowDrawable
      */
     public static final int SlidingMenu_shadowDrawable=8;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#shadowWidth}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#shadowWidth}
      * attribute's value can be found in the {@link #SlidingMenu} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9841,11 +9869,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:shadowWidth
+     * @attr name ng.dsoftlab.stegocam:shadowWidth
      */
     public static final int SlidingMenu_shadowWidth=9;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#touchModeAbove}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#touchModeAbove}
      * attribute's value can be found in the {@link #SlidingMenu} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9859,11 +9887,11 @@ public final class R {
      * <tr><td>none</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name b4a.example:touchModeAbove
+     * @attr name ng.dsoftlab.stegocam:touchModeAbove
      */
     public static final int SlidingMenu_touchModeAbove=10;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#touchModeBehind}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#touchModeBehind}
      * attribute's value can be found in the {@link #SlidingMenu} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9877,11 +9905,11 @@ public final class R {
      * <tr><td>none</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name b4a.example:touchModeBehind
+     * @attr name ng.dsoftlab.stegocam:touchModeBehind
      */
     public static final int SlidingMenu_touchModeBehind=11;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#viewAbove}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#viewAbove}
      * attribute's value can be found in the {@link #SlidingMenu} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9889,11 +9917,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:viewAbove
+     * @attr name ng.dsoftlab.stegocam:viewAbove
      */
     public static final int SlidingMenu_viewAbove=12;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#viewBehind}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#viewBehind}
      * attribute's value can be found in the {@link #SlidingMenu} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9901,7 +9929,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:viewBehind
+     * @attr name ng.dsoftlab.stegocam:viewBehind
      */
     public static final int SlidingMenu_viewBehind=13;
     /**
@@ -9915,7 +9943,7 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme b4a.example:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Spinner_popupTheme ng.dsoftlab.stegocam:popupTheme}</code></td><td></td></tr>
      * </table>
      * @see #Spinner_android_entries
      * @see #Spinner_android_popupBackground
@@ -9925,7 +9953,7 @@ public final class R {
      */
     public static final int[] Spinner={
       0x010100b2, 0x01010176, 0x0101017b, 0x01010262, 
-      0x7f0300d4
+      0x7f0400d4
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#entries}
@@ -9990,7 +10018,7 @@ public final class R {
      */
     public static final int Spinner_android_dropDownWidth=3;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9998,7 +10026,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:popupTheme
+     * @attr name ng.dsoftlab.stegocam:popupTheme
      */
     public static final int Spinner_popupTheme=4;
     /**
@@ -10117,12 +10145,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SwipeRefreshLayout_swipeRefreshLayoutProgressSpinnerBackgroundColor b4a.example:swipeRefreshLayoutProgressSpinnerBackgroundColor}</code></td><td>Background color for SwipeRefreshLayout progress spinner.</td></tr>
+     * <tr><td><code>{@link #SwipeRefreshLayout_swipeRefreshLayoutProgressSpinnerBackgroundColor ng.dsoftlab.stegocam:swipeRefreshLayoutProgressSpinnerBackgroundColor}</code></td><td>Background color for SwipeRefreshLayout progress spinner.</td></tr>
      * </table>
      * @see #SwipeRefreshLayout_swipeRefreshLayoutProgressSpinnerBackgroundColor
      */
     public static final int[] SwipeRefreshLayout={
-      0x7f0300fe
+      0x7f0400fe
     };
     /**
      * <p>
@@ -10133,7 +10161,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:swipeRefreshLayoutProgressSpinnerBackgroundColor
+     * @attr name ng.dsoftlab.stegocam:swipeRefreshLayoutProgressSpinnerBackgroundColor
      */
     public static final int SwipeRefreshLayout_swipeRefreshLayoutProgressSpinnerBackgroundColor=0;
     /**
@@ -10146,17 +10174,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText b4a.example:showText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack b4a.example:splitTrack}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth b4a.example:switchMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding b4a.example:switchPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance b4a.example:switchTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding b4a.example:thumbTextPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint b4a.example:thumbTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode b4a.example:thumbTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track b4a.example:track}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint b4a.example:trackTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode b4a.example:trackTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText ng.dsoftlab.stegocam:showText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack ng.dsoftlab.stegocam:splitTrack}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth ng.dsoftlab.stegocam:switchMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding ng.dsoftlab.stegocam:switchPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance ng.dsoftlab.stegocam:switchTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding ng.dsoftlab.stegocam:thumbTextPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint ng.dsoftlab.stegocam:thumbTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode ng.dsoftlab.stegocam:thumbTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track ng.dsoftlab.stegocam:track}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint ng.dsoftlab.stegocam:trackTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode ng.dsoftlab.stegocam:trackTintMode}</code></td><td></td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -10174,10 +10202,10 @@ public final class R {
      * @see #SwitchCompat_trackTintMode
      */
     public static final int[] SwitchCompat={
-      0x01010124, 0x01010125, 0x01010142, 0x7f0300ed, 
-      0x7f0300f3, 0x7f0300ff, 0x7f030100, 0x7f030102, 
-      0x7f030111, 0x7f030112, 0x7f030113, 0x7f03012a, 
-      0x7f03012b, 0x7f03012c
+      0x01010124, 0x01010125, 0x01010142, 0x7f0400ed, 
+      0x7f0400f3, 0x7f0400ff, 0x7f040100, 0x7f040102, 
+      0x7f040111, 0x7f040112, 0x7f040113, 0x7f04012a, 
+      0x7f04012b, 0x7f04012c
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textOn}
@@ -10212,27 +10240,27 @@ public final class R {
      */
     public static final int SwitchCompat_android_thumb=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#showText}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#showText}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:showText
+     * @attr name ng.dsoftlab.stegocam:showText
      */
     public static final int SwitchCompat_showText=3;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#splitTrack}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#splitTrack}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:splitTrack
+     * @attr name ng.dsoftlab.stegocam:splitTrack
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#switchMinWidth}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#switchMinWidth}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10241,11 +10269,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:switchMinWidth
+     * @attr name ng.dsoftlab.stegocam:switchMinWidth
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#switchPadding}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#switchPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10254,11 +10282,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:switchPadding
+     * @attr name ng.dsoftlab.stegocam:switchPadding
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#switchTextAppearance}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#switchTextAppearance}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10266,11 +10294,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:switchTextAppearance
+     * @attr name ng.dsoftlab.stegocam:switchTextAppearance
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#thumbTextPadding}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#thumbTextPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10279,22 +10307,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:thumbTextPadding
+     * @attr name ng.dsoftlab.stegocam:thumbTextPadding
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#thumbTint}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#thumbTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:thumbTint
+     * @attr name ng.dsoftlab.stegocam:thumbTint
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#thumbTintMode}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#thumbTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10316,11 +10344,11 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name b4a.example:thumbTintMode
+     * @attr name ng.dsoftlab.stegocam:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#track}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#track}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10328,22 +10356,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:track
+     * @attr name ng.dsoftlab.stegocam:track
      */
     public static final int SwitchCompat_track=11;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#trackTint}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#trackTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:trackTint
+     * @attr name ng.dsoftlab.stegocam:trackTint
      */
     public static final int SwitchCompat_trackTint=12;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#trackTintMode}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#trackTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10365,7 +10393,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name b4a.example:trackTintMode
+     * @attr name ng.dsoftlab.stegocam:trackTintMode
      */
     public static final int SwitchCompat_trackTintMode=13;
     /**
@@ -10387,10 +10415,10 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_textFontWeight android:textFontWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily b4a.example:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontVariationSettings b4a.example:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps b4a.example:textAllCaps}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_textLocale b4a.example:textLocale}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontFamily ng.dsoftlab.stegocam:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontVariationSettings ng.dsoftlab.stegocam:fontVariationSettings}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps ng.dsoftlab.stegocam:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_textLocale ng.dsoftlab.stegocam:textLocale}</code></td><td></td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -10413,7 +10441,7 @@ public final class R {
       0x01010095, 0x01010096, 0x01010097, 0x01010098, 
       0x0101009a, 0x0101009b, 0x01010161, 0x01010162, 
       0x01010163, 0x01010164, 0x010103ac, 0x01010585, 
-      0x7f03008a, 0x7f030093, 0x7f030103, 0x7f03010e
+      0x7f04008a, 0x7f040093, 0x7f040103, 0x7f04010e
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textSize}
@@ -10568,27 +10596,27 @@ public final class R {
      */
     public static final int TextAppearance_android_textFontWeight=11;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fontFamily}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:fontFamily
+     * @attr name ng.dsoftlab.stegocam:fontFamily
      */
     public static final int TextAppearance_fontFamily=12;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#fontVariationSettings}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#fontVariationSettings}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:fontVariationSettings
+     * @attr name ng.dsoftlab.stegocam:fontVariationSettings
      */
     public static final int TextAppearance_fontVariationSettings=13;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10598,17 +10626,17 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name b4a.example:textAllCaps
+     * @attr name ng.dsoftlab.stegocam:textAllCaps
      */
     public static final int TextAppearance_textAllCaps=14;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#textLocale}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#textLocale}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:textLocale
+     * @attr name ng.dsoftlab.stegocam:textLocale
      */
     public static final int TextAppearance_textLocale=15;
     /**
@@ -10620,34 +10648,34 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_buttonGravity b4a.example:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription b4a.example:collapseContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon b4a.example:collapseIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd b4a.example:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions b4a.example:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft b4a.example:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight b4a.example:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart b4a.example:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation b4a.example:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logo b4a.example:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription b4a.example:logoDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_maxButtonHeight b4a.example:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_menu b4a.example:menu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription b4a.example:navigationContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon b4a.example:navigationIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme b4a.example:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle b4a.example:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance b4a.example:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor b4a.example:subtitleTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_title b4a.example:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin b4a.example:titleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom b4a.example:titleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd b4a.example:titleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart b4a.example:titleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop b4a.example:titleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins b4a.example:titleMargins}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextAppearance b4a.example:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor b4a.example:titleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_buttonGravity ng.dsoftlab.stegocam:buttonGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription ng.dsoftlab.stegocam:collapseContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon ng.dsoftlab.stegocam:collapseIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd ng.dsoftlab.stegocam:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions ng.dsoftlab.stegocam:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft ng.dsoftlab.stegocam:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight ng.dsoftlab.stegocam:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart ng.dsoftlab.stegocam:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation ng.dsoftlab.stegocam:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logo ng.dsoftlab.stegocam:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription ng.dsoftlab.stegocam:logoDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_maxButtonHeight ng.dsoftlab.stegocam:maxButtonHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_menu ng.dsoftlab.stegocam:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription ng.dsoftlab.stegocam:navigationContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationIcon ng.dsoftlab.stegocam:navigationIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_popupTheme ng.dsoftlab.stegocam:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitle ng.dsoftlab.stegocam:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance ng.dsoftlab.stegocam:subtitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor ng.dsoftlab.stegocam:subtitleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_title ng.dsoftlab.stegocam:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin ng.dsoftlab.stegocam:titleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom ng.dsoftlab.stegocam:titleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd ng.dsoftlab.stegocam:titleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart ng.dsoftlab.stegocam:titleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop ng.dsoftlab.stegocam:titleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins ng.dsoftlab.stegocam:titleMargins}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextAppearance ng.dsoftlab.stegocam:titleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor ng.dsoftlab.stegocam:titleTextColor}</code></td><td></td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -10681,14 +10709,14 @@ public final class R {
      * @see #Toolbar_titleTextColor
      */
     public static final int[] Toolbar={
-      0x010100af, 0x01010140, 0x7f030043, 0x7f030051, 
-      0x7f030052, 0x7f030060, 0x7f030061, 0x7f030062, 
-      0x7f030063, 0x7f030064, 0x7f030065, 0x7f0300be, 
-      0x7f0300bf, 0x7f0300c0, 0x7f0300c3, 0x7f0300c6, 
-      0x7f0300c7, 0x7f0300d4, 0x7f0300f9, 0x7f0300fa, 
-      0x7f0300fb, 0x7f030119, 0x7f03011a, 0x7f03011b, 
-      0x7f03011c, 0x7f03011d, 0x7f03011e, 0x7f03011f, 
-      0x7f030120, 0x7f030121
+      0x010100af, 0x01010140, 0x7f040043, 0x7f040051, 
+      0x7f040052, 0x7f040060, 0x7f040061, 0x7f040062, 
+      0x7f040063, 0x7f040064, 0x7f040065, 0x7f0400be, 
+      0x7f0400bf, 0x7f0400c0, 0x7f0400c3, 0x7f0400c6, 
+      0x7f0400c7, 0x7f0400d4, 0x7f0400f9, 0x7f0400fa, 
+      0x7f0400fb, 0x7f040119, 0x7f04011a, 0x7f04011b, 
+      0x7f04011c, 0x7f04011d, 0x7f04011e, 0x7f04011f, 
+      0x7f040120, 0x7f040121
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#gravity}
@@ -10733,7 +10761,7 @@ public final class R {
      */
     public static final int Toolbar_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#buttonGravity}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#buttonGravity}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -10747,21 +10775,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      *
-     * @attr name b4a.example:buttonGravity
+     * @attr name ng.dsoftlab.stegocam:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#collapseContentDescription}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#collapseContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:collapseContentDescription
+     * @attr name ng.dsoftlab.stegocam:collapseContentDescription
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#collapseIcon}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#collapseIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10769,11 +10797,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:collapseIcon
+     * @attr name ng.dsoftlab.stegocam:collapseIcon
      */
     public static final int Toolbar_collapseIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10782,11 +10810,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:contentInsetEnd
+     * @attr name ng.dsoftlab.stegocam:contentInsetEnd
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10795,11 +10823,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:contentInsetEndWithActions
+     * @attr name ng.dsoftlab.stegocam:contentInsetEndWithActions
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10808,11 +10836,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:contentInsetLeft
+     * @attr name ng.dsoftlab.stegocam:contentInsetLeft
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10821,11 +10849,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:contentInsetRight
+     * @attr name ng.dsoftlab.stegocam:contentInsetRight
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10834,11 +10862,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:contentInsetStart
+     * @attr name ng.dsoftlab.stegocam:contentInsetStart
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10847,11 +10875,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:contentInsetStartWithNavigation
+     * @attr name ng.dsoftlab.stegocam:contentInsetStartWithNavigation
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#logo}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#logo}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10859,21 +10887,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:logo
+     * @attr name ng.dsoftlab.stegocam:logo
      */
     public static final int Toolbar_logo=11;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#logoDescription}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#logoDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:logoDescription
+     * @attr name ng.dsoftlab.stegocam:logoDescription
      */
     public static final int Toolbar_logoDescription=12;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#maxButtonHeight}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#maxButtonHeight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10882,11 +10910,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:maxButtonHeight
+     * @attr name ng.dsoftlab.stegocam:maxButtonHeight
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#menu}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#menu}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10894,21 +10922,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:menu
+     * @attr name ng.dsoftlab.stegocam:menu
      */
     public static final int Toolbar_menu=14;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#navigationContentDescription}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#navigationContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:navigationContentDescription
+     * @attr name ng.dsoftlab.stegocam:navigationContentDescription
      */
     public static final int Toolbar_navigationContentDescription=15;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#navigationIcon}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#navigationIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10916,11 +10944,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:navigationIcon
+     * @attr name ng.dsoftlab.stegocam:navigationIcon
      */
     public static final int Toolbar_navigationIcon=16;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10928,21 +10956,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:popupTheme
+     * @attr name ng.dsoftlab.stegocam:popupTheme
      */
     public static final int Toolbar_popupTheme=17;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#subtitle}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:subtitle
+     * @attr name ng.dsoftlab.stegocam:subtitle
      */
     public static final int Toolbar_subtitle=18;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#subtitleTextAppearance}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#subtitleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10950,32 +10978,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:subtitleTextAppearance
+     * @attr name ng.dsoftlab.stegocam:subtitleTextAppearance
      */
     public static final int Toolbar_subtitleTextAppearance=19;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#subtitleTextColor}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#subtitleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:subtitleTextColor
+     * @attr name ng.dsoftlab.stegocam:subtitleTextColor
      */
     public static final int Toolbar_subtitleTextColor=20;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#title}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#title}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name b4a.example:title
+     * @attr name ng.dsoftlab.stegocam:title
      */
     public static final int Toolbar_title=21;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#titleMargin}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#titleMargin}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10984,11 +11012,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:titleMargin
+     * @attr name ng.dsoftlab.stegocam:titleMargin
      */
     public static final int Toolbar_titleMargin=22;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#titleMarginBottom}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#titleMarginBottom}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10997,11 +11025,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:titleMarginBottom
+     * @attr name ng.dsoftlab.stegocam:titleMarginBottom
      */
     public static final int Toolbar_titleMarginBottom=23;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#titleMarginEnd}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#titleMarginEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11010,11 +11038,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:titleMarginEnd
+     * @attr name ng.dsoftlab.stegocam:titleMarginEnd
      */
     public static final int Toolbar_titleMarginEnd=24;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#titleMarginStart}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#titleMarginStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11023,11 +11051,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:titleMarginStart
+     * @attr name ng.dsoftlab.stegocam:titleMarginStart
      */
     public static final int Toolbar_titleMarginStart=25;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#titleMarginTop}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#titleMarginTop}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11036,11 +11064,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:titleMarginTop
+     * @attr name ng.dsoftlab.stegocam:titleMarginTop
      */
     public static final int Toolbar_titleMarginTop=26;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#titleMargins}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#titleMargins}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11049,11 +11077,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:titleMargins
+     * @attr name ng.dsoftlab.stegocam:titleMargins
      */
     public static final int Toolbar_titleMargins=27;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#titleTextAppearance}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#titleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11061,18 +11089,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:titleTextAppearance
+     * @attr name ng.dsoftlab.stegocam:titleTextAppearance
      */
     public static final int Toolbar_titleTextAppearance=28;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#titleTextColor}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#titleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:titleTextColor
+     * @attr name ng.dsoftlab.stegocam:titleTextColor
      */
     public static final int Toolbar_titleTextColor=29;
     /**
@@ -11084,9 +11112,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd b4a.example:paddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingStart b4a.example:paddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_theme b4a.example:theme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingEnd ng.dsoftlab.stegocam:paddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingStart ng.dsoftlab.stegocam:paddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_theme ng.dsoftlab.stegocam:theme}</code></td><td></td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -11095,8 +11123,8 @@ public final class R {
      * @see #View_theme
      */
     public static final int[] View={
-      0x01010000, 0x010100da, 0x7f0300cd, 0x7f0300ce, 
-      0x7f03010f
+      0x01010000, 0x010100da, 0x7f0400cd, 0x7f0400ce, 
+      0x7f04010f
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#theme}
@@ -11129,7 +11157,7 @@ public final class R {
      */
     public static final int View_android_focusable=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#paddingEnd}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#paddingEnd}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11138,11 +11166,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:paddingEnd
+     * @attr name ng.dsoftlab.stegocam:paddingEnd
      */
     public static final int View_paddingEnd=2;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#paddingStart}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#paddingStart}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11151,11 +11179,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name b4a.example:paddingStart
+     * @attr name ng.dsoftlab.stegocam:paddingStart
      */
     public static final int View_paddingStart=3;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#theme}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#theme}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11163,7 +11191,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name b4a.example:theme
+     * @attr name ng.dsoftlab.stegocam:theme
      */
     public static final int View_theme=4;
     /**
@@ -11174,15 +11202,15 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint b4a.example:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode b4a.example:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint ng.dsoftlab.stegocam:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode ng.dsoftlab.stegocam:backgroundTintMode}</code></td><td></td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
      * @see #ViewBackgroundHelper_backgroundTintMode
      */
     public static final int[] ViewBackgroundHelper={
-      0x010100d4, 0x7f030036, 0x7f030037
+      0x010100d4, 0x7f040036, 0x7f040037
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#background}
@@ -11200,18 +11228,18 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name b4a.example:backgroundTint
+     * @attr name ng.dsoftlab.stegocam:backgroundTint
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
-     * <p>This symbol is the offset where the {@link b4a.example.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link ng.dsoftlab.stegocam.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11233,7 +11261,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name b4a.example:backgroundTintMode
+     * @attr name ng.dsoftlab.stegocam:backgroundTintMode
      */
     public static final int ViewBackgroundHelper_backgroundTintMode=2;
     /**

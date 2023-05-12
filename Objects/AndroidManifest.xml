@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	package="b4a.example"
+	package="ng.dsoftlab.stegocam"
 	android:versionCode="1"
 	android:versionName=""
 	android:installLocation="internalOnly">
@@ -13,9 +13,12 @@
 	    android:anyDensity="true"/>
 	<uses-permission android:name="android.permission.INTERNET"/>
 	<uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+	<uses-permission android:name="android.permission.USE_FINGERPRINT"/>
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 	<application
+		android:name="androidx.multidex.MultiDexApplication"
 		android:icon="@drawable/icon"
 		android:label="StegoCam"
 		android:theme="@style/MyAppTheme">
@@ -52,6 +55,22 @@
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
 			android:name=".leftmenu"
+			android:label="StegoCam"
+			android:screenOrientation="unspecified"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateVisible"
+			android:launchMode="singleTop"
+			android:name=".login"
+			android:label="StegoCam"
+			android:screenOrientation="unspecified"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateVisible"
+			android:launchMode="singleTop"
+			android:name=".pinsetup"
 			android:label="StegoCam"
 			android:screenOrientation="unspecified"
 			android:exported="true">

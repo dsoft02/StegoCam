@@ -13,7 +13,7 @@ Version=12.2
 Sub Process_Globals
 	'These global variables will be declared once when the application starts.
 	'These variables can be accessed from all modules.
-
+	Private Biometric As BiometricManager
 End Sub
 
 Sub Globals
@@ -30,12 +30,17 @@ Sub Globals
 	Private ic1Menu As ImageView
 	Private ic2Menu As ImageView
 	Private ic3Menu As ImageView
+	Private EditText1 As EditText
+	Private Button1 As Button
+	
+	Dim myScale As SimpleScale
+	Dim container As Panel
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
 	'Do not forget to load the layout file created with the visual designer. For example:
 	Try
-		Drawer.Initialize(Me, "Drawer", Activity, 270dip)
+		Drawer.Initialize(Me, "Drawer", Activity, 300dip)
 		Drawer.CenterPanel.LoadLayout("mainmenu")
 		ToolbarHelper.Initialize
 		ToolbarHelper.ShowUpIndicator = True 'set to true to show the up arrow
@@ -43,9 +48,11 @@ Sub Activity_Create(FirstTime As Boolean)
 		ACToolBarLight1.InitMenuListener
 		Drawer.LeftPanel.LoadLayout("leftmenu")
 		load_Images
+		
 	Catch
 		Log(LastException)
 	End Try
+	
 End Sub
 
 Sub Activity_Resume
@@ -93,5 +100,6 @@ End Sub
 Private Sub lb3Menu_Click
 	If Drawer.LeftOpen Then Drawer.LeftOpen = False
 	Sleep(10)
-	MsgboxAsync("Application developed by Abdul Cadre Hassamo in the scope of * Recruitment Challenge * made by Wit. "& CRLF & CRLF &" The application should show time at the current location and 10 European cities, for this I used bridges (JSON APIs) to obtain such data. " & CRLF & CRLF & "Used APIs:" & CRLF & "Meteorological Data: http://openweathermap.org/api"&CRLF&"Lista do countries: http://vocab.nic.in/rest.php/country/json"&CRLF&CRLF&CRLF&"Eventual contacts I place the layout: achassamo@gmail.com | +258840122758 "," About the application ")
+	MsgboxAsync("Application developed by Ebenezer Ogidiolu in the scope of *Alx Software Engineering Project*." & CRLF & CRLF & "The stegocam application allows users to hide secret messages or files within images, providing a secure and confidential communication method." & CRLF & CRLF & "Users can take new photos or select existing ones from their device. They have the option to hide a secret message or file within the image using various encryption methods, such as AES or DES." & CRLF & CRLF & "To extract hidden data, users can view their modified photos within the app and decrypt the hidden message or extract the hidden file." & CRLF & CRLF & "For any inquiries or support, please contact: ogidioluebenezer@gmail.com | +2349169442847" & CRLF, "About the stegocam application")
 End Sub
+
