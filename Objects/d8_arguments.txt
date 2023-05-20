@@ -54,11 +54,15 @@ c:\android-sdk\tools\..\extras\b4a_remote\androidx\biometric\biometric\1.1.0\unp
 c:\android-sdk\tools\..\extras\b4a_remote\androidx\multidex\multidex\2.0.1\unpacked-multidex-2.0.1\jars\classes.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-appcompat-63810072328000\dex_v1\appcompat.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-core-63810072328000\dex_v1\core.zip
+C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-ime-63810072328000\dex_v1\ime.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-javaobject-63810072328000\dex_v1\javaobject.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-phone-63810072330000\dex_v1\phone.zip
-C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-slidingmenuwrapper-63818870133921\dex_v1\slidingmenuwrapper.zip
-C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-xui-63810072330000\dex_v1\xui.zip
+C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-runtimepermissions-63810072330000\dex_v1\runtimepermissions.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-sharedpreferences-63819295778547\dex_v1\sharedpreferences.zip
+C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-slidingmenuwrapper-63818870133921\dex_v1\slidingmenuwrapper.zip
+C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-sweetalertdialog-63818869545107\dex_v1\sweetalertdialog.zip
+C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-xui-63810072330000\dex_v1\xui.zip
+C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-permissionsmanager-63810541076000\dex_v1\permissionsmanager.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-kotlin-stdlib-1.6.10-63810072330000\dex_v1\kotlin-stdlib-1.6.10.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-viewsex-63810072330000\dex_v1\viewsex.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-remotelogger-63810072330000\dex_v1\remotelogger.zip
@@ -535,12 +539,6 @@ C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\s
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\biometricmanager$BiometricPromptAuthentication.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\biometricmanager.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\config.dex
-C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\leftmenu$1.dex
-C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\leftmenu$B4AMenuItemsClickListener.dex
-C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\leftmenu$HandleKeyDelayed.dex
-C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\leftmenu$ResumeMessage.dex
-C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\leftmenu$WaitForLayout.dex
-C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\leftmenu.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\login$1.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\login$B4AMenuItemsClickListener.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\login$HandleKeyDelayed.dex
@@ -560,13 +558,15 @@ C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\s
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$HandleKeyDelayed.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$ResumableSub_lb1Menu_Click.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$ResumableSub_lb2Menu_Click.dex
-C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$ResumableSub_lb3Menu_Click.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$ResumableSub_lb4Menu_Click.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$ResumableSub_pnlExit_Click.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$ResumeMessage.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$WaitForLayout.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\pinsetup$1.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\pinsetup$B4AMenuItemsClickListener.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\pinsetup$HandleKeyDelayed.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\pinsetup$ResumableSub_btnSave_Click.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\pinsetup$ResumeMessage.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\pinsetup$WaitForLayout.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\pinsetup.dex
