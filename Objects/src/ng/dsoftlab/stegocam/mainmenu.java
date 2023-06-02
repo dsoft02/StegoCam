@@ -34,7 +34,7 @@ public class mainmenu extends androidx.appcompat.app.AppCompatActivity implement
 		super.onCreate(savedInstanceState);
         mostCurrent = this;
 		if (processBA == null) {
-			processBA = new BA(this.getApplicationContext(), null, null, "ng.dsoftlab.stegocam", "ng.dsoftlab.stegocam.mainmenu");
+			processBA = new anywheresoftware.b4a.ShellBA(this.getApplicationContext(), null, null, "ng.dsoftlab.stegocam", "ng.dsoftlab.stegocam.mainmenu");
 			processBA.loadHtSubs(this.getClass());
 	        float deviceScale = getApplicationContext().getResources().getDisplayMetrics().density;
 	        BALayout.setDeviceScale(deviceScale);
@@ -335,6 +335,15 @@ public class mainmenu extends androidx.appcompat.app.AppCompatActivity implement
             
     }
 
+
+
+public static void initializeProcessGlobals() {
+             try {
+                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+}
 public anywheresoftware.b4a.keywords.Common __c = null;
 public static ng.dsoftlab.stegocam.biometricmanager _biometric = null;
 public de.amberhome.objects.appcompat.ACToolbarLightWrapper _actoolbarlight1 = null;
@@ -373,369 +382,130 @@ public anywheresoftware.b4a.objects.PanelWrapper _pnlencode = null;
 public anywheresoftware.b4a.objects.PanelWrapper _pnlexit = null;
 public anywheresoftware.b4a.objects.PanelWrapper _pnlhistory = null;
 public anywheresoftware.b4a.objects.PanelWrapper _pnlsettings = null;
+public b4a.example.dateutils _dateutils = null;
 public ng.dsoftlab.stegocam.main _main = null;
 public ng.dsoftlab.stegocam.starter _starter = null;
 public ng.dsoftlab.stegocam.config _config = null;
-public ng.dsoftlab.stegocam.login _login = null;
+public ng.dsoftlab.stegocam.encode _encode = null;
+public ng.dsoftlab.stegocam.settings _settings = null;
 public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
-
-public static void initializeProcessGlobals() {
-             try {
-                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-}
+public ng.dsoftlab.stegocam.forgotpin _forgotpin = null;
+public ng.dsoftlab.stegocam.login _login = null;
+public ng.dsoftlab.stegocam.pinchange _pinchange = null;
+public ng.dsoftlab.stegocam.pinreset _pinreset = null;
+public ng.dsoftlab.stegocam.securityquestion _securityquestion = null;
+public ng.dsoftlab.stegocam.history _history = null;
+public ng.dsoftlab.stegocam.b4xcollections _b4xcollections = null;
+public ng.dsoftlab.stegocam.httputils2service _httputils2service = null;
+public ng.dsoftlab.stegocam.xuiviewsutils _xuiviewsutils = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
- //BA.debugLineNum = 57;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
- //BA.debugLineNum = 59;BA.debugLine="Try";
-try { //BA.debugLineNum = 60;BA.debugLine="Drawer.Initialize(Me, \"Drawer\", Activity, 300dip";
-mostCurrent._drawer._initialize /*String*/ (mostCurrent.activityBA,mainmenu.getObject(),"Drawer",(anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(mostCurrent._activity.getObject())),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (300)));
- //BA.debugLineNum = 61;BA.debugLine="Drawer.CenterPanel.LoadLayout(\"mainmenu\")";
-mostCurrent._drawer._getcenterpanel /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ().LoadLayout("mainmenu",mostCurrent.activityBA);
- //BA.debugLineNum = 62;BA.debugLine="ToolbarHelper.Initialize";
+RDebugUtils.currentModule="mainmenu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
+RDebugUtils.currentLine=37945344;
+ //BA.debugLineNum = 37945344;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=37945346;
+ //BA.debugLineNum = 37945346;BA.debugLine="Try";
+try {RDebugUtils.currentLine=37945347;
+ //BA.debugLineNum = 37945347;BA.debugLine="Drawer.Initialize(Me, \"Drawer\", Activity, 300dip";
+mostCurrent._drawer._initialize /*String*/ (null,mostCurrent.activityBA,mainmenu.getObject(),"Drawer",(anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(mostCurrent._activity.getObject())),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (300)));
+RDebugUtils.currentLine=37945348;
+ //BA.debugLineNum = 37945348;BA.debugLine="Drawer.CenterPanel.LoadLayout(\"mainmenu\")";
+mostCurrent._drawer._getcenterpanel /*anywheresoftware.b4a.objects.B4XViewWrapper*/ (null).LoadLayout("mainmenu",mostCurrent.activityBA);
+RDebugUtils.currentLine=37945349;
+ //BA.debugLineNum = 37945349;BA.debugLine="ToolbarHelper.Initialize";
 mostCurrent._toolbarhelper.Initialize(mostCurrent.activityBA);
- //BA.debugLineNum = 63;BA.debugLine="ToolbarHelper.ShowUpIndicator = True 'set to tru";
+RDebugUtils.currentLine=37945350;
+ //BA.debugLineNum = 37945350;BA.debugLine="ToolbarHelper.ShowUpIndicator = True 'set to tru";
 mostCurrent._toolbarhelper.setShowUpIndicator(anywheresoftware.b4a.keywords.Common.True);
- //BA.debugLineNum = 64;BA.debugLine="ToolbarHelper.UpIndicatorDrawable = config.Bitma";
+RDebugUtils.currentLine=37945351;
+ //BA.debugLineNum = 37945351;BA.debugLine="ToolbarHelper.UpIndicatorDrawable = config.Bitma";
 mostCurrent._toolbarhelper.setUpIndicatorDrawable((android.graphics.drawable.Drawable)(mostCurrent._config._bitmaptobitmapdrawable /*anywheresoftware.b4a.objects.drawable.BitmapDrawable*/ (mostCurrent.activityBA,anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"hamburger.png")).getObject()));
- //BA.debugLineNum = 65;BA.debugLine="ACToolBarLight1.InitMenuListener";
+RDebugUtils.currentLine=37945352;
+ //BA.debugLineNum = 37945352;BA.debugLine="ACToolBarLight1.InitMenuListener";
 mostCurrent._actoolbarlight1.InitMenuListener();
- //BA.debugLineNum = 66;BA.debugLine="Drawer.LeftPanel.LoadLayout(\"leftmenu\")";
-mostCurrent._drawer._getleftpanel /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ().LoadLayout("leftmenu",mostCurrent.activityBA);
- //BA.debugLineNum = 67;BA.debugLine="load_Images";
+RDebugUtils.currentLine=37945353;
+ //BA.debugLineNum = 37945353;BA.debugLine="Drawer.LeftPanel.LoadLayout(\"leftmenu\")";
+mostCurrent._drawer._getleftpanel /*anywheresoftware.b4a.objects.B4XViewWrapper*/ (null).LoadLayout("leftmenu",mostCurrent.activityBA);
+RDebugUtils.currentLine=37945354;
+ //BA.debugLineNum = 37945354;BA.debugLine="load_Images";
 _load_images();
  } 
        catch (Exception e11) {
-			processBA.setLastException(e11); //BA.debugLineNum = 71;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("3917518",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+			processBA.setLastException(e11);RDebugUtils.currentLine=37945358;
+ //BA.debugLineNum = 37945358;BA.debugLine="Log(LastException)";
+anywheresoftware.b4a.keywords.Common.LogImpl("737945358",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
  };
- //BA.debugLineNum = 74;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37945361;
+ //BA.debugLineNum = 37945361;BA.debugLine="End Sub";
+return "";
+}
+public static String  _load_images() throws Exception{
+RDebugUtils.currentModule="mainmenu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "load_images", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "load_images", null));}
+RDebugUtils.currentLine=38338560;
+ //BA.debugLineNum = 38338560;BA.debugLine="Sub load_Images";
+RDebugUtils.currentLine=38338561;
+ //BA.debugLineNum = 38338561;BA.debugLine="config.AjustImageView(ic1Menu,File.DirAssets,\"loc";
+mostCurrent._config._ajustimageview /*String*/ (mostCurrent.activityBA,mostCurrent._ic1menu,anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"lock_color.png");
+RDebugUtils.currentLine=38338562;
+ //BA.debugLineNum = 38338562;BA.debugLine="config.AjustImageView(ic2Menu,File.DirAssets,\"unl";
+mostCurrent._config._ajustimageview /*String*/ (mostCurrent.activityBA,mostCurrent._ic2menu,anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"unlock_color.png");
+RDebugUtils.currentLine=38338563;
+ //BA.debugLineNum = 38338563;BA.debugLine="config.AjustImageView(ic3Menu,File.DirAssets,\"his";
+mostCurrent._config._ajustimageview /*String*/ (mostCurrent.activityBA,mostCurrent._ic3menu,anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"history_color.png");
+RDebugUtils.currentLine=38338564;
+ //BA.debugLineNum = 38338564;BA.debugLine="config.AjustImageView(ic4Menu,File.DirAssets,\"abo";
+mostCurrent._config._ajustimageview /*String*/ (mostCurrent.activityBA,mostCurrent._ic4menu,anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"about_color.png");
+RDebugUtils.currentLine=38338565;
+ //BA.debugLineNum = 38338565;BA.debugLine="config.AjustImageView(ic5Menu,File.DirAssets,\"pin";
+mostCurrent._config._ajustimageview /*String*/ (mostCurrent.activityBA,mostCurrent._ic5menu,anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"pin.png");
+RDebugUtils.currentLine=38338566;
+ //BA.debugLineNum = 38338566;BA.debugLine="config.AjustImageView(ic6Menu,File.DirAssets,\"sec";
+mostCurrent._config._ajustimageview /*String*/ (mostCurrent.activityBA,mostCurrent._ic6menu,anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"sec_quest.png");
+RDebugUtils.currentLine=38338567;
+ //BA.debugLineNum = 38338567;BA.debugLine="End Sub";
 return "";
 }
 public static boolean  _activity_keypress(int _keycode) throws Exception{
- //BA.debugLineNum = 89;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
- //BA.debugLineNum = 90;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK And Drawer.Lef";
-if (_keycode==anywheresoftware.b4a.keywords.Common.KeyCodes.KEYCODE_BACK && mostCurrent._drawer._getleftopen /*boolean*/ ()) { 
- //BA.debugLineNum = 91;BA.debugLine="Drawer.LeftOpen = False";
-mostCurrent._drawer._setleftopen /*boolean*/ (anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 92;BA.debugLine="Return True";
+RDebugUtils.currentModule="mainmenu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_keypress", false))
+	 {return ((Boolean) Debug.delegate(mostCurrent.activityBA, "activity_keypress", new Object[] {_keycode}));}
+RDebugUtils.currentLine=38207488;
+ //BA.debugLineNum = 38207488;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
+RDebugUtils.currentLine=38207489;
+ //BA.debugLineNum = 38207489;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK And Drawer.Lef";
+if (_keycode==anywheresoftware.b4a.keywords.Common.KeyCodes.KEYCODE_BACK && mostCurrent._drawer._getleftopen /*boolean*/ (null)) { 
+RDebugUtils.currentLine=38207490;
+ //BA.debugLineNum = 38207490;BA.debugLine="Drawer.LeftOpen = False";
+mostCurrent._drawer._setleftopen /*boolean*/ (null,anywheresoftware.b4a.keywords.Common.False);
+RDebugUtils.currentLine=38207491;
+ //BA.debugLineNum = 38207491;BA.debugLine="Return True";
 if (true) return anywheresoftware.b4a.keywords.Common.True;
- }else if(_keycode==anywheresoftware.b4a.keywords.Common.KeyCodes.KEYCODE_BACK && mostCurrent._drawer._getleftopen /*boolean*/ ()==anywheresoftware.b4a.keywords.Common.False) { 
- //BA.debugLineNum = 94;BA.debugLine="pnlExit_Click";
+ }else 
+{RDebugUtils.currentLine=38207492;
+ //BA.debugLineNum = 38207492;BA.debugLine="Else If KeyCode = KeyCodes.KEYCODE_BACK And Drawe";
+if (_keycode==anywheresoftware.b4a.keywords.Common.KeyCodes.KEYCODE_BACK && mostCurrent._drawer._getleftopen /*boolean*/ (null)==anywheresoftware.b4a.keywords.Common.False) { 
+RDebugUtils.currentLine=38207493;
+ //BA.debugLineNum = 38207493;BA.debugLine="pnlExit_Click";
 _pnlexit_click();
- //BA.debugLineNum = 95;BA.debugLine="Return True";
+RDebugUtils.currentLine=38207494;
+ //BA.debugLineNum = 38207494;BA.debugLine="Return True";
 if (true) return anywheresoftware.b4a.keywords.Common.True;
- };
- //BA.debugLineNum = 97;BA.debugLine="Return False";
+ }}
+;
+RDebugUtils.currentLine=38207496;
+ //BA.debugLineNum = 38207496;BA.debugLine="Return False";
 if (true) return anywheresoftware.b4a.keywords.Common.False;
- //BA.debugLineNum = 98;BA.debugLine="End Sub";
+RDebugUtils.currentLine=38207497;
+ //BA.debugLineNum = 38207497;BA.debugLine="End Sub";
 return false;
 }
-public static String  _activity_pause(boolean _userclosed) throws Exception{
- //BA.debugLineNum = 80;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
- //BA.debugLineNum = 82;BA.debugLine="End Sub";
-return "";
-}
-public static String  _activity_resume() throws Exception{
- //BA.debugLineNum = 76;BA.debugLine="Sub Activity_Resume";
- //BA.debugLineNum = 78;BA.debugLine="End Sub";
-return "";
-}
-public static String  _actoolbarlight1_menuitemclick(de.amberhome.objects.appcompat.ACMenuItemWrapper _item) throws Exception{
- //BA.debugLineNum = 100;BA.debugLine="Private Sub ACToolBarLight1_MenuItemClick (Item As";
- //BA.debugLineNum = 102;BA.debugLine="End Sub";
-return "";
-}
-public static String  _actoolbarlight1_navigationitemclick() throws Exception{
- //BA.debugLineNum = 85;BA.debugLine="Sub ACToolBarLight1_NavigationItemClick";
- //BA.debugLineNum = 86;BA.debugLine="Drawer.LeftOpen = Not(Drawer.LeftOpen)";
-mostCurrent._drawer._setleftopen /*boolean*/ (anywheresoftware.b4a.keywords.Common.Not(mostCurrent._drawer._getleftopen /*boolean*/ ()));
- //BA.debugLineNum = 87;BA.debugLine="End Sub";
-return "";
-}
-public static String  _globals() throws Exception{
- //BA.debugLineNum = 13;BA.debugLine="Sub Globals";
- //BA.debugLineNum = 17;BA.debugLine="Private ACToolBarLight1 As ACToolBarLight";
-mostCurrent._actoolbarlight1 = new de.amberhome.objects.appcompat.ACToolbarLightWrapper();
- //BA.debugLineNum = 18;BA.debugLine="Private ToolbarHelper As ACActionBar";
-mostCurrent._toolbarhelper = new de.amberhome.objects.appcompat.ACActionBar();
- //BA.debugLineNum = 19;BA.debugLine="Private Drawer As B4XDrawer";
-mostCurrent._drawer = new ng.dsoftlab.stegocam.b4xdrawer();
- //BA.debugLineNum = 21;BA.debugLine="Private lb1Menu As Label";
-mostCurrent._lb1menu = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 22;BA.debugLine="Private lb2Menu As Label";
-mostCurrent._lb2menu = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 23;BA.debugLine="Private lb3Menu As Label";
-mostCurrent._lb3menu = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 24;BA.debugLine="Private ic1Menu As ImageView";
-mostCurrent._ic1menu = new anywheresoftware.b4a.objects.ImageViewWrapper();
- //BA.debugLineNum = 25;BA.debugLine="Private ic2Menu As ImageView";
-mostCurrent._ic2menu = new anywheresoftware.b4a.objects.ImageViewWrapper();
- //BA.debugLineNum = 26;BA.debugLine="Private ic3Menu As ImageView";
-mostCurrent._ic3menu = new anywheresoftware.b4a.objects.ImageViewWrapper();
- //BA.debugLineNum = 27;BA.debugLine="Private ic4Menu As ImageView";
-mostCurrent._ic4menu = new anywheresoftware.b4a.objects.ImageViewWrapper();
- //BA.debugLineNum = 28;BA.debugLine="Private ic5Menu As ImageView";
-mostCurrent._ic5menu = new anywheresoftware.b4a.objects.ImageViewWrapper();
- //BA.debugLineNum = 29;BA.debugLine="Private ic6Menu As ImageView";
-mostCurrent._ic6menu = new anywheresoftware.b4a.objects.ImageViewWrapper();
- //BA.debugLineNum = 30;BA.debugLine="Private EditText1 As EditText";
-mostCurrent._edittext1 = new anywheresoftware.b4a.objects.EditTextWrapper();
- //BA.debugLineNum = 31;BA.debugLine="Private Button1 As Button";
-mostCurrent._button1 = new anywheresoftware.b4a.objects.ButtonWrapper();
- //BA.debugLineNum = 33;BA.debugLine="Dim myScale As SimpleScale";
-mostCurrent._myscale = new ng.dsoftlab.stegocam.simplescale();
- //BA.debugLineNum = 34;BA.debugLine="Dim container As Panel";
-mostCurrent._container = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 35;BA.debugLine="Private imgAbout As ImageView";
-mostCurrent._imgabout = new anywheresoftware.b4a.objects.ImageViewWrapper();
- //BA.debugLineNum = 36;BA.debugLine="Private imgDecode As ImageView";
-mostCurrent._imgdecode = new anywheresoftware.b4a.objects.ImageViewWrapper();
- //BA.debugLineNum = 37;BA.debugLine="Private imgEncode As ImageView";
-mostCurrent._imgencode = new anywheresoftware.b4a.objects.ImageViewWrapper();
- //BA.debugLineNum = 38;BA.debugLine="Private imgExit As ImageView";
-mostCurrent._imgexit = new anywheresoftware.b4a.objects.ImageViewWrapper();
- //BA.debugLineNum = 39;BA.debugLine="Private imgHistory As ImageView";
-mostCurrent._imghistory = new anywheresoftware.b4a.objects.ImageViewWrapper();
- //BA.debugLineNum = 40;BA.debugLine="Private imgSettings As ImageView";
-mostCurrent._imgsettings = new anywheresoftware.b4a.objects.ImageViewWrapper();
- //BA.debugLineNum = 41;BA.debugLine="Private lblAbout As Label";
-mostCurrent._lblabout = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 42;BA.debugLine="Private lblDecode As Label";
-mostCurrent._lbldecode = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 43;BA.debugLine="Private lblEncode As Label";
-mostCurrent._lblencode = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 44;BA.debugLine="Private lblExit As Label";
-mostCurrent._lblexit = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 45;BA.debugLine="Private lblHistory As Label";
-mostCurrent._lblhistory = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 46;BA.debugLine="Private lblSettings As Label";
-mostCurrent._lblsettings = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 47;BA.debugLine="Private Panel1 As Panel";
-mostCurrent._panel1 = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 48;BA.debugLine="Private Panel2 As Panel";
-mostCurrent._panel2 = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 49;BA.debugLine="Private pnlAbout As Panel";
-mostCurrent._pnlabout = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 50;BA.debugLine="Private pnlDecode As Panel";
-mostCurrent._pnldecode = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 51;BA.debugLine="Private pnlEncode As Panel";
-mostCurrent._pnlencode = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 52;BA.debugLine="Private pnlExit As Panel";
-mostCurrent._pnlexit = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 53;BA.debugLine="Private pnlHistory As Panel";
-mostCurrent._pnlhistory = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 54;BA.debugLine="Private pnlSettings As Panel";
-mostCurrent._pnlsettings = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 55;BA.debugLine="End Sub";
-return "";
-}
-public static void  _lb1menu_click() throws Exception{
-ResumableSub_lb1Menu_Click rsub = new ResumableSub_lb1Menu_Click(null);
-rsub.resume(processBA, null);
-}
-public static class ResumableSub_lb1Menu_Click extends BA.ResumableSub {
-public ResumableSub_lb1Menu_Click(ng.dsoftlab.stegocam.mainmenu parent) {
-this.parent = parent;
-}
-ng.dsoftlab.stegocam.mainmenu parent;
-
-@Override
-public void resume(BA ba, Object[] result) throws Exception{
-
-    while (true) {
-        switch (state) {
-            case -1:
-return;
-
-case 0:
-//C
-this.state = 1;
- //BA.debugLineNum = 120;BA.debugLine="If Drawer.LeftOpen Then Drawer.LeftOpen = False";
-if (true) break;
-
-case 1:
-//if
-this.state = 6;
-if (parent.mostCurrent._drawer._getleftopen /*boolean*/ ()) { 
-this.state = 3;
-;}if (true) break;
-
-case 3:
-//C
-this.state = 6;
-parent.mostCurrent._drawer._setleftopen /*boolean*/ (anywheresoftware.b4a.keywords.Common.False);
-if (true) break;
-
-case 6:
-//C
-this.state = -1;
-;
- //BA.debugLineNum = 121;BA.debugLine="Sleep(10)";
-anywheresoftware.b4a.keywords.Common.Sleep(mostCurrent.activityBA,this,(int) (10));
-this.state = 7;
-return;
-case 7:
-//C
-this.state = -1;
-;
- //BA.debugLineNum = 122;BA.debugLine="End Sub";
-if (true) break;
-
-            }
-        }
-    }
-}
-public static void  _lb2menu_click() throws Exception{
-ResumableSub_lb2Menu_Click rsub = new ResumableSub_lb2Menu_Click(null);
-rsub.resume(processBA, null);
-}
-public static class ResumableSub_lb2Menu_Click extends BA.ResumableSub {
-public ResumableSub_lb2Menu_Click(ng.dsoftlab.stegocam.mainmenu parent) {
-this.parent = parent;
-}
-ng.dsoftlab.stegocam.mainmenu parent;
-
-@Override
-public void resume(BA ba, Object[] result) throws Exception{
-
-    while (true) {
-        switch (state) {
-            case -1:
-return;
-
-case 0:
-//C
-this.state = 1;
- //BA.debugLineNum = 116;BA.debugLine="If Drawer.LeftOpen Then Drawer.LeftOpen = False";
-if (true) break;
-
-case 1:
-//if
-this.state = 6;
-if (parent.mostCurrent._drawer._getleftopen /*boolean*/ ()) { 
-this.state = 3;
-;}if (true) break;
-
-case 3:
-//C
-this.state = 6;
-parent.mostCurrent._drawer._setleftopen /*boolean*/ (anywheresoftware.b4a.keywords.Common.False);
-if (true) break;
-
-case 6:
-//C
-this.state = -1;
-;
- //BA.debugLineNum = 117;BA.debugLine="Sleep(150)";
-anywheresoftware.b4a.keywords.Common.Sleep(mostCurrent.activityBA,this,(int) (150));
-this.state = 7;
-return;
-case 7:
-//C
-this.state = -1;
-;
- //BA.debugLineNum = 118;BA.debugLine="End Sub";
-if (true) break;
-
-            }
-        }
-    }
-}
-public static void  _lb4menu_click() throws Exception{
-ResumableSub_lb4Menu_Click rsub = new ResumableSub_lb4Menu_Click(null);
-rsub.resume(processBA, null);
-}
-public static class ResumableSub_lb4Menu_Click extends BA.ResumableSub {
-public ResumableSub_lb4Menu_Click(ng.dsoftlab.stegocam.mainmenu parent) {
-this.parent = parent;
-}
-ng.dsoftlab.stegocam.mainmenu parent;
-
-@Override
-public void resume(BA ba, Object[] result) throws Exception{
-
-    while (true) {
-        switch (state) {
-            case -1:
-return;
-
-case 0:
-//C
-this.state = 1;
- //BA.debugLineNum = 124;BA.debugLine="If Drawer.LeftOpen Then Drawer.LeftOpen = False";
-if (true) break;
-
-case 1:
-//if
-this.state = 6;
-if (parent.mostCurrent._drawer._getleftopen /*boolean*/ ()) { 
-this.state = 3;
-;}if (true) break;
-
-case 3:
-//C
-this.state = 6;
-parent.mostCurrent._drawer._setleftopen /*boolean*/ (anywheresoftware.b4a.keywords.Common.False);
-if (true) break;
-
-case 6:
-//C
-this.state = -1;
-;
- //BA.debugLineNum = 125;BA.debugLine="Sleep(10)";
-anywheresoftware.b4a.keywords.Common.Sleep(mostCurrent.activityBA,this,(int) (10));
-this.state = 7;
-return;
-case 7:
-//C
-this.state = -1;
-;
- //BA.debugLineNum = 126;BA.debugLine="MsgboxAsync(\"Application developed by Ebenezer Og";
-anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Application developed by Ebenezer Ogidiolu in the scope of *Alx Software Engineering Project*."+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"The stegocam application allows users to hide secret messages or files within images, providing a secure and confidential communication method."+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"Users can take new photos or select existing ones from their device. They have the option to hide a secret message or file within the image using various encryption methods, such as AES or DES."+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"To extract hidden data, users can view their modified photos within the app and decrypt the hidden message or extract the hidden file."+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"For any inquiries or support, please contact: ogidioluebenezer@gmail.com | +2349169442847"+anywheresoftware.b4a.keywords.Common.CRLF),BA.ObjectToCharSequence("About the stegocam application"),processBA);
- //BA.debugLineNum = 127;BA.debugLine="End Sub";
-if (true) break;
-
-            }
-        }
-    }
-}
-public static String  _load_images() throws Exception{
- //BA.debugLineNum = 105;BA.debugLine="Sub load_Images";
- //BA.debugLineNum = 106;BA.debugLine="config.AjustImageView(ic1Menu,File.DirAssets,\"loc";
-mostCurrent._config._ajustimageview /*String*/ (mostCurrent.activityBA,mostCurrent._ic1menu,anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"lock_color.png");
- //BA.debugLineNum = 107;BA.debugLine="config.AjustImageView(ic2Menu,File.DirAssets,\"unl";
-mostCurrent._config._ajustimageview /*String*/ (mostCurrent.activityBA,mostCurrent._ic2menu,anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"unlock_color.png");
- //BA.debugLineNum = 108;BA.debugLine="config.AjustImageView(ic3Menu,File.DirAssets,\"his";
-mostCurrent._config._ajustimageview /*String*/ (mostCurrent.activityBA,mostCurrent._ic3menu,anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"history_color.png");
- //BA.debugLineNum = 109;BA.debugLine="config.AjustImageView(ic4Menu,File.DirAssets,\"abo";
-mostCurrent._config._ajustimageview /*String*/ (mostCurrent.activityBA,mostCurrent._ic4menu,anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"about_color.png");
- //BA.debugLineNum = 110;BA.debugLine="config.AjustImageView(ic5Menu,File.DirAssets,\"pin";
-mostCurrent._config._ajustimageview /*String*/ (mostCurrent.activityBA,mostCurrent._ic5menu,anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"pin.png");
- //BA.debugLineNum = 111;BA.debugLine="config.AjustImageView(ic6Menu,File.DirAssets,\"sec";
-mostCurrent._config._ajustimageview /*String*/ (mostCurrent.activityBA,mostCurrent._ic6menu,anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"sec_quest.png");
- //BA.debugLineNum = 112;BA.debugLine="End Sub";
-return "";
-}
-public static String  _pnlabout_click() throws Exception{
- //BA.debugLineNum = 156;BA.debugLine="Private Sub pnlAbout_Click";
- //BA.debugLineNum = 157;BA.debugLine="lb4Menu_Click";
-_lb4menu_click();
- //BA.debugLineNum = 158;BA.debugLine="End Sub";
-return "";
-}
-public static String  _pnldecode_click() throws Exception{
- //BA.debugLineNum = 152;BA.debugLine="Private Sub pnlDecode_Click";
- //BA.debugLineNum = 154;BA.debugLine="End Sub";
-return "";
-}
-public static String  _pnlencode_click() throws Exception{
- //BA.debugLineNum = 148;BA.debugLine="Private Sub pnlEncode_Click";
- //BA.debugLineNum = 150;BA.debugLine="End Sub";
-return "";
-}
 public static void  _pnlexit_click() throws Exception{
+RDebugUtils.currentModule="mainmenu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "pnlexit_click", false))
+	 {Debug.delegate(mostCurrent.activityBA, "pnlexit_click", null); return;}
 ResumableSub_pnlExit_Click rsub = new ResumableSub_pnlExit_Click(null);
 rsub.resume(processBA, null);
 }
@@ -748,6 +518,7 @@ int _result = 0;
 
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
+RDebugUtils.currentModule="mainmenu";
 
     while (true) {
         switch (state) {
@@ -757,10 +528,12 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 140;BA.debugLine="Msgbox2Async(\"Are you sure you want to exit?\",\"Ex";
+RDebugUtils.currentLine=38731777;
+ //BA.debugLineNum = 38731777;BA.debugLine="Msgbox2Async(\"Are you sure you want to exit?\",\"Ex";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Are you sure you want to exit?"),BA.ObjectToCharSequence("Exit Application"),"Yes","No","",(anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)),processBA,anywheresoftware.b4a.keywords.Common.True);
- //BA.debugLineNum = 141;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
-anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
+RDebugUtils.currentLine=38731778;
+ //BA.debugLineNum = 38731778;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "mainmenu", "pnlexit_click"), null);
 this.state = 5;
 return;
 case 5:
@@ -768,7 +541,8 @@ case 5:
 this.state = 1;
 _result = (Integer) result[0];
 ;
- //BA.debugLineNum = 142;BA.debugLine="If Result = DialogResponse.POSITIVE Then";
+RDebugUtils.currentLine=38731779;
+ //BA.debugLineNum = 38731779;BA.debugLine="If Result = DialogResponse.POSITIVE Then";
 if (true) break;
 
 case 1:
@@ -781,40 +555,325 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
- //BA.debugLineNum = 143;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=38731780;
+ //BA.debugLineNum = 38731780;BA.debugLine="Activity.Finish";
 parent.mostCurrent._activity.Finish();
- //BA.debugLineNum = 144;BA.debugLine="ExitApplication";
-anywheresoftware.b4a.keywords.Common.ExitApplication();
  if (true) break;
 
 case 4:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 146;BA.debugLine="End Sub";
+RDebugUtils.currentLine=38731783;
+ //BA.debugLineNum = 38731783;BA.debugLine="End Sub";
 if (true) break;
 
             }
         }
     }
 }
-public static void  _msgbox_result(int _result) throws Exception{
+public static String  _activity_pause(boolean _userclosed) throws Exception{
+RDebugUtils.currentModule="mainmenu";
+RDebugUtils.currentLine=38076416;
+ //BA.debugLineNum = 38076416;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=38076418;
+ //BA.debugLineNum = 38076418;BA.debugLine="End Sub";
+return "";
+}
+public static String  _activity_resume() throws Exception{
+RDebugUtils.currentModule="mainmenu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
+RDebugUtils.currentLine=38010880;
+ //BA.debugLineNum = 38010880;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=38010882;
+ //BA.debugLineNum = 38010882;BA.debugLine="End Sub";
+return "";
+}
+public static String  _actoolbarlight1_menuitemclick(de.amberhome.objects.appcompat.ACMenuItemWrapper _item) throws Exception{
+RDebugUtils.currentModule="mainmenu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "actoolbarlight1_menuitemclick", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "actoolbarlight1_menuitemclick", new Object[] {_item}));}
+RDebugUtils.currentLine=38273024;
+ //BA.debugLineNum = 38273024;BA.debugLine="Private Sub ACToolBarLight1_MenuItemClick (Item As";
+RDebugUtils.currentLine=38273026;
+ //BA.debugLineNum = 38273026;BA.debugLine="End Sub";
+return "";
+}
+public static String  _actoolbarlight1_navigationitemclick() throws Exception{
+RDebugUtils.currentModule="mainmenu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "actoolbarlight1_navigationitemclick", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "actoolbarlight1_navigationitemclick", null));}
+RDebugUtils.currentLine=38141952;
+ //BA.debugLineNum = 38141952;BA.debugLine="Sub ACToolBarLight1_NavigationItemClick";
+RDebugUtils.currentLine=38141953;
+ //BA.debugLineNum = 38141953;BA.debugLine="Drawer.LeftOpen = Not(Drawer.LeftOpen)";
+mostCurrent._drawer._setleftopen /*boolean*/ (null,anywheresoftware.b4a.keywords.Common.Not(mostCurrent._drawer._getleftopen /*boolean*/ (null)));
+RDebugUtils.currentLine=38141954;
+ //BA.debugLineNum = 38141954;BA.debugLine="End Sub";
+return "";
+}
+public static void  _lb1menu_click() throws Exception{
+RDebugUtils.currentModule="mainmenu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "lb1menu_click", false))
+	 {Debug.delegate(mostCurrent.activityBA, "lb1menu_click", null); return;}
+ResumableSub_lb1Menu_Click rsub = new ResumableSub_lb1Menu_Click(null);
+rsub.resume(processBA, null);
+}
+public static class ResumableSub_lb1Menu_Click extends BA.ResumableSub {
+public ResumableSub_lb1Menu_Click(ng.dsoftlab.stegocam.mainmenu parent) {
+this.parent = parent;
+}
+ng.dsoftlab.stegocam.mainmenu parent;
+
+@Override
+public void resume(BA ba, Object[] result) throws Exception{
+RDebugUtils.currentModule="mainmenu";
+
+    while (true) {
+        switch (state) {
+            case -1:
+return;
+
+case 0:
+//C
+this.state = 1;
+RDebugUtils.currentLine=38469633;
+ //BA.debugLineNum = 38469633;BA.debugLine="If Drawer.LeftOpen Then Drawer.LeftOpen = False";
+if (true) break;
+
+case 1:
+//if
+this.state = 6;
+if (parent.mostCurrent._drawer._getleftopen /*boolean*/ (null)) { 
+this.state = 3;
+;}if (true) break;
+
+case 3:
+//C
+this.state = 6;
+parent.mostCurrent._drawer._setleftopen /*boolean*/ (null,anywheresoftware.b4a.keywords.Common.False);
+if (true) break;
+
+case 6:
+//C
+this.state = -1;
+;
+RDebugUtils.currentLine=38469634;
+ //BA.debugLineNum = 38469634;BA.debugLine="Sleep(10)";
+anywheresoftware.b4a.keywords.Common.Sleep(mostCurrent.activityBA,new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "mainmenu", "lb1menu_click"),(int) (10));
+this.state = 7;
+return;
+case 7:
+//C
+this.state = -1;
+;
+RDebugUtils.currentLine=38469635;
+ //BA.debugLineNum = 38469635;BA.debugLine="End Sub";
+if (true) break;
+
+            }
+        }
+    }
+}
+public static void  _lb2menu_click() throws Exception{
+RDebugUtils.currentModule="mainmenu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "lb2menu_click", false))
+	 {Debug.delegate(mostCurrent.activityBA, "lb2menu_click", null); return;}
+ResumableSub_lb2Menu_Click rsub = new ResumableSub_lb2Menu_Click(null);
+rsub.resume(processBA, null);
+}
+public static class ResumableSub_lb2Menu_Click extends BA.ResumableSub {
+public ResumableSub_lb2Menu_Click(ng.dsoftlab.stegocam.mainmenu parent) {
+this.parent = parent;
+}
+ng.dsoftlab.stegocam.mainmenu parent;
+
+@Override
+public void resume(BA ba, Object[] result) throws Exception{
+RDebugUtils.currentModule="mainmenu";
+
+    while (true) {
+        switch (state) {
+            case -1:
+return;
+
+case 0:
+//C
+this.state = 1;
+RDebugUtils.currentLine=38404097;
+ //BA.debugLineNum = 38404097;BA.debugLine="If Drawer.LeftOpen Then Drawer.LeftOpen = False";
+if (true) break;
+
+case 1:
+//if
+this.state = 6;
+if (parent.mostCurrent._drawer._getleftopen /*boolean*/ (null)) { 
+this.state = 3;
+;}if (true) break;
+
+case 3:
+//C
+this.state = 6;
+parent.mostCurrent._drawer._setleftopen /*boolean*/ (null,anywheresoftware.b4a.keywords.Common.False);
+if (true) break;
+
+case 6:
+//C
+this.state = -1;
+;
+RDebugUtils.currentLine=38404098;
+ //BA.debugLineNum = 38404098;BA.debugLine="Sleep(150)";
+anywheresoftware.b4a.keywords.Common.Sleep(mostCurrent.activityBA,new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "mainmenu", "lb2menu_click"),(int) (150));
+this.state = 7;
+return;
+case 7:
+//C
+this.state = -1;
+;
+RDebugUtils.currentLine=38404099;
+ //BA.debugLineNum = 38404099;BA.debugLine="End Sub";
+if (true) break;
+
+            }
+        }
+    }
+}
+public static void  _lb4menu_click() throws Exception{
+RDebugUtils.currentModule="mainmenu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "lb4menu_click", false))
+	 {Debug.delegate(mostCurrent.activityBA, "lb4menu_click", null); return;}
+ResumableSub_lb4Menu_Click rsub = new ResumableSub_lb4Menu_Click(null);
+rsub.resume(processBA, null);
+}
+public static class ResumableSub_lb4Menu_Click extends BA.ResumableSub {
+public ResumableSub_lb4Menu_Click(ng.dsoftlab.stegocam.mainmenu parent) {
+this.parent = parent;
+}
+ng.dsoftlab.stegocam.mainmenu parent;
+
+@Override
+public void resume(BA ba, Object[] result) throws Exception{
+RDebugUtils.currentModule="mainmenu";
+
+    while (true) {
+        switch (state) {
+            case -1:
+return;
+
+case 0:
+//C
+this.state = 1;
+RDebugUtils.currentLine=38535169;
+ //BA.debugLineNum = 38535169;BA.debugLine="If Drawer.LeftOpen Then Drawer.LeftOpen = False";
+if (true) break;
+
+case 1:
+//if
+this.state = 6;
+if (parent.mostCurrent._drawer._getleftopen /*boolean*/ (null)) { 
+this.state = 3;
+;}if (true) break;
+
+case 3:
+//C
+this.state = 6;
+parent.mostCurrent._drawer._setleftopen /*boolean*/ (null,anywheresoftware.b4a.keywords.Common.False);
+if (true) break;
+
+case 6:
+//C
+this.state = -1;
+;
+RDebugUtils.currentLine=38535170;
+ //BA.debugLineNum = 38535170;BA.debugLine="Sleep(10)";
+anywheresoftware.b4a.keywords.Common.Sleep(mostCurrent.activityBA,new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "mainmenu", "lb4menu_click"),(int) (10));
+this.state = 7;
+return;
+case 7:
+//C
+this.state = -1;
+;
+RDebugUtils.currentLine=38535171;
+ //BA.debugLineNum = 38535171;BA.debugLine="MsgboxAsync(\"Application developed by Ebenezer Og";
+anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Application developed by Ebenezer Ogidiolu in the scope of Alx Software Engineering Project."+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"The stegocam application allows users to hide secret messages or files within images, providing a secure and confidential communication method."+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"Users can take new photos or select existing ones from their device. They have the option to hide a secret message or file within the image using various encryption methods, such as AES or DES."+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"To extract hidden data, users can view their modified photos within the app and decrypt the hidden message or extract the hidden file."+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"For any inquiries or support, please contact: ogidioluebenezer@gmail.com | +2349169442847"+anywheresoftware.b4a.keywords.Common.CRLF),BA.ObjectToCharSequence("About the stegocam application"),processBA);
+RDebugUtils.currentLine=38535172;
+ //BA.debugLineNum = 38535172;BA.debugLine="End Sub";
+if (true) break;
+
+            }
+        }
+    }
+}
+public static String  _pnlabout_click() throws Exception{
+RDebugUtils.currentModule="mainmenu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "pnlabout_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "pnlabout_click", null));}
+RDebugUtils.currentLine=38928384;
+ //BA.debugLineNum = 38928384;BA.debugLine="Private Sub pnlAbout_Click";
+RDebugUtils.currentLine=38928385;
+ //BA.debugLineNum = 38928385;BA.debugLine="lb4Menu_Click";
+_lb4menu_click();
+RDebugUtils.currentLine=38928386;
+ //BA.debugLineNum = 38928386;BA.debugLine="End Sub";
+return "";
+}
+public static String  _pnldecode_click() throws Exception{
+RDebugUtils.currentModule="mainmenu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "pnldecode_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "pnldecode_click", null));}
+RDebugUtils.currentLine=38862848;
+ //BA.debugLineNum = 38862848;BA.debugLine="Private Sub pnlDecode_Click";
+RDebugUtils.currentLine=38862850;
+ //BA.debugLineNum = 38862850;BA.debugLine="End Sub";
+return "";
+}
+public static String  _pnlencode_click() throws Exception{
+RDebugUtils.currentModule="mainmenu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "pnlencode_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "pnlencode_click", null));}
+RDebugUtils.currentLine=38797312;
+ //BA.debugLineNum = 38797312;BA.debugLine="Private Sub pnlEncode_Click";
+RDebugUtils.currentLine=38797313;
+ //BA.debugLineNum = 38797313;BA.debugLine="StartActivity(encode)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._encode.getObject()));
+RDebugUtils.currentLine=38797314;
+ //BA.debugLineNum = 38797314;BA.debugLine="Activity.Finish";
+mostCurrent._activity.Finish();
+RDebugUtils.currentLine=38797315;
+ //BA.debugLineNum = 38797315;BA.debugLine="End Sub";
+return "";
 }
 public static String  _pnlhistory_click() throws Exception{
- //BA.debugLineNum = 135;BA.debugLine="Private Sub pnlHistory_Click";
- //BA.debugLineNum = 137;BA.debugLine="End Sub";
+RDebugUtils.currentModule="mainmenu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "pnlhistory_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "pnlhistory_click", null));}
+RDebugUtils.currentLine=38666240;
+ //BA.debugLineNum = 38666240;BA.debugLine="Private Sub pnlHistory_Click";
+RDebugUtils.currentLine=38666241;
+ //BA.debugLineNum = 38666241;BA.debugLine="StartActivity(history)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._history.getObject()));
+RDebugUtils.currentLine=38666242;
+ //BA.debugLineNum = 38666242;BA.debugLine="Activity.Finish";
+mostCurrent._activity.Finish();
+RDebugUtils.currentLine=38666243;
+ //BA.debugLineNum = 38666243;BA.debugLine="End Sub";
 return "";
 }
 public static String  _pnlsettings_click() throws Exception{
- //BA.debugLineNum = 131;BA.debugLine="Private Sub pnlSettings_Click";
- //BA.debugLineNum = 133;BA.debugLine="End Sub";
-return "";
-}
-public static String  _process_globals() throws Exception{
- //BA.debugLineNum = 7;BA.debugLine="Sub Process_Globals";
- //BA.debugLineNum = 10;BA.debugLine="Private Biometric As BiometricManager";
-_biometric = new ng.dsoftlab.stegocam.biometricmanager();
- //BA.debugLineNum = 11;BA.debugLine="End Sub";
+RDebugUtils.currentModule="mainmenu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "pnlsettings_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "pnlsettings_click", null));}
+RDebugUtils.currentLine=38600704;
+ //BA.debugLineNum = 38600704;BA.debugLine="Private Sub pnlSettings_Click";
+RDebugUtils.currentLine=38600705;
+ //BA.debugLineNum = 38600705;BA.debugLine="StartActivity(settings)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._settings.getObject()));
+RDebugUtils.currentLine=38600706;
+ //BA.debugLineNum = 38600706;BA.debugLine="Activity.Finish";
+mostCurrent._activity.Finish();
+RDebugUtils.currentLine=38600707;
+ //BA.debugLineNum = 38600707;BA.debugLine="End Sub";
 return "";
 }
 }

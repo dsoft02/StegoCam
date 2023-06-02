@@ -34,7 +34,7 @@ public class main extends androidx.appcompat.app.AppCompatActivity implements B4
 		super.onCreate(savedInstanceState);
         mostCurrent = this;
 		if (processBA == null) {
-			processBA = new BA(this.getApplicationContext(), null, null, "ng.dsoftlab.stegocam", "ng.dsoftlab.stegocam.main");
+			processBA = new anywheresoftware.b4a.ShellBA(this.getApplicationContext(), null, null, "ng.dsoftlab.stegocam", "ng.dsoftlab.stegocam.main");
 			processBA.loadHtSubs(this.getClass());
 	        float deviceScale = getApplicationContext().getResources().getDisplayMetrics().density;
 	        BALayout.setDeviceScale(deviceScale);
@@ -335,6 +335,179 @@ public class main extends androidx.appcompat.app.AppCompatActivity implements B4
             
     }
 
+
+
+public static void initializeProcessGlobals() {
+    
+    if (main.processGlobalsRun == false) {
+	    main.processGlobalsRun = true;
+		try {
+		        b4a.example.dateutils._process_globals();
+		
+        } catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+    }
+}
+public static boolean isAnyActivityVisible() {
+    boolean vis = false;
+vis = vis | (main.mostCurrent != null);
+vis = vis | (mainmenu.mostCurrent != null);
+vis = vis | (encode.mostCurrent != null);
+vis = vis | (settings.mostCurrent != null);
+vis = vis | (pinsetup.mostCurrent != null);
+vis = vis | (forgotpin.mostCurrent != null);
+vis = vis | (login.mostCurrent != null);
+vis = vis | (pinchange.mostCurrent != null);
+vis = vis | (pinreset.mostCurrent != null);
+vis = vis | (securityquestion.mostCurrent != null);
+vis = vis | (history.mostCurrent != null);
+return vis;}
+
+private static BA killProgramHelper(BA ba) {
+    if (ba == null)
+        return null;
+    anywheresoftware.b4a.BA.SharedProcessBA sharedProcessBA = ba.sharedProcessBA;
+    if (sharedProcessBA == null || sharedProcessBA.activityBA == null)
+        return null;
+    return sharedProcessBA.activityBA.get();
+}
+public static void killProgram() {
+     {
+            Activity __a = null;
+            if (main.previousOne != null) {
+				__a = main.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(main.mostCurrent == null ? null : main.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+BA.applicationContext.stopService(new android.content.Intent(BA.applicationContext, starter.class));
+ {
+            Activity __a = null;
+            if (mainmenu.previousOne != null) {
+				__a = mainmenu.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(mainmenu.mostCurrent == null ? null : mainmenu.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+ {
+            Activity __a = null;
+            if (encode.previousOne != null) {
+				__a = encode.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(encode.mostCurrent == null ? null : encode.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+ {
+            Activity __a = null;
+            if (settings.previousOne != null) {
+				__a = settings.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(settings.mostCurrent == null ? null : settings.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+ {
+            Activity __a = null;
+            if (pinsetup.previousOne != null) {
+				__a = pinsetup.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(pinsetup.mostCurrent == null ? null : pinsetup.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+ {
+            Activity __a = null;
+            if (forgotpin.previousOne != null) {
+				__a = forgotpin.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(forgotpin.mostCurrent == null ? null : forgotpin.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+ {
+            Activity __a = null;
+            if (login.previousOne != null) {
+				__a = login.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(login.mostCurrent == null ? null : login.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+ {
+            Activity __a = null;
+            if (pinchange.previousOne != null) {
+				__a = pinchange.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(pinchange.mostCurrent == null ? null : pinchange.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+ {
+            Activity __a = null;
+            if (pinreset.previousOne != null) {
+				__a = pinreset.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(pinreset.mostCurrent == null ? null : pinreset.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+ {
+            Activity __a = null;
+            if (securityquestion.previousOne != null) {
+				__a = securityquestion.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(securityquestion.mostCurrent == null ? null : securityquestion.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+ {
+            Activity __a = null;
+            if (history.previousOne != null) {
+				__a = history.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(history.mostCurrent == null ? null : history.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+BA.applicationContext.stopService(new android.content.Intent(BA.applicationContext, httputils2service.class));
+}
 public anywheresoftware.b4a.keywords.Common __c = null;
 public static anywheresoftware.b4a.objects.B4XViewWrapper.XUI _xui = null;
 public anywheresoftware.b4a.objects.B4XViewWrapper _imgicon = null;
@@ -342,20 +515,26 @@ public anywheresoftware.b4a.objects.Timer _splashtimer = null;
 public static boolean _firstrun = false;
 public static String _userpin = "";
 public com.b4x.sharedpreferences.SharedPreferences _sharedprefs = null;
+public b4a.example.dateutils _dateutils = null;
 public ng.dsoftlab.stegocam.starter _starter = null;
 public ng.dsoftlab.stegocam.mainmenu _mainmenu = null;
 public ng.dsoftlab.stegocam.config _config = null;
-public ng.dsoftlab.stegocam.login _login = null;
+public ng.dsoftlab.stegocam.encode _encode = null;
+public ng.dsoftlab.stegocam.settings _settings = null;
 public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
-
-public static boolean isAnyActivityVisible() {
-    boolean vis = false;
-vis = vis | (main.mostCurrent != null);
-vis = vis | (mainmenu.mostCurrent != null);
-vis = vis | (login.mostCurrent != null);
-vis = vis | (pinsetup.mostCurrent != null);
-return vis;}
+public ng.dsoftlab.stegocam.forgotpin _forgotpin = null;
+public ng.dsoftlab.stegocam.login _login = null;
+public ng.dsoftlab.stegocam.pinchange _pinchange = null;
+public ng.dsoftlab.stegocam.pinreset _pinreset = null;
+public ng.dsoftlab.stegocam.securityquestion _securityquestion = null;
+public ng.dsoftlab.stegocam.history _history = null;
+public ng.dsoftlab.stegocam.b4xcollections _b4xcollections = null;
+public ng.dsoftlab.stegocam.httputils2service _httputils2service = null;
+public ng.dsoftlab.stegocam.xuiviewsutils _xuiviewsutils = null;
 public static void  _activity_create(boolean _firsttime) throws Exception{
+RDebugUtils.currentModule="main";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
+	 {Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}); return;}
 ResumableSub_Activity_Create rsub = new ResumableSub_Activity_Create(null,_firsttime);
 rsub.resume(processBA, null);
 }
@@ -369,6 +548,7 @@ boolean _firsttime;
 
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
+RDebugUtils.currentModule="main";
 
     while (true) {
         switch (state) {
@@ -378,25 +558,32 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 44;BA.debugLine="Activity.LoadLayout(\"splash\")";
+RDebugUtils.currentLine=131073;
+ //BA.debugLineNum = 131073;BA.debugLine="Activity.LoadLayout(\"splash\")";
 parent.mostCurrent._activity.LoadLayout("splash",mostCurrent.activityBA);
- //BA.debugLineNum = 45;BA.debugLine="imgIcon.SetBitmap(xui.LoadBitmapResize(File.DirAs";
+RDebugUtils.currentLine=131074;
+ //BA.debugLineNum = 131074;BA.debugLine="imgIcon.SetBitmap(xui.LoadBitmapResize(File.DirAs";
 parent.mostCurrent._imgicon.SetBitmap((android.graphics.Bitmap)(parent._xui.LoadBitmapResize(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"stegocam_ico.png",parent.mostCurrent._imgicon.getWidth(),parent.mostCurrent._imgicon.getHeight(),anywheresoftware.b4a.keywords.Common.True).getObject()));
- //BA.debugLineNum = 46;BA.debugLine="Sleep(3000)";
-anywheresoftware.b4a.keywords.Common.Sleep(mostCurrent.activityBA,this,(int) (3000));
+RDebugUtils.currentLine=131075;
+ //BA.debugLineNum = 131075;BA.debugLine="Sleep(3000)";
+anywheresoftware.b4a.keywords.Common.Sleep(mostCurrent.activityBA,new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "main", "activity_create"),(int) (3000));
 this.state = 7;
 return;
 case 7:
 //C
 this.state = 1;
 ;
- //BA.debugLineNum = 48;BA.debugLine="SharedPrefs.Initialize(\"StegoCamPrefs\")";
+RDebugUtils.currentLine=131077;
+ //BA.debugLineNum = 131077;BA.debugLine="SharedPrefs.Initialize(\"StegoCamPrefs\")";
 parent.mostCurrent._sharedprefs.Initialize("StegoCamPrefs");
- //BA.debugLineNum = 52;BA.debugLine="firstRun =config.isFirstRun 'SharedPrefs.GetBoole";
+RDebugUtils.currentLine=131081;
+ //BA.debugLineNum = 131081;BA.debugLine="firstRun =config.isFirstRun 'SharedPrefs.GetBoole";
 parent._firstrun = parent.mostCurrent._config._isfirstrun /*boolean*/ (mostCurrent.activityBA);
- //BA.debugLineNum = 54;BA.debugLine="userPin =config.getUserPin 'SharedPrefs.GetString";
+RDebugUtils.currentLine=131083;
+ //BA.debugLineNum = 131083;BA.debugLine="userPin =config.getUserPin 'SharedPrefs.GetString";
 parent.mostCurrent._userpin = parent.mostCurrent._config._getuserpin /*String*/ (mostCurrent.activityBA);
- //BA.debugLineNum = 57;BA.debugLine="If firstRun Or userPin=\"\" Then";
+RDebugUtils.currentLine=131086;
+ //BA.debugLineNum = 131086;BA.debugLine="If firstRun Or userPin=\"\" Then";
 if (true) break;
 
 case 1:
@@ -411,16 +598,19 @@ this.state = 5;
 case 3:
 //C
 this.state = 6;
- //BA.debugLineNum = 59;BA.debugLine="StartActivity(PinSetup)";
+RDebugUtils.currentLine=131088;
+ //BA.debugLineNum = 131088;BA.debugLine="StartActivity(PinSetup)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(parent.mostCurrent._pinsetup.getObject()));
- //BA.debugLineNum = 61;BA.debugLine="SharedPrefs.SaveBoolean(\"FirstRun\", False)";
+RDebugUtils.currentLine=131090;
+ //BA.debugLineNum = 131090;BA.debugLine="SharedPrefs.SaveBoolean(\"FirstRun\", False)";
 parent.mostCurrent._sharedprefs.SaveBoolean("FirstRun",anywheresoftware.b4a.keywords.Common.False);
  if (true) break;
 
 case 5:
 //C
 this.state = 6;
- //BA.debugLineNum = 64;BA.debugLine="StartActivity(Login)";
+RDebugUtils.currentLine=131093;
+ //BA.debugLineNum = 131093;BA.debugLine="StartActivity(Login)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(parent.mostCurrent._login.getObject()));
  if (true) break;
 
@@ -428,9 +618,11 @@ case 6:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 66;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=131095;
+ //BA.debugLineNum = 131095;BA.debugLine="Activity.Finish";
 parent.mostCurrent._activity.Finish();
- //BA.debugLineNum = 72;BA.debugLine="End Sub";
+RDebugUtils.currentLine=131101;
+ //BA.debugLineNum = 131101;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -438,63 +630,40 @@ if (true) break;
     }
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
- //BA.debugLineNum = 78;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
- //BA.debugLineNum = 80;BA.debugLine="End Sub";
+RDebugUtils.currentModule="main";
+RDebugUtils.currentLine=262144;
+ //BA.debugLineNum = 262144;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=262146;
+ //BA.debugLineNum = 262146;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
- //BA.debugLineNum = 74;BA.debugLine="Sub Activity_Resume";
- //BA.debugLineNum = 76;BA.debugLine="End Sub";
-return "";
-}
-public static String  _globals() throws Exception{
- //BA.debugLineNum = 34;BA.debugLine="Sub Globals";
- //BA.debugLineNum = 36;BA.debugLine="Private imgIcon As B4XView";
-mostCurrent._imgicon = new anywheresoftware.b4a.objects.B4XViewWrapper();
- //BA.debugLineNum = 37;BA.debugLine="Dim splashTimer As Timer";
-mostCurrent._splashtimer = new anywheresoftware.b4a.objects.Timer();
- //BA.debugLineNum = 38;BA.debugLine="Dim firstRun As Boolean";
-_firstrun = false;
- //BA.debugLineNum = 39;BA.debugLine="Dim userPin As String";
-mostCurrent._userpin = "";
- //BA.debugLineNum = 40;BA.debugLine="Dim SharedPrefs As SharedPreferences";
-mostCurrent._sharedprefs = new com.b4x.sharedpreferences.SharedPreferences();
- //BA.debugLineNum = 41;BA.debugLine="End Sub";
+RDebugUtils.currentModule="main";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
+RDebugUtils.currentLine=196608;
+ //BA.debugLineNum = 196608;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=196610;
+ //BA.debugLineNum = 196610;BA.debugLine="End Sub";
 return "";
 }
 public static String  _mytimer_tick() throws Exception{
- //BA.debugLineNum = 82;BA.debugLine="Sub myTimer_tick";
- //BA.debugLineNum = 83;BA.debugLine="splashTimer.Enabled=False";
+RDebugUtils.currentModule="main";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "mytimer_tick", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "mytimer_tick", null));}
+RDebugUtils.currentLine=37355520;
+ //BA.debugLineNum = 37355520;BA.debugLine="Sub myTimer_tick";
+RDebugUtils.currentLine=37355521;
+ //BA.debugLineNum = 37355521;BA.debugLine="splashTimer.Enabled=False";
 mostCurrent._splashtimer.setEnabled(anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 84;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=37355522;
+ //BA.debugLineNum = 37355522;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
- //BA.debugLineNum = 85;BA.debugLine="StartActivity(mainmenu)";
+RDebugUtils.currentLine=37355523;
+ //BA.debugLineNum = 37355523;BA.debugLine="StartActivity(mainmenu)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mainmenu.getObject()));
- //BA.debugLineNum = 86;BA.debugLine="End Sub";
-return "";
-}
-
-public static void initializeProcessGlobals() {
-    
-    if (main.processGlobalsRun == false) {
-	    main.processGlobalsRun = true;
-		try {
-		        main._process_globals();
-starter._process_globals();
-mainmenu._process_globals();
-config._process_globals();
-login._process_globals();
-pinsetup._process_globals();
-		
-        } catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-    }
-}public static String  _process_globals() throws Exception{
- //BA.debugLineNum = 27;BA.debugLine="Sub Process_Globals";
- //BA.debugLineNum = 30;BA.debugLine="Private xui As XUI";
-_xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
- //BA.debugLineNum = 32;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37355524;
+ //BA.debugLineNum = 37355524;BA.debugLine="End Sub";
 return "";
 }
 }

@@ -14,7 +14,7 @@ public class starter extends android.app.Service{
 			android.content.Intent in = new android.content.Intent(context, starter.class);
 			if (intent != null)
 				in.putExtra("b4a_internal_intent", intent);
-            ServiceHelper.StarterHelper.startServiceFromReceiver (context, in, true, BA.class);
+            ServiceHelper.StarterHelper.startServiceFromReceiver (context, in, true, anywheresoftware.b4a.ShellBA.class);
 		}
 
 	}
@@ -29,7 +29,7 @@ public class starter extends android.app.Service{
         super.onCreate();
         mostCurrent = this;
         if (processBA == null) {
-		    processBA = new BA(this, null, null, "ng.dsoftlab.stegocam", "ng.dsoftlab.stegocam.starter");
+		    processBA = new anywheresoftware.b4a.ShellBA(this, null, null, "ng.dsoftlab.stegocam", "ng.dsoftlab.stegocam.starter");
             if (BA.isShellModeRuntimeCheck(processBA)) {
                 processBA.raiseEvent2(null, true, "SHELL", false);
 		    }
@@ -124,44 +124,83 @@ public class starter extends android.app.Service{
 @Override
 	public android.os.IBinder onBind(android.content.Intent intent) {
 		return null;
-	}public anywheresoftware.b4a.keywords.Common __c = null;
+	}
+public anywheresoftware.b4a.keywords.Common __c = null;
+public static anywheresoftware.b4a.objects.RuntimePermissions _rp = null;
+public static ng.dsoftlab.stegocam.fileprovider _provider = null;
+public b4a.example.dateutils _dateutils = null;
 public ng.dsoftlab.stegocam.main _main = null;
 public ng.dsoftlab.stegocam.mainmenu _mainmenu = null;
 public ng.dsoftlab.stegocam.config _config = null;
-public ng.dsoftlab.stegocam.login _login = null;
+public ng.dsoftlab.stegocam.encode _encode = null;
+public ng.dsoftlab.stegocam.settings _settings = null;
 public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
+public ng.dsoftlab.stegocam.forgotpin _forgotpin = null;
+public ng.dsoftlab.stegocam.login _login = null;
+public ng.dsoftlab.stegocam.pinchange _pinchange = null;
+public ng.dsoftlab.stegocam.pinreset _pinreset = null;
+public ng.dsoftlab.stegocam.securityquestion _securityquestion = null;
+public ng.dsoftlab.stegocam.history _history = null;
+public ng.dsoftlab.stegocam.b4xcollections _b4xcollections = null;
+public ng.dsoftlab.stegocam.httputils2service _httputils2service = null;
+public ng.dsoftlab.stegocam.xuiviewsutils _xuiviewsutils = null;
 public static boolean  _application_error(anywheresoftware.b4a.objects.B4AException _error,String _stacktrace) throws Exception{
- //BA.debugLineNum = 27;BA.debugLine="Sub Application_Error (Error As Exception, StackTr";
- //BA.debugLineNum = 28;BA.debugLine="Return True";
+RDebugUtils.currentModule="starter";
+if (Debug.shouldDelegate(processBA, "application_error", false))
+	 {return ((Boolean) Debug.delegate(processBA, "application_error", new Object[] {_error,_stacktrace}));}
+RDebugUtils.currentLine=37683200;
+ //BA.debugLineNum = 37683200;BA.debugLine="Sub Application_Error (Error As Exception, StackTr";
+RDebugUtils.currentLine=37683201;
+ //BA.debugLineNum = 37683201;BA.debugLine="Return True";
 if (true) return anywheresoftware.b4a.keywords.Common.True;
- //BA.debugLineNum = 29;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37683202;
+ //BA.debugLineNum = 37683202;BA.debugLine="End Sub";
 return false;
 }
-public static String  _process_globals() throws Exception{
- //BA.debugLineNum = 6;BA.debugLine="Sub Process_Globals";
- //BA.debugLineNum = 10;BA.debugLine="End Sub";
-return "";
-}
 public static String  _service_create() throws Exception{
- //BA.debugLineNum = 12;BA.debugLine="Sub Service_Create";
- //BA.debugLineNum = 16;BA.debugLine="End Sub";
+RDebugUtils.currentModule="starter";
+if (Debug.shouldDelegate(processBA, "service_create", false))
+	 {return ((String) Debug.delegate(processBA, "service_create", null));}
+RDebugUtils.currentLine=37486592;
+ //BA.debugLineNum = 37486592;BA.debugLine="Sub Service_Create";
+RDebugUtils.currentLine=37486595;
+ //BA.debugLineNum = 37486595;BA.debugLine="provider.Initialize";
+_provider._initialize /*String*/ (null,processBA);
+RDebugUtils.currentLine=37486596;
+ //BA.debugLineNum = 37486596;BA.debugLine="End Sub";
 return "";
 }
 public static String  _service_destroy() throws Exception{
- //BA.debugLineNum = 31;BA.debugLine="Sub Service_Destroy";
- //BA.debugLineNum = 33;BA.debugLine="End Sub";
+RDebugUtils.currentModule="starter";
+if (Debug.shouldDelegate(processBA, "service_destroy", false))
+	 {return ((String) Debug.delegate(processBA, "service_destroy", null));}
+RDebugUtils.currentLine=37748736;
+ //BA.debugLineNum = 37748736;BA.debugLine="Sub Service_Destroy";
+RDebugUtils.currentLine=37748738;
+ //BA.debugLineNum = 37748738;BA.debugLine="End Sub";
 return "";
 }
 public static String  _service_start(anywheresoftware.b4a.objects.IntentWrapper _startingintent) throws Exception{
- //BA.debugLineNum = 18;BA.debugLine="Sub Service_Start (StartingIntent As Intent)";
- //BA.debugLineNum = 19;BA.debugLine="Service.StopAutomaticForeground 'Starter service";
+RDebugUtils.currentModule="starter";
+if (Debug.shouldDelegate(processBA, "service_start", false))
+	 {return ((String) Debug.delegate(processBA, "service_start", new Object[] {_startingintent}));}
+RDebugUtils.currentLine=37552128;
+ //BA.debugLineNum = 37552128;BA.debugLine="Sub Service_Start (StartingIntent As Intent)";
+RDebugUtils.currentLine=37552129;
+ //BA.debugLineNum = 37552129;BA.debugLine="Service.StopAutomaticForeground 'Starter service";
 mostCurrent._service.StopAutomaticForeground();
- //BA.debugLineNum = 20;BA.debugLine="End Sub";
+RDebugUtils.currentLine=37552130;
+ //BA.debugLineNum = 37552130;BA.debugLine="End Sub";
 return "";
 }
 public static String  _service_taskremoved() throws Exception{
- //BA.debugLineNum = 22;BA.debugLine="Sub Service_TaskRemoved";
- //BA.debugLineNum = 24;BA.debugLine="End Sub";
+RDebugUtils.currentModule="starter";
+if (Debug.shouldDelegate(processBA, "service_taskremoved", false))
+	 {return ((String) Debug.delegate(processBA, "service_taskremoved", null));}
+RDebugUtils.currentLine=37617664;
+ //BA.debugLineNum = 37617664;BA.debugLine="Sub Service_TaskRemoved";
+RDebugUtils.currentLine=37617666;
+ //BA.debugLineNum = 37617666;BA.debugLine="End Sub";
 return "";
 }
 }

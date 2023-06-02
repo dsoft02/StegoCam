@@ -19,7 +19,7 @@ End Sub
 Sub Globals
 	'These global variables will be redeclared each time the activity is created.
 	'These variables can only be accessed from this module.
-	Private btnResetPin As B4XView
+	Private btnResetPin As Label
 	Private btnSignin As B4XView
 	Private imgFingerprint As B4XView
 	Private imgIcon As B4XView
@@ -44,6 +44,7 @@ Sub Activity_Create(FirstTime As Boolean)
 	txtPin.InputType=Bit.Or(txtPin.InputType, 2)
 	IME.Initialize("IME")
 	IME.SetLengthFilter(txtPin,4)
+	clearForm
 	ToolbarHelper.Initialize
 	ToolbarHelper.ShowUpIndicator = True 'set to true to show the up arrow
 	ACToolBarLight1.InitMenuListener
@@ -62,6 +63,12 @@ Sub Activity_Create(FirstTime As Boolean)
 	
 End Sub
 
+Private Sub clearForm
+	txtPin.Text=""
+	lblShowPassword.Text=config.hide
+	txtPin.PasswordMode=True
+	txtPin.RequestFocus
+End Sub
 Sub Activity_Resume
 
 End Sub
@@ -72,27 +79,33 @@ End Sub
 
 
 Sub ACToolBarLight1_NavigationItemClick
+	'ExitApplication
 	Activity.Finish
-	ExitApplication
 End Sub
 
 Sub Activity_KeyPress (KeyCode As Int) As Boolean
 	If KeyCode = KeyCodes.KEYCODE_BACK Then
+		'ExitApplication
 		Activity.Finish
-		ExitApplication
 	End If
 	Return False
 End Sub
 
 Private Sub imgFingerprint_Click
-	Biometric.Show("Verify Finegerprint")
-	Wait For Authenticate_Complete (Success As Boolean, ErrorMessage As String)
-	If Success Then
-		Activity.Finish
-		StartActivity(mainmenu)
-		'ToastMessageShow("Authentication Successful! ",False)
+	Dim fingerPrintEnabled As Boolean=config.getBiometric
+	
+	If fingerPrintEnabled=True Then
+		Biometric.Show("Verifying Finegerprint")
+		Wait For Authenticate_Complete (Success As Boolean, ErrorMessage As String)
+		If Success Then
+			Activity.Finish
+			StartActivity(mainmenu)
+			'ToastMessageShow("Authentication Successful! ",False)
+		Else
+			ToastMessageShow("Error: " & ErrorMessage,False)
+		End If
 	Else
-		ToastMessageShow("Error: " & ErrorMessage,False)
+		Msgbox2Async("Fingerprint login is not available for this account. You can change this in the settings page after login","Notice","OK","","",Null,False)
 	End If
 End Sub
 
@@ -125,4 +138,9 @@ End Sub
 
 Private Sub txtPin_TextChanged (Old As String, New As String)
 	lblErrorMsg.Text=""
+End Sub
+
+
+Private Sub btnResetPin_Click
+	StartActivity(forgotpin)
 End Sub

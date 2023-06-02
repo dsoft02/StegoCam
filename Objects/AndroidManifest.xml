@@ -6,15 +6,20 @@
 	android:versionName=""
 	android:installLocation="internalOnly">
 	
-	<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="31"/>
+	<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="29"/>
 	<supports-screens android:largeScreens="true" 
 	    android:normalScreens="true" 
 	    android:smallScreens="true" 
 	    android:anyDensity="true"/>
+	<uses-permission
+	android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+	android:maxSdkVersion="18" />
 	<uses-permission android:name="android.permission.INTERNET"/>
 	<uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
 	<uses-permission android:name="android.permission.USE_BIOMETRIC"/>
 	<uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission android:name="android.permission.CAMERA"/>
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 	<application
@@ -22,6 +27,16 @@
 		android:icon="@drawable/icon"
 		android:label="StegoCam"
 		android:theme="@style/MyAppTheme">
+		
+		<provider
+		  android:name="androidx.core.content.FileProvider"
+		  android:authorities="ng.dsoftlab.stegocam.provider"
+		  android:exported="false"
+		  android:grantUriPermissions="true">
+		  <meta-data
+		  android:name="android.support.FILE_PROVIDER_PATHS"
+		  android:resource="@xml/provider_paths"/>
+		  </provider>
 		<activity
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
@@ -52,9 +67,17 @@
 			android:exported="true">
 		</activity>
 		<activity
-			android:windowSoftInputMode="stateVisible"
+			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
-			android:name=".login"
+			android:name=".encode"
+			android:label="StegoCam"
+			android:screenOrientation="unspecified"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".settings"
 			android:label="StegoCam"
 			android:screenOrientation="unspecified"
 			android:exported="true">
@@ -67,5 +90,61 @@
 			android:screenOrientation="unspecified"
 			android:exported="true">
 		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".forgotpin"
+			android:label="StegoCam"
+			android:screenOrientation="unspecified"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateVisible"
+			android:launchMode="singleTop"
+			android:name=".login"
+			android:label="StegoCam"
+			android:screenOrientation="unspecified"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateVisible"
+			android:launchMode="singleTop"
+			android:name=".pinchange"
+			android:label="StegoCam"
+			android:screenOrientation="unspecified"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateVisible"
+			android:launchMode="singleTop"
+			android:name=".pinreset"
+			android:label="StegoCam"
+			android:screenOrientation="unspecified"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".securityquestion"
+			android:label="StegoCam"
+			android:screenOrientation="unspecified"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".history"
+			android:label="StegoCam"
+			android:screenOrientation="unspecified"
+			android:exported="true">
+		</activity>
+		<service
+			android:name=".httputils2service"
+			android:exported="true">
+		</service>
+		<receiver
+			android:name=".httputils2service$httputils2service_BR"
+			android:exported="true">
+		</receiver>
 	</application>
 </manifest>

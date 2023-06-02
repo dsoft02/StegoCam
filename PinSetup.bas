@@ -88,14 +88,14 @@ End Sub
 
 
 Sub ACToolBarLight1_NavigationItemClick
-	Activity.Finish
 	ExitApplication
+	'Activity.Finish
 End Sub
 
 Sub Activity_KeyPress (KeyCode As Int) As Boolean
 	If KeyCode = KeyCodes.KEYCODE_BACK Then
+		'ExitApplication
 		Activity.Finish
-		ExitApplication
 		Return True
 	End If
 	Return False
@@ -109,7 +109,7 @@ Private Sub btnSave_Click
 	Else If txtQuestion.Text="" Then
 		lblErrorMsg2.Text="Please enter security question"
 	Else If txtAnswer.Text="" Then
-		lblErrorMsg3.Text ="Please enter answer"
+		lblErrorMsg3.Text ="Please enter security answer"
 	Else
 		config.setUserPin(txtPin.Text)
 		config.saveSecurityQA(txtQuestion.Text,txtAnswer.Text)

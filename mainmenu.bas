@@ -135,11 +135,13 @@ End Sub
 
 
 Private Sub pnlSettings_Click
-	
+	StartActivity(settings)
+	Activity.Finish
 End Sub
 
 Private Sub pnlHistory_Click
-	
+	StartActivity(history)
+	Activity.Finish
 End Sub
 
 Private Sub pnlExit_Click
@@ -147,12 +149,13 @@ Private Sub pnlExit_Click
 	Wait For Msgbox_Result (Result As Int)
 	If Result = DialogResponse.POSITIVE Then
 		Activity.Finish
-		ExitApplication
+		'ExitApplication
 	End If
 End Sub
 
 Private Sub pnlEncode_Click
-	
+	StartActivity(encode)
+	Activity.Finish
 End Sub
 
 Private Sub pnlDecode_Click

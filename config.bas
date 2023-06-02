@@ -14,8 +14,10 @@ Sub Process_Globals
 	Dim SharedPrefs As SharedPreferences
 	Dim userPin As String =""
 	Dim firstRun As Boolean=True
+	Dim isBioEnabled As Boolean=True
 	Dim question As String=""
-	Dim answer As String=""
+	Dim answer As String=""sss
+	Public stegoImagePath As String = Starter.rp.GetSafeDirDefaultExternal("stegoimages")
 End Sub
 
 Sub getUserPin() As String
@@ -56,13 +58,24 @@ Sub isFirstRun() As Boolean
 End Sub
 
 
+Sub getBiometric() As Boolean
+	isBioEnabled=True
+	'Initialize SharedPreferences
+	SharedPrefs.Initialize("StegoCamPrefs")
+	
+	' Check if it's the first run
+	isBioEnabled = SharedPrefs.GetBoolean("Biometric", True)
+	
+	Return isBioEnabled
+End Sub
+
 Sub getSecurityQuestion() As String
 	question=""
 	'Initialize SharedPreferences
 	SharedPrefs.Initialize("StegoCamPrefs")
 	
 	' get security question
-	question = SharedPrefs.GetBoolean("Question", True)
+	question = SharedPrefs.GetString("Question", "")
 	
 	Return question
 End Sub
@@ -74,7 +87,7 @@ Sub getSecurityAnswer() As String
 	SharedPrefs.Initialize("StegoCamPrefs")
 	
 	' get security answer
-	answer = SharedPrefs.GetBoolean("Answer", True)
+	answer = SharedPrefs.GetString("Answer", "")
 	
 	Return answer
 End Sub
@@ -122,4 +135,62 @@ Sub BitmapToBitmapDrawable (bitmap As Bitmap) As BitmapDrawable
 	Dim bd As BitmapDrawable
 	bd.Initialize(bitmap)
 	Return bd
+End Sub
+
+Sub ResizeLabelHeight(lbl As Label)
+	Dim su As StringUtils
+	lbl.Height = su.MeasureMultilineTextHeight(lbl, lbl.Text)
+End Sub
+
+
+' _display_name
+' mime_type
+' _size
+' last_modified
+' datetaken
+Sub GetFileInfoByIndex(column As String, uri As String) As String
+	
+	Dim results As String
+	Dim Cur As Cursor
+	Dim Uri1 As Uri
+	Dim cr As ContentResolver
+	cr.Initialize("")
+
+	'if viewing by gallery
+	If uri.StartsWith("content://media/") Then
+		Dim i As Int = uri.LastIndexOf("/")
+		Dim id As String = uri.SubString(i + 1)
+		Uri1.Parse(uri)
+		Cur = cr.Query(Uri1, Null, "_id = ?", Array As String(id), Null)
+		Cur.Position = 0
+		If Cur.RowCount <> 0 Then
+			For i = 0 To Cur.ColumnCount - 1
+				If Cur.GetColumnName(i) <> Null Then
+					If Cur.GetColumnName(i) = column Then
+						results = Cur.GetString2(i)
+						Exit
+					End If
+				End If
+			Next
+		End If
+	Else
+		Uri1.Parse(uri)
+		Cur = cr.Query(Uri1, Null, Null, Null, Null)
+		Cur.Position = 0
+		If Cur.RowCount <> 0 Then
+			For i = 0 To Cur.ColumnCount - 1
+				If Cur.GetColumnName(i) <> Null Then
+					If Cur.GetColumnName(i) = column Then
+						results = Cur.GetString2(i)
+						Exit
+					End If
+				End If
+			Next
+		End If
+	End If
+	
+	Cur.Close
+	
+	Return results
+	
 End Sub

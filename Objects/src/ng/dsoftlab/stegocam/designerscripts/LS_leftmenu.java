@@ -9,38 +9,26 @@ public class LS_leftmenu{
 public static void LS_general(anywheresoftware.b4a.BA ba, android.view.View parent, anywheresoftware.b4a.keywords.LayoutValues lv, java.util.Map props,
 java.util.Map<String, anywheresoftware.b4a.keywords.LayoutBuilder.ViewWrapperAndAnchor> views, int width, int height, float scale) throws Exception {
 anywheresoftware.b4a.keywords.LayoutBuilder.setScaleRate(0.3);
-//BA.debugLineNum = 1;BA.debugLine="AutoScaleAll"[leftmenu/General script]
 anywheresoftware.b4a.keywords.LayoutBuilder.scaleAll(views);
-//BA.debugLineNum = 3;BA.debugLine="pVerdeMenu.SetLeftAndRight(0%x,100%x)"[leftmenu/General script]
 views.get("pverdemenu").vw.setLeft((int)((0d / 100 * width)));
 views.get("pverdemenu").vw.setWidth((int)((100d / 100 * width) - ((0d / 100 * width))));
-//BA.debugLineNum = 4;BA.debugLine="pVerdeMenu.SetTopAndBottom(0%y,25%y)"[leftmenu/General script]
 views.get("pverdemenu").vw.setTop((int)((0d / 100 * height)));
 views.get("pverdemenu").vw.setHeight((int)((25d / 100 * height) - ((0d / 100 * height))));
-//BA.debugLineNum = 6;BA.debugLine="pRedondoMenu.SetLeftAndRight(7%x,27%x)"[leftmenu/General script]
 views.get("predondomenu").vw.setLeft((int)((7d / 100 * width)));
 views.get("predondomenu").vw.setWidth((int)((27d / 100 * width) - ((7d / 100 * width))));
-//BA.debugLineNum = 7;BA.debugLine="pRedondoMenu.Height = pRedondoMenu.Width"[leftmenu/General script]
 views.get("predondomenu").vw.setHeight((int)((views.get("predondomenu").vw.getWidth())));
-//BA.debugLineNum = 12;BA.debugLine="lbNomeMenu.SetLeftAndRight(32%x,98%x)"[leftmenu/General script]
 views.get("lbnomemenu").vw.setLeft((int)((32d / 100 * width)));
 views.get("lbnomemenu").vw.setWidth((int)((98d / 100 * width) - ((32d / 100 * width))));
-//BA.debugLineNum = 13;BA.debugLine="lbNomeMenu.SetTopAndBottom(pRedondoMenu.Top,pRedondoMenu.Bottom)"[leftmenu/General script]
 views.get("lbnomemenu").vw.setTop((int)((views.get("predondomenu").vw.getTop())));
 views.get("lbnomemenu").vw.setHeight((int)((views.get("predondomenu").vw.getTop() + views.get("predondomenu").vw.getHeight()) - ((views.get("predondomenu").vw.getTop()))));
-//BA.debugLineNum = 15;BA.debugLine="lbEmailMenu.SetLeftAndRight(8%x,98%x)"[leftmenu/General script]
 views.get("lbemailmenu").vw.setLeft((int)((8d / 100 * width)));
 views.get("lbemailmenu").vw.setWidth((int)((98d / 100 * width) - ((8d / 100 * width))));
-//BA.debugLineNum = 16;BA.debugLine="lbEmailMenu.SetTopAndBottom(pRedondoMenu.Bottom +2%y,pRedondoMenu.Bottom + 7%y)"[leftmenu/General script]
 views.get("lbemailmenu").vw.setTop((int)((views.get("predondomenu").vw.getTop() + views.get("predondomenu").vw.getHeight())+(2d / 100 * height)));
 views.get("lbemailmenu").vw.setHeight((int)((views.get("predondomenu").vw.getTop() + views.get("predondomenu").vw.getHeight())+(7d / 100 * height) - ((views.get("predondomenu").vw.getTop() + views.get("predondomenu").vw.getHeight())+(2d / 100 * height))));
-//BA.debugLineNum = 21;BA.debugLine="pFundo1Menu.SetLeftAndRight(0%X,100%X)"[leftmenu/General script]
 views.get("pfundo1menu").vw.setLeft((int)((0d / 100 * width)));
 views.get("pfundo1menu").vw.setWidth((int)((100d / 100 * width) - ((0d / 100 * width))));
-//BA.debugLineNum = 22;BA.debugLine="pFundo1Menu.SetTopAndBottom(28%Y,35%Y)"[leftmenu/General script]
 views.get("pfundo1menu").vw.setTop((int)((28d / 100 * height)));
 views.get("pfundo1menu").vw.setHeight((int)((35d / 100 * height) - ((28d / 100 * height))));
-//BA.debugLineNum = 24;BA.debugLine="pBranco1Menu.SetLeftAndRight(1%X,100%X)"[leftmenu/General script]
 views.get("pbranco1menu").vw.setLeft((int)((1d / 100 * width)));
 views.get("pbranco1menu").vw.setWidth((int)((100d / 100 * width) - ((1d / 100 * width))));
 //BA.debugLineNum = 25;BA.debugLine="pBranco1Menu.SetTopAndBottom(0%y,pFundo1Menu.Height)"[leftmenu/General script]
