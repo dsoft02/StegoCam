@@ -52,6 +52,6 @@ ModuleClosedNodes6=
 ModuleClosedNodes7=
 ModuleClosedNodes8=
 ModuleClosedNodes9=
-NavigationStack=pinreset,ACToolBarLight1_NavigationItemClick,89,1,pinreset,Activity_KeyPress,100,1,mainmenu,Globals,28,0,mainmenu,load_Images,113,0,mainmenu,lb1Menu_Click,118,4,mainmenu,lb2Menu_Click,125,4,mainmenu,lb4Menu_Click,142,0,mainmenu,lb3Menu_Click,131,4,mainmenu,lb5Menu_Click,145,1,mainmenu,lb6Menu_Click,152,0,mainmenu,pnlSettings_Click,159,0
+NavigationStack=mainmenu,Globals,28,0,mainmenu,load_Images,113,0,mainmenu,lb1Menu_Click,118,4,mainmenu,lb2Menu_Click,125,4,mainmenu,lb4Menu_Click,142,0,mainmenu,lb3Menu_Click,131,4,mainmenu,lb5Menu_Click,145,1,mainmenu,pnlSettings_Click,159,0,config,displayMessage,196,0,mainmenu,lb6Menu_Click,155,0,Main,Activity_Create,49,0
 SelectedBuild=1
 VisibleModules=16,9,2,4,5,17,7,3,14,11
