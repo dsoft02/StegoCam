@@ -34,7 +34,7 @@ public class settings extends androidx.appcompat.app.AppCompatActivity implement
 		super.onCreate(savedInstanceState);
         mostCurrent = this;
 		if (processBA == null) {
-			processBA = new anywheresoftware.b4a.ShellBA(this.getApplicationContext(), null, null, "ng.dsoftlab.stegocam", "ng.dsoftlab.stegocam.settings");
+			processBA = new BA(this.getApplicationContext(), null, null, "ng.dsoftlab.stegocam", "ng.dsoftlab.stegocam.settings");
 			processBA.loadHtSubs(this.getClass());
 	        float deviceScale = getApplicationContext().getResources().getDisplayMetrics().density;
 	        BALayout.setDeviceScale(deviceScale);
@@ -335,15 +335,6 @@ public class settings extends androidx.appcompat.app.AppCompatActivity implement
             
     }
 
-
-
-public static void initializeProcessGlobals() {
-             try {
-                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-}
 public anywheresoftware.b4a.keywords.Common __c = null;
 public de.amberhome.objects.appcompat.ACToolbarLightWrapper _actoolbarlight1 = null;
 public de.amberhome.objects.appcompat.ACActionBar _toolbarhelper = null;
@@ -366,78 +357,73 @@ public ng.dsoftlab.stegocam.pinchange _pinchange = null;
 public ng.dsoftlab.stegocam.pinreset _pinreset = null;
 public ng.dsoftlab.stegocam.securityquestion _securityquestion = null;
 public ng.dsoftlab.stegocam.history _history = null;
+public ng.dsoftlab.stegocam.decode _decode = null;
 public ng.dsoftlab.stegocam.b4xcollections _b4xcollections = null;
 public ng.dsoftlab.stegocam.httputils2service _httputils2service = null;
 public ng.dsoftlab.stegocam.xuiviewsutils _xuiviewsutils = null;
+
+public static void initializeProcessGlobals() {
+             try {
+                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+}
 public static String  _activity_create(boolean _firsttime) throws Exception{
-RDebugUtils.currentModule="settings";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=41418752;
- //BA.debugLineNum = 41418752;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=41418754;
- //BA.debugLineNum = 41418754;BA.debugLine="Activity.LoadLayout(\"settings\")";
+ //BA.debugLineNum = 25;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+ //BA.debugLineNum = 27;BA.debugLine="Activity.LoadLayout(\"settings\")";
 mostCurrent._activity.LoadLayout("settings",mostCurrent.activityBA);
-RDebugUtils.currentLine=41418755;
- //BA.debugLineNum = 41418755;BA.debugLine="ToolbarHelper.Initialize";
+ //BA.debugLineNum = 28;BA.debugLine="ToolbarHelper.Initialize";
 mostCurrent._toolbarhelper.Initialize(mostCurrent.activityBA);
-RDebugUtils.currentLine=41418756;
- //BA.debugLineNum = 41418756;BA.debugLine="ToolbarHelper.ShowUpIndicator = True 'set to true";
+ //BA.debugLineNum = 29;BA.debugLine="ToolbarHelper.ShowUpIndicator = True 'set to true";
 mostCurrent._toolbarhelper.setShowUpIndicator(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=41418757;
- //BA.debugLineNum = 41418757;BA.debugLine="ACToolBarLight1.InitMenuListener";
+ //BA.debugLineNum = 30;BA.debugLine="ACToolBarLight1.InitMenuListener";
 mostCurrent._actoolbarlight1.InitMenuListener();
-RDebugUtils.currentLine=41418760;
- //BA.debugLineNum = 41418760;BA.debugLine="SharedPrefs.Initialize(\"StegoCamPrefs\")";
+ //BA.debugLineNum = 33;BA.debugLine="SharedPrefs.Initialize(\"StegoCamPrefs\")";
 mostCurrent._sharedprefs.Initialize("StegoCamPrefs");
-RDebugUtils.currentLine=41418761;
- //BA.debugLineNum = 41418761;BA.debugLine="B4XSwitch1.Value=config.getBiometric";
-mostCurrent._b4xswitch1._setvalue /*boolean*/ (null,mostCurrent._config._getbiometric /*boolean*/ (mostCurrent.activityBA));
-RDebugUtils.currentLine=41418762;
- //BA.debugLineNum = 41418762;BA.debugLine="Biometric.Initialize(Me, \"Authenticate\")";
-mostCurrent._biometric._initialize /*String*/ (null,processBA,settings.getObject(),"Authenticate");
-RDebugUtils.currentLine=41418763;
- //BA.debugLineNum = 41418763;BA.debugLine="End Sub";
+ //BA.debugLineNum = 34;BA.debugLine="B4XSwitch1.Value=config.getBiometric";
+mostCurrent._b4xswitch1._setvalue /*boolean*/ (mostCurrent._config._getbiometric /*boolean*/ (mostCurrent.activityBA));
+ //BA.debugLineNum = 35;BA.debugLine="Biometric.Initialize(Me, \"Authenticate\")";
+mostCurrent._biometric._initialize /*String*/ (processBA,settings.getObject(),"Authenticate");
+ //BA.debugLineNum = 36;BA.debugLine="End Sub";
 return "";
 }
+public static boolean  _activity_keypress(int _keycode) throws Exception{
+ //BA.debugLineNum = 52;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
+ //BA.debugLineNum = 53;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK Then";
+if (_keycode==anywheresoftware.b4a.keywords.Common.KeyCodes.KEYCODE_BACK) { 
+ //BA.debugLineNum = 54;BA.debugLine="StartActivity(mainmenu)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mainmenu.getObject()));
+ //BA.debugLineNum = 55;BA.debugLine="Activity.Finish";
+mostCurrent._activity.Finish();
+ //BA.debugLineNum = 56;BA.debugLine="Return True";
+if (true) return anywheresoftware.b4a.keywords.Common.True;
+ };
+ //BA.debugLineNum = 58;BA.debugLine="Return False";
+if (true) return anywheresoftware.b4a.keywords.Common.False;
+ //BA.debugLineNum = 59;BA.debugLine="End Sub";
+return false;
+}
 public static String  _activity_pause(boolean _userclosed) throws Exception{
-RDebugUtils.currentModule="settings";
-RDebugUtils.currentLine=41549824;
- //BA.debugLineNum = 41549824;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=41549826;
- //BA.debugLineNum = 41549826;BA.debugLine="End Sub";
+ //BA.debugLineNum = 42;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+ //BA.debugLineNum = 44;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
-RDebugUtils.currentModule="settings";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=41484288;
- //BA.debugLineNum = 41484288;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=41484290;
- //BA.debugLineNum = 41484290;BA.debugLine="End Sub";
+ //BA.debugLineNum = 38;BA.debugLine="Sub Activity_Resume";
+ //BA.debugLineNum = 40;BA.debugLine="End Sub";
 return "";
 }
 public static String  _actoolbarlight1_navigationitemclick() throws Exception{
-RDebugUtils.currentModule="settings";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "actoolbarlight1_navigationitemclick", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "actoolbarlight1_navigationitemclick", null));}
-RDebugUtils.currentLine=41615360;
- //BA.debugLineNum = 41615360;BA.debugLine="Sub ACToolBarLight1_NavigationItemClick";
-RDebugUtils.currentLine=41615361;
- //BA.debugLineNum = 41615361;BA.debugLine="Activity.Finish";
-mostCurrent._activity.Finish();
-RDebugUtils.currentLine=41615362;
- //BA.debugLineNum = 41615362;BA.debugLine="StartActivity(mainmenu)";
+ //BA.debugLineNum = 46;BA.debugLine="Sub ACToolBarLight1_NavigationItemClick";
+ //BA.debugLineNum = 47;BA.debugLine="StartActivity(mainmenu)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mainmenu.getObject()));
-RDebugUtils.currentLine=41615363;
- //BA.debugLineNum = 41615363;BA.debugLine="End Sub";
+ //BA.debugLineNum = 48;BA.debugLine="Activity.Finish";
+mostCurrent._activity.Finish();
+ //BA.debugLineNum = 49;BA.debugLine="End Sub";
 return "";
 }
 public static void  _b4xswitch1_valuechanged(boolean _value) throws Exception{
-RDebugUtils.currentModule="settings";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "b4xswitch1_valuechanged", false))
-	 {Debug.delegate(mostCurrent.activityBA, "b4xswitch1_valuechanged", new Object[] {_value}); return;}
 ResumableSub_B4XSwitch1_ValueChanged rsub = new ResumableSub_B4XSwitch1_ValueChanged(null,_value);
 rsub.resume(processBA, null);
 }
@@ -457,7 +443,6 @@ String _errormessage = "";
 
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
-RDebugUtils.currentModule="settings";
 
     while (true) {
         switch (state) {
@@ -467,20 +452,17 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=41680897;
- //BA.debugLineNum = 41680897;BA.debugLine="Dim icFingerprint As Bitmap";
+ //BA.debugLineNum = 63;BA.debugLine="Dim icFingerprint As Bitmap";
 _icfingerprint = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
-RDebugUtils.currentLine=41680898;
- //BA.debugLineNum = 41680898;BA.debugLine="Dim bioVal As Boolean= B4XSwitch1.Value";
-_bioval = parent.mostCurrent._b4xswitch1._getvalue /*boolean*/ (null);
-RDebugUtils.currentLine=41680899;
- //BA.debugLineNum = 41680899;BA.debugLine="If B4XSwitch1.Value=False Then";
+ //BA.debugLineNum = 64;BA.debugLine="Dim bioVal As Boolean= B4XSwitch1.Value";
+_bioval = parent.mostCurrent._b4xswitch1._getvalue /*boolean*/ ();
+ //BA.debugLineNum = 65;BA.debugLine="If B4XSwitch1.Value=False Then";
 if (true) break;
 
 case 1:
 //if
 this.state = 24;
-if (parent.mostCurrent._b4xswitch1._getvalue /*boolean*/ (null)==anywheresoftware.b4a.keywords.Common.False) { 
+if (parent.mostCurrent._b4xswitch1._getvalue /*boolean*/ ()==anywheresoftware.b4a.keywords.Common.False) { 
 this.state = 3;
 }else {
 this.state = 11;
@@ -489,12 +471,10 @@ this.state = 11;
 case 3:
 //C
 this.state = 4;
-RDebugUtils.currentLine=41680900;
- //BA.debugLineNum = 41680900;BA.debugLine="Msgbox2Async(\"Are you sure you want to disable f";
+ //BA.debugLineNum = 66;BA.debugLine="Msgbox2Async(\"Are you sure you want to disable f";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Are you sure you want to disable fingerprint login?"),BA.ObjectToCharSequence("Disable Fingerprint"),"Confirm","Cancel","",anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"icons8-fingerprint-94.png"),processBA,anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=41680901;
- //BA.debugLineNum = 41680901;BA.debugLine="Wait For Msgbox_Result(Result As Int)";
-anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "settings", "b4xswitch1_valuechanged"), null);
+ //BA.debugLineNum = 67;BA.debugLine="Wait For Msgbox_Result(Result As Int)";
+anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
 this.state = 25;
 return;
 case 25:
@@ -502,8 +482,7 @@ case 25:
 this.state = 4;
 _result = (Integer) result[0];
 ;
-RDebugUtils.currentLine=41680902;
- //BA.debugLineNum = 41680902;BA.debugLine="If Result=DialogResponse.POSITIVE Then";
+ //BA.debugLineNum = 68;BA.debugLine="If Result=DialogResponse.POSITIVE Then";
 if (true) break;
 
 case 4:
@@ -518,17 +497,15 @@ this.state = 8;
 case 6:
 //C
 this.state = 9;
-RDebugUtils.currentLine=41680903;
- //BA.debugLineNum = 41680903;BA.debugLine="SharedPrefs.SaveBoolean(\"Biometric\",B4XSwitch1.";
-parent.mostCurrent._sharedprefs.SaveBoolean("Biometric",parent.mostCurrent._b4xswitch1._getvalue /*boolean*/ (null));
+ //BA.debugLineNum = 69;BA.debugLine="SharedPrefs.SaveBoolean(\"Biometric\",B4XSwitch1.";
+parent.mostCurrent._sharedprefs.SaveBoolean("Biometric",parent.mostCurrent._b4xswitch1._getvalue /*boolean*/ ());
  if (true) break;
 
 case 8:
 //C
 this.state = 9;
-RDebugUtils.currentLine=41680905;
- //BA.debugLineNum = 41680905;BA.debugLine="B4XSwitch1.Value=True";
-parent.mostCurrent._b4xswitch1._setvalue /*boolean*/ (null,anywheresoftware.b4a.keywords.Common.True);
+ //BA.debugLineNum = 71;BA.debugLine="B4XSwitch1.Value=True";
+parent.mostCurrent._b4xswitch1._setvalue /*boolean*/ (anywheresoftware.b4a.keywords.Common.True);
  if (true) break;
 
 case 9:
@@ -540,11 +517,9 @@ this.state = 24;
 case 11:
 //C
 this.state = 12;
-RDebugUtils.currentLine=41680908;
- //BA.debugLineNum = 41680908;BA.debugLine="Dim res As String = Biometric.CanAuthenticate";
-_res = parent.mostCurrent._biometric._canauthenticate /*String*/ (null);
-RDebugUtils.currentLine=41680909;
- //BA.debugLineNum = 41680909;BA.debugLine="If res = \"SUCCESS\" Then";
+ //BA.debugLineNum = 74;BA.debugLine="Dim res As String = Biometric.CanAuthenticate";
+_res = parent.mostCurrent._biometric._canauthenticate /*String*/ ();
+ //BA.debugLineNum = 75;BA.debugLine="If res = \"SUCCESS\" Then";
 if (true) break;
 
 case 12:
@@ -559,12 +534,10 @@ this.state = 22;
 case 14:
 //C
 this.state = 15;
-RDebugUtils.currentLine=41680910;
- //BA.debugLineNum = 41680910;BA.debugLine="Biometric.Show(\"Verifying Finegerprint\")";
-parent.mostCurrent._biometric._show /*String*/ (null,"Verifying Finegerprint");
-RDebugUtils.currentLine=41680911;
- //BA.debugLineNum = 41680911;BA.debugLine="Wait For Authenticate_Complete (Success As Bool";
-anywheresoftware.b4a.keywords.Common.WaitFor("authenticate_complete", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "settings", "b4xswitch1_valuechanged"), null);
+ //BA.debugLineNum = 76;BA.debugLine="Biometric.Show(\"Verifying Finegerprint\")";
+parent.mostCurrent._biometric._show /*String*/ ("Verifying Finegerprint");
+ //BA.debugLineNum = 77;BA.debugLine="Wait For Authenticate_Complete (Success As Bool";
+anywheresoftware.b4a.keywords.Common.WaitFor("authenticate_complete", processBA, this, null);
 this.state = 26;
 return;
 case 26:
@@ -573,8 +546,7 @@ this.state = 15;
 _success = (Boolean) result[0];
 _errormessage = (String) result[1];
 ;
-RDebugUtils.currentLine=41680912;
- //BA.debugLineNum = 41680912;BA.debugLine="If Success Then";
+ //BA.debugLineNum = 78;BA.debugLine="If Success Then";
 if (true) break;
 
 case 15:
@@ -589,20 +561,17 @@ this.state = 19;
 case 17:
 //C
 this.state = 20;
-RDebugUtils.currentLine=41680913;
- //BA.debugLineNum = 41680913;BA.debugLine="SharedPrefs.SaveBoolean(\"Biometric\",B4XSwitch1";
-parent.mostCurrent._sharedprefs.SaveBoolean("Biometric",parent.mostCurrent._b4xswitch1._getvalue /*boolean*/ (null));
-RDebugUtils.currentLine=41680914;
- //BA.debugLineNum = 41680914;BA.debugLine="Msgbox2Async(\"Fingerprint login enabled\",\"Fing";
+ //BA.debugLineNum = 79;BA.debugLine="SharedPrefs.SaveBoolean(\"Biometric\",B4XSwitch1";
+parent.mostCurrent._sharedprefs.SaveBoolean("Biometric",parent.mostCurrent._b4xswitch1._getvalue /*boolean*/ ());
+ //BA.debugLineNum = 80;BA.debugLine="Msgbox2Async(\"Fingerprint login enabled\",\"Fing";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Fingerprint login enabled"),BA.ObjectToCharSequence("Fingerprint Enabled"),"Done","","",anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"icons8-fingerprint-94.png"),processBA,anywheresoftware.b4a.keywords.Common.False);
  if (true) break;
 
 case 19:
 //C
 this.state = 20;
-RDebugUtils.currentLine=41680916;
- //BA.debugLineNum = 41680916;BA.debugLine="B4XSwitch1.Value=False";
-parent.mostCurrent._b4xswitch1._setvalue /*boolean*/ (null,anywheresoftware.b4a.keywords.Common.False);
+ //BA.debugLineNum = 82;BA.debugLine="B4XSwitch1.Value=False";
+parent.mostCurrent._b4xswitch1._setvalue /*boolean*/ (anywheresoftware.b4a.keywords.Common.False);
  if (true) break;
 
 case 20:
@@ -614,9 +583,8 @@ this.state = 23;
 case 22:
 //C
 this.state = 23;
-RDebugUtils.currentLine=41680919;
- //BA.debugLineNum = 41680919;BA.debugLine="B4XSwitch1.Value=False";
-parent.mostCurrent._b4xswitch1._setvalue /*boolean*/ (null,anywheresoftware.b4a.keywords.Common.False);
+ //BA.debugLineNum = 85;BA.debugLine="B4XSwitch1.Value=False";
+parent.mostCurrent._b4xswitch1._setvalue /*boolean*/ (anywheresoftware.b4a.keywords.Common.False);
  if (true) break;
 
 case 23:
@@ -629,60 +597,68 @@ case 24:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=41680922;
- //BA.debugLineNum = 41680922;BA.debugLine="End Sub";
+ //BA.debugLineNum = 88;BA.debugLine="End Sub";
 if (true) break;
 
             }
         }
     }
 }
+public static void  _msgbox_result(int _result) throws Exception{
+}
+public static void  _authenticate_complete(boolean _success,String _errormessage) throws Exception{
+}
+public static String  _globals() throws Exception{
+ //BA.debugLineNum = 12;BA.debugLine="Sub Globals";
+ //BA.debugLineNum = 15;BA.debugLine="Private ACToolBarLight1 As ACToolBarLight";
+mostCurrent._actoolbarlight1 = new de.amberhome.objects.appcompat.ACToolbarLightWrapper();
+ //BA.debugLineNum = 16;BA.debugLine="Private ToolbarHelper As ACActionBar";
+mostCurrent._toolbarhelper = new de.amberhome.objects.appcompat.ACActionBar();
+ //BA.debugLineNum = 17;BA.debugLine="Private B4XSwitch1 As B4XSwitch";
+mostCurrent._b4xswitch1 = new ng.dsoftlab.stegocam.b4xswitch();
+ //BA.debugLineNum = 18;BA.debugLine="Dim SharedPrefs As SharedPreferences";
+mostCurrent._sharedprefs = new com.b4x.sharedpreferences.SharedPreferences();
+ //BA.debugLineNum = 19;BA.debugLine="Private Biometric As BiometricManager";
+mostCurrent._biometric = new ng.dsoftlab.stegocam.biometricmanager();
+ //BA.debugLineNum = 20;BA.debugLine="Private lblSignout As Label";
+mostCurrent._lblsignout = new anywheresoftware.b4a.objects.LabelWrapper();
+ //BA.debugLineNum = 21;BA.debugLine="Private pnlPinChange As Panel";
+mostCurrent._pnlpinchange = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 22;BA.debugLine="Private pnlSecurityQuestion As Panel";
+mostCurrent._pnlsecurityquestion = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 23;BA.debugLine="End Sub";
+return "";
+}
 public static String  _lblsignout_click() throws Exception{
-RDebugUtils.currentModule="settings";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "lblsignout_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "lblsignout_click", null));}
-RDebugUtils.currentLine=41746432;
- //BA.debugLineNum = 41746432;BA.debugLine="Private Sub lblSignout_Click";
-RDebugUtils.currentLine=41746433;
- //BA.debugLineNum = 41746433;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 90;BA.debugLine="Private Sub lblSignout_Click";
+ //BA.debugLineNum = 91;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=41746434;
- //BA.debugLineNum = 41746434;BA.debugLine="StartActivity(Login)";
+ //BA.debugLineNum = 92;BA.debugLine="StartActivity(Login)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._login.getObject()));
-RDebugUtils.currentLine=41746435;
- //BA.debugLineNum = 41746435;BA.debugLine="End Sub";
+ //BA.debugLineNum = 93;BA.debugLine="End Sub";
 return "";
 }
 public static String  _pnlpinchange_click() throws Exception{
-RDebugUtils.currentModule="settings";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "pnlpinchange_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "pnlpinchange_click", null));}
-RDebugUtils.currentLine=41877504;
- //BA.debugLineNum = 41877504;BA.debugLine="Private Sub pnlPinChange_Click";
-RDebugUtils.currentLine=41877505;
- //BA.debugLineNum = 41877505;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 100;BA.debugLine="Private Sub pnlPinChange_Click";
+ //BA.debugLineNum = 101;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=41877506;
- //BA.debugLineNum = 41877506;BA.debugLine="StartActivity(PinChange)";
+ //BA.debugLineNum = 102;BA.debugLine="StartActivity(PinChange)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._pinchange.getObject()));
-RDebugUtils.currentLine=41877507;
- //BA.debugLineNum = 41877507;BA.debugLine="End Sub";
+ //BA.debugLineNum = 103;BA.debugLine="End Sub";
 return "";
 }
 public static String  _pnlsecurityquestion_click() throws Exception{
-RDebugUtils.currentModule="settings";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "pnlsecurityquestion_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "pnlsecurityquestion_click", null));}
-RDebugUtils.currentLine=41811968;
- //BA.debugLineNum = 41811968;BA.debugLine="Private Sub pnlSecurityQuestion_Click";
-RDebugUtils.currentLine=41811969;
- //BA.debugLineNum = 41811969;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 95;BA.debugLine="Private Sub pnlSecurityQuestion_Click";
+ //BA.debugLineNum = 96;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=41811970;
- //BA.debugLineNum = 41811970;BA.debugLine="StartActivity(securityquestion)";
+ //BA.debugLineNum = 97;BA.debugLine="StartActivity(securityquestion)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._securityquestion.getObject()));
-RDebugUtils.currentLine=41811971;
- //BA.debugLineNum = 41811971;BA.debugLine="End Sub";
+ //BA.debugLineNum = 98;BA.debugLine="End Sub";
+return "";
+}
+public static String  _process_globals() throws Exception{
+ //BA.debugLineNum = 6;BA.debugLine="Sub Process_Globals";
+ //BA.debugLineNum = 10;BA.debugLine="End Sub";
 return "";
 }
 }

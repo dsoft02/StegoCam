@@ -118,14 +118,27 @@ Sub load_Images
 End Sub
 
 
-Private Sub lb2Menu_Click
-	If Drawer.LeftOpen Then Drawer.LeftOpen = False
-	Sleep(150)
-End Sub
 Private Sub lb1Menu_Click
 	If Drawer.LeftOpen Then Drawer.LeftOpen = False
 	Sleep(10)
+	StartActivity(encode)
+	Activity.Finish
 End Sub
+
+Private Sub lb2Menu_Click
+	If Drawer.LeftOpen Then Drawer.LeftOpen = False
+	Sleep(10)
+	StartActivity(decode)
+	Activity.Finish
+End Sub
+
+Private Sub lb3Menu_Click
+	If Drawer.LeftOpen Then Drawer.LeftOpen = False
+	Sleep(10)
+	StartActivity(history)
+	Activity.Finish
+End Sub
+
 Private Sub lb4Menu_Click
 	If Drawer.LeftOpen Then Drawer.LeftOpen = False
 	Sleep(10)
@@ -133,6 +146,19 @@ Private Sub lb4Menu_Click
 End Sub
 
 
+Private Sub lb5Menu_Click
+	If Drawer.LeftOpen Then Drawer.LeftOpen = False
+	Sleep(10)
+	StartActivity(settings)
+	Activity.Finish
+End Sub
+
+Private Sub lb6Menu_Click
+	If Drawer.LeftOpen Then Drawer.LeftOpen = False
+	Sleep(10)
+	StartActivity(settings)
+	Activity.Finish
+End Sub
 
 Private Sub pnlSettings_Click
 	StartActivity(settings)
@@ -159,7 +185,8 @@ Private Sub pnlEncode_Click
 End Sub
 
 Private Sub pnlDecode_Click
-	
+	StartActivity(decode)
+	Activity.Finish
 End Sub
 
 Private Sub pnlAbout_Click

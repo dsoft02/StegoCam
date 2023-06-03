@@ -6,12 +6,15 @@ Version=12.2
 @EndOfDesignText@
 Sub Class_Globals
 	Private steg As F5Steg
-	Private stegoCamBytes() As Byte = "STEGOCAM_".GetBytes("UTF8")
+	Private stegoCamBytes() As Byte = "_STEGOCAM_".GetBytes("UTF8")
 	Private str As StringUtils
 	Public curFilename As String
 	Public embeddingSuccessful As Boolean=False
+	Public extractionSuccessful As Boolean=False
 	Public lastErrorMessage As String = ""
 	Public file_extension As String = ""
+	Public extractedString As String = ""
+	Public stegoMarkerByte() As Byte = FileToBytes(File.DirAssets,"stegomarker.jpg")
 End Sub
 
 ' Initializes the object. You can add parameters to this method if needed.
@@ -36,21 +39,6 @@ End Sub
 
 Sub text_Embedded(OutFileName As String)
 	Try
-		' Read the image file into bytes
-		Dim imageBytes() As Byte = File.ReadBytes(OutFileName,"")
-	    
-		' Convert the text to bytes
-		Dim textBytes() As Byte = "TEXT".GetBytes("UTF8")
-	    
-		' Concatenate the image bytes and text bytes
-		Dim modifiedBytes() As Byte =CombineBytes(stegoCamBytes, textBytes)
-		
-		' Concatenate the image bytes and modified bytes
-		Dim newImageBytes() As Byte = CombineBytes(imageBytes, modifiedBytes)
-	    
-		' Write the new image bytes to the output file
-		File.WriteBytes(OutFileName,"", newImageBytes)
-		
 		'copy the file from the cache to the stegoimages folder in the app folder
 		File.Copy(OutFileName,"",config.stegoImagePath,curFilename)
 		embeddingSuccessful =File.Exists(config.stegoImagePath,curFilename)
@@ -64,96 +52,34 @@ Sub text_Embedded(OutFileName As String)
 	End Try
 End Sub
 
-
-Sub EmbedFile(SecretFile As String,Password As String)
+' Extracts the text with a password from the given image file
+Public Sub ExtractText(imageFilePath As String, password As String) As String
+	' Extract the hidden text from the image using the password
 	Try
-		embeddingSuccessful=False
-		Dim stegoFilePath As String = copyFiletoTemp(SecretFile)
-		Dim SecretMessage() As Byte = Bit.InputStreamToBytes(File.OpenInput(stegoFilePath,""))
-		'Dim SecretMessage() As Byte=File.ReadBytes(SecretFile,"")
-'		Msgbox(SecretFile,"secret file")
-'		Msgbox(stegoFilePath,"stegoFilePath")
-'		Msgbox(File.Exists(stegoFilePath,""),"secret message")
-		
-		Dim imageFilePath As String  = File.Combine(File.DirInternalCache, "stegocover.png")
-		Dim outputFilePath  As String = File.Combine(File.DirInternalCache, GenerateFilename)
-		steg.EmbedArray2 (imageFilePath, outputFilePath, SecretMessage, 100, Password, "file")
+		steg.ExtractToString2(imageFilePath, password, "steg")
+		'extractionSuccessful=True
+		lastErrorMessage="Success: Extraction completed successfully!"
 	Catch
-		Msgbox(LastException.Message,"")
+		Log(LastException)
+		Dim errMessage() As String =Regex.Split(":", LastException.Message)
+		If errMessage(errMessage.Length-1) ="BAD_DECRYPT" Then
+			Msgbox2Async("Error: Invalid Decryption Key Please Try Again!", "Extraction Fail", "OK", "", "", Null, False)
+			lastErrorMessage="Error: Invalid Decryption Key Please Try Again!"
+		Else
+			Msgbox2Async("Error: Invalid Stego Image or wrong Decryption Key Please Try Again!", "Extraction Fail", "OK", "", "", Null, False)
+			lastErrorMessage="Error: Invalid Stego Image or wrong Decryption Key"
+		End If
 		
+		extractionSuccessful=False
 	End Try
 End Sub
 
-
-Sub GetStreamFromContentResult(UriString As String) As InputStream
-	Dim r As Reflector
-	Dim Uri As Object
-	Dim iStream As InputStream
-	Uri = r.RunStaticMethod("android.net.Uri", "parse", Array As Object(UriString), Array As String("java.lang.String"))
-	r.Target = r.GetContext
-	r.Target = r.RunMethod("getContentResolver")
-	iStream = r.RunMethod4( "openInputStream", Array As Object(Uri), Array As String("android.net.Uri"))
-
-	
-'	Dim jo As JavaObject
-'	Dim cd As String = jo.InitializeStatic("anywheresoftware.b4a.objects.streams.File").GetField("ContentDir")
-'	iStream = File.OpenInput(cd , UriString)
-
-
-	Return iStream
+Sub steg_StringExtracted(SecretMessage As String)
+	extractedString = SecretMessage
+	extractionSuccessful = True
+	lastErrorMessage = "Success: Extraction completed successfully!"
 End Sub
 
-Sub copyFiletoTemp(cfilename As String) As String
-	Dim returnFilePath As String =""
-	Try
-		'Msgbox(cfilename,"cfile")
-		Dim jo As JavaObject
-		Dim Inp As InputStream  = GetStreamFromContentResult(cfilename)
-		Dim ofilename As String = "stegofile." & file_extension
-		Dim Out As OutputStream = File.OpenOutput(File.DirInternalCache, ofilename, False)
-		File.copy2(Inp, Out)
-		Inp.Close
-		Out.Close
-		returnFilePath=File.combine(File.DirInternalCache, ofilename)
-	Catch
-		returnFilePath=""
-		Msgbox(LastException.Message,"")
-		Log(":: issue " & LastException)
-	End Try
-	Return returnFilePath
-End Sub
-
-Sub file_Embedded(OutFileName As String)
-	Try
-		' Read the image file into bytes
-		Dim imageBytes() As Byte = File.ReadBytes(OutFileName,"")
-	    
-		Dim textStr As String = "FILE_" & file_extension
-		
-		' Convert the text to bytes
-		Dim textBytes() As Byte = textStr.GetBytes("UTF8")
-	    
-		' Concatenate the image bytes and text bytes
-		Dim modifiedBytes() As Byte =CombineBytes(stegoCamBytes, textBytes)
-		
-		' Concatenate the image bytes and modified bytes
-		Dim newImageBytes() As Byte = CombineBytes(imageBytes, modifiedBytes)
-	    
-		' Write the new image bytes to the output file
-		File.WriteBytes(OutFileName,"", newImageBytes)
-		
-		'copy the file from the cache to the stegoimages folder in the app folder
-		File.Copy(OutFileName,"",config.stegoImagePath,curFilename)
-		embeddingSuccessful =File.Exists(config.stegoImagePath,curFilename)
-		lastErrorMessage=""
-		' Delete the temporary output file without extension
-		File.Delete(OutFileName,"")
-	Catch
-		embeddingSuccessful =False
-		lastErrorMessage="Embedding Failed: " & LastException.Message
-		ToastMessageShow("Embedding Failed: " & LastException.Message,True)
-	End Try
-End Sub
 
 Sub CombineBytes(arr1() As Byte, arr2() As Byte) As Byte()
 	Dim res(arr1.Length + arr2.Length) As Byte
@@ -163,48 +89,67 @@ Sub CombineBytes(arr1() As Byte, arr2() As Byte) As Byte()
 	Return res
 End Sub
 
-
-' Extracts the text with a password from the given image file
-Public Sub ExtractTextWithPassword(imageFilePath As String, password As String) As String
-	' Extract the hidden text from the image using the password
-	steg.ExtractToString2(imageFilePath, password, "steg")
+Public Sub isStegoImage(imageFilePath As String) As Boolean
+	Dim bc As ByteConverter
+    ' Check if the image file exists.
+    If Not(File.Exists(imageFilePath,"")) Then
+        ' Return False if the image file does not exist.
+        Return False
+    End If
+	
+    ' Get the bytes of the image file.
+    Dim fileBytes() As Byte = FileToBytes(imageFilePath, "")
+	Dim fileBytesString As String= bc.StringFromBytes(fileBytes,"UTF8")
+	Dim stegoBytesString As String =bc.StringFromBytes(stegoMarkerByte,"UTF8")
+	If fileBytesString.Contains(stegoBytesString) Then
+		Return True
+	Else
+		Return False
+	End If
+	
+	Return False
 End Sub
 
-Sub steg_StringExtracted(SecretMessage As String)
-	Log("Extracted Text: " & SecretMessage)
-End Sub
+Public Sub RemoveStegoCamBytes(imageFilePath As String) As String
+	Dim newFilePath As String = ""
+	Try
+		Dim fileBytes() As Byte = File.ReadBytes(imageFilePath, "")
 
+		Dim stegoCamLength As Int = stegoMarkerByte.Length
+		
+		Dim newLength As Int = fileBytes.Length - stegoCamLength
+		
+		Dim modifiedBytes(newLength) As Byte
+		Dim bc As ByteConverter 'ByteConverter library
+		
+		' Copy the bytes from fileBytes to modifiedBytes excluding the stegoCamBytes
+		bc.ArrayCopy(fileBytes,0, modifiedBytes,0, newLength)
+		
+		' Write the modified bytes to a new file
+		newFilePath = File.Combine(File.DirInternalCache, "ModifiedStegoImage.jpg")
+		File.WriteBytes(newFilePath,"", modifiedBytes)
+		
+	Catch
+		' Display an error message if any exception occurs
+		ToastMessageShow("Error: " & LastException.Message, True)
+	End Try
+	
+	Return newFilePath
+End Sub
 
 Sub createTempCoverImage(img As ImageView)
-'	If img.Tag="" Then
 		Dim Bitmap1 As Bitmap = img.Bitmap
 		Dim Out As OutputStream
 		'Out = File.OpenOutput(config.stegoImagePath, "stegocover.png", False)
 		Out = File.OpenOutput(File.DirInternalCache, "stegocover.png", False)
 		Bitmap1.WriteToStream(Out, 100, "PNG")
 		Out.Close
-'	Else
-'		Dim tpath() As String
-'		tpath= Regex.Split("\|",img.Tag)
-'		Dim pathlist As List
-'		pathlist.Initialize2(tpath)
-'		Dim fpath As String =pathlist.Get(0).As(String)
-'		Dim fname As String =pathlist.Get(1).As(String)
-'		'Msgbox(img.Tag & CRLF &  "Path: " & fpath & CRLF & "File: " & fname,Application.LabelName)
-'		Try
-'			If File.Exists(File.DirInternalCache, "stegocover.png")=True Then File.Delete(File.DirInternalCache, "stegocover.png")
-'			File.Copy(fpath,fname,File.DirInternalCache, "stegocover.png")
-'		Catch
-'			'Msgbox(LastException.Message,Application.LabelName)
-'		End Try
-'	End If
+
 End Sub
 
 Sub isCoverImage() As Boolean
 	Return File.Exists(File.DirInternalCache, "stegocover.png")
 End Sub
-
-
 
 Sub deleteTempResources(res As String)
 	If res ="stegocover" Then
@@ -212,12 +157,43 @@ Sub deleteTempResources(res As String)
 	End If
 End Sub
 
-Sub BytesToFile (Dir As String, FileName As String, Data() As Byte)
+Sub BytesToFile (Data() As Byte,Dir As String, FileName As String)
 	Dim out As OutputStream = File.OpenOutput(Dir, FileName, False)
 	out.WriteBytes(Data, 0, Data.Length)
 	out.Close
 End Sub
 
 Sub FileToBytes (Dir As String, FileName As String) As Byte()
-	Return Bit.InputStreamToBytes(File.OpenInput(Dir, FileName))
+   Return Bit.InputStreamToBytes(File.OpenInput(Dir, FileName))
+End Sub
+
+Sub GetStreamFromContentResult(UriString As String) As InputStream
+	Dim r As Reflector
+	Dim Uri As Object
+	Dim iStream As InputStream
+	Uri = r.RunStaticMethod("android.net.Uri", "parse", Array As Object(UriString), Array As String("java.lang.String"))
+	r.Target = r.GetContext
+	r.Target = r.RunMethod("getContentResolver")
+	iStream = r.RunMethod4( "openInputStream", Array As Object(Uri), Array As String("android.net.Uri"))
+	Return iStream
+End Sub
+
+Sub copyFiletoTemp(srcFile As String,destFile As String) As String
+	Dim returnFilePath As String =""
+	Try
+		'Msgbox(cfilename,"cfile")
+		Dim jo As JavaObject
+		Dim Inp As InputStream  = GetStreamFromContentResult(srcFile)
+		'Dim ofilename As String = "stegofile." & file_extension
+		Dim Out As OutputStream = File.OpenOutput(File.DirInternalCache, destFile, False)
+		File.copy2(Inp, Out)
+		Inp.Close
+		Out.Close
+		returnFilePath=File.combine(File.DirInternalCache, destFile)
+	Catch
+		returnFilePath=""
+		'Msgbox(LastException.Message,"")
+		Log(":: issue " & LastException)
+	End Try
+	Return returnFilePath
 End Sub

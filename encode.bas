@@ -38,12 +38,8 @@ Sub Globals
 	Private ImageView4 As ImageView
 	Private lblErrorMsg As Label
 	Private pnlEncryption As Panel
-	Private pnlFile As Panel
 	Private pnlKey As Panel
 	Private pnlMessage As Panel
-	Private rboxEncodeFile As RadioButton
-	Private rboxEncodeText As RadioButton
-	Private txtFilename As EditText
 	Private txtKey As EditText
 	Private txtMessage As EditText
 	Private imgCover As ImageView
@@ -66,6 +62,7 @@ Sub Globals
 	Private pnlDelete As Panel
 	Private pnlExtract As Panel
 	Private pnlShare As Panel
+	Dim sClipboard As BClipboard
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -117,40 +114,30 @@ Private Sub btnEncode_Click
 	If imgCover.Bitmap=Null Then
 		lblErrorMsg.Text="Please select cover Image"
 		ToastMessageShow("Please select cover Image",False)
-	Else If rboxEncodeText.Checked And txtMessage.Text="" Then
+	Else If txtMessage.Text="" Then
 		lblErrorMsg.Text="Please enter your secret message"
 		ToastMessageShow("Please enter your secret message",False)
 		txtMessage.RequestFocus
-	Else If rboxEncodeFile.Checked And txtFilename.Text="" Then
-		lblErrorMsg.Text="Please select your secret file"
-		ToastMessageShow("Please select your secret file",False)
-		BrowseFile
 	else if txtKey.Text="" Then
 		lblErrorMsg.Text="Please enter your encryption key"
 		ToastMessageShow("Please enter your encryption key",False)
 		txtKey.RequestFocus
-		
+	else if txtKey.Text.Length<4 Then
+		lblErrorMsg.Text="Encryption key must be 4 or more letters"
+		ToastMessageShow("Encryption key must be 4 or more letters",False)
+		txtKey.RequestFocus
 	Else
 		lblErrorMsg.Text=""
 		stegoHandler.createTempCoverImage(imgCover)
 		If stegoHandler.isCoverImage Then
-			If rboxEncodeText.Checked Then 
-				stegoHandler.EmbedText(txtMessage.Text,txtKey.Text)
-				If stegoHandler.embeddingSuccessful=True Then
-					ToastMessageShow("Secret has been hidden successfully!",True)
-					showCompleteDialog(File.Combine(config.stegoImagePath,stegoHandler.curFilename))
-				Else
-					lblErrorMsg.Text=stegoHandler.lastErrorMessage
-				End If
-			Else if rboxEncodeFile.Checked Then
-				stegoHandler.file_extension=txtFilename.text.SubString(txtFilename.text.LastIndexOf(".")+1)
-				stegoHandler.EmbedFile(txtFilename.Tag,txtKey.Text)
-				If stegoHandler.embeddingSuccessful=True Then
-					ToastMessageShow("Secret File has been hidden successfully!",True)
-					showCompleteDialog(File.Combine(config.stegoImagePath,stegoHandler.curFilename))
-				Else
-					lblErrorMsg.Text=stegoHandler.lastErrorMessage
-				End If
+			stegoHandler.EmbedText(txtMessage.Text,txtKey.Text)
+			If stegoHandler.embeddingSuccessful=True Then
+				ToastMessageShow("Secret has been hidden successfully!",True)
+				showCompleteDialog(File.Combine(config.stegoImagePath,stegoHandler.curFilename))
+				sClipboard.setText(txtKey.Text)
+				ToastMessageShow("Encryption Key has been copied to clipboard",True)
+			Else
+				lblErrorMsg.Text=stegoHandler.lastErrorMessage
 			End If
 		Else
 			ToastMessageShow("An error has occured please Try Again!",True)
@@ -224,48 +211,13 @@ End Sub
 
 
 Private Sub clearForm
-	Dim encryptionTypes As List
-	encryptionTypes.Initialize
-	encryptionTypes.AddAll(Array As String("AES", "DES"))
-	cboEncryption.SetItems(encryptionTypes)
-	cboEncryption.SelectedIndex=0
 	lastPicture=Null
 	imgCover.Bitmap=Null
-	txtFilename.Text=""
 	txtMessage.Text=""
 	imgCover.Tag=""
-	txtFilename.Tag=""
 	txtKey.Text=""
 	lblShowPassword.Text=config.hide
 	txtKey.PasswordMode=True
-End Sub
-
-
-
-Private Sub rboxEncodeText_CheckedChange(Checked As Boolean)
-	If rboxEncodeText.Checked Then
-		pnlFile.Visible=False
-		pnlMessage.Visible=True
-		'pnlEncryption.Top=pnlMessage.Top+pnlMessage.Height+10dip
-		'pnlKey.Top=pnlEncryption.Top+pnlEncryption.Height+10dip
-		pnlKey.Top=pnlMessage.Top+pnlMessage.Height+10dip
-		lblErrorMsg.Top=pnlKey.Top+pnlKey.Height+10dip
-		btnCancel.Top=lblErrorMsg.Top+lblErrorMsg.Height+10dip
-		btnEncode.Top=lblErrorMsg.Top+lblErrorMsg.Height+10dip
-	End If
-End Sub
-
-Private Sub rboxEncodeFile_CheckedChange(Checked As Boolean)
-	If rboxEncodeFile.Checked Then
-		pnlMessage.Visible=False
-		pnlFile.Visible=True
-		'pnlEncryption.Top=pnlFile.Top+pnlFile.Height+15dip
-		'pnlKey.Top=pnlEncryption.Top+pnlEncryption.Height+15dip
-		pnlKey.Top=pnlFile.Top+pnlFile.Height+15dip
-		lblErrorMsg.Top=pnlKey.Top+pnlKey.Height+15dip
-		btnCancel.Top=lblErrorMsg.Top+lblErrorMsg.Height+10dip
-		btnEncode.Top=lblErrorMsg.Top+lblErrorMsg.Height+10dip
-	End If
 End Sub
 
 
@@ -302,7 +254,7 @@ Sub BrowseCoverImage
 		Try
 			'imgCover.Bitmap = LoadBitmap(Result.Dir,Result.FileName)
 			imgCover.Bitmap =xui.LoadBitmapResize(Result.Dir,Result.FileName,imgCover.Width,imgCover.Height,True)
-			imgCover.Tag= GetPathFromContentResult(Result.FileName) 'Result.Dir & "/" & Result.FileName
+			imgCover.Tag= Result.FileName 'Result.Dir & "/" &  GetPathFromContentResult(Result.FileName) '
 			lblErrorMsg.Text=""
 		Catch
 			imgCover.Bitmap=Null
@@ -313,29 +265,6 @@ Sub BrowseCoverImage
 	End If
 End Sub
 
-
-Sub BrowseFile
-	Wait For (FileHandler1.Load) Complete (Result As LoadResult)
-	If Result.Success Then
-		Dim fpath As String=""
-		Dim fname As String=""
-		Try
-			fpath=Result.FileName 'Result.Dir & "/" &  GetPathFromContentResult(Result.FileName) '
-			'Msgbox(Result.FileName & "   " & fpath,"")
-			fname=Result.RealName
-			lblErrorMsg.Text=""
-		Catch
-			fpath=""
-			fname=""
-			Log(LastException)
-			lblErrorMsg.Text=LastException.Message
-		End Try
-		txtFilename.Text=fname
-		txtFilename.Tag=fpath
-		imgCover.Tag=fpath
-		Log(fpath)
-	End If
-End Sub
 
 Sub TakePicture
 	Dim i As Intent
@@ -388,12 +317,6 @@ Sub GetBA As Object
 	Return jo.GetField("processBA")
 End Sub
 
-
-Private Sub btnBrowse_Click
-	BrowseFile
-End Sub
-
-
 Private Sub lblShowPassword_Click
 	If lblShowPassword.Text=config.hide Then
 		lblShowPassword.Text=config.show
@@ -424,10 +347,6 @@ Private Sub imgShare_Click
 	Catch
 		ToastMessageShow(LastException.Message,True)
 	End Try
-End Sub
-
-Private Sub imgExtract_Click
-	
 End Sub
 
 Private Sub imgDelete_Click
@@ -463,4 +382,12 @@ Sub GetPathFromContentResult(UriString As String) As String
 	res = Cursor1.GetString("_data")
 	Cursor1.Close
 	Return res
+End Sub
+
+
+Private Sub imgExtract_Click
+	decode.fromfile=False
+	decode.stegoimage=lblImgLocation.Text
+	StartActivity(decode)
+	Activity.Finish
 End Sub

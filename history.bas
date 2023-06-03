@@ -100,7 +100,7 @@ Sub FindPictures
 			AllPictures.Add(File.Combine(PicturesFolder, f))
 		Next
 	End If
-	
+	AllPictures.Sort(False)
 	CreateTable(AllPictures)
 End Sub
 
@@ -264,14 +264,6 @@ Sub btnPrev_Click
 End Sub
 
 
-Private Sub btnShare_Click
-	
-End Sub
-
-
-Private Sub btnCancel_Click
-	
-End Sub
 
 Private Sub imgShare_Click
 	Try
@@ -293,7 +285,10 @@ Private Sub imgShare_Click
 End Sub
 
 Private Sub imgExtract_Click
-	
+	decode.fromfile=False
+	decode.stegoimage=lblImgLocation.Text
+	StartActivity(decode)
+	Activity.Finish
 End Sub
 
 Private Sub imgDelete_Click

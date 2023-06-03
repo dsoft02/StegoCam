@@ -50,8 +50,18 @@ Sub Activity_Pause (UserClosed As Boolean)
 End Sub
 
 Sub ACToolBarLight1_NavigationItemClick
-	Activity.Finish
 	StartActivity(mainmenu)
+	Activity.Finish
+End Sub
+
+
+Sub Activity_KeyPress (KeyCode As Int) As Boolean
+	If KeyCode = KeyCodes.KEYCODE_BACK Then
+		StartActivity(mainmenu)
+		Activity.Finish
+		Return True
+	End If
+	Return False
 End Sub
 
 

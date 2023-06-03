@@ -6,7 +6,6 @@ C:\Android-Sdk\platforms\android-33\android.jar
 --min-api
 21
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-b4ashared-63810072328000\dex_v1\b4ashared.zip
-C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-debug-63810072328000\dex_v1\debug.zip
 c:\android-sdk\tools\..\extras\b4a_local\unpacked-appcompat.androidx-63819274541952\jars\classes.zip
 c:\android-sdk\tools\..\extras\b4a_local\unpacked-switchbutton-63635712190000\jars\classes.zip
 c:\android-sdk\tools\..\extras\b4a_remote\androidx\appcompat\appcompat\1.5.1\unpacked-appcompat-1.5.1\jars\classes.zip
@@ -63,13 +62,14 @@ C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-f5steg-63600978014000\dex_v1\f
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-ime-63810072328000\dex_v1\ime.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-javaobject-63810072328000\dex_v1\javaobject.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-phone-63810072330000\dex_v1\phone.zip
+C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-reflection-63810072330000\dex_v1\reflection.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-runtimepermissions-63810072330000\dex_v1\runtimepermissions.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-sharedpreferences-63819295778547\dex_v1\sharedpreferences.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-sql-63810072330000\dex_v1\sql.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-stringutils-63810072330000\dex_v1\stringutils.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-sweetalertdialog-63818869545107\dex_v1\sweetalertdialog.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-switchbutton-63635717838000\dex_v1\switchbutton.zip
-C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-reflection-63810072330000\dex_v1\reflection.zip
+C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-clipboard-63818866360264\dex_v1\clipboard.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-kotlin-stdlib-1.6.10-63810072330000\dex_v1\kotlin-stdlib-1.6.10.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-xui-63810072330000\dex_v1\xui.zip
 C:\Android-Sdk\tools\..\extras\b4a_local\unpacked-viewsex-63810072330000\dex_v1\viewsex.zip
@@ -661,11 +661,19 @@ C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\s
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\biometricmanager$BiometricPromptAuthentication.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\biometricmanager.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\config.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\decode$1.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\decode$B4AMenuItemsClickListener.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\decode$HandleKeyDelayed.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\decode$ResumableSub_BrowseStegoImage.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\decode$ResumableSub_btnDecode_Click.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\decode$ResumableSub_getPermissions.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\decode$ResumeMessage.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\decode$WaitForLayout.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\decode.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\encode$1.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\encode$B4AMenuItemsClickListener.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\encode$HandleKeyDelayed.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\encode$ResumableSub_BrowseCoverImage.dex
-C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\encode$ResumableSub_BrowseFile.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\encode$ResumableSub_getPermissions.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\encode$ResumableSub_imgCover_Click.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\encode$ResumableSub_imgDelete_Click.dex
@@ -718,7 +726,10 @@ C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\s
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$HandleKeyDelayed.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$ResumableSub_lb1Menu_Click.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$ResumableSub_lb2Menu_Click.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$ResumableSub_lb3Menu_Click.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$ResumableSub_lb4Menu_Click.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$ResumableSub_lb5Menu_Click.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$ResumableSub_lb6Menu_Click.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$ResumableSub_pnlExit_Click.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$ResumeMessage.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\mainmenu$WaitForLayout.dex
@@ -787,6 +798,7 @@ C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\s
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\stegocamhandler.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\swiftbutton.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\xuiviewsutils.dex
+C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\designerscripts\LS_decode.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\designerscripts\LS_encode.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\designerscripts\LS_forgotpin.dex
 C:\wamp\www\E-backup\EBEN FILES\ALX PROJECT\StegoCam\Objects\dexed\ng\dsoftlab\stegocam\designerscripts\LS_history.dex

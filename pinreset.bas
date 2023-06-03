@@ -93,13 +93,13 @@ Private Sub lblShowPassword2_Click
 End Sub
 
 Sub ACToolBarLight1_NavigationItemClick
-	StartActivity(settings)
+	StartActivity(Login)
 	Activity.Finish
 End Sub
 
 Sub Activity_KeyPress (KeyCode As Int) As Boolean
 	If KeyCode = KeyCodes.KEYCODE_BACK Then
-		StartActivity(settings)
+		StartActivity(Login)
 		Activity.Finish
 		Return True
 	End If

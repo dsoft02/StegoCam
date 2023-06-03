@@ -34,7 +34,7 @@ public class history extends androidx.appcompat.app.AppCompatActivity implements
 		super.onCreate(savedInstanceState);
         mostCurrent = this;
 		if (processBA == null) {
-			processBA = new anywheresoftware.b4a.ShellBA(this.getApplicationContext(), null, null, "ng.dsoftlab.stegocam", "ng.dsoftlab.stegocam.history");
+			processBA = new BA(this.getApplicationContext(), null, null, "ng.dsoftlab.stegocam", "ng.dsoftlab.stegocam.history");
 			processBA.loadHtSubs(this.getClass());
 	        float deviceScale = getApplicationContext().getResources().getDisplayMetrics().density;
 	        BALayout.setDeviceScale(deviceScale);
@@ -335,15 +335,6 @@ public class history extends androidx.appcompat.app.AppCompatActivity implements
             
     }
 
-
-
-public static void initializeProcessGlobals() {
-             try {
-                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-}
 public anywheresoftware.b4a.keywords.Common __c = null;
 public static anywheresoftware.b4a.objects.RuntimePermissions _rp = null;
 public static int _numberofcolumns = 0;
@@ -387,47 +378,339 @@ public ng.dsoftlab.stegocam.login _login = null;
 public ng.dsoftlab.stegocam.pinchange _pinchange = null;
 public ng.dsoftlab.stegocam.pinreset _pinreset = null;
 public ng.dsoftlab.stegocam.securityquestion _securityquestion = null;
+public ng.dsoftlab.stegocam.decode _decode = null;
 public ng.dsoftlab.stegocam.b4xcollections _b4xcollections = null;
 public ng.dsoftlab.stegocam.httputils2service _httputils2service = null;
 public ng.dsoftlab.stegocam.xuiviewsutils _xuiviewsutils = null;
+
+public static void initializeProcessGlobals() {
+             try {
+                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+}
 public static String  _activity_create(boolean _firsttime) throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=56557568;
- //BA.debugLineNum = 56557568;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=56557570;
- //BA.debugLineNum = 56557570;BA.debugLine="Activity.LoadLayout(\"history\")";
+ //BA.debugLineNum = 46;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+ //BA.debugLineNum = 48;BA.debugLine="Activity.LoadLayout(\"history\")";
 mostCurrent._activity.LoadLayout("history",mostCurrent.activityBA);
-RDebugUtils.currentLine=56557571;
- //BA.debugLineNum = 56557571;BA.debugLine="SharedPrefs.Initialize(\"StegoCamPrefs\")";
+ //BA.debugLineNum = 49;BA.debugLine="SharedPrefs.Initialize(\"StegoCamPrefs\")";
 mostCurrent._sharedprefs.Initialize("StegoCamPrefs");
-RDebugUtils.currentLine=56557572;
- //BA.debugLineNum = 56557572;BA.debugLine="ToolbarHelper.Initialize";
+ //BA.debugLineNum = 50;BA.debugLine="ToolbarHelper.Initialize";
 mostCurrent._toolbarhelper.Initialize(mostCurrent.activityBA);
-RDebugUtils.currentLine=56557573;
- //BA.debugLineNum = 56557573;BA.debugLine="ToolbarHelper.ShowUpIndicator = True 'set to true";
+ //BA.debugLineNum = 51;BA.debugLine="ToolbarHelper.ShowUpIndicator = True 'set to true";
 mostCurrent._toolbarhelper.setShowUpIndicator(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=56557574;
- //BA.debugLineNum = 56557574;BA.debugLine="ACToolBarLight1.InitMenuListener";
+ //BA.debugLineNum = 52;BA.debugLine="ACToolBarLight1.InitMenuListener";
 mostCurrent._actoolbarlight1.InitMenuListener();
-RDebugUtils.currentLine=56557575;
- //BA.debugLineNum = 56557575;BA.debugLine="Dialog.Initialize(Activity)";
-mostCurrent._dialog._initialize /*String*/ (null,mostCurrent.activityBA,(anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(mostCurrent._activity.getObject())));
-RDebugUtils.currentLine=56557576;
- //BA.debugLineNum = 56557576;BA.debugLine="Dialog.Title = \"Stego Image View\"";
+ //BA.debugLineNum = 53;BA.debugLine="Dialog.Initialize(Activity)";
+mostCurrent._dialog._initialize /*String*/ (mostCurrent.activityBA,(anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(mostCurrent._activity.getObject())));
+ //BA.debugLineNum = 54;BA.debugLine="Dialog.Title = \"Stego Image View\"";
 mostCurrent._dialog._title /*Object*/  = (Object)("Stego Image View");
-RDebugUtils.currentLine=56557577;
- //BA.debugLineNum = 56557577;BA.debugLine="FindPictures";
+ //BA.debugLineNum = 55;BA.debugLine="FindPictures";
 _findpictures();
-RDebugUtils.currentLine=56557578;
- //BA.debugLineNum = 56557578;BA.debugLine="End Sub";
+ //BA.debugLineNum = 56;BA.debugLine="End Sub";
+return "";
+}
+public static boolean  _activity_keypress(int _keycode) throws Exception{
+ //BA.debugLineNum = 71;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
+ //BA.debugLineNum = 72;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK And Dialog.Clo";
+if (_keycode==anywheresoftware.b4a.keywords.Common.KeyCodes.KEYCODE_BACK && mostCurrent._dialog._close /*boolean*/ (mostCurrent._xui.DialogResponse_Cancel)) { 
+ //BA.debugLineNum = 73;BA.debugLine="Return True";
+if (true) return anywheresoftware.b4a.keywords.Common.True;
+ }else {
+ //BA.debugLineNum = 75;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK Then";
+if (_keycode==anywheresoftware.b4a.keywords.Common.KeyCodes.KEYCODE_BACK) { 
+ //BA.debugLineNum = 76;BA.debugLine="StartActivity(mainmenu)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mainmenu.getObject()));
+ //BA.debugLineNum = 77;BA.debugLine="Activity.Finish";
+mostCurrent._activity.Finish();
+ //BA.debugLineNum = 78;BA.debugLine="Return True";
+if (true) return anywheresoftware.b4a.keywords.Common.True;
+ };
+ };
+ //BA.debugLineNum = 82;BA.debugLine="Return False";
+if (true) return anywheresoftware.b4a.keywords.Common.False;
+ //BA.debugLineNum = 83;BA.debugLine="End Sub";
+return false;
+}
+public static String  _activity_pause(boolean _userclosed) throws Exception{
+ //BA.debugLineNum = 62;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+ //BA.debugLineNum = 64;BA.debugLine="End Sub";
+return "";
+}
+public static String  _activity_resume() throws Exception{
+ //BA.debugLineNum = 58;BA.debugLine="Sub Activity_Resume";
+ //BA.debugLineNum = 60;BA.debugLine="End Sub";
+return "";
+}
+public static String  _activity_touch(int _action,float _x,float _y) throws Exception{
+ //BA.debugLineNum = 236;BA.debugLine="Sub Activity_Touch (Action As Int, X As Float, Y A";
+ //BA.debugLineNum = 237;BA.debugLine="Select Action";
+switch (BA.switchObjectToInt(_action,mostCurrent._activity.ACTION_DOWN,mostCurrent._activity.ACTION_UP)) {
+case 0: {
+ //BA.debugLineNum = 239;BA.debugLine="startX = X";
+_startx = _x;
+ //BA.debugLineNum = 240;BA.debugLine="startY = Y";
+_starty = _y;
+ break; }
+case 1: {
+ //BA.debugLineNum = 242;BA.debugLine="If Abs(y - startY) > 20%y Then Return";
+if (anywheresoftware.b4a.keywords.Common.Abs(_y-_starty)>anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (20),mostCurrent.activityBA)) { 
+if (true) return "";};
+ //BA.debugLineNum = 243;BA.debugLine="If X - startX > 30%x Then";
+if (_x-_startx>anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (30),mostCurrent.activityBA)) { 
+ //BA.debugLineNum = 244;BA.debugLine="If btnPrev.Enabled=True Then CallSub(\"\",btnPre";
+if (mostCurrent._btnprev.getEnabled()==anywheresoftware.b4a.keywords.Common.True) { 
+anywheresoftware.b4a.keywords.Common.CallSubNew(processBA,(Object)(""),_btnprev_click());};
+ }else if(_startx-_x>anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (30),mostCurrent.activityBA)) { 
+ //BA.debugLineNum = 246;BA.debugLine="If btnNext.Enabled=True Then CallSub(\"\",btnNex";
+if (mostCurrent._btnnext.getEnabled()==anywheresoftware.b4a.keywords.Common.True) { 
+anywheresoftware.b4a.keywords.Common.CallSubNew(processBA,(Object)(""),_btnnext_click());};
+ };
+ break; }
+}
+;
+ //BA.debugLineNum = 250;BA.debugLine="End Sub";
+return "";
+}
+public static String  _actoolbarlight1_navigationitemclick() throws Exception{
+ //BA.debugLineNum = 66;BA.debugLine="Sub ACToolBarLight1_NavigationItemClick";
+ //BA.debugLineNum = 67;BA.debugLine="StartActivity(mainmenu)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mainmenu.getObject()));
+ //BA.debugLineNum = 68;BA.debugLine="Activity.Finish";
+mostCurrent._activity.Finish();
+ //BA.debugLineNum = 69;BA.debugLine="End Sub";
+return "";
+}
+public static String  _b4xtable1_cellclicked(String _columnid,long _rowid) throws Exception{
+String _img = "";
+anywheresoftware.b4a.objects.B4XViewWrapper _pnl = null;
+int _panelwidth = 0;
+int _panelspacing = 0;
+ //BA.debugLineNum = 179;BA.debugLine="Sub B4XTable1_CellClicked (ColumnId As String, Row";
+ //BA.debugLineNum = 180;BA.debugLine="Dim img As String = B4XTable1.GetRow(RowId).Get(C";
+_img = BA.ObjectToString(mostCurrent._b4xtable1._getrow /*anywheresoftware.b4a.objects.collections.Map*/ (_rowid).Get((Object)(_columnid)));
+ //BA.debugLineNum = 181;BA.debugLine="curCol=ColumnId";
+_curcol = (int)(Double.parseDouble(_columnid));
+ //BA.debugLineNum = 182;BA.debugLine="curRow = RowId";
+_currow = (int) (_rowid);
+ //BA.debugLineNum = 183;BA.debugLine="If img <> \"\" Then";
+if ((_img).equals("") == false) { 
+ //BA.debugLineNum = 184;BA.debugLine="Dim pnl As B4XView = xui.CreatePanel(\"\")";
+_pnl = new anywheresoftware.b4a.objects.B4XViewWrapper();
+_pnl = mostCurrent._xui.CreatePanel(processBA,"");
+ //BA.debugLineNum = 187;BA.debugLine="pnl.SetLayoutAnimated(0, 0, 0, 90%x, 80%y)";
+_pnl.SetLayoutAnimated((int) (0),(int) (0),(int) (0),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (90),mostCurrent.activityBA),anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (80),mostCurrent.activityBA));
+ //BA.debugLineNum = 188;BA.debugLine="pnl.LoadLayout(\"embedDialog\")";
+_pnl.LoadLayout("embedDialog",mostCurrent.activityBA);
+ //BA.debugLineNum = 192;BA.debugLine="imgPreview.Width=pnlPreview.Width-20";
+mostCurrent._imgpreview.setWidth((int) (mostCurrent._pnlpreview.getWidth()-20));
+ //BA.debugLineNum = 193;BA.debugLine="imgPreview.Height=imgPreview.Width";
+mostCurrent._imgpreview.setHeight(mostCurrent._imgpreview.getWidth());
+ //BA.debugLineNum = 194;BA.debugLine="imgPreview.Left=pnlPreview.Width/2 - imgPreview.";
+mostCurrent._imgpreview.setLeft((int) (mostCurrent._pnlpreview.getWidth()/(double)2-mostCurrent._imgpreview.getWidth()/(double)2));
+ //BA.debugLineNum = 195;BA.debugLine="imgPreview.Bitmap = xui.LoadBitmapResize(\"\", img";
+mostCurrent._imgpreview.setBitmap((android.graphics.Bitmap)(mostCurrent._xui.LoadBitmapResize("",_img,mostCurrent._imgpreview.getWidth(),mostCurrent._imgpreview.getHeight(),anywheresoftware.b4a.keywords.Common.True).getObject()));
+ //BA.debugLineNum = 197;BA.debugLine="pnlExtract.Top=imgPreview.Top+imgPreview.Height+";
+mostCurrent._pnlextract.setTop((int) (mostCurrent._imgpreview.getTop()+mostCurrent._imgpreview.getHeight()+anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10))));
+ //BA.debugLineNum = 198;BA.debugLine="pnlDelete.Top=imgPreview.Top+imgPreview.Height+1";
+mostCurrent._pnldelete.setTop((int) (mostCurrent._imgpreview.getTop()+mostCurrent._imgpreview.getHeight()+anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10))));
+ //BA.debugLineNum = 199;BA.debugLine="pnlShare.Top=imgPreview.Top+imgPreview.Height+10";
+mostCurrent._pnlshare.setTop((int) (mostCurrent._imgpreview.getTop()+mostCurrent._imgpreview.getHeight()+anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10))));
+ //BA.debugLineNum = 201;BA.debugLine="Dim panelWidth, panelSpacing As Int";
+_panelwidth = 0;
+_panelspacing = 0;
+ //BA.debugLineNum = 202;BA.debugLine="panelSpacing = 5dip";
+_panelspacing = anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (5));
+ //BA.debugLineNum = 203;BA.debugLine="panelWidth = (pnlPreview.Width / 3)";
+_panelwidth = (int) ((mostCurrent._pnlpreview.getWidth()/(double)3));
+ //BA.debugLineNum = 205;BA.debugLine="pnlExtract.Width  = panelWidth";
+mostCurrent._pnlextract.setWidth(_panelwidth);
+ //BA.debugLineNum = 206;BA.debugLine="pnlDelete.Width   = panelWidth";
+mostCurrent._pnldelete.setWidth(_panelwidth);
+ //BA.debugLineNum = 207;BA.debugLine="pnlShare.Width    = panelWidth";
+mostCurrent._pnlshare.setWidth(_panelwidth);
+ //BA.debugLineNum = 209;BA.debugLine="pnlExtract.Left=0";
+mostCurrent._pnlextract.setLeft((int) (0));
+ //BA.debugLineNum = 210;BA.debugLine="pnlDelete.Left=panelWidth";
+mostCurrent._pnldelete.setLeft(_panelwidth);
+ //BA.debugLineNum = 211;BA.debugLine="pnlShare.Left=(panelWidth * 2)";
+mostCurrent._pnlshare.setLeft((int) ((_panelwidth*2)));
+ //BA.debugLineNum = 216;BA.debugLine="imgExtract.Left=pnlExtract.Width/2-imgExtract.Wi";
+mostCurrent._imgextract.setLeft((int) (mostCurrent._pnlextract.getWidth()/(double)2-mostCurrent._imgextract.getWidth()/(double)2));
+ //BA.debugLineNum = 217;BA.debugLine="imgDelete.Left=pnlDelete.Width/2-imgDelete.Width";
+mostCurrent._imgdelete.setLeft((int) (mostCurrent._pnldelete.getWidth()/(double)2-mostCurrent._imgdelete.getWidth()/(double)2));
+ //BA.debugLineNum = 218;BA.debugLine="imgShare.Left=pnlShare.Width/2-imgShare.Width/2";
+mostCurrent._imgshare.setLeft((int) (mostCurrent._pnlshare.getWidth()/(double)2-mostCurrent._imgshare.getWidth()/(double)2));
+ //BA.debugLineNum = 220;BA.debugLine="Label1.Left=0";
+mostCurrent._label1.setLeft((int) (0));
+ //BA.debugLineNum = 221;BA.debugLine="Label1.Width=pnlExtract.Width";
+mostCurrent._label1.setWidth(mostCurrent._pnlextract.getWidth());
+ //BA.debugLineNum = 223;BA.debugLine="Label4.Left=0";
+mostCurrent._label4.setLeft((int) (0));
+ //BA.debugLineNum = 224;BA.debugLine="Label4.Width=pnlDelete.Width";
+mostCurrent._label4.setWidth(mostCurrent._pnldelete.getWidth());
+ //BA.debugLineNum = 226;BA.debugLine="Label2.Left=0";
+mostCurrent._label2.setLeft((int) (0));
+ //BA.debugLineNum = 227;BA.debugLine="Label2.Width=pnlShare.Width";
+mostCurrent._label2.setWidth(mostCurrent._pnlshare.getWidth());
+ //BA.debugLineNum = 230;BA.debugLine="lblImgLocation.Text=img";
+mostCurrent._lblimglocation.setText(BA.ObjectToCharSequence(_img));
+ //BA.debugLineNum = 231;BA.debugLine="Dialog.ShowCustom(pnl, \"Close\", \"\", \"\")";
+mostCurrent._dialog._showcustom /*anywheresoftware.b4a.keywords.Common.ResumableSubWrapper*/ (_pnl,(Object)("Close"),(Object)(""),(Object)(""));
+ };
+ //BA.debugLineNum = 233;BA.debugLine="End Sub";
+return "";
+}
+public static String  _b4xtable1_dataupdated() throws Exception{
+anywheresoftware.b4a.objects.collections.Map _row = null;
+int _i = 0;
+long _rowid = 0L;
+ng.dsoftlab.stegocam.b4xtable._b4xtablecolumn _column = null;
+anywheresoftware.b4a.objects.B4XViewWrapper _pnl = null;
+anywheresoftware.b4a.objects.B4XViewWrapper _iv = null;
+ //BA.debugLineNum = 156;BA.debugLine="Sub B4XTable1_DataUpdated";
+ //BA.debugLineNum = 157;BA.debugLine="Dim row As Map";
+_row = new anywheresoftware.b4a.objects.collections.Map();
+ //BA.debugLineNum = 158;BA.debugLine="For i = 0 To B4XTable1.VisibleRowIds.Size - 1";
+{
+final int step2 = 1;
+final int limit2 = (int) (mostCurrent._b4xtable1._visiblerowids /*anywheresoftware.b4a.objects.collections.List*/ .getSize()-1);
+_i = (int) (0) ;
+for (;_i <= limit2 ;_i = _i + step2 ) {
+ //BA.debugLineNum = 159;BA.debugLine="Dim RowId As Long = B4XTable1.VisibleRowIds.Get(";
+_rowid = BA.ObjectToLongNumber(mostCurrent._b4xtable1._visiblerowids /*anywheresoftware.b4a.objects.collections.List*/ .Get(_i));
+ //BA.debugLineNum = 160;BA.debugLine="If RowId > 0 Then";
+if (_rowid>0) { 
+ //BA.debugLineNum = 161;BA.debugLine="row = B4XTable1.GetRow(RowId)";
+_row = mostCurrent._b4xtable1._getrow /*anywheresoftware.b4a.objects.collections.Map*/ (_rowid);
+ }else {
+ //BA.debugLineNum = 163;BA.debugLine="row = CreateMap()";
+_row = anywheresoftware.b4a.keywords.Common.createMap(new Object[] {});
+ };
+ //BA.debugLineNum = 165;BA.debugLine="For Each column As B4XTableColumn In B4XTable1.C";
+{
+final anywheresoftware.b4a.BA.IterableList group9 = mostCurrent._b4xtable1._columns /*anywheresoftware.b4a.objects.collections.List*/ ;
+final int groupLen9 = group9.getSize()
+;int index9 = 0;
+;
+for (; index9 < groupLen9;index9++){
+_column = (ng.dsoftlab.stegocam.b4xtable._b4xtablecolumn)(group9.Get(index9));
+ //BA.debugLineNum = 166;BA.debugLine="Dim pnl As B4XView = column.CellsLayouts.Get(i";
+_pnl = new anywheresoftware.b4a.objects.B4XViewWrapper();
+_pnl = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_column.CellsLayouts /*anywheresoftware.b4a.objects.collections.List*/ .Get((int) (_i+1))));
+ //BA.debugLineNum = 167;BA.debugLine="Dim iv As B4XView = pnl.GetView(1) 'ImageView w";
+_iv = new anywheresoftware.b4a.objects.B4XViewWrapper();
+_iv = _pnl.GetView((int) (1));
+ //BA.debugLineNum = 168;BA.debugLine="If row.GetDefault(column.Id, \"\") <> \"\" Then";
+if ((_row.GetDefault((Object)(_column.Id /*String*/ ),(Object)(""))).equals((Object)("")) == false) { 
+ //BA.debugLineNum = 169;BA.debugLine="iv.SetBitmap(xui.LoadBitmapResize(\"\", row.Get(";
+_iv.SetBitmap((android.graphics.Bitmap)(mostCurrent._xui.LoadBitmapResize("",BA.ObjectToString(_row.Get((Object)(_column.Id /*String*/ ))),_iv.getWidth(),_iv.getHeight(),anywheresoftware.b4a.keywords.Common.False).getObject()));
+ }else {
+ //BA.debugLineNum = 171;BA.debugLine="iv.SetBitmap(Null)";
+_iv.SetBitmap((android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null));
+ };
+ }
+};
+ }
+};
+ //BA.debugLineNum = 175;BA.debugLine="btnNext.Enabled = B4XTable1.lblNext.Tag";
+mostCurrent._btnnext.setEnabled(BA.ObjectToBoolean(mostCurrent._b4xtable1._lblnext /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getTag()));
+ //BA.debugLineNum = 176;BA.debugLine="btnPrev.Enabled = B4XTable1.lblBack.Tag";
+mostCurrent._btnprev.setEnabled(BA.ObjectToBoolean(mostCurrent._b4xtable1._lblback /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getTag()));
+ //BA.debugLineNum = 177;BA.debugLine="End Sub";
+return "";
+}
+public static String  _btnnext_click() throws Exception{
+ //BA.debugLineNum = 252;BA.debugLine="Sub btnNext_Click";
+ //BA.debugLineNum = 253;BA.debugLine="B4XTable1.CurrentPage = B4XTable1.CurrentPage + 1";
+mostCurrent._b4xtable1._setcurrentpage /*int*/ ((int) (mostCurrent._b4xtable1._getcurrentpage /*int*/ ()+1));
+ //BA.debugLineNum = 254;BA.debugLine="End Sub";
+return "";
+}
+public static String  _btnprev_click() throws Exception{
+ //BA.debugLineNum = 256;BA.debugLine="Sub btnPrev_Click";
+ //BA.debugLineNum = 257;BA.debugLine="B4XTable1.CurrentPage = B4XTable1.CurrentPage - 1";
+mostCurrent._b4xtable1._setcurrentpage /*int*/ ((int) (mostCurrent._b4xtable1._getcurrentpage /*int*/ ()-1));
+ //BA.debugLineNum = 258;BA.debugLine="End Sub";
+return "";
+}
+public static String  _createtable(anywheresoftware.b4a.objects.collections.List _files) throws Exception{
+int _i = 0;
+ng.dsoftlab.stegocam.b4xtable._b4xtablecolumn _col = null;
+anywheresoftware.b4a.objects.B4XViewWrapper _pnl = null;
+anywheresoftware.b4a.objects.ImageViewWrapper _iv = null;
+ //BA.debugLineNum = 101;BA.debugLine="Sub CreateTable (Files As List)";
+ //BA.debugLineNum = 102;BA.debugLine="B4XTable1.Clear";
+mostCurrent._b4xtable1._clear /*void*/ ();
+ //BA.debugLineNum = 103;BA.debugLine="B4XTable1.AllowSmallRowHeightModifications = Fals";
+mostCurrent._b4xtable1._allowsmallrowheightmodifications /*boolean*/  = anywheresoftware.b4a.keywords.Common.False;
+ //BA.debugLineNum = 104;BA.debugLine="B4XTable1.RowHeight = 100dip";
+mostCurrent._b4xtable1._rowheight /*int*/  = anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (100));
+ //BA.debugLineNum = 105;BA.debugLine="B4XTable1.SearchField.TextField.Enabled = False";
+mostCurrent._b4xtable1._searchfield /*ng.dsoftlab.stegocam.b4xfloattextfield*/ ._gettextfield /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ().setEnabled(anywheresoftware.b4a.keywords.Common.False);
+ //BA.debugLineNum = 106;BA.debugLine="B4XTable1.SearchField.TextField.Visible=False";
+mostCurrent._b4xtable1._searchfield /*ng.dsoftlab.stegocam.b4xfloattextfield*/ ._gettextfield /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ().setVisible(anywheresoftware.b4a.keywords.Common.False);
+ //BA.debugLineNum = 107;BA.debugLine="B4XTable1.SearchField.mBase.Visible=False";
+mostCurrent._b4xtable1._searchfield /*ng.dsoftlab.stegocam.b4xfloattextfield*/ ._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setVisible(anywheresoftware.b4a.keywords.Common.False);
+ //BA.debugLineNum = 108;BA.debugLine="For i = 0 To NumberOfColumns - 1";
+{
+final int step7 = 1;
+final int limit7 = (int) (_numberofcolumns-1);
+_i = (int) (0) ;
+for (;_i <= limit7 ;_i = _i + step7 ) {
+ //BA.debugLineNum = 109;BA.debugLine="B4XTable1.AddColumn(i, B4XTable1.COLUMN_TYPE_TEX";
+mostCurrent._b4xtable1._addcolumn /*ng.dsoftlab.stegocam.b4xtable._b4xtablecolumn*/ (BA.NumberToString(_i),mostCurrent._b4xtable1._column_type_text /*int*/ );
+ }
+};
+ //BA.debugLineNum = 112;BA.debugLine="B4XTable1.MaximumRowsPerPage = 20";
+mostCurrent._b4xtable1._maximumrowsperpage /*int*/  = (int) (20);
+ //BA.debugLineNum = 113;BA.debugLine="B4XTable1.BuildLayoutsCache(B4XTable1.MaximumRows";
+mostCurrent._b4xtable1._buildlayoutscache /*String*/ (mostCurrent._b4xtable1._maximumrowsperpage /*int*/ );
+ //BA.debugLineNum = 114;BA.debugLine="For Each col As B4XTableColumn In B4XTable1.Colum";
+{
+final anywheresoftware.b4a.BA.IterableList group12 = mostCurrent._b4xtable1._columns /*anywheresoftware.b4a.objects.collections.List*/ ;
+final int groupLen12 = group12.getSize()
+;int index12 = 0;
+;
+for (; index12 < groupLen12;index12++){
+_col = (ng.dsoftlab.stegocam.b4xtable._b4xtablecolumn)(group12.Get(index12));
+ //BA.debugLineNum = 115;BA.debugLine="col.Sortable = False";
+_col.Sortable /*boolean*/  = anywheresoftware.b4a.keywords.Common.False;
+ //BA.debugLineNum = 116;BA.debugLine="col.Width = 100%x / NumberOfColumns";
+_col.Width /*int*/  = (int) (anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (100),mostCurrent.activityBA)/(double)_numberofcolumns);
+ //BA.debugLineNum = 117;BA.debugLine="For i = 0 To col.CellsLayouts.Size - 1";
+{
+final int step15 = 1;
+final int limit15 = (int) (_col.CellsLayouts /*anywheresoftware.b4a.objects.collections.List*/ .getSize()-1);
+_i = (int) (0) ;
+for (;_i <= limit15 ;_i = _i + step15 ) {
+ //BA.debugLineNum = 118;BA.debugLine="Dim pnl As B4XView = col.CellsLayouts.Get(i)";
+_pnl = new anywheresoftware.b4a.objects.B4XViewWrapper();
+_pnl = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_col.CellsLayouts /*anywheresoftware.b4a.objects.collections.List*/ .Get(_i)));
+ //BA.debugLineNum = 119;BA.debugLine="pnl.GetView(0).Visible = False 'hide the label";
+_pnl.GetView((int) (0)).setVisible(anywheresoftware.b4a.keywords.Common.False);
+ //BA.debugLineNum = 120;BA.debugLine="If i > 0 Then 'i = 0 is the header";
+if (_i>0) { 
+ //BA.debugLineNum = 121;BA.debugLine="Dim iv As ImageView";
+_iv = new anywheresoftware.b4a.objects.ImageViewWrapper();
+ //BA.debugLineNum = 122;BA.debugLine="iv.Initialize(\"\")";
+_iv.Initialize(mostCurrent.activityBA,"");
+ //BA.debugLineNum = 123;BA.debugLine="pnl.AddView(iv, 2dip, 2dip, col.Width - 4dip,";
+_pnl.AddView((android.view.View)(_iv.getObject()),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (2)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (2)),(int) (_col.Width /*int*/ -anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (4))),(int) (mostCurrent._b4xtable1._rowheight /*int*/ -anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (4))));
+ };
+ }
+};
+ }
+};
+ //BA.debugLineNum = 127;BA.debugLine="LoadData(Files)";
+_loaddata(_files);
+ //BA.debugLineNum = 128;BA.debugLine="B4XTable1.mBase.Visible = True";
+mostCurrent._b4xtable1._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setVisible(anywheresoftware.b4a.keywords.Common.True);
+ //BA.debugLineNum = 129;BA.debugLine="End Sub";
 return "";
 }
 public static void  _findpictures() throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "findpictures", false))
-	 {Debug.delegate(mostCurrent.activityBA, "findpictures", null); return;}
 ResumableSub_FindPictures rsub = new ResumableSub_FindPictures(null);
 rsub.resume(processBA, null);
 }
@@ -447,7 +730,6 @@ int groupLen7;
 
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
-RDebugUtils.currentModule="history";
 
     while (true) {
         switch (state) {
@@ -457,17 +739,13 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=61407233;
- //BA.debugLineNum = 61407233;BA.debugLine="Dim AllPictures As List";
+ //BA.debugLineNum = 87;BA.debugLine="Dim AllPictures As List";
 _allpictures = new anywheresoftware.b4a.objects.collections.List();
-RDebugUtils.currentLine=61407234;
- //BA.debugLineNum = 61407234;BA.debugLine="AllPictures.Initialize";
+ //BA.debugLineNum = 88;BA.debugLine="AllPictures.Initialize";
 _allpictures.Initialize();
-RDebugUtils.currentLine=61407235;
- //BA.debugLineNum = 61407235;BA.debugLine="Dim PicturesFolder As String = config.stegoImageP";
+ //BA.debugLineNum = 89;BA.debugLine="Dim PicturesFolder As String = config.stegoImageP";
 _picturesfolder = parent.mostCurrent._config._stegoimagepath /*String*/ ;
-RDebugUtils.currentLine=61407236;
- //BA.debugLineNum = 61407236;BA.debugLine="If File.Exists(PicturesFolder, \"\") = False Then C";
+ //BA.debugLineNum = 90;BA.debugLine="If File.Exists(PicturesFolder, \"\") = False Then C";
 if (true) break;
 
 case 1:
@@ -488,9 +766,8 @@ case 6:
 //C
 this.state = 7;
 ;
-RDebugUtils.currentLine=61407237;
- //BA.debugLineNum = 61407237;BA.debugLine="Wait For (File.ListFilesAsync(PicturesFolder)) Co";
-anywheresoftware.b4a.keywords.Common.WaitFor("complete", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "history", "findpictures"), anywheresoftware.b4a.keywords.Common.File.ListFilesAsync(processBA,_picturesfolder));
+ //BA.debugLineNum = 91;BA.debugLine="Wait For (File.ListFilesAsync(PicturesFolder)) Co";
+anywheresoftware.b4a.keywords.Common.WaitFor("complete", processBA, this, anywheresoftware.b4a.keywords.Common.File.ListFilesAsync(processBA,_picturesfolder));
 this.state = 15;
 return;
 case 15:
@@ -499,8 +776,7 @@ this.state = 7;
 _success = (Boolean) result[0];
 _files = (anywheresoftware.b4a.objects.collections.List) result[1];
 ;
-RDebugUtils.currentLine=61407238;
- //BA.debugLineNum = 61407238;BA.debugLine="If Success Then";
+ //BA.debugLineNum = 92;BA.debugLine="If Success Then";
 if (true) break;
 
 case 7:
@@ -513,8 +789,7 @@ this.state = 9;
 case 9:
 //C
 this.state = 10;
-RDebugUtils.currentLine=61407239;
- //BA.debugLineNum = 61407239;BA.debugLine="For Each f As String In Files";
+ //BA.debugLineNum = 93;BA.debugLine="For Each f As String In Files";
 if (true) break;
 
 case 10:
@@ -543,8 +818,7 @@ if (true) break;
 case 12:
 //C
 this.state = 17;
-RDebugUtils.currentLine=61407240;
- //BA.debugLineNum = 61407240;BA.debugLine="AllPictures.Add(File.Combine(PicturesFolder, f)";
+ //BA.debugLineNum = 94;BA.debugLine="AllPictures.Add(File.Combine(PicturesFolder, f)";
 _allpictures.Add((Object)(anywheresoftware.b4a.keywords.Common.File.Combine(_picturesfolder,_f)));
  if (true) break;
 if (true) break;
@@ -559,259 +833,74 @@ case 14:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=61407244;
- //BA.debugLineNum = 61407244;BA.debugLine="CreateTable(AllPictures)";
+ //BA.debugLineNum = 97;BA.debugLine="AllPictures.Sort(False)";
+_allpictures.Sort(anywheresoftware.b4a.keywords.Common.False);
+ //BA.debugLineNum = 98;BA.debugLine="CreateTable(AllPictures)";
 _createtable(_allpictures);
-RDebugUtils.currentLine=61407245;
- //BA.debugLineNum = 61407245;BA.debugLine="End Sub";
+ //BA.debugLineNum = 99;BA.debugLine="End Sub";
 if (true) break;
 
             }
         }
     }
 }
-public static boolean  _activity_keypress(int _keycode) throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_keypress", false))
-	 {return ((Boolean) Debug.delegate(mostCurrent.activityBA, "activity_keypress", new Object[] {_keycode}));}
-RDebugUtils.currentLine=56819712;
- //BA.debugLineNum = 56819712;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
-RDebugUtils.currentLine=56819713;
- //BA.debugLineNum = 56819713;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK And Dialog.Clo";
-if (_keycode==anywheresoftware.b4a.keywords.Common.KeyCodes.KEYCODE_BACK && mostCurrent._dialog._close /*boolean*/ (null,mostCurrent._xui.DialogResponse_Cancel)) { 
-RDebugUtils.currentLine=56819714;
- //BA.debugLineNum = 56819714;BA.debugLine="Return True";
-if (true) return anywheresoftware.b4a.keywords.Common.True;
- }else {
-RDebugUtils.currentLine=56819716;
- //BA.debugLineNum = 56819716;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK Then";
-if (_keycode==anywheresoftware.b4a.keywords.Common.KeyCodes.KEYCODE_BACK) { 
-RDebugUtils.currentLine=56819717;
- //BA.debugLineNum = 56819717;BA.debugLine="StartActivity(mainmenu)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mainmenu.getObject()));
-RDebugUtils.currentLine=56819718;
- //BA.debugLineNum = 56819718;BA.debugLine="Activity.Finish";
-mostCurrent._activity.Finish();
-RDebugUtils.currentLine=56819719;
- //BA.debugLineNum = 56819719;BA.debugLine="Return True";
-if (true) return anywheresoftware.b4a.keywords.Common.True;
- };
- };
-RDebugUtils.currentLine=56819723;
- //BA.debugLineNum = 56819723;BA.debugLine="Return False";
-if (true) return anywheresoftware.b4a.keywords.Common.False;
-RDebugUtils.currentLine=56819724;
- //BA.debugLineNum = 56819724;BA.debugLine="End Sub";
-return false;
+public static void  _complete(boolean _success,anywheresoftware.b4a.objects.collections.List _files) throws Exception{
 }
-public static String  _activity_pause(boolean _userclosed) throws Exception{
-RDebugUtils.currentModule="history";
-RDebugUtils.currentLine=56688640;
- //BA.debugLineNum = 56688640;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=56688642;
- //BA.debugLineNum = 56688642;BA.debugLine="End Sub";
-return "";
-}
-public static String  _activity_resume() throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=56623104;
- //BA.debugLineNum = 56623104;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=56623106;
- //BA.debugLineNum = 56623106;BA.debugLine="End Sub";
-return "";
-}
-public static String  _activity_touch(int _action,float _x,float _y) throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_touch", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_touch", new Object[] {_action,_x,_y}));}
-RDebugUtils.currentLine=61997056;
- //BA.debugLineNum = 61997056;BA.debugLine="Sub Activity_Touch (Action As Int, X As Float, Y A";
-RDebugUtils.currentLine=61997057;
- //BA.debugLineNum = 61997057;BA.debugLine="Select Action";
-switch (BA.switchObjectToInt(_action,mostCurrent._activity.ACTION_DOWN,mostCurrent._activity.ACTION_UP)) {
-case 0: {
-RDebugUtils.currentLine=61997059;
- //BA.debugLineNum = 61997059;BA.debugLine="startX = X";
-_startx = _x;
-RDebugUtils.currentLine=61997060;
- //BA.debugLineNum = 61997060;BA.debugLine="startY = Y";
-_starty = _y;
- break; }
-case 1: {
-RDebugUtils.currentLine=61997062;
- //BA.debugLineNum = 61997062;BA.debugLine="If Abs(y - startY) > 20%y Then Return";
-if (anywheresoftware.b4a.keywords.Common.Abs(_y-_starty)>anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (20),mostCurrent.activityBA)) { 
-if (true) return "";};
-RDebugUtils.currentLine=61997063;
- //BA.debugLineNum = 61997063;BA.debugLine="If X - startX > 30%x Then";
-if (_x-_startx>anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (30),mostCurrent.activityBA)) { 
-RDebugUtils.currentLine=61997064;
- //BA.debugLineNum = 61997064;BA.debugLine="If btnPrev.Enabled=True Then CallSub(\"\",btnPre";
-if (mostCurrent._btnprev.getEnabled()==anywheresoftware.b4a.keywords.Common.True) { 
-anywheresoftware.b4a.keywords.Common.CallSubDebug(processBA,(Object)(""),_btnprev_click());};
- }else 
-{RDebugUtils.currentLine=61997065;
- //BA.debugLineNum = 61997065;BA.debugLine="Else If startX - x > 30%x Then";
-if (_startx-_x>anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (30),mostCurrent.activityBA)) { 
-RDebugUtils.currentLine=61997066;
- //BA.debugLineNum = 61997066;BA.debugLine="If btnNext.Enabled=True Then CallSub(\"\",btnNex";
-if (mostCurrent._btnnext.getEnabled()==anywheresoftware.b4a.keywords.Common.True) { 
-anywheresoftware.b4a.keywords.Common.CallSubDebug(processBA,(Object)(""),_btnnext_click());};
- }}
-;
- break; }
-}
-;
-RDebugUtils.currentLine=61997070;
- //BA.debugLineNum = 61997070;BA.debugLine="End Sub";
-return "";
-}
-public static String  _btnprev_click() throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btnprev_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnprev_click", null));}
-RDebugUtils.currentLine=61800448;
- //BA.debugLineNum = 61800448;BA.debugLine="Sub btnPrev_Click";
-RDebugUtils.currentLine=61800449;
- //BA.debugLineNum = 61800449;BA.debugLine="B4XTable1.CurrentPage = B4XTable1.CurrentPage - 1";
-mostCurrent._b4xtable1._setcurrentpage /*int*/ (null,(int) (mostCurrent._b4xtable1._getcurrentpage /*int*/ (null)-1));
-RDebugUtils.currentLine=61800450;
- //BA.debugLineNum = 61800450;BA.debugLine="End Sub";
-return "";
-}
-public static String  _actoolbarlight1_navigationitemclick() throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "actoolbarlight1_navigationitemclick", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "actoolbarlight1_navigationitemclick", null));}
-RDebugUtils.currentLine=56754176;
- //BA.debugLineNum = 56754176;BA.debugLine="Sub ACToolBarLight1_NavigationItemClick";
-RDebugUtils.currentLine=56754177;
- //BA.debugLineNum = 56754177;BA.debugLine="StartActivity(mainmenu)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mainmenu.getObject()));
-RDebugUtils.currentLine=56754178;
- //BA.debugLineNum = 56754178;BA.debugLine="Activity.Finish";
-mostCurrent._activity.Finish();
-RDebugUtils.currentLine=56754179;
- //BA.debugLineNum = 56754179;BA.debugLine="End Sub";
-return "";
-}
-public static String  _b4xtable1_dataupdated() throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "b4xtable1_dataupdated", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "b4xtable1_dataupdated", null));}
-anywheresoftware.b4a.objects.collections.Map _row = null;
-int _i = 0;
-long _rowid = 0L;
-ng.dsoftlab.stegocam.b4xtable._b4xtablecolumn _column = null;
-anywheresoftware.b4a.objects.B4XViewWrapper _pnl = null;
-anywheresoftware.b4a.objects.B4XViewWrapper _iv = null;
-RDebugUtils.currentLine=61603840;
- //BA.debugLineNum = 61603840;BA.debugLine="Sub B4XTable1_DataUpdated";
-RDebugUtils.currentLine=61603841;
- //BA.debugLineNum = 61603841;BA.debugLine="Dim row As Map";
-_row = new anywheresoftware.b4a.objects.collections.Map();
-RDebugUtils.currentLine=61603842;
- //BA.debugLineNum = 61603842;BA.debugLine="For i = 0 To B4XTable1.VisibleRowIds.Size - 1";
-{
-final int step2 = 1;
-final int limit2 = (int) (mostCurrent._b4xtable1._visiblerowids /*anywheresoftware.b4a.objects.collections.List*/ .getSize()-1);
-_i = (int) (0) ;
-for (;_i <= limit2 ;_i = _i + step2 ) {
-RDebugUtils.currentLine=61603843;
- //BA.debugLineNum = 61603843;BA.debugLine="Dim RowId As Long = B4XTable1.VisibleRowIds.Get(";
-_rowid = BA.ObjectToLongNumber(mostCurrent._b4xtable1._visiblerowids /*anywheresoftware.b4a.objects.collections.List*/ .Get(_i));
-RDebugUtils.currentLine=61603844;
- //BA.debugLineNum = 61603844;BA.debugLine="If RowId > 0 Then";
-if (_rowid>0) { 
-RDebugUtils.currentLine=61603845;
- //BA.debugLineNum = 61603845;BA.debugLine="row = B4XTable1.GetRow(RowId)";
-_row = mostCurrent._b4xtable1._getrow /*anywheresoftware.b4a.objects.collections.Map*/ (null,_rowid);
- }else {
-RDebugUtils.currentLine=61603847;
- //BA.debugLineNum = 61603847;BA.debugLine="row = CreateMap()";
-_row = anywheresoftware.b4a.keywords.Common.createMap(new Object[] {});
- };
-RDebugUtils.currentLine=61603849;
- //BA.debugLineNum = 61603849;BA.debugLine="For Each column As B4XTableColumn In B4XTable1.C";
-{
-final anywheresoftware.b4a.BA.IterableList group9 = mostCurrent._b4xtable1._columns /*anywheresoftware.b4a.objects.collections.List*/ ;
-final int groupLen9 = group9.getSize()
-;int index9 = 0;
-;
-for (; index9 < groupLen9;index9++){
-_column = (ng.dsoftlab.stegocam.b4xtable._b4xtablecolumn)(group9.Get(index9));
-RDebugUtils.currentLine=61603850;
- //BA.debugLineNum = 61603850;BA.debugLine="Dim pnl As B4XView = column.CellsLayouts.Get(i";
-_pnl = new anywheresoftware.b4a.objects.B4XViewWrapper();
-_pnl = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_column.CellsLayouts /*anywheresoftware.b4a.objects.collections.List*/ .Get((int) (_i+1))));
-RDebugUtils.currentLine=61603851;
- //BA.debugLineNum = 61603851;BA.debugLine="Dim iv As B4XView = pnl.GetView(1) 'ImageView w";
-_iv = new anywheresoftware.b4a.objects.B4XViewWrapper();
-_iv = _pnl.GetView((int) (1));
-RDebugUtils.currentLine=61603852;
- //BA.debugLineNum = 61603852;BA.debugLine="If row.GetDefault(column.Id, \"\") <> \"\" Then";
-if ((_row.GetDefault((Object)(_column.Id /*String*/ ),(Object)(""))).equals((Object)("")) == false) { 
-RDebugUtils.currentLine=61603853;
- //BA.debugLineNum = 61603853;BA.debugLine="iv.SetBitmap(xui.LoadBitmapResize(\"\", row.Get(";
-_iv.SetBitmap((android.graphics.Bitmap)(mostCurrent._xui.LoadBitmapResize("",BA.ObjectToString(_row.Get((Object)(_column.Id /*String*/ ))),_iv.getWidth(),_iv.getHeight(),anywheresoftware.b4a.keywords.Common.False).getObject()));
- }else {
-RDebugUtils.currentLine=61603855;
- //BA.debugLineNum = 61603855;BA.debugLine="iv.SetBitmap(Null)";
-_iv.SetBitmap((android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null));
- };
- }
-};
- }
-};
-RDebugUtils.currentLine=61603859;
- //BA.debugLineNum = 61603859;BA.debugLine="btnNext.Enabled = B4XTable1.lblNext.Tag";
-mostCurrent._btnnext.setEnabled(BA.ObjectToBoolean(mostCurrent._b4xtable1._lblnext /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getTag()));
-RDebugUtils.currentLine=61603860;
- //BA.debugLineNum = 61603860;BA.debugLine="btnPrev.Enabled = B4XTable1.lblBack.Tag";
-mostCurrent._btnprev.setEnabled(BA.ObjectToBoolean(mostCurrent._b4xtable1._lblback /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getTag()));
-RDebugUtils.currentLine=61603861;
- //BA.debugLineNum = 61603861;BA.debugLine="End Sub";
-return "";
-}
-public static String  _btncancel_click() throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btncancel_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btncancel_click", null));}
-RDebugUtils.currentLine=56885248;
- //BA.debugLineNum = 56885248;BA.debugLine="Private Sub btnCancel_Click";
-RDebugUtils.currentLine=56885250;
- //BA.debugLineNum = 56885250;BA.debugLine="End Sub";
-return "";
-}
-public static String  _btnnext_click() throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btnnext_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnnext_click", null));}
-RDebugUtils.currentLine=61734912;
- //BA.debugLineNum = 61734912;BA.debugLine="Sub btnNext_Click";
-RDebugUtils.currentLine=61734913;
- //BA.debugLineNum = 61734913;BA.debugLine="B4XTable1.CurrentPage = B4XTable1.CurrentPage + 1";
-mostCurrent._b4xtable1._setcurrentpage /*int*/ (null,(int) (mostCurrent._b4xtable1._getcurrentpage /*int*/ (null)+1));
-RDebugUtils.currentLine=61734914;
- //BA.debugLineNum = 61734914;BA.debugLine="End Sub";
-return "";
-}
-public static String  _btnshare_click() throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btnshare_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnshare_click", null));}
-RDebugUtils.currentLine=61865984;
- //BA.debugLineNum = 61865984;BA.debugLine="Private Sub btnShare_Click";
-RDebugUtils.currentLine=61865986;
- //BA.debugLineNum = 61865986;BA.debugLine="End Sub";
+public static String  _globals() throws Exception{
+ //BA.debugLineNum = 16;BA.debugLine="Sub Globals";
+ //BA.debugLineNum = 19;BA.debugLine="Private ACToolBarLight1 As ACToolBarLight";
+mostCurrent._actoolbarlight1 = new de.amberhome.objects.appcompat.ACToolbarLightWrapper();
+ //BA.debugLineNum = 20;BA.debugLine="Private ToolbarHelper As ACActionBar";
+mostCurrent._toolbarhelper = new de.amberhome.objects.appcompat.ACActionBar();
+ //BA.debugLineNum = 21;BA.debugLine="Dim SharedPrefs As SharedPreferences";
+mostCurrent._sharedprefs = new com.b4x.sharedpreferences.SharedPreferences();
+ //BA.debugLineNum = 22;BA.debugLine="Private xui As XUI";
+mostCurrent._xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
+ //BA.debugLineNum = 23;BA.debugLine="Private B4XTable1 As B4XTable";
+mostCurrent._b4xtable1 = new ng.dsoftlab.stegocam.b4xtable();
+ //BA.debugLineNum = 24;BA.debugLine="Private Dialog As B4XDialog";
+mostCurrent._dialog = new ng.dsoftlab.stegocam.b4xdialog();
+ //BA.debugLineNum = 25;BA.debugLine="Private btnPrev As Button";
+mostCurrent._btnprev = new anywheresoftware.b4a.objects.ButtonWrapper();
+ //BA.debugLineNum = 26;BA.debugLine="Private btnNext As Button";
+mostCurrent._btnnext = new anywheresoftware.b4a.objects.ButtonWrapper();
+ //BA.debugLineNum = 27;BA.debugLine="Private btnCancel As Button";
+mostCurrent._btncancel = new anywheresoftware.b4a.objects.ButtonWrapper();
+ //BA.debugLineNum = 28;BA.debugLine="Private btnExtract As Button";
+mostCurrent._btnextract = new anywheresoftware.b4a.objects.ButtonWrapper();
+ //BA.debugLineNum = 29;BA.debugLine="Private btnShare As Button";
+mostCurrent._btnshare = new anywheresoftware.b4a.objects.ButtonWrapper();
+ //BA.debugLineNum = 30;BA.debugLine="Private imgPreview As ImageView";
+mostCurrent._imgpreview = new anywheresoftware.b4a.objects.ImageViewWrapper();
+ //BA.debugLineNum = 31;BA.debugLine="Private pnlPreview As Panel";
+mostCurrent._pnlpreview = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 33;BA.debugLine="Dim startX, startY As Float";
+_startx = 0f;
+_starty = 0f;
+ //BA.debugLineNum = 34;BA.debugLine="Private lblImgLocation As Label";
+mostCurrent._lblimglocation = new anywheresoftware.b4a.objects.LabelWrapper();
+ //BA.debugLineNum = 35;BA.debugLine="Private imgDelete As ImageView";
+mostCurrent._imgdelete = new anywheresoftware.b4a.objects.ImageViewWrapper();
+ //BA.debugLineNum = 36;BA.debugLine="Private imgExtract As ImageView";
+mostCurrent._imgextract = new anywheresoftware.b4a.objects.ImageViewWrapper();
+ //BA.debugLineNum = 37;BA.debugLine="Private imgShare As ImageView";
+mostCurrent._imgshare = new anywheresoftware.b4a.objects.ImageViewWrapper();
+ //BA.debugLineNum = 38;BA.debugLine="Private pnlDelete As Panel";
+mostCurrent._pnldelete = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 39;BA.debugLine="Private pnlExtract As Panel";
+mostCurrent._pnlextract = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 40;BA.debugLine="Private pnlShare As Panel";
+mostCurrent._pnlshare = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 41;BA.debugLine="Private Label1 As Label";
+mostCurrent._label1 = new anywheresoftware.b4a.objects.LabelWrapper();
+ //BA.debugLineNum = 42;BA.debugLine="Private Label4 As Label";
+mostCurrent._label4 = new anywheresoftware.b4a.objects.LabelWrapper();
+ //BA.debugLineNum = 43;BA.debugLine="Private Label2 As Label";
+mostCurrent._label2 = new anywheresoftware.b4a.objects.LabelWrapper();
+ //BA.debugLineNum = 44;BA.debugLine="End Sub";
 return "";
 }
 public static void  _imgdelete_click() throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "imgdelete_click", false))
-	 {Debug.delegate(mostCurrent.activityBA, "imgdelete_click", null); return;}
 ResumableSub_imgDelete_Click rsub = new ResumableSub_imgDelete_Click(null);
 rsub.resume(processBA, null);
 }
@@ -824,7 +913,6 @@ int _result = 0;
 
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
-RDebugUtils.currentModule="history";
 
     while (true) {
         switch (state) {
@@ -834,12 +922,10 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=64815105;
- //BA.debugLineNum = 64815105;BA.debugLine="Msgbox2Async(\"Are you sure you want to delete fil";
+ //BA.debugLineNum = 289;BA.debugLine="Msgbox2Async(\"Are you sure you want to delete fil";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Are you sure you want to delete file?"),BA.ObjectToCharSequence("Delete Image"),"Yes","No","",(anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)),processBA,anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=64815106;
- //BA.debugLineNum = 64815106;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
-anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "history", "imgdelete_click"), null);
+ //BA.debugLineNum = 290;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
 this.state = 5;
 return;
 case 5:
@@ -847,8 +933,7 @@ case 5:
 this.state = 1;
 _result = (Integer) result[0];
 ;
-RDebugUtils.currentLine=64815107;
- //BA.debugLineNum = 64815107;BA.debugLine="If Result = DialogResponse.POSITIVE Then";
+ //BA.debugLineNum = 291;BA.debugLine="If Result = DialogResponse.POSITIVE Then";
 if (true) break;
 
 case 1:
@@ -861,331 +946,87 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
-RDebugUtils.currentLine=64815108;
- //BA.debugLineNum = 64815108;BA.debugLine="File.Delete(lblImgLocation.Text,\"\")";
+ //BA.debugLineNum = 292;BA.debugLine="File.Delete(lblImgLocation.Text,\"\")";
 anywheresoftware.b4a.keywords.Common.File.Delete(parent.mostCurrent._lblimglocation.getText(),"");
-RDebugUtils.currentLine=64815109;
- //BA.debugLineNum = 64815109;BA.debugLine="FindPictures";
+ //BA.debugLineNum = 293;BA.debugLine="FindPictures";
 _findpictures();
-RDebugUtils.currentLine=64815110;
- //BA.debugLineNum = 64815110;BA.debugLine="Dialog.Close(xui.DialogResponse_Cancel)";
-parent.mostCurrent._dialog._close /*boolean*/ (null,parent.mostCurrent._xui.DialogResponse_Cancel);
+ //BA.debugLineNum = 294;BA.debugLine="Dialog.Close(xui.DialogResponse_Cancel)";
+parent.mostCurrent._dialog._close /*boolean*/ (parent.mostCurrent._xui.DialogResponse_Cancel);
  if (true) break;
 
 case 4:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=64815112;
- //BA.debugLineNum = 64815112;BA.debugLine="End Sub";
+ //BA.debugLineNum = 296;BA.debugLine="End Sub";
 if (true) break;
 
             }
         }
     }
 }
+public static void  _msgbox_result(int _result) throws Exception{
+}
 public static String  _imgextract_click() throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "imgextract_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "imgextract_click", null));}
-RDebugUtils.currentLine=64749568;
- //BA.debugLineNum = 64749568;BA.debugLine="Private Sub imgExtract_Click";
-RDebugUtils.currentLine=64749570;
- //BA.debugLineNum = 64749570;BA.debugLine="End Sub";
+ //BA.debugLineNum = 281;BA.debugLine="Private Sub imgExtract_Click";
+ //BA.debugLineNum = 282;BA.debugLine="decode.fromfile=False";
+mostCurrent._decode._fromfile /*boolean*/  = anywheresoftware.b4a.keywords.Common.False;
+ //BA.debugLineNum = 283;BA.debugLine="decode.stegoimage=lblImgLocation.Text";
+mostCurrent._decode._stegoimage /*String*/  = mostCurrent._lblimglocation.getText();
+ //BA.debugLineNum = 284;BA.debugLine="StartActivity(decode)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._decode.getObject()));
+ //BA.debugLineNum = 285;BA.debugLine="Activity.Finish";
+mostCurrent._activity.Finish();
+ //BA.debugLineNum = 286;BA.debugLine="End Sub";
 return "";
 }
 public static String  _imgshare_click() throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "imgshare_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "imgshare_click", null));}
 String _filename = "";
 anywheresoftware.b4a.objects.ContentResolverWrapper.UriWrapper _u = null;
 anywheresoftware.b4a.objects.IntentWrapper _inten = null;
 String _tmpt = "";
-RDebugUtils.currentLine=64684032;
- //BA.debugLineNum = 64684032;BA.debugLine="Private Sub imgShare_Click";
-RDebugUtils.currentLine=64684033;
- //BA.debugLineNum = 64684033;BA.debugLine="Try";
-try {RDebugUtils.currentLine=64684034;
- //BA.debugLineNum = 64684034;BA.debugLine="Dim filename As String=lblImgLocation.Text.SubSt";
+ //BA.debugLineNum = 262;BA.debugLine="Private Sub imgShare_Click";
+ //BA.debugLineNum = 263;BA.debugLine="Try";
+try { //BA.debugLineNum = 264;BA.debugLine="Dim filename As String=lblImgLocation.Text.SubSt";
 _filename = mostCurrent._lblimglocation.getText().substring((int) (mostCurrent._lblimglocation.getText().lastIndexOf("/")+1));
-RDebugUtils.currentLine=64684035;
- //BA.debugLineNum = 64684035;BA.debugLine="File.Copy(lblImgLocation.Text,\"\", Starter.Provid";
+ //BA.debugLineNum = 265;BA.debugLine="File.Copy(lblImgLocation.Text,\"\", Starter.Provid";
 anywheresoftware.b4a.keywords.Common.File.Copy(mostCurrent._lblimglocation.getText(),"",mostCurrent._starter._provider /*ng.dsoftlab.stegocam.fileprovider*/ ._sharedfolder /*String*/ ,_filename);
-RDebugUtils.currentLine=64684036;
- //BA.debugLineNum = 64684036;BA.debugLine="Dim u As Uri 'ContentResolver library";
+ //BA.debugLineNum = 266;BA.debugLine="Dim u As Uri 'ContentResolver library";
 _u = new anywheresoftware.b4a.objects.ContentResolverWrapper.UriWrapper();
-RDebugUtils.currentLine=64684037;
- //BA.debugLineNum = 64684037;BA.debugLine="u.Parse(Starter.Provider.GetFileUri(filename))";
-_u.Parse(BA.ObjectToString(mostCurrent._starter._provider /*ng.dsoftlab.stegocam.fileprovider*/ ._getfileuri /*Object*/ (null,_filename)));
-RDebugUtils.currentLine=64684038;
- //BA.debugLineNum = 64684038;BA.debugLine="Dim inten As Intent";
+ //BA.debugLineNum = 267;BA.debugLine="u.Parse(Starter.Provider.GetFileUri(filename))";
+_u.Parse(BA.ObjectToString(mostCurrent._starter._provider /*ng.dsoftlab.stegocam.fileprovider*/ ._getfileuri /*Object*/ (_filename)));
+ //BA.debugLineNum = 268;BA.debugLine="Dim inten As Intent";
 _inten = new anywheresoftware.b4a.objects.IntentWrapper();
-RDebugUtils.currentLine=64684039;
- //BA.debugLineNum = 64684039;BA.debugLine="Dim tmpt As String = \"\"";
+ //BA.debugLineNum = 269;BA.debugLine="Dim tmpt As String = \"\"";
 _tmpt = "";
-RDebugUtils.currentLine=64684040;
- //BA.debugLineNum = 64684040;BA.debugLine="inten.Initialize(inten.ACTION_SEND,\"\")";
+ //BA.debugLineNum = 270;BA.debugLine="inten.Initialize(inten.ACTION_SEND,\"\")";
 _inten.Initialize(_inten.ACTION_SEND,"");
-RDebugUtils.currentLine=64684041;
- //BA.debugLineNum = 64684041;BA.debugLine="inten.SetType(\"image/*\")";
+ //BA.debugLineNum = 271;BA.debugLine="inten.SetType(\"image/*\")";
 _inten.SetType("image/*");
-RDebugUtils.currentLine=64684042;
- //BA.debugLineNum = 64684042;BA.debugLine="inten.PutExtra(\"android.intent.extra.STREAM\",u)";
+ //BA.debugLineNum = 272;BA.debugLine="inten.PutExtra(\"android.intent.extra.STREAM\",u)";
 _inten.PutExtra("android.intent.extra.STREAM",(Object)(_u.getObject()));
-RDebugUtils.currentLine=64684045;
- //BA.debugLineNum = 64684045;BA.debugLine="StartActivity(inten)";
+ //BA.debugLineNum = 275;BA.debugLine="StartActivity(inten)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(_inten.getObject()));
  } 
        catch (Exception e13) {
-			processBA.setLastException(e13);RDebugUtils.currentLine=64684047;
- //BA.debugLineNum = 64684047;BA.debugLine="ToastMessageShow(LastException.Message,True)";
+			processBA.setLastException(e13); //BA.debugLineNum = 277;BA.debugLine="ToastMessageShow(LastException.Message,True)";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA).getMessage()),anywheresoftware.b4a.keywords.Common.True);
  };
-RDebugUtils.currentLine=64684049;
- //BA.debugLineNum = 64684049;BA.debugLine="End Sub";
-return "";
-}
-public static String  _b4xtable1_cellclicked(String _columnid,long _rowid) throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "b4xtable1_cellclicked", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "b4xtable1_cellclicked", new Object[] {_columnid,_rowid}));}
-String _img = "";
-anywheresoftware.b4a.objects.B4XViewWrapper _pnl = null;
-int _panelwidth = 0;
-int _panelspacing = 0;
-RDebugUtils.currentLine=61669376;
- //BA.debugLineNum = 61669376;BA.debugLine="Sub B4XTable1_CellClicked (ColumnId As String, Row";
-RDebugUtils.currentLine=61669377;
- //BA.debugLineNum = 61669377;BA.debugLine="Dim img As String = B4XTable1.GetRow(RowId).Get(C";
-_img = BA.ObjectToString(mostCurrent._b4xtable1._getrow /*anywheresoftware.b4a.objects.collections.Map*/ (null,_rowid).Get((Object)(_columnid)));
-RDebugUtils.currentLine=61669378;
- //BA.debugLineNum = 61669378;BA.debugLine="curCol=ColumnId";
-_curcol = (int)(Double.parseDouble(_columnid));
-RDebugUtils.currentLine=61669379;
- //BA.debugLineNum = 61669379;BA.debugLine="curRow = RowId";
-_currow = (int) (_rowid);
-RDebugUtils.currentLine=61669380;
- //BA.debugLineNum = 61669380;BA.debugLine="If img <> \"\" Then";
-if ((_img).equals("") == false) { 
-RDebugUtils.currentLine=61669381;
- //BA.debugLineNum = 61669381;BA.debugLine="Dim pnl As B4XView = xui.CreatePanel(\"\")";
-_pnl = new anywheresoftware.b4a.objects.B4XViewWrapper();
-_pnl = mostCurrent._xui.CreatePanel(processBA,"");
-RDebugUtils.currentLine=61669384;
- //BA.debugLineNum = 61669384;BA.debugLine="pnl.SetLayoutAnimated(0, 0, 0, 90%x, 80%y)";
-_pnl.SetLayoutAnimated((int) (0),(int) (0),(int) (0),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (90),mostCurrent.activityBA),anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (80),mostCurrent.activityBA));
-RDebugUtils.currentLine=61669385;
- //BA.debugLineNum = 61669385;BA.debugLine="pnl.LoadLayout(\"embedDialog\")";
-_pnl.LoadLayout("embedDialog",mostCurrent.activityBA);
-RDebugUtils.currentLine=61669389;
- //BA.debugLineNum = 61669389;BA.debugLine="imgPreview.Width=pnlPreview.Width-20";
-mostCurrent._imgpreview.setWidth((int) (mostCurrent._pnlpreview.getWidth()-20));
-RDebugUtils.currentLine=61669390;
- //BA.debugLineNum = 61669390;BA.debugLine="imgPreview.Height=imgPreview.Width";
-mostCurrent._imgpreview.setHeight(mostCurrent._imgpreview.getWidth());
-RDebugUtils.currentLine=61669391;
- //BA.debugLineNum = 61669391;BA.debugLine="imgPreview.Left=pnlPreview.Width/2 - imgPreview.";
-mostCurrent._imgpreview.setLeft((int) (mostCurrent._pnlpreview.getWidth()/(double)2-mostCurrent._imgpreview.getWidth()/(double)2));
-RDebugUtils.currentLine=61669392;
- //BA.debugLineNum = 61669392;BA.debugLine="imgPreview.Bitmap = xui.LoadBitmapResize(\"\", img";
-mostCurrent._imgpreview.setBitmap((android.graphics.Bitmap)(mostCurrent._xui.LoadBitmapResize("",_img,mostCurrent._imgpreview.getWidth(),mostCurrent._imgpreview.getHeight(),anywheresoftware.b4a.keywords.Common.True).getObject()));
-RDebugUtils.currentLine=61669394;
- //BA.debugLineNum = 61669394;BA.debugLine="pnlExtract.Top=imgPreview.Top+imgPreview.Height+";
-mostCurrent._pnlextract.setTop((int) (mostCurrent._imgpreview.getTop()+mostCurrent._imgpreview.getHeight()+anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10))));
-RDebugUtils.currentLine=61669395;
- //BA.debugLineNum = 61669395;BA.debugLine="pnlDelete.Top=imgPreview.Top+imgPreview.Height+1";
-mostCurrent._pnldelete.setTop((int) (mostCurrent._imgpreview.getTop()+mostCurrent._imgpreview.getHeight()+anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10))));
-RDebugUtils.currentLine=61669396;
- //BA.debugLineNum = 61669396;BA.debugLine="pnlShare.Top=imgPreview.Top+imgPreview.Height+10";
-mostCurrent._pnlshare.setTop((int) (mostCurrent._imgpreview.getTop()+mostCurrent._imgpreview.getHeight()+anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10))));
-RDebugUtils.currentLine=61669398;
- //BA.debugLineNum = 61669398;BA.debugLine="Dim panelWidth, panelSpacing As Int";
-_panelwidth = 0;
-_panelspacing = 0;
-RDebugUtils.currentLine=61669399;
- //BA.debugLineNum = 61669399;BA.debugLine="panelSpacing = 5dip";
-_panelspacing = anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (5));
-RDebugUtils.currentLine=61669400;
- //BA.debugLineNum = 61669400;BA.debugLine="panelWidth = (pnlPreview.Width / 3)";
-_panelwidth = (int) ((mostCurrent._pnlpreview.getWidth()/(double)3));
-RDebugUtils.currentLine=61669402;
- //BA.debugLineNum = 61669402;BA.debugLine="pnlExtract.Width  = panelWidth";
-mostCurrent._pnlextract.setWidth(_panelwidth);
-RDebugUtils.currentLine=61669403;
- //BA.debugLineNum = 61669403;BA.debugLine="pnlDelete.Width   = panelWidth";
-mostCurrent._pnldelete.setWidth(_panelwidth);
-RDebugUtils.currentLine=61669404;
- //BA.debugLineNum = 61669404;BA.debugLine="pnlShare.Width    = panelWidth";
-mostCurrent._pnlshare.setWidth(_panelwidth);
-RDebugUtils.currentLine=61669406;
- //BA.debugLineNum = 61669406;BA.debugLine="pnlExtract.Left=0";
-mostCurrent._pnlextract.setLeft((int) (0));
-RDebugUtils.currentLine=61669407;
- //BA.debugLineNum = 61669407;BA.debugLine="pnlDelete.Left=panelWidth";
-mostCurrent._pnldelete.setLeft(_panelwidth);
-RDebugUtils.currentLine=61669408;
- //BA.debugLineNum = 61669408;BA.debugLine="pnlShare.Left=(panelWidth * 2)";
-mostCurrent._pnlshare.setLeft((int) ((_panelwidth*2)));
-RDebugUtils.currentLine=61669413;
- //BA.debugLineNum = 61669413;BA.debugLine="imgExtract.Left=pnlExtract.Width/2-imgExtract.Wi";
-mostCurrent._imgextract.setLeft((int) (mostCurrent._pnlextract.getWidth()/(double)2-mostCurrent._imgextract.getWidth()/(double)2));
-RDebugUtils.currentLine=61669414;
- //BA.debugLineNum = 61669414;BA.debugLine="imgDelete.Left=pnlDelete.Width/2-imgDelete.Width";
-mostCurrent._imgdelete.setLeft((int) (mostCurrent._pnldelete.getWidth()/(double)2-mostCurrent._imgdelete.getWidth()/(double)2));
-RDebugUtils.currentLine=61669415;
- //BA.debugLineNum = 61669415;BA.debugLine="imgShare.Left=pnlShare.Width/2-imgShare.Width/2";
-mostCurrent._imgshare.setLeft((int) (mostCurrent._pnlshare.getWidth()/(double)2-mostCurrent._imgshare.getWidth()/(double)2));
-RDebugUtils.currentLine=61669417;
- //BA.debugLineNum = 61669417;BA.debugLine="Label1.Left=0";
-mostCurrent._label1.setLeft((int) (0));
-RDebugUtils.currentLine=61669418;
- //BA.debugLineNum = 61669418;BA.debugLine="Label1.Width=pnlExtract.Width";
-mostCurrent._label1.setWidth(mostCurrent._pnlextract.getWidth());
-RDebugUtils.currentLine=61669420;
- //BA.debugLineNum = 61669420;BA.debugLine="Label4.Left=0";
-mostCurrent._label4.setLeft((int) (0));
-RDebugUtils.currentLine=61669421;
- //BA.debugLineNum = 61669421;BA.debugLine="Label4.Width=pnlDelete.Width";
-mostCurrent._label4.setWidth(mostCurrent._pnldelete.getWidth());
-RDebugUtils.currentLine=61669423;
- //BA.debugLineNum = 61669423;BA.debugLine="Label2.Left=0";
-mostCurrent._label2.setLeft((int) (0));
-RDebugUtils.currentLine=61669424;
- //BA.debugLineNum = 61669424;BA.debugLine="Label2.Width=pnlShare.Width";
-mostCurrent._label2.setWidth(mostCurrent._pnlshare.getWidth());
-RDebugUtils.currentLine=61669427;
- //BA.debugLineNum = 61669427;BA.debugLine="lblImgLocation.Text=img";
-mostCurrent._lblimglocation.setText(BA.ObjectToCharSequence(_img));
-RDebugUtils.currentLine=61669428;
- //BA.debugLineNum = 61669428;BA.debugLine="Dialog.ShowCustom(pnl, \"Close\", \"\", \"\")";
-mostCurrent._dialog._showcustom /*anywheresoftware.b4a.keywords.Common.ResumableSubWrapper*/ (null,_pnl,(Object)("Close"),(Object)(""),(Object)(""));
- };
-RDebugUtils.currentLine=61669430;
- //BA.debugLineNum = 61669430;BA.debugLine="End Sub";
-return "";
-}
-public static String  _createtable(anywheresoftware.b4a.objects.collections.List _files) throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "createtable", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "createtable", new Object[] {_files}));}
-int _i = 0;
-ng.dsoftlab.stegocam.b4xtable._b4xtablecolumn _col = null;
-anywheresoftware.b4a.objects.B4XViewWrapper _pnl = null;
-anywheresoftware.b4a.objects.ImageViewWrapper _iv = null;
-RDebugUtils.currentLine=61472768;
- //BA.debugLineNum = 61472768;BA.debugLine="Sub CreateTable (Files As List)";
-RDebugUtils.currentLine=61472769;
- //BA.debugLineNum = 61472769;BA.debugLine="B4XTable1.Clear";
-mostCurrent._b4xtable1._clear /*void*/ (null);
-RDebugUtils.currentLine=61472770;
- //BA.debugLineNum = 61472770;BA.debugLine="B4XTable1.AllowSmallRowHeightModifications = Fals";
-mostCurrent._b4xtable1._allowsmallrowheightmodifications /*boolean*/  = anywheresoftware.b4a.keywords.Common.False;
-RDebugUtils.currentLine=61472771;
- //BA.debugLineNum = 61472771;BA.debugLine="B4XTable1.RowHeight = 100dip";
-mostCurrent._b4xtable1._rowheight /*int*/  = anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (100));
-RDebugUtils.currentLine=61472772;
- //BA.debugLineNum = 61472772;BA.debugLine="B4XTable1.SearchField.TextField.Enabled = False";
-mostCurrent._b4xtable1._searchfield /*ng.dsoftlab.stegocam.b4xfloattextfield*/ ._gettextfield /*anywheresoftware.b4a.objects.B4XViewWrapper*/ (null).setEnabled(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=61472773;
- //BA.debugLineNum = 61472773;BA.debugLine="B4XTable1.SearchField.TextField.Visible=False";
-mostCurrent._b4xtable1._searchfield /*ng.dsoftlab.stegocam.b4xfloattextfield*/ ._gettextfield /*anywheresoftware.b4a.objects.B4XViewWrapper*/ (null).setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=61472774;
- //BA.debugLineNum = 61472774;BA.debugLine="B4XTable1.SearchField.mBase.Visible=False";
-mostCurrent._b4xtable1._searchfield /*ng.dsoftlab.stegocam.b4xfloattextfield*/ ._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=61472775;
- //BA.debugLineNum = 61472775;BA.debugLine="For i = 0 To NumberOfColumns - 1";
-{
-final int step7 = 1;
-final int limit7 = (int) (_numberofcolumns-1);
-_i = (int) (0) ;
-for (;_i <= limit7 ;_i = _i + step7 ) {
-RDebugUtils.currentLine=61472776;
- //BA.debugLineNum = 61472776;BA.debugLine="B4XTable1.AddColumn(i, B4XTable1.COLUMN_TYPE_TEX";
-mostCurrent._b4xtable1._addcolumn /*ng.dsoftlab.stegocam.b4xtable._b4xtablecolumn*/ (null,BA.NumberToString(_i),mostCurrent._b4xtable1._column_type_text /*int*/ );
- }
-};
-RDebugUtils.currentLine=61472779;
- //BA.debugLineNum = 61472779;BA.debugLine="B4XTable1.MaximumRowsPerPage = 20";
-mostCurrent._b4xtable1._maximumrowsperpage /*int*/  = (int) (20);
-RDebugUtils.currentLine=61472780;
- //BA.debugLineNum = 61472780;BA.debugLine="B4XTable1.BuildLayoutsCache(B4XTable1.MaximumRows";
-mostCurrent._b4xtable1._buildlayoutscache /*String*/ (null,mostCurrent._b4xtable1._maximumrowsperpage /*int*/ );
-RDebugUtils.currentLine=61472781;
- //BA.debugLineNum = 61472781;BA.debugLine="For Each col As B4XTableColumn In B4XTable1.Colum";
-{
-final anywheresoftware.b4a.BA.IterableList group12 = mostCurrent._b4xtable1._columns /*anywheresoftware.b4a.objects.collections.List*/ ;
-final int groupLen12 = group12.getSize()
-;int index12 = 0;
-;
-for (; index12 < groupLen12;index12++){
-_col = (ng.dsoftlab.stegocam.b4xtable._b4xtablecolumn)(group12.Get(index12));
-RDebugUtils.currentLine=61472782;
- //BA.debugLineNum = 61472782;BA.debugLine="col.Sortable = False";
-_col.Sortable /*boolean*/  = anywheresoftware.b4a.keywords.Common.False;
-RDebugUtils.currentLine=61472783;
- //BA.debugLineNum = 61472783;BA.debugLine="col.Width = 100%x / NumberOfColumns";
-_col.Width /*int*/  = (int) (anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (100),mostCurrent.activityBA)/(double)_numberofcolumns);
-RDebugUtils.currentLine=61472784;
- //BA.debugLineNum = 61472784;BA.debugLine="For i = 0 To col.CellsLayouts.Size - 1";
-{
-final int step15 = 1;
-final int limit15 = (int) (_col.CellsLayouts /*anywheresoftware.b4a.objects.collections.List*/ .getSize()-1);
-_i = (int) (0) ;
-for (;_i <= limit15 ;_i = _i + step15 ) {
-RDebugUtils.currentLine=61472785;
- //BA.debugLineNum = 61472785;BA.debugLine="Dim pnl As B4XView = col.CellsLayouts.Get(i)";
-_pnl = new anywheresoftware.b4a.objects.B4XViewWrapper();
-_pnl = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_col.CellsLayouts /*anywheresoftware.b4a.objects.collections.List*/ .Get(_i)));
-RDebugUtils.currentLine=61472786;
- //BA.debugLineNum = 61472786;BA.debugLine="pnl.GetView(0).Visible = False 'hide the label";
-_pnl.GetView((int) (0)).setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=61472787;
- //BA.debugLineNum = 61472787;BA.debugLine="If i > 0 Then 'i = 0 is the header";
-if (_i>0) { 
-RDebugUtils.currentLine=61472788;
- //BA.debugLineNum = 61472788;BA.debugLine="Dim iv As ImageView";
-_iv = new anywheresoftware.b4a.objects.ImageViewWrapper();
-RDebugUtils.currentLine=61472789;
- //BA.debugLineNum = 61472789;BA.debugLine="iv.Initialize(\"\")";
-_iv.Initialize(mostCurrent.activityBA,"");
-RDebugUtils.currentLine=61472790;
- //BA.debugLineNum = 61472790;BA.debugLine="pnl.AddView(iv, 2dip, 2dip, col.Width - 4dip,";
-_pnl.AddView((android.view.View)(_iv.getObject()),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (2)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (2)),(int) (_col.Width /*int*/ -anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (4))),(int) (mostCurrent._b4xtable1._rowheight /*int*/ -anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (4))));
- };
- }
-};
- }
-};
-RDebugUtils.currentLine=61472794;
- //BA.debugLineNum = 61472794;BA.debugLine="LoadData(Files)";
-_loaddata(_files);
-RDebugUtils.currentLine=61472795;
- //BA.debugLineNum = 61472795;BA.debugLine="B4XTable1.mBase.Visible = True";
-mostCurrent._b4xtable1._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setVisible(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=61472796;
- //BA.debugLineNum = 61472796;BA.debugLine="End Sub";
+ //BA.debugLineNum = 279;BA.debugLine="End Sub";
 return "";
 }
 public static String  _loaddata(anywheresoftware.b4a.objects.collections.List _files) throws Exception{
-RDebugUtils.currentModule="history";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "loaddata", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "loaddata", new Object[] {_files}));}
 anywheresoftware.b4a.objects.collections.List _data = null;
 Object[] _row = null;
 int _index = 0;
 String _f = "";
 int _i = 0;
-RDebugUtils.currentLine=61538304;
- //BA.debugLineNum = 61538304;BA.debugLine="Private Sub LoadData (Files As List)";
-RDebugUtils.currentLine=61538305;
- //BA.debugLineNum = 61538305;BA.debugLine="Dim Data As List";
+ //BA.debugLineNum = 131;BA.debugLine="Private Sub LoadData (Files As List)";
+ //BA.debugLineNum = 132;BA.debugLine="Dim Data As List";
 _data = new anywheresoftware.b4a.objects.collections.List();
-RDebugUtils.currentLine=61538306;
- //BA.debugLineNum = 61538306;BA.debugLine="Data.Initialize";
+ //BA.debugLineNum = 133;BA.debugLine="Data.Initialize";
 _data.Initialize();
-RDebugUtils.currentLine=61538307;
- //BA.debugLineNum = 61538307;BA.debugLine="Dim row(NumberOfColumns) As Object";
+ //BA.debugLineNum = 134;BA.debugLine="Dim row(NumberOfColumns) As Object";
 _row = new Object[_numberofcolumns];
 {
 int d0 = _row.length;
@@ -1194,11 +1035,9 @@ _row[i0] = new Object();
 }
 }
 ;
-RDebugUtils.currentLine=61538308;
- //BA.debugLineNum = 61538308;BA.debugLine="Dim index As Int = -1";
+ //BA.debugLineNum = 135;BA.debugLine="Dim index As Int = -1";
 _index = (int) (-1);
-RDebugUtils.currentLine=61538309;
- //BA.debugLineNum = 61538309;BA.debugLine="For Each f As String In Files";
+ //BA.debugLineNum = 136;BA.debugLine="For Each f As String In Files";
 {
 final anywheresoftware.b4a.BA.IterableList group5 = _files;
 final int groupLen5 = group5.getSize()
@@ -1206,23 +1045,17 @@ final int groupLen5 = group5.getSize()
 ;
 for (; index5 < groupLen5;index5++){
 _f = BA.ObjectToString(group5.Get(index5));
-RDebugUtils.currentLine=61538310;
- //BA.debugLineNum = 61538310;BA.debugLine="If f.EndsWith(\".jpg\") Or f.EndsWith(\".png\") Then";
+ //BA.debugLineNum = 137;BA.debugLine="If f.EndsWith(\".jpg\") Or f.EndsWith(\".png\") Then";
 if (_f.endsWith(".jpg") || _f.endsWith(".png")) { 
-RDebugUtils.currentLine=61538311;
- //BA.debugLineNum = 61538311;BA.debugLine="index = (index + 1) Mod NumberOfColumns";
+ //BA.debugLineNum = 138;BA.debugLine="index = (index + 1) Mod NumberOfColumns";
 _index = (int) ((_index+1)%_numberofcolumns);
-RDebugUtils.currentLine=61538312;
- //BA.debugLineNum = 61538312;BA.debugLine="row(index) = f";
+ //BA.debugLineNum = 139;BA.debugLine="row(index) = f";
 _row[_index] = (Object)(_f);
-RDebugUtils.currentLine=61538313;
- //BA.debugLineNum = 61538313;BA.debugLine="If index = NumberOfColumns - 1 Then";
+ //BA.debugLineNum = 140;BA.debugLine="If index = NumberOfColumns - 1 Then";
 if (_index==_numberofcolumns-1) { 
-RDebugUtils.currentLine=61538314;
- //BA.debugLineNum = 61538314;BA.debugLine="Data.Add(row)";
+ //BA.debugLineNum = 141;BA.debugLine="Data.Add(row)";
 _data.Add((Object)(_row));
-RDebugUtils.currentLine=61538315;
- //BA.debugLineNum = 61538315;BA.debugLine="Dim row(NumberOfColumns) As Object";
+ //BA.debugLineNum = 142;BA.debugLine="Dim row(NumberOfColumns) As Object";
 _row = new Object[_numberofcolumns];
 {
 int d0 = _row.length;
@@ -1235,30 +1068,37 @@ _row[i0] = new Object();
  };
  }
 };
-RDebugUtils.currentLine=61538319;
- //BA.debugLineNum = 61538319;BA.debugLine="If index < NumberOfColumns - 1 Then";
+ //BA.debugLineNum = 146;BA.debugLine="If index < NumberOfColumns - 1 Then";
 if (_index<_numberofcolumns-1) { 
-RDebugUtils.currentLine=61538321;
- //BA.debugLineNum = 61538321;BA.debugLine="For i = index + 1 To NumberOfColumns - 1";
+ //BA.debugLineNum = 148;BA.debugLine="For i = index + 1 To NumberOfColumns - 1";
 {
 final int step16 = 1;
 final int limit16 = (int) (_numberofcolumns-1);
 _i = (int) (_index+1) ;
 for (;_i <= limit16 ;_i = _i + step16 ) {
-RDebugUtils.currentLine=61538322;
- //BA.debugLineNum = 61538322;BA.debugLine="row(i) = \"\"";
+ //BA.debugLineNum = 149;BA.debugLine="row(i) = \"\"";
 _row[_i] = (Object)("");
  }
 };
-RDebugUtils.currentLine=61538324;
- //BA.debugLineNum = 61538324;BA.debugLine="Data.Add(row)";
+ //BA.debugLineNum = 151;BA.debugLine="Data.Add(row)";
 _data.Add((Object)(_row));
  };
-RDebugUtils.currentLine=61538326;
- //BA.debugLineNum = 61538326;BA.debugLine="B4XTable1.SetData(Data)";
-mostCurrent._b4xtable1._setdata /*anywheresoftware.b4a.keywords.Common.ResumableSubWrapper*/ (null,_data);
-RDebugUtils.currentLine=61538327;
- //BA.debugLineNum = 61538327;BA.debugLine="End Sub";
+ //BA.debugLineNum = 153;BA.debugLine="B4XTable1.SetData(Data)";
+mostCurrent._b4xtable1._setdata /*anywheresoftware.b4a.keywords.Common.ResumableSubWrapper*/ (_data);
+ //BA.debugLineNum = 154;BA.debugLine="End Sub";
+return "";
+}
+public static String  _process_globals() throws Exception{
+ //BA.debugLineNum = 7;BA.debugLine="Sub Process_Globals";
+ //BA.debugLineNum = 10;BA.debugLine="Private rp As RuntimePermissions";
+_rp = new anywheresoftware.b4a.objects.RuntimePermissions();
+ //BA.debugLineNum = 11;BA.debugLine="Private NumberOfColumns As Int = 3";
+_numberofcolumns = (int) (3);
+ //BA.debugLineNum = 12;BA.debugLine="Dim curRow As Int";
+_currow = 0;
+ //BA.debugLineNum = 13;BA.debugLine="Dim curCol As Int";
+_curcol = 0;
+ //BA.debugLineNum = 14;BA.debugLine="End Sub";
 return "";
 }
 }

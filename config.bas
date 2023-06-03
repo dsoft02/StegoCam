@@ -194,3 +194,18 @@ Sub GetFileInfoByIndex(column As String, uri As String) As String
 	Return results
 	
 End Sub
+
+
+
+Sub displayMessage(message As String,lblDisplay As Label,success As Boolean)
+	lblDisplay.Text=message
+	If success=True Then
+		lblDisplay.TextColor=Colors.Blue
+	Else
+		lblDisplay.TextColor=Colors.Red
+	End If
+End Sub
+
+Sub getFileExtension(filename As String) As String
+	Return filename.SubString(filename.LastIndexOf(".")+1)
+End Sub

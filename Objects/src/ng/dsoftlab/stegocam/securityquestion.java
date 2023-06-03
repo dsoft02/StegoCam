@@ -34,7 +34,7 @@ public class securityquestion extends androidx.appcompat.app.AppCompatActivity i
 		super.onCreate(savedInstanceState);
         mostCurrent = this;
 		if (processBA == null) {
-			processBA = new anywheresoftware.b4a.ShellBA(this.getApplicationContext(), null, null, "ng.dsoftlab.stegocam", "ng.dsoftlab.stegocam.securityquestion");
+			processBA = new BA(this.getApplicationContext(), null, null, "ng.dsoftlab.stegocam", "ng.dsoftlab.stegocam.securityquestion");
 			processBA.loadHtSubs(this.getClass());
 	        float deviceScale = getApplicationContext().getResources().getDisplayMetrics().density;
 	        BALayout.setDeviceScale(deviceScale);
@@ -335,15 +335,6 @@ public class securityquestion extends androidx.appcompat.app.AppCompatActivity i
             
     }
 
-
-
-public static void initializeProcessGlobals() {
-             try {
-                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-}
 public anywheresoftware.b4a.keywords.Common __c = null;
 public de.amberhome.objects.appcompat.ACToolbarLightWrapper _actoolbarlight1 = null;
 public de.amberhome.objects.appcompat.ACActionBar _toolbarhelper = null;
@@ -377,142 +368,80 @@ public ng.dsoftlab.stegocam.login _login = null;
 public ng.dsoftlab.stegocam.pinchange _pinchange = null;
 public ng.dsoftlab.stegocam.pinreset _pinreset = null;
 public ng.dsoftlab.stegocam.history _history = null;
+public ng.dsoftlab.stegocam.decode _decode = null;
 public ng.dsoftlab.stegocam.b4xcollections _b4xcollections = null;
 public ng.dsoftlab.stegocam.httputils2service _httputils2service = null;
 public ng.dsoftlab.stegocam.xuiviewsutils _xuiviewsutils = null;
-public static String  _activity_create(boolean _firsttime) throws Exception{
-RDebugUtils.currentModule="securityquestion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=48168960;
- //BA.debugLineNum = 48168960;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=48168962;
- //BA.debugLineNum = 48168962;BA.debugLine="Activity.LoadLayout(\"securityquestion\")";
-mostCurrent._activity.LoadLayout("securityquestion",mostCurrent.activityBA);
-RDebugUtils.currentLine=48168963;
- //BA.debugLineNum = 48168963;BA.debugLine="SharedPrefs.Initialize(\"StegoCamPrefs\")";
-mostCurrent._sharedprefs.Initialize("StegoCamPrefs");
-RDebugUtils.currentLine=48168964;
- //BA.debugLineNum = 48168964;BA.debugLine="ToolbarHelper.Initialize";
-mostCurrent._toolbarhelper.Initialize(mostCurrent.activityBA);
-RDebugUtils.currentLine=48168965;
- //BA.debugLineNum = 48168965;BA.debugLine="ToolbarHelper.ShowUpIndicator = True 'set to true";
-mostCurrent._toolbarhelper.setShowUpIndicator(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=48168966;
- //BA.debugLineNum = 48168966;BA.debugLine="ACToolBarLight1.InitMenuListener";
-mostCurrent._actoolbarlight1.InitMenuListener();
-RDebugUtils.currentLine=48168967;
- //BA.debugLineNum = 48168967;BA.debugLine="clearForm";
-_clearform();
-RDebugUtils.currentLine=48168968;
- //BA.debugLineNum = 48168968;BA.debugLine="End Sub";
-return "";
+
+public static void initializeProcessGlobals() {
+             try {
+                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
 }
-public static String  _clearform() throws Exception{
-RDebugUtils.currentModule="securityquestion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "clearform", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "clearform", null));}
-RDebugUtils.currentLine=48627712;
- //BA.debugLineNum = 48627712;BA.debugLine="Private Sub clearForm";
-RDebugUtils.currentLine=48627713;
- //BA.debugLineNum = 48627713;BA.debugLine="txtQuestion.Text=config.getSecurityQuestion";
-mostCurrent._txtquestion.setText(BA.ObjectToCharSequence(mostCurrent._config._getsecurityquestion /*String*/ (mostCurrent.activityBA)));
-RDebugUtils.currentLine=48627714;
- //BA.debugLineNum = 48627714;BA.debugLine="txtAnswer.Text=config.getSecurityAnswer";
-mostCurrent._txtanswer.setText(BA.ObjectToCharSequence(mostCurrent._config._getsecurityanswer /*String*/ (mostCurrent.activityBA)));
-RDebugUtils.currentLine=48627715;
- //BA.debugLineNum = 48627715;BA.debugLine="lblErrorMsg2.Text=\"\"";
-mostCurrent._lblerrormsg2.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=48627716;
- //BA.debugLineNum = 48627716;BA.debugLine="lblErrorMsg3.Text=\"\"";
-mostCurrent._lblerrormsg3.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=48627717;
- //BA.debugLineNum = 48627717;BA.debugLine="txtQuestion.RequestFocus";
-mostCurrent._txtquestion.RequestFocus();
-RDebugUtils.currentLine=48627718;
- //BA.debugLineNum = 48627718;BA.debugLine="End Sub";
+public static String  _activity_create(boolean _firsttime) throws Exception{
+ //BA.debugLineNum = 37;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+ //BA.debugLineNum = 39;BA.debugLine="Activity.LoadLayout(\"securityquestion\")";
+mostCurrent._activity.LoadLayout("securityquestion",mostCurrent.activityBA);
+ //BA.debugLineNum = 40;BA.debugLine="SharedPrefs.Initialize(\"StegoCamPrefs\")";
+mostCurrent._sharedprefs.Initialize("StegoCamPrefs");
+ //BA.debugLineNum = 41;BA.debugLine="ToolbarHelper.Initialize";
+mostCurrent._toolbarhelper.Initialize(mostCurrent.activityBA);
+ //BA.debugLineNum = 42;BA.debugLine="ToolbarHelper.ShowUpIndicator = True 'set to true";
+mostCurrent._toolbarhelper.setShowUpIndicator(anywheresoftware.b4a.keywords.Common.True);
+ //BA.debugLineNum = 43;BA.debugLine="ACToolBarLight1.InitMenuListener";
+mostCurrent._actoolbarlight1.InitMenuListener();
+ //BA.debugLineNum = 44;BA.debugLine="clearForm";
+_clearform();
+ //BA.debugLineNum = 45;BA.debugLine="End Sub";
 return "";
 }
 public static boolean  _activity_keypress(int _keycode) throws Exception{
-RDebugUtils.currentModule="securityquestion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_keypress", false))
-	 {return ((Boolean) Debug.delegate(mostCurrent.activityBA, "activity_keypress", new Object[] {_keycode}));}
-RDebugUtils.currentLine=48431104;
- //BA.debugLineNum = 48431104;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
-RDebugUtils.currentLine=48431105;
- //BA.debugLineNum = 48431105;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK Then";
+ //BA.debugLineNum = 60;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
+ //BA.debugLineNum = 61;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK Then";
 if (_keycode==anywheresoftware.b4a.keywords.Common.KeyCodes.KEYCODE_BACK) { 
-RDebugUtils.currentLine=48431106;
- //BA.debugLineNum = 48431106;BA.debugLine="StartActivity(settings)";
+ //BA.debugLineNum = 62;BA.debugLine="StartActivity(settings)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._settings.getObject()));
-RDebugUtils.currentLine=48431107;
- //BA.debugLineNum = 48431107;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 63;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=48431108;
- //BA.debugLineNum = 48431108;BA.debugLine="Return True";
+ //BA.debugLineNum = 64;BA.debugLine="Return True";
 if (true) return anywheresoftware.b4a.keywords.Common.True;
  };
-RDebugUtils.currentLine=48431110;
- //BA.debugLineNum = 48431110;BA.debugLine="Return False";
+ //BA.debugLineNum = 66;BA.debugLine="Return False";
 if (true) return anywheresoftware.b4a.keywords.Common.False;
-RDebugUtils.currentLine=48431111;
- //BA.debugLineNum = 48431111;BA.debugLine="End Sub";
+ //BA.debugLineNum = 67;BA.debugLine="End Sub";
 return false;
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
-RDebugUtils.currentModule="securityquestion";
-RDebugUtils.currentLine=48300032;
- //BA.debugLineNum = 48300032;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=48300034;
- //BA.debugLineNum = 48300034;BA.debugLine="End Sub";
+ //BA.debugLineNum = 51;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+ //BA.debugLineNum = 53;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
-RDebugUtils.currentModule="securityquestion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=48234496;
- //BA.debugLineNum = 48234496;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=48234498;
- //BA.debugLineNum = 48234498;BA.debugLine="End Sub";
+ //BA.debugLineNum = 47;BA.debugLine="Sub Activity_Resume";
+ //BA.debugLineNum = 49;BA.debugLine="End Sub";
 return "";
 }
 public static String  _actoolbarlight1_navigationitemclick() throws Exception{
-RDebugUtils.currentModule="securityquestion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "actoolbarlight1_navigationitemclick", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "actoolbarlight1_navigationitemclick", null));}
-RDebugUtils.currentLine=48365568;
- //BA.debugLineNum = 48365568;BA.debugLine="Sub ACToolBarLight1_NavigationItemClick";
-RDebugUtils.currentLine=48365569;
- //BA.debugLineNum = 48365569;BA.debugLine="StartActivity(settings)";
+ //BA.debugLineNum = 55;BA.debugLine="Sub ACToolBarLight1_NavigationItemClick";
+ //BA.debugLineNum = 56;BA.debugLine="StartActivity(settings)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._settings.getObject()));
-RDebugUtils.currentLine=48365570;
- //BA.debugLineNum = 48365570;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 57;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=48365571;
- //BA.debugLineNum = 48365571;BA.debugLine="End Sub";
+ //BA.debugLineNum = 58;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btncancel_click() throws Exception{
-RDebugUtils.currentModule="securityquestion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btncancel_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btncancel_click", null));}
-RDebugUtils.currentLine=48562176;
- //BA.debugLineNum = 48562176;BA.debugLine="Private Sub btnCancel_Click";
-RDebugUtils.currentLine=48562177;
- //BA.debugLineNum = 48562177;BA.debugLine="StartActivity(settings)";
+ //BA.debugLineNum = 88;BA.debugLine="Private Sub btnCancel_Click";
+ //BA.debugLineNum = 89;BA.debugLine="StartActivity(settings)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._settings.getObject()));
-RDebugUtils.currentLine=48562178;
- //BA.debugLineNum = 48562178;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 90;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=48562179;
- //BA.debugLineNum = 48562179;BA.debugLine="End Sub";
+ //BA.debugLineNum = 91;BA.debugLine="End Sub";
 return "";
 }
 public static void  _btnsave_click() throws Exception{
-RDebugUtils.currentModule="securityquestion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btnsave_click", false))
-	 {Debug.delegate(mostCurrent.activityBA, "btnsave_click", null); return;}
 ResumableSub_btnSave_Click rsub = new ResumableSub_btnSave_Click(null);
 rsub.resume(processBA, null);
 }
@@ -525,7 +454,6 @@ int _result = 0;
 
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
-RDebugUtils.currentModule="securityquestion";
 
     while (true) {
         switch (state) {
@@ -535,8 +463,7 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=48496641;
- //BA.debugLineNum = 48496641;BA.debugLine="If txtQuestion.Text=\"\" Then";
+ //BA.debugLineNum = 71;BA.debugLine="If txtQuestion.Text=\"\" Then";
 if (true) break;
 
 case 1:
@@ -544,44 +471,35 @@ case 1:
 this.state = 12;
 if ((parent.mostCurrent._txtquestion.getText()).equals("")) { 
 this.state = 3;
-}else 
-{RDebugUtils.currentLine=48496643;
- //BA.debugLineNum = 48496643;BA.debugLine="Else If txtAnswer.Text=\"\" Then";
-if ((parent.mostCurrent._txtanswer.getText()).equals("")) { 
+}else if((parent.mostCurrent._txtanswer.getText()).equals("")) { 
 this.state = 5;
 }else {
 this.state = 7;
-}}
-if (true) break;
+}if (true) break;
 
 case 3:
 //C
 this.state = 12;
-RDebugUtils.currentLine=48496642;
- //BA.debugLineNum = 48496642;BA.debugLine="lblErrorMsg2.Text=\"Please enter security questio";
+ //BA.debugLineNum = 72;BA.debugLine="lblErrorMsg2.Text=\"Please enter security questio";
 parent.mostCurrent._lblerrormsg2.setText(BA.ObjectToCharSequence("Please enter security question"));
  if (true) break;
 
 case 5:
 //C
 this.state = 12;
-RDebugUtils.currentLine=48496644;
- //BA.debugLineNum = 48496644;BA.debugLine="lblErrorMsg3.Text =\"Please enter security answer";
+ //BA.debugLineNum = 74;BA.debugLine="lblErrorMsg3.Text =\"Please enter security answer";
 parent.mostCurrent._lblerrormsg3.setText(BA.ObjectToCharSequence("Please enter security answer"));
  if (true) break;
 
 case 7:
 //C
 this.state = 8;
-RDebugUtils.currentLine=48496646;
- //BA.debugLineNum = 48496646;BA.debugLine="config.saveSecurityQA(txtQuestion.Text,txtAnswer";
+ //BA.debugLineNum = 76;BA.debugLine="config.saveSecurityQA(txtQuestion.Text,txtAnswer";
 parent.mostCurrent._config._savesecurityqa /*String*/ (mostCurrent.activityBA,parent.mostCurrent._txtquestion.getText(),parent.mostCurrent._txtanswer.getText());
-RDebugUtils.currentLine=48496647;
- //BA.debugLineNum = 48496647;BA.debugLine="Msgbox2Async(\"Security Question and Answer updat";
+ //BA.debugLineNum = 77;BA.debugLine="Msgbox2Async(\"Security Question and Answer updat";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Security Question and Answer updated successfully!"),BA.ObjectToCharSequence("Updated"),"OK","","",anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"icons8-success-100.png"),processBA,anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=48496648;
- //BA.debugLineNum = 48496648;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
-anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "securityquestion", "btnsave_click"), null);
+ //BA.debugLineNum = 78;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
 this.state = 13;
 return;
 case 13:
@@ -589,8 +507,7 @@ case 13:
 this.state = 8;
 _result = (Integer) result[0];
 ;
-RDebugUtils.currentLine=48496649;
- //BA.debugLineNum = 48496649;BA.debugLine="If Result = DialogResponse.POSITIVE Then";
+ //BA.debugLineNum = 79;BA.debugLine="If Result = DialogResponse.POSITIVE Then";
 if (true) break;
 
 case 8:
@@ -603,11 +520,9 @@ this.state = 10;
 case 10:
 //C
 this.state = 11;
-RDebugUtils.currentLine=48496650;
- //BA.debugLineNum = 48496650;BA.debugLine="StartActivity(settings)";
+ //BA.debugLineNum = 80;BA.debugLine="StartActivity(settings)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(parent.mostCurrent._settings.getObject()));
-RDebugUtils.currentLine=48496651;
- //BA.debugLineNum = 48496651;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 81;BA.debugLine="Activity.Finish";
 parent.mostCurrent._activity.Finish();
  if (true) break;
 
@@ -621,38 +536,90 @@ case 12:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=48496655;
- //BA.debugLineNum = 48496655;BA.debugLine="End Sub";
+ //BA.debugLineNum = 85;BA.debugLine="End Sub";
 if (true) break;
 
             }
         }
     }
 }
-public static String  _txtanswer_textchanged(String _old,String _new) throws Exception{
-RDebugUtils.currentModule="securityquestion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "txtanswer_textchanged", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "txtanswer_textchanged", new Object[] {_old,_new}));}
-RDebugUtils.currentLine=48758784;
- //BA.debugLineNum = 48758784;BA.debugLine="Private Sub txtAnswer_TextChanged (Old As String,";
-RDebugUtils.currentLine=48758785;
- //BA.debugLineNum = 48758785;BA.debugLine="lblErrorMsg3.Text=\"\"";
+public static void  _msgbox_result(int _result) throws Exception{
+}
+public static String  _clearform() throws Exception{
+ //BA.debugLineNum = 94;BA.debugLine="Private Sub clearForm";
+ //BA.debugLineNum = 95;BA.debugLine="txtQuestion.Text=config.getSecurityQuestion";
+mostCurrent._txtquestion.setText(BA.ObjectToCharSequence(mostCurrent._config._getsecurityquestion /*String*/ (mostCurrent.activityBA)));
+ //BA.debugLineNum = 96;BA.debugLine="txtAnswer.Text=config.getSecurityAnswer";
+mostCurrent._txtanswer.setText(BA.ObjectToCharSequence(mostCurrent._config._getsecurityanswer /*String*/ (mostCurrent.activityBA)));
+ //BA.debugLineNum = 97;BA.debugLine="lblErrorMsg2.Text=\"\"";
+mostCurrent._lblerrormsg2.setText(BA.ObjectToCharSequence(""));
+ //BA.debugLineNum = 98;BA.debugLine="lblErrorMsg3.Text=\"\"";
 mostCurrent._lblerrormsg3.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=48758786;
- //BA.debugLineNum = 48758786;BA.debugLine="End Sub";
+ //BA.debugLineNum = 99;BA.debugLine="txtQuestion.RequestFocus";
+mostCurrent._txtquestion.RequestFocus();
+ //BA.debugLineNum = 100;BA.debugLine="End Sub";
+return "";
+}
+public static String  _globals() throws Exception{
+ //BA.debugLineNum = 13;BA.debugLine="Sub Globals";
+ //BA.debugLineNum = 16;BA.debugLine="Private ACToolBarLight1 As ACToolBarLight";
+mostCurrent._actoolbarlight1 = new de.amberhome.objects.appcompat.ACToolbarLightWrapper();
+ //BA.debugLineNum = 17;BA.debugLine="Private ToolbarHelper As ACActionBar";
+mostCurrent._toolbarhelper = new de.amberhome.objects.appcompat.ACActionBar();
+ //BA.debugLineNum = 18;BA.debugLine="Dim SharedPrefs As SharedPreferences";
+mostCurrent._sharedprefs = new com.b4x.sharedpreferences.SharedPreferences();
+ //BA.debugLineNum = 19;BA.debugLine="Dim IME As IME";
+mostCurrent._ime = new anywheresoftware.b4a.objects.IME();
+ //BA.debugLineNum = 20;BA.debugLine="Private btnCancel As Button";
+mostCurrent._btncancel = new anywheresoftware.b4a.objects.ButtonWrapper();
+ //BA.debugLineNum = 21;BA.debugLine="Private btnSave As Button";
+mostCurrent._btnsave = new anywheresoftware.b4a.objects.ButtonWrapper();
+ //BA.debugLineNum = 22;BA.debugLine="Private ImageView1 As ImageView";
+mostCurrent._imageview1 = new anywheresoftware.b4a.objects.ImageViewWrapper();
+ //BA.debugLineNum = 23;BA.debugLine="Private ImageView2 As ImageView";
+mostCurrent._imageview2 = new anywheresoftware.b4a.objects.ImageViewWrapper();
+ //BA.debugLineNum = 24;BA.debugLine="Private imgIcon As ImageView";
+mostCurrent._imgicon = new anywheresoftware.b4a.objects.ImageViewWrapper();
+ //BA.debugLineNum = 25;BA.debugLine="Private Label1 As Label";
+mostCurrent._label1 = new anywheresoftware.b4a.objects.LabelWrapper();
+ //BA.debugLineNum = 26;BA.debugLine="Private Label3 As Label";
+mostCurrent._label3 = new anywheresoftware.b4a.objects.LabelWrapper();
+ //BA.debugLineNum = 27;BA.debugLine="Private Label4 As Label";
+mostCurrent._label4 = new anywheresoftware.b4a.objects.LabelWrapper();
+ //BA.debugLineNum = 28;BA.debugLine="Private lblErrorMsg2 As Label";
+mostCurrent._lblerrormsg2 = new anywheresoftware.b4a.objects.LabelWrapper();
+ //BA.debugLineNum = 29;BA.debugLine="Private lblErrorMsg3 As Label";
+mostCurrent._lblerrormsg3 = new anywheresoftware.b4a.objects.LabelWrapper();
+ //BA.debugLineNum = 30;BA.debugLine="Private Panel1 As Panel";
+mostCurrent._panel1 = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 31;BA.debugLine="Private Panel2 As Panel";
+mostCurrent._panel2 = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 32;BA.debugLine="Private pnlContainer As Panel";
+mostCurrent._pnlcontainer = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 33;BA.debugLine="Private txtAnswer As EditText";
+mostCurrent._txtanswer = new anywheresoftware.b4a.objects.EditTextWrapper();
+ //BA.debugLineNum = 34;BA.debugLine="Private txtQuestion As EditText";
+mostCurrent._txtquestion = new anywheresoftware.b4a.objects.EditTextWrapper();
+ //BA.debugLineNum = 35;BA.debugLine="End Sub";
+return "";
+}
+public static String  _process_globals() throws Exception{
+ //BA.debugLineNum = 7;BA.debugLine="Sub Process_Globals";
+ //BA.debugLineNum = 11;BA.debugLine="End Sub";
+return "";
+}
+public static String  _txtanswer_textchanged(String _old,String _new) throws Exception{
+ //BA.debugLineNum = 107;BA.debugLine="Private Sub txtAnswer_TextChanged (Old As String,";
+ //BA.debugLineNum = 108;BA.debugLine="lblErrorMsg3.Text=\"\"";
+mostCurrent._lblerrormsg3.setText(BA.ObjectToCharSequence(""));
+ //BA.debugLineNum = 109;BA.debugLine="End Sub";
 return "";
 }
 public static String  _txtquestion_textchanged(String _old,String _new) throws Exception{
-RDebugUtils.currentModule="securityquestion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "txtquestion_textchanged", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "txtquestion_textchanged", new Object[] {_old,_new}));}
-RDebugUtils.currentLine=48693248;
- //BA.debugLineNum = 48693248;BA.debugLine="Private Sub txtQuestion_TextChanged (Old As String";
-RDebugUtils.currentLine=48693249;
- //BA.debugLineNum = 48693249;BA.debugLine="lblErrorMsg2.Text=\"\"";
+ //BA.debugLineNum = 103;BA.debugLine="Private Sub txtQuestion_TextChanged (Old As String";
+ //BA.debugLineNum = 104;BA.debugLine="lblErrorMsg2.Text=\"\"";
 mostCurrent._lblerrormsg2.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=48693250;
- //BA.debugLineNum = 48693250;BA.debugLine="End Sub";
+ //BA.debugLineNum = 105;BA.debugLine="End Sub";
 return "";
 }
 }

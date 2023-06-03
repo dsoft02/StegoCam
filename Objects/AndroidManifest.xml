@@ -138,6 +138,14 @@
 			android:screenOrientation="unspecified"
 			android:exported="true">
 		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".decode"
+			android:label="StegoCam"
+			android:screenOrientation="unspecified"
+			android:exported="true">
+		</activity>
 		<service
 			android:name=".httputils2service"
 			android:exported="true">

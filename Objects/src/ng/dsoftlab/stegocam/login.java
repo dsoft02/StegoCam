@@ -34,7 +34,7 @@ public class login extends androidx.appcompat.app.AppCompatActivity implements B
 		super.onCreate(savedInstanceState);
         mostCurrent = this;
 		if (processBA == null) {
-			processBA = new anywheresoftware.b4a.ShellBA(this.getApplicationContext(), null, null, "ng.dsoftlab.stegocam", "ng.dsoftlab.stegocam.login");
+			processBA = new BA(this.getApplicationContext(), null, null, "ng.dsoftlab.stegocam", "ng.dsoftlab.stegocam.login");
 			processBA.loadHtSubs(this.getClass());
 	        float deviceScale = getApplicationContext().getResources().getDisplayMetrics().density;
 	        BALayout.setDeviceScale(deviceScale);
@@ -335,15 +335,6 @@ public class login extends androidx.appcompat.app.AppCompatActivity implements B
             
     }
 
-
-
-public static void initializeProcessGlobals() {
-             try {
-                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-}
 public anywheresoftware.b4a.keywords.Common __c = null;
 public static ng.dsoftlab.stegocam.biometricmanager _biometric = null;
 public anywheresoftware.b4a.objects.LabelWrapper _btnresetpin = null;
@@ -372,205 +363,166 @@ public ng.dsoftlab.stegocam.pinchange _pinchange = null;
 public ng.dsoftlab.stegocam.pinreset _pinreset = null;
 public ng.dsoftlab.stegocam.securityquestion _securityquestion = null;
 public ng.dsoftlab.stegocam.history _history = null;
+public ng.dsoftlab.stegocam.decode _decode = null;
 public ng.dsoftlab.stegocam.b4xcollections _b4xcollections = null;
 public ng.dsoftlab.stegocam.httputils2service _httputils2service = null;
 public ng.dsoftlab.stegocam.xuiviewsutils _xuiviewsutils = null;
+
+public static void initializeProcessGlobals() {
+             try {
+                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+}
 public static String  _activity_create(boolean _firsttime) throws Exception{
-RDebugUtils.currentModule="login";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
 String _res = "";
-RDebugUtils.currentLine=44892160;
- //BA.debugLineNum = 44892160;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=44892162;
- //BA.debugLineNum = 44892162;BA.debugLine="Activity.LoadLayout(\"login\")";
+ //BA.debugLineNum = 34;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+ //BA.debugLineNum = 36;BA.debugLine="Activity.LoadLayout(\"login\")";
 mostCurrent._activity.LoadLayout("login",mostCurrent.activityBA);
-RDebugUtils.currentLine=44892163;
- //BA.debugLineNum = 44892163;BA.debugLine="SharedPrefs.Initialize(\"StegoCamPrefs\")";
+ //BA.debugLineNum = 37;BA.debugLine="SharedPrefs.Initialize(\"StegoCamPrefs\")";
 mostCurrent._sharedprefs.Initialize("StegoCamPrefs");
-RDebugUtils.currentLine=44892164;
- //BA.debugLineNum = 44892164;BA.debugLine="txtPin.InputType=Bit.Or(txtPin.InputType, 2)";
+ //BA.debugLineNum = 38;BA.debugLine="txtPin.InputType=Bit.Or(txtPin.InputType, 2)";
 mostCurrent._txtpin.setInputType(anywheresoftware.b4a.keywords.Common.Bit.Or(mostCurrent._txtpin.getInputType(),(int) (2)));
-RDebugUtils.currentLine=44892165;
- //BA.debugLineNum = 44892165;BA.debugLine="IME.Initialize(\"IME\")";
+ //BA.debugLineNum = 39;BA.debugLine="IME.Initialize(\"IME\")";
 mostCurrent._ime.Initialize("IME");
-RDebugUtils.currentLine=44892166;
- //BA.debugLineNum = 44892166;BA.debugLine="IME.SetLengthFilter(txtPin,4)";
+ //BA.debugLineNum = 40;BA.debugLine="IME.SetLengthFilter(txtPin,4)";
 mostCurrent._ime.SetLengthFilter((android.widget.EditText)(mostCurrent._txtpin.getObject()),(int) (4));
-RDebugUtils.currentLine=44892167;
- //BA.debugLineNum = 44892167;BA.debugLine="clearForm";
+ //BA.debugLineNum = 41;BA.debugLine="clearForm";
 _clearform();
-RDebugUtils.currentLine=44892168;
- //BA.debugLineNum = 44892168;BA.debugLine="ToolbarHelper.Initialize";
+ //BA.debugLineNum = 42;BA.debugLine="ToolbarHelper.Initialize";
 mostCurrent._toolbarhelper.Initialize(mostCurrent.activityBA);
-RDebugUtils.currentLine=44892169;
- //BA.debugLineNum = 44892169;BA.debugLine="ToolbarHelper.ShowUpIndicator = True 'set to true";
+ //BA.debugLineNum = 43;BA.debugLine="ToolbarHelper.ShowUpIndicator = True 'set to true";
 mostCurrent._toolbarhelper.setShowUpIndicator(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=44892170;
- //BA.debugLineNum = 44892170;BA.debugLine="ACToolBarLight1.InitMenuListener";
+ //BA.debugLineNum = 44;BA.debugLine="ACToolBarLight1.InitMenuListener";
 mostCurrent._actoolbarlight1.InitMenuListener();
-RDebugUtils.currentLine=44892171;
- //BA.debugLineNum = 44892171;BA.debugLine="txtPin.Text=\"\"";
+ //BA.debugLineNum = 45;BA.debugLine="txtPin.Text=\"\"";
 mostCurrent._txtpin.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=44892172;
- //BA.debugLineNum = 44892172;BA.debugLine="lblErrorMsg.Text=\"\"";
+ //BA.debugLineNum = 46;BA.debugLine="lblErrorMsg.Text=\"\"";
 mostCurrent._lblerrormsg.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=44892174;
- //BA.debugLineNum = 44892174;BA.debugLine="Biometric.Initialize(Me, \"Authenticate\")";
-_biometric._initialize /*String*/ (null,processBA,login.getObject(),"Authenticate");
-RDebugUtils.currentLine=44892175;
- //BA.debugLineNum = 44892175;BA.debugLine="Dim res As String = Biometric.CanAuthenticate";
-_res = _biometric._canauthenticate /*String*/ (null);
-RDebugUtils.currentLine=44892176;
- //BA.debugLineNum = 44892176;BA.debugLine="If res = \"SUCCESS\" Then";
+ //BA.debugLineNum = 48;BA.debugLine="Biometric.Initialize(Me, \"Authenticate\")";
+_biometric._initialize /*String*/ (processBA,login.getObject(),"Authenticate");
+ //BA.debugLineNum = 49;BA.debugLine="Dim res As String = Biometric.CanAuthenticate";
+_res = _biometric._canauthenticate /*String*/ ();
+ //BA.debugLineNum = 50;BA.debugLine="If res = \"SUCCESS\" Then";
 if ((_res).equals("SUCCESS")) { 
-RDebugUtils.currentLine=44892177;
- //BA.debugLineNum = 44892177;BA.debugLine="Label3.Visible=True";
+ //BA.debugLineNum = 51;BA.debugLine="Label3.Visible=True";
 mostCurrent._label3.setVisible(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=44892178;
- //BA.debugLineNum = 44892178;BA.debugLine="imgFingerprint.Visible=True";
+ //BA.debugLineNum = 52;BA.debugLine="imgFingerprint.Visible=True";
 mostCurrent._imgfingerprint.setVisible(anywheresoftware.b4a.keywords.Common.True);
  }else {
-RDebugUtils.currentLine=44892180;
- //BA.debugLineNum = 44892180;BA.debugLine="Label3.Visible=False";
+ //BA.debugLineNum = 54;BA.debugLine="Label3.Visible=False";
 mostCurrent._label3.setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=44892181;
- //BA.debugLineNum = 44892181;BA.debugLine="imgFingerprint.Visible=False";
+ //BA.debugLineNum = 55;BA.debugLine="imgFingerprint.Visible=False";
 mostCurrent._imgfingerprint.setVisible(anywheresoftware.b4a.keywords.Common.False);
  };
-RDebugUtils.currentLine=44892184;
- //BA.debugLineNum = 44892184;BA.debugLine="End Sub";
-return "";
-}
-public static String  _clearform() throws Exception{
-RDebugUtils.currentModule="login";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "clearform", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "clearform", null));}
-RDebugUtils.currentLine=44957696;
- //BA.debugLineNum = 44957696;BA.debugLine="Private Sub clearForm";
-RDebugUtils.currentLine=44957697;
- //BA.debugLineNum = 44957697;BA.debugLine="txtPin.Text=\"\"";
-mostCurrent._txtpin.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=44957698;
- //BA.debugLineNum = 44957698;BA.debugLine="lblShowPassword.Text=config.hide";
-mostCurrent._lblshowpassword.setText(BA.ObjectToCharSequence(mostCurrent._config._hide /*char*/ ));
-RDebugUtils.currentLine=44957699;
- //BA.debugLineNum = 44957699;BA.debugLine="txtPin.PasswordMode=True";
-mostCurrent._txtpin.setPasswordMode(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=44957700;
- //BA.debugLineNum = 44957700;BA.debugLine="txtPin.RequestFocus";
-mostCurrent._txtpin.RequestFocus();
-RDebugUtils.currentLine=44957701;
- //BA.debugLineNum = 44957701;BA.debugLine="End Sub";
+ //BA.debugLineNum = 58;BA.debugLine="End Sub";
 return "";
 }
 public static boolean  _activity_keypress(int _keycode) throws Exception{
-RDebugUtils.currentModule="login";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_keypress", false))
-	 {return ((Boolean) Debug.delegate(mostCurrent.activityBA, "activity_keypress", new Object[] {_keycode}));}
-RDebugUtils.currentLine=45219840;
- //BA.debugLineNum = 45219840;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
-RDebugUtils.currentLine=45219841;
- //BA.debugLineNum = 45219841;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK Then";
+ //BA.debugLineNum = 80;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
+ //BA.debugLineNum = 81;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK Then";
 if (_keycode==anywheresoftware.b4a.keywords.Common.KeyCodes.KEYCODE_BACK) { 
-RDebugUtils.currentLine=45219843;
- //BA.debugLineNum = 45219843;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 83;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
  };
-RDebugUtils.currentLine=45219845;
- //BA.debugLineNum = 45219845;BA.debugLine="Return False";
+ //BA.debugLineNum = 85;BA.debugLine="Return False";
 if (true) return anywheresoftware.b4a.keywords.Common.False;
-RDebugUtils.currentLine=45219846;
- //BA.debugLineNum = 45219846;BA.debugLine="End Sub";
+ //BA.debugLineNum = 86;BA.debugLine="End Sub";
 return false;
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
-RDebugUtils.currentModule="login";
-RDebugUtils.currentLine=45088768;
- //BA.debugLineNum = 45088768;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=45088770;
- //BA.debugLineNum = 45088770;BA.debugLine="End Sub";
+ //BA.debugLineNum = 70;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+ //BA.debugLineNum = 72;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
-RDebugUtils.currentModule="login";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=45023232;
- //BA.debugLineNum = 45023232;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=45023234;
- //BA.debugLineNum = 45023234;BA.debugLine="End Sub";
+ //BA.debugLineNum = 66;BA.debugLine="Sub Activity_Resume";
+ //BA.debugLineNum = 68;BA.debugLine="End Sub";
 return "";
 }
 public static String  _actoolbarlight1_navigationitemclick() throws Exception{
-RDebugUtils.currentModule="login";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "actoolbarlight1_navigationitemclick", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "actoolbarlight1_navigationitemclick", null));}
-RDebugUtils.currentLine=45154304;
- //BA.debugLineNum = 45154304;BA.debugLine="Sub ACToolBarLight1_NavigationItemClick";
-RDebugUtils.currentLine=45154306;
- //BA.debugLineNum = 45154306;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 75;BA.debugLine="Sub ACToolBarLight1_NavigationItemClick";
+ //BA.debugLineNum = 77;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=45154307;
- //BA.debugLineNum = 45154307;BA.debugLine="End Sub";
+ //BA.debugLineNum = 78;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnresetpin_click() throws Exception{
-RDebugUtils.currentModule="login";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btnresetpin_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnresetpin_click", null));}
-RDebugUtils.currentLine=45547520;
- //BA.debugLineNum = 45547520;BA.debugLine="Private Sub btnResetPin_Click";
-RDebugUtils.currentLine=45547521;
- //BA.debugLineNum = 45547521;BA.debugLine="StartActivity(forgotpin)";
+ //BA.debugLineNum = 138;BA.debugLine="Private Sub btnResetPin_Click";
+ //BA.debugLineNum = 139;BA.debugLine="StartActivity(forgotpin)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._forgotpin.getObject()));
-RDebugUtils.currentLine=45547522;
- //BA.debugLineNum = 45547522;BA.debugLine="End Sub";
+ //BA.debugLineNum = 140;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnsignin_click() throws Exception{
-RDebugUtils.currentModule="login";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btnsignin_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnsignin_click", null));}
 String _curpin = "";
-RDebugUtils.currentLine=45350912;
- //BA.debugLineNum = 45350912;BA.debugLine="Private Sub btnSignin_Click";
-RDebugUtils.currentLine=45350915;
- //BA.debugLineNum = 45350915;BA.debugLine="userPin = config.getUserPin";
+ //BA.debugLineNum = 106;BA.debugLine="Private Sub btnSignin_Click";
+ //BA.debugLineNum = 109;BA.debugLine="userPin = config.getUserPin";
 mostCurrent._userpin = mostCurrent._config._getuserpin /*String*/ (mostCurrent.activityBA);
-RDebugUtils.currentLine=45350917;
- //BA.debugLineNum = 45350917;BA.debugLine="Dim curPIN As String = txtPin.Text";
+ //BA.debugLineNum = 111;BA.debugLine="Dim curPIN As String = txtPin.Text";
 _curpin = mostCurrent._txtpin.getText();
-RDebugUtils.currentLine=45350918;
- //BA.debugLineNum = 45350918;BA.debugLine="If curPIN=\"\" Or curPIN.Length<4 Then";
+ //BA.debugLineNum = 112;BA.debugLine="If curPIN=\"\" Or curPIN.Length<4 Then";
 if ((_curpin).equals("") || _curpin.length()<4) { 
-RDebugUtils.currentLine=45350919;
- //BA.debugLineNum = 45350919;BA.debugLine="lblErrorMsg.Text=\"Please enter 4 digits PIN\"";
+ //BA.debugLineNum = 113;BA.debugLine="lblErrorMsg.Text=\"Please enter 4 digits PIN\"";
 mostCurrent._lblerrormsg.setText(BA.ObjectToCharSequence("Please enter 4 digits PIN"));
- }else 
-{RDebugUtils.currentLine=45350920;
- //BA.debugLineNum = 45350920;BA.debugLine="Else if curPIN=userPin Then";
-if ((_curpin).equals(mostCurrent._userpin)) { 
-RDebugUtils.currentLine=45350921;
- //BA.debugLineNum = 45350921;BA.debugLine="Activity.Finish";
+ }else if((_curpin).equals(mostCurrent._userpin)) { 
+ //BA.debugLineNum = 115;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=45350922;
- //BA.debugLineNum = 45350922;BA.debugLine="StartActivity(mainmenu)";
+ //BA.debugLineNum = 116;BA.debugLine="StartActivity(mainmenu)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mainmenu.getObject()));
  }else {
-RDebugUtils.currentLine=45350924;
- //BA.debugLineNum = 45350924;BA.debugLine="lblErrorMsg.Text=\"Invalid PIN\"";
+ //BA.debugLineNum = 118;BA.debugLine="lblErrorMsg.Text=\"Invalid PIN\"";
 mostCurrent._lblerrormsg.setText(BA.ObjectToCharSequence("Invalid PIN"));
- }}
-;
-RDebugUtils.currentLine=45350926;
- //BA.debugLineNum = 45350926;BA.debugLine="End Sub";
+ };
+ //BA.debugLineNum = 120;BA.debugLine="End Sub";
+return "";
+}
+public static String  _clearform() throws Exception{
+ //BA.debugLineNum = 60;BA.debugLine="Private Sub clearForm";
+ //BA.debugLineNum = 61;BA.debugLine="txtPin.Text=\"\"";
+mostCurrent._txtpin.setText(BA.ObjectToCharSequence(""));
+ //BA.debugLineNum = 62;BA.debugLine="lblShowPassword.Text=config.hide";
+mostCurrent._lblshowpassword.setText(BA.ObjectToCharSequence(mostCurrent._config._hide /*char*/ ));
+ //BA.debugLineNum = 63;BA.debugLine="txtPin.PasswordMode=True";
+mostCurrent._txtpin.setPasswordMode(anywheresoftware.b4a.keywords.Common.True);
+ //BA.debugLineNum = 64;BA.debugLine="txtPin.RequestFocus";
+mostCurrent._txtpin.RequestFocus();
+ //BA.debugLineNum = 65;BA.debugLine="End Sub";
+return "";
+}
+public static String  _globals() throws Exception{
+ //BA.debugLineNum = 13;BA.debugLine="Sub Globals";
+ //BA.debugLineNum = 16;BA.debugLine="Private btnResetPin As Label";
+mostCurrent._btnresetpin = new anywheresoftware.b4a.objects.LabelWrapper();
+ //BA.debugLineNum = 17;BA.debugLine="Private btnSignin As B4XView";
+mostCurrent._btnsignin = new anywheresoftware.b4a.objects.B4XViewWrapper();
+ //BA.debugLineNum = 18;BA.debugLine="Private imgFingerprint As B4XView";
+mostCurrent._imgfingerprint = new anywheresoftware.b4a.objects.B4XViewWrapper();
+ //BA.debugLineNum = 19;BA.debugLine="Private imgIcon As B4XView";
+mostCurrent._imgicon = new anywheresoftware.b4a.objects.B4XViewWrapper();
+ //BA.debugLineNum = 20;BA.debugLine="Private lblShowPassword As B4XView";
+mostCurrent._lblshowpassword = new anywheresoftware.b4a.objects.B4XViewWrapper();
+ //BA.debugLineNum = 21;BA.debugLine="Private txtPin As EditText";
+mostCurrent._txtpin = new anywheresoftware.b4a.objects.EditTextWrapper();
+ //BA.debugLineNum = 22;BA.debugLine="Private Label3 As B4XView";
+mostCurrent._label3 = new anywheresoftware.b4a.objects.B4XViewWrapper();
+ //BA.debugLineNum = 24;BA.debugLine="Dim userPin As String";
+mostCurrent._userpin = "";
+ //BA.debugLineNum = 25;BA.debugLine="Dim SharedPrefs As SharedPreferences";
+mostCurrent._sharedprefs = new com.b4x.sharedpreferences.SharedPreferences();
+ //BA.debugLineNum = 27;BA.debugLine="Private lblErrorMsg As B4XView";
+mostCurrent._lblerrormsg = new anywheresoftware.b4a.objects.B4XViewWrapper();
+ //BA.debugLineNum = 28;BA.debugLine="Dim IME As IME";
+mostCurrent._ime = new anywheresoftware.b4a.objects.IME();
+ //BA.debugLineNum = 29;BA.debugLine="Private ACToolBarLight1 As ACToolBarLight";
+mostCurrent._actoolbarlight1 = new de.amberhome.objects.appcompat.ACToolbarLightWrapper();
+ //BA.debugLineNum = 30;BA.debugLine="Private ToolbarHelper As ACActionBar";
+mostCurrent._toolbarhelper = new de.amberhome.objects.appcompat.ACActionBar();
+ //BA.debugLineNum = 32;BA.debugLine="End Sub";
 return "";
 }
 public static void  _imgfingerprint_click() throws Exception{
-RDebugUtils.currentModule="login";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "imgfingerprint_click", false))
-	 {Debug.delegate(mostCurrent.activityBA, "imgfingerprint_click", null); return;}
 ResumableSub_imgFingerprint_Click rsub = new ResumableSub_imgFingerprint_Click(null);
 rsub.resume(processBA, null);
 }
@@ -585,7 +537,6 @@ String _errormessage = "";
 
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
-RDebugUtils.currentModule="login";
 
     while (true) {
         switch (state) {
@@ -595,11 +546,9 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=45285377;
- //BA.debugLineNum = 45285377;BA.debugLine="Dim fingerPrintEnabled As Boolean=config.getBiome";
+ //BA.debugLineNum = 89;BA.debugLine="Dim fingerPrintEnabled As Boolean=config.getBiome";
 _fingerprintenabled = parent.mostCurrent._config._getbiometric /*boolean*/ (mostCurrent.activityBA);
-RDebugUtils.currentLine=45285379;
- //BA.debugLineNum = 45285379;BA.debugLine="If fingerPrintEnabled=True Then";
+ //BA.debugLineNum = 91;BA.debugLine="If fingerPrintEnabled=True Then";
 if (true) break;
 
 case 1:
@@ -614,12 +563,10 @@ this.state = 11;
 case 3:
 //C
 this.state = 4;
-RDebugUtils.currentLine=45285380;
- //BA.debugLineNum = 45285380;BA.debugLine="Biometric.Show(\"Verifying Finegerprint\")";
-parent._biometric._show /*String*/ (null,"Verifying Finegerprint");
-RDebugUtils.currentLine=45285381;
- //BA.debugLineNum = 45285381;BA.debugLine="Wait For Authenticate_Complete (Success As Boole";
-anywheresoftware.b4a.keywords.Common.WaitFor("authenticate_complete", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "login", "imgfingerprint_click"), null);
+ //BA.debugLineNum = 92;BA.debugLine="Biometric.Show(\"Verifying Finegerprint\")";
+parent._biometric._show /*String*/ ("Verifying Finegerprint");
+ //BA.debugLineNum = 93;BA.debugLine="Wait For Authenticate_Complete (Success As Boole";
+anywheresoftware.b4a.keywords.Common.WaitFor("authenticate_complete", processBA, this, null);
 this.state = 13;
 return;
 case 13:
@@ -628,8 +575,7 @@ this.state = 4;
 _success = (Boolean) result[0];
 _errormessage = (String) result[1];
 ;
-RDebugUtils.currentLine=45285382;
- //BA.debugLineNum = 45285382;BA.debugLine="If Success Then";
+ //BA.debugLineNum = 94;BA.debugLine="If Success Then";
 if (true) break;
 
 case 4:
@@ -644,19 +590,16 @@ this.state = 8;
 case 6:
 //C
 this.state = 9;
-RDebugUtils.currentLine=45285383;
- //BA.debugLineNum = 45285383;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 95;BA.debugLine="Activity.Finish";
 parent.mostCurrent._activity.Finish();
-RDebugUtils.currentLine=45285384;
- //BA.debugLineNum = 45285384;BA.debugLine="StartActivity(mainmenu)";
+ //BA.debugLineNum = 96;BA.debugLine="StartActivity(mainmenu)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(parent.mostCurrent._mainmenu.getObject()));
  if (true) break;
 
 case 8:
 //C
 this.state = 9;
-RDebugUtils.currentLine=45285387;
- //BA.debugLineNum = 45285387;BA.debugLine="ToastMessageShow(\"Error: \" & ErrorMessage,False";
+ //BA.debugLineNum = 99;BA.debugLine="ToastMessageShow(\"Error: \" & ErrorMessage,False";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Error: "+_errormessage),anywheresoftware.b4a.keywords.Common.False);
  if (true) break;
 
@@ -669,8 +612,7 @@ this.state = 12;
 case 11:
 //C
 this.state = 12;
-RDebugUtils.currentLine=45285390;
- //BA.debugLineNum = 45285390;BA.debugLine="Msgbox2Async(\"Fingerprint login is not available";
+ //BA.debugLineNum = 102;BA.debugLine="Msgbox2Async(\"Fingerprint login is not available";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Fingerprint login is not available for this account. You can change this in the settings page after login"),BA.ObjectToCharSequence("Notice"),"OK","","",(anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)),processBA,anywheresoftware.b4a.keywords.Common.False);
  if (true) break;
 
@@ -678,55 +620,46 @@ case 12:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=45285392;
- //BA.debugLineNum = 45285392;BA.debugLine="End Sub";
+ //BA.debugLineNum = 104;BA.debugLine="End Sub";
 if (true) break;
 
             }
         }
     }
 }
+public static void  _authenticate_complete(boolean _success,String _errormessage) throws Exception{
+}
 public static String  _lblshowpassword_click() throws Exception{
-RDebugUtils.currentModule="login";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "lblshowpassword_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "lblshowpassword_click", null));}
-RDebugUtils.currentLine=45416448;
- //BA.debugLineNum = 45416448;BA.debugLine="Private Sub lblShowPassword_Click";
-RDebugUtils.currentLine=45416449;
- //BA.debugLineNum = 45416449;BA.debugLine="If lblShowPassword.Text=config.hide Then";
+ //BA.debugLineNum = 122;BA.debugLine="Private Sub lblShowPassword_Click";
+ //BA.debugLineNum = 123;BA.debugLine="If lblShowPassword.Text=config.hide Then";
 if ((mostCurrent._lblshowpassword.getText()).equals(BA.ObjectToString(mostCurrent._config._hide /*char*/ ))) { 
-RDebugUtils.currentLine=45416450;
- //BA.debugLineNum = 45416450;BA.debugLine="lblShowPassword.Text=config.show";
+ //BA.debugLineNum = 124;BA.debugLine="lblShowPassword.Text=config.show";
 mostCurrent._lblshowpassword.setText(BA.ObjectToCharSequence(mostCurrent._config._show /*char*/ ));
-RDebugUtils.currentLine=45416451;
- //BA.debugLineNum = 45416451;BA.debugLine="txtPin.PasswordMode=False";
+ //BA.debugLineNum = 125;BA.debugLine="txtPin.PasswordMode=False";
 mostCurrent._txtpin.setPasswordMode(anywheresoftware.b4a.keywords.Common.False);
  }else {
-RDebugUtils.currentLine=45416453;
- //BA.debugLineNum = 45416453;BA.debugLine="lblShowPassword.Text=config.hide";
+ //BA.debugLineNum = 127;BA.debugLine="lblShowPassword.Text=config.hide";
 mostCurrent._lblshowpassword.setText(BA.ObjectToCharSequence(mostCurrent._config._hide /*char*/ ));
-RDebugUtils.currentLine=45416454;
- //BA.debugLineNum = 45416454;BA.debugLine="txtPin.PasswordMode=True";
+ //BA.debugLineNum = 128;BA.debugLine="txtPin.PasswordMode=True";
 mostCurrent._txtpin.setPasswordMode(anywheresoftware.b4a.keywords.Common.True);
  };
-RDebugUtils.currentLine=45416456;
- //BA.debugLineNum = 45416456;BA.debugLine="txtPin.SelectionStart=txtPin.Text.Length";
+ //BA.debugLineNum = 130;BA.debugLine="txtPin.SelectionStart=txtPin.Text.Length";
 mostCurrent._txtpin.setSelectionStart(mostCurrent._txtpin.getText().length());
-RDebugUtils.currentLine=45416457;
- //BA.debugLineNum = 45416457;BA.debugLine="End Sub";
+ //BA.debugLineNum = 131;BA.debugLine="End Sub";
+return "";
+}
+public static String  _process_globals() throws Exception{
+ //BA.debugLineNum = 7;BA.debugLine="Sub Process_Globals";
+ //BA.debugLineNum = 10;BA.debugLine="Private Biometric As BiometricManager";
+_biometric = new ng.dsoftlab.stegocam.biometricmanager();
+ //BA.debugLineNum = 11;BA.debugLine="End Sub";
 return "";
 }
 public static String  _txtpin_textchanged(String _old,String _new) throws Exception{
-RDebugUtils.currentModule="login";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "txtpin_textchanged", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "txtpin_textchanged", new Object[] {_old,_new}));}
-RDebugUtils.currentLine=45481984;
- //BA.debugLineNum = 45481984;BA.debugLine="Private Sub txtPin_TextChanged (Old As String, New";
-RDebugUtils.currentLine=45481985;
- //BA.debugLineNum = 45481985;BA.debugLine="lblErrorMsg.Text=\"\"";
+ //BA.debugLineNum = 133;BA.debugLine="Private Sub txtPin_TextChanged (Old As String, New";
+ //BA.debugLineNum = 134;BA.debugLine="lblErrorMsg.Text=\"\"";
 mostCurrent._lblerrormsg.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=45481986;
- //BA.debugLineNum = 45481986;BA.debugLine="End Sub";
+ //BA.debugLineNum = 135;BA.debugLine="End Sub";
 return "";
 }
 }
