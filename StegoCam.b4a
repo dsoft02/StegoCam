@@ -341,7 +341,7 @@ Sub Activity_Create(FirstTime As Boolean)
 	Sleep(3000)
 	'Initialize SharedPreferences
 	SharedPrefs.Initialize("StegoCamPrefs")
-	config.setUserPin("")
+	'config.setUserPin("")
     
 	' Check if it's the first run
 	firstRun =config.isFirstRun 'SharedPrefs.GetBoolean("FirstRun", True)

@@ -412,8 +412,6 @@ this.state = 1;
 ;
  //BA.debugLineNum = 49;BA.debugLine="SharedPrefs.Initialize(\"StegoCamPrefs\")";
 parent.mostCurrent._sharedprefs.Initialize("StegoCamPrefs");
- //BA.debugLineNum = 50;BA.debugLine="config.setUserPin(\"\")";
-parent.mostCurrent._config._setuserpin /*String*/ (mostCurrent.activityBA,"");
  //BA.debugLineNum = 53;BA.debugLine="firstRun =config.isFirstRun 'SharedPrefs.GetBoole";
 parent._firstrun = parent.mostCurrent._config._isfirstrun /*boolean*/ (mostCurrent.activityBA);
  //BA.debugLineNum = 55;BA.debugLine="userPin =config.getUserPin 'SharedPrefs.GetString";
