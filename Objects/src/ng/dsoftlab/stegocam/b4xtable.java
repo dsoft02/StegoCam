@@ -95,15 +95,16 @@ public ng.dsoftlab.stegocam.starter _starter = null;
 public ng.dsoftlab.stegocam.mainmenu _mainmenu = null;
 public ng.dsoftlab.stegocam.config _config = null;
 public ng.dsoftlab.stegocam.encode _encode = null;
+public ng.dsoftlab.stegocam.history _history = null;
+public ng.dsoftlab.stegocam.decode _decode = null;
 public ng.dsoftlab.stegocam.settings _settings = null;
-public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
+public ng.dsoftlab.stegocam.pinreset _pinreset = null;
 public ng.dsoftlab.stegocam.forgotpin _forgotpin = null;
 public ng.dsoftlab.stegocam.login _login = null;
 public ng.dsoftlab.stegocam.pinchange _pinchange = null;
-public ng.dsoftlab.stegocam.pinreset _pinreset = null;
+public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
 public ng.dsoftlab.stegocam.securityquestion _securityquestion = null;
-public ng.dsoftlab.stegocam.history _history = null;
-public ng.dsoftlab.stegocam.decode _decode = null;
+public ng.dsoftlab.stegocam.stegopreview _stegopreview = null;
 public ng.dsoftlab.stegocam.b4xcollections _b4xcollections = null;
 public ng.dsoftlab.stegocam.httputils2service _httputils2service = null;
 public ng.dsoftlab.stegocam.xuiviewsutils _xuiviewsutils = null;
@@ -1028,7 +1029,7 @@ case 18:
 //C
 this.state = 19;
  //BA.debugLineNum = 166;BA.debugLine="Log(\"closing old db.\")";
-parent.__c.LogImpl("958130452","closing old db.",0);
+parent.__c.LogImpl("922020116","closing old db.",0);
  //BA.debugLineNum = 167;BA.debugLine="OldSQL.Close";
 _oldsql.Close();
  if (true) break;
@@ -1940,7 +1941,7 @@ case 60:
 //C
 this.state = 61;
  //BA.debugLineNum = 484;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("959113542",BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("923003206",BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 ;
  //BA.debugLineNum = 486;BA.debugLine="If xui.SubExists(mCallBack, mEventName & \"_DataUp";

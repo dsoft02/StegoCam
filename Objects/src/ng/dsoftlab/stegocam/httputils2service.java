@@ -135,15 +135,16 @@ public ng.dsoftlab.stegocam.starter _starter = null;
 public ng.dsoftlab.stegocam.mainmenu _mainmenu = null;
 public ng.dsoftlab.stegocam.config _config = null;
 public ng.dsoftlab.stegocam.encode _encode = null;
+public ng.dsoftlab.stegocam.history _history = null;
+public ng.dsoftlab.stegocam.decode _decode = null;
 public ng.dsoftlab.stegocam.settings _settings = null;
-public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
+public ng.dsoftlab.stegocam.pinreset _pinreset = null;
 public ng.dsoftlab.stegocam.forgotpin _forgotpin = null;
 public ng.dsoftlab.stegocam.login _login = null;
 public ng.dsoftlab.stegocam.pinchange _pinchange = null;
-public ng.dsoftlab.stegocam.pinreset _pinreset = null;
+public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
 public ng.dsoftlab.stegocam.securityquestion _securityquestion = null;
-public ng.dsoftlab.stegocam.history _history = null;
-public ng.dsoftlab.stegocam.decode _decode = null;
+public ng.dsoftlab.stegocam.stegopreview _stegopreview = null;
 public ng.dsoftlab.stegocam.b4xcollections _b4xcollections = null;
 public ng.dsoftlab.stegocam.xuiviewsutils _xuiviewsutils = null;
 public static String  _completejob(int _taskid,boolean _success,String _errormessage) throws Exception{
@@ -154,7 +155,7 @@ _job = (ng.dsoftlab.stegocam.httpjob)(_taskidtojob.Get((Object)(_taskid)));
  //BA.debugLineNum = 151;BA.debugLine="If job = Null Then";
 if (_job== null) { 
  //BA.debugLineNum = 152;BA.debugLine="Log(\"HttpUtils2Service: job completed multiple t";
-anywheresoftware.b4a.keywords.Common.LogImpl("46684678","HttpUtils2Service: job completed multiple times - "+BA.NumberToString(_taskid),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("326673158","HttpUtils2Service: job completed multiple times - "+BA.NumberToString(_taskid),0);
  //BA.debugLineNum = 153;BA.debugLine="Return";
 if (true) return "";
  };
@@ -173,7 +174,7 @@ public static String  _hc_responseerror(anywheresoftware.b4h.okhttp.OkHttpClient
 ng.dsoftlab.stegocam.httpjob _job = null;
  //BA.debugLineNum = 109;BA.debugLine="Sub hc_ResponseError (Response As OkHttpResponse,";
  //BA.debugLineNum = 111;BA.debugLine="Log($\"ResponseError. Reason: ${Reason}, Response:";
-anywheresoftware.b4a.keywords.Common.LogImpl("46619138",("ResponseError. Reason: "+anywheresoftware.b4a.keywords.Common.SmartStringFormatter("",(Object)(_reason))+", Response: "+anywheresoftware.b4a.keywords.Common.SmartStringFormatter("",(Object)(_response.getErrorResponse()))+""),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("326607618",("ResponseError. Reason: "+anywheresoftware.b4a.keywords.Common.SmartStringFormatter("",(Object)(_reason))+", Response: "+anywheresoftware.b4a.keywords.Common.SmartStringFormatter("",(Object)(_response.getErrorResponse()))+""),0);
  //BA.debugLineNum = 113;BA.debugLine="Response.Release";
 _response.Release();
  //BA.debugLineNum = 114;BA.debugLine="Dim job As HttpJob = TaskIdToJob.Get(TaskId)";
@@ -181,7 +182,7 @@ _job = (ng.dsoftlab.stegocam.httpjob)(_taskidtojob.Get((Object)(_taskid)));
  //BA.debugLineNum = 115;BA.debugLine="If job = Null Then";
 if (_job== null) { 
  //BA.debugLineNum = 116;BA.debugLine="Log(\"HttpUtils2Service (hc_ResponseError): job c";
-anywheresoftware.b4a.keywords.Common.LogImpl("46619143","HttpUtils2Service (hc_ResponseError): job completed multiple times - "+BA.NumberToString(_taskid),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("326607623","HttpUtils2Service (hc_ResponseError): job completed multiple times - "+BA.NumberToString(_taskid),0);
  //BA.debugLineNum = 117;BA.debugLine="Return";
 if (true) return "";
  };
@@ -207,7 +208,7 @@ _job = (ng.dsoftlab.stegocam.httpjob)(_taskidtojob.Get((Object)(_taskid)));
  //BA.debugLineNum = 88;BA.debugLine="If job = Null Then";
 if (_job== null) { 
  //BA.debugLineNum = 89;BA.debugLine="Log(\"HttpUtils2Service (hc_ResponseSuccess): job";
-anywheresoftware.b4a.keywords.Common.LogImpl("46488067","HttpUtils2Service (hc_ResponseSuccess): job completed multiple times - "+BA.NumberToString(_taskid),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("326476547","HttpUtils2Service (hc_ResponseSuccess): job completed multiple times - "+BA.NumberToString(_taskid),0);
  //BA.debugLineNum = 90;BA.debugLine="Return";
 if (true) return "";
  };
@@ -259,9 +260,9 @@ anywheresoftware.b4a.keywords.Common.File.Delete(_tempfolder,"~test.test");
  } 
        catch (Exception e6) {
 			processBA.setLastException(e6); //BA.debugLineNum = 34;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("46225927",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(processBA)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("326214407",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(processBA)),0);
  //BA.debugLineNum = 35;BA.debugLine="Log(\"Switching to File.DirInternal\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("46225928","Switching to File.DirInternal",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("326214408","Switching to File.DirInternal",0);
  //BA.debugLineNum = 36;BA.debugLine="TempFolder = File.DirInternal";
 _tempfolder = anywheresoftware.b4a.keywords.Common.File.getDirInternal();
  };

@@ -359,7 +359,7 @@ public anywheresoftware.b4a.objects.PanelWrapper _pnlkey = null;
 public anywheresoftware.b4a.objects.PanelWrapper _pnlmessage = null;
 public anywheresoftware.b4a.objects.EditTextWrapper _txtkey = null;
 public anywheresoftware.b4a.objects.EditTextWrapper _txtmessage = null;
-public anywheresoftware.b4a.objects.ImageViewWrapper _imgcover = null;
+public ng.dsoftlab.stegocam.b4ximageview _imgcover = null;
 public anywheresoftware.b4a.objects.PanelWrapper _pnlcoverimage = null;
 public ng.dsoftlab.stegocam.b4xcombobox _cboencryption = null;
 public anywheresoftware.b4a.objects.ImageViewWrapper _btnbrowse = null;
@@ -379,20 +379,22 @@ public anywheresoftware.b4a.objects.PanelWrapper _pnldelete = null;
 public anywheresoftware.b4a.objects.PanelWrapper _pnlextract = null;
 public anywheresoftware.b4a.objects.PanelWrapper _pnlshare = null;
 public anywheresoftware.b4a.objects.EditTextWrapper _txtfilename = null;
+public anywheresoftware.b4a.objects.ImageViewWrapper _btncamera = null;
 public b4a.example.dateutils _dateutils = null;
 public ng.dsoftlab.stegocam.main _main = null;
 public ng.dsoftlab.stegocam.starter _starter = null;
 public ng.dsoftlab.stegocam.mainmenu _mainmenu = null;
 public ng.dsoftlab.stegocam.config _config = null;
 public ng.dsoftlab.stegocam.encode _encode = null;
+public ng.dsoftlab.stegocam.history _history = null;
 public ng.dsoftlab.stegocam.settings _settings = null;
-public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
+public ng.dsoftlab.stegocam.pinreset _pinreset = null;
 public ng.dsoftlab.stegocam.forgotpin _forgotpin = null;
 public ng.dsoftlab.stegocam.login _login = null;
 public ng.dsoftlab.stegocam.pinchange _pinchange = null;
-public ng.dsoftlab.stegocam.pinreset _pinreset = null;
+public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
 public ng.dsoftlab.stegocam.securityquestion _securityquestion = null;
-public ng.dsoftlab.stegocam.history _history = null;
+public ng.dsoftlab.stegocam.stegopreview _stegopreview = null;
 public ng.dsoftlab.stegocam.b4xcollections _b4xcollections = null;
 public ng.dsoftlab.stegocam.httputils2service _httputils2service = null;
 public ng.dsoftlab.stegocam.xuiviewsutils _xuiviewsutils = null;
@@ -406,86 +408,90 @@ public static void initializeProcessGlobals() {
 }
 public static String  _activity_create(boolean _firsttime) throws Exception{
 anywheresoftware.b4j.object.JavaObject _jo = null;
- //BA.debugLineNum = 61;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
- //BA.debugLineNum = 63;BA.debugLine="Activity.LoadLayout(\"decode\")";
+ //BA.debugLineNum = 62;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+ //BA.debugLineNum = 64;BA.debugLine="Activity.LoadLayout(\"decode\")";
 mostCurrent._activity.LoadLayout("decode",mostCurrent.activityBA);
- //BA.debugLineNum = 64;BA.debugLine="SharedPrefs.Initialize(\"StegoCamPrefs\")";
+ //BA.debugLineNum = 65;BA.debugLine="SharedPrefs.Initialize(\"StegoCamPrefs\")";
 mostCurrent._sharedprefs.Initialize("StegoCamPrefs");
- //BA.debugLineNum = 65;BA.debugLine="ToolbarHelper.Initialize";
+ //BA.debugLineNum = 66;BA.debugLine="ToolbarHelper.Initialize";
 mostCurrent._toolbarhelper.Initialize(mostCurrent.activityBA);
- //BA.debugLineNum = 66;BA.debugLine="ToolbarHelper.ShowUpIndicator = True 'set to true";
+ //BA.debugLineNum = 67;BA.debugLine="ToolbarHelper.ShowUpIndicator = True 'set to true";
 mostCurrent._toolbarhelper.setShowUpIndicator(anywheresoftware.b4a.keywords.Common.True);
- //BA.debugLineNum = 67;BA.debugLine="ACToolBarLight1.InitMenuListener";
+ //BA.debugLineNum = 68;BA.debugLine="ACToolBarLight1.InitMenuListener";
 mostCurrent._actoolbarlight1.InitMenuListener();
- //BA.debugLineNum = 68;BA.debugLine="Dim jo As JavaObject = txtMessage";
+ //BA.debugLineNum = 69;BA.debugLine="Dim jo As JavaObject = txtMessage";
 _jo = new anywheresoftware.b4j.object.JavaObject();
 _jo = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(mostCurrent._txtmessage.getObject()));
- //BA.debugLineNum = 69;BA.debugLine="txtMessage.InputType=txtMessage.INPUT_TYPE_NONE";
+ //BA.debugLineNum = 70;BA.debugLine="txtMessage.InputType=txtMessage.INPUT_TYPE_NONE";
 mostCurrent._txtmessage.setInputType(mostCurrent._txtmessage.INPUT_TYPE_NONE);
- //BA.debugLineNum = 70;BA.debugLine="jo.RunMethod(\"setTextIsSelectable\", Array(True))";
+ //BA.debugLineNum = 71;BA.debugLine="jo.RunMethod(\"setTextIsSelectable\", Array(True))";
 _jo.RunMethod("setTextIsSelectable",new Object[]{(Object)(anywheresoftware.b4a.keywords.Common.True)});
- //BA.debugLineNum = 71;BA.debugLine="FileHandler1.Initialize";
+ //BA.debugLineNum = 72;BA.debugLine="txtMessage.SingleLine=False";
+mostCurrent._txtmessage.setSingleLine(anywheresoftware.b4a.keywords.Common.False);
+ //BA.debugLineNum = 73;BA.debugLine="txtMessage.Wrap=True";
+mostCurrent._txtmessage.setWrap(anywheresoftware.b4a.keywords.Common.True);
+ //BA.debugLineNum = 74;BA.debugLine="FileHandler1.Initialize";
 _filehandler1._initialize /*String*/ (processBA);
- //BA.debugLineNum = 72;BA.debugLine="stegoHandler.Initialize";
+ //BA.debugLineNum = 75;BA.debugLine="stegoHandler.Initialize";
 _stegohandler._initialize /*String*/ (processBA);
- //BA.debugLineNum = 73;BA.debugLine="Dialog.Initialize(Activity)";
+ //BA.debugLineNum = 76;BA.debugLine="Dialog.Initialize(Activity)";
 mostCurrent._dialog._initialize /*String*/ (mostCurrent.activityBA,(anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(mostCurrent._activity.getObject())));
- //BA.debugLineNum = 74;BA.debugLine="Dialog.Title = \"Stego Image View\"";
+ //BA.debugLineNum = 77;BA.debugLine="Dialog.Title = \"Stego Image View\"";
 mostCurrent._dialog._title /*Object*/  = (Object)("Stego Image View");
- //BA.debugLineNum = 75;BA.debugLine="getPermissions";
+ //BA.debugLineNum = 78;BA.debugLine="getPermissions";
 _getpermissions();
- //BA.debugLineNum = 76;BA.debugLine="If fromfile=False And stegoimage <>\"\" Then";
+ //BA.debugLineNum = 79;BA.debugLine="If fromfile=False And stegoimage <>\"\" Then";
 if (_fromfile==anywheresoftware.b4a.keywords.Common.False && (_stegoimage).equals("") == false) { 
- //BA.debugLineNum = 77;BA.debugLine="txtFileName.Text=stegoimage";
+ //BA.debugLineNum = 80;BA.debugLine="txtFileName.Text=stegoimage";
 mostCurrent._txtfilename.setText(BA.ObjectToCharSequence(_stegoimage));
- //BA.debugLineNum = 78;BA.debugLine="txtFileName.Tag=\"\"";
+ //BA.debugLineNum = 81;BA.debugLine="txtFileName.Tag=\"\"";
 mostCurrent._txtfilename.setTag((Object)(""));
- //BA.debugLineNum = 79;BA.debugLine="imgCover.Bitmap =xui.LoadBitmapResize(stegoimage";
-mostCurrent._imgcover.setBitmap((android.graphics.Bitmap)(mostCurrent._xui.LoadBitmapResize(_stegoimage,"",mostCurrent._imgcover.getWidth(),mostCurrent._imgcover.getHeight(),anywheresoftware.b4a.keywords.Common.True).getObject()));
+ //BA.debugLineNum = 83;BA.debugLine="imgCover.Load(stegoimage,\"\")";
+mostCurrent._imgcover._load /*String*/ (_stegoimage,"");
  }else {
- //BA.debugLineNum = 81;BA.debugLine="clearForm";
+ //BA.debugLineNum = 85;BA.debugLine="clearForm";
 _clearform();
  };
- //BA.debugLineNum = 83;BA.debugLine="End Sub";
-return "";
-}
-public static boolean  _activity_keypress(int _keycode) throws Exception{
- //BA.debugLineNum = 99;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
- //BA.debugLineNum = 100;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK Then";
-if (_keycode==anywheresoftware.b4a.keywords.Common.KeyCodes.KEYCODE_BACK) { 
- //BA.debugLineNum = 101;BA.debugLine="clearForm";
-_clearform();
- //BA.debugLineNum = 102;BA.debugLine="StartActivity(mainmenu)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mainmenu.getObject()));
- //BA.debugLineNum = 103;BA.debugLine="Activity.Finish";
-mostCurrent._activity.Finish();
- //BA.debugLineNum = 104;BA.debugLine="Return True";
-if (true) return anywheresoftware.b4a.keywords.Common.True;
- };
- //BA.debugLineNum = 106;BA.debugLine="Return False";
-if (true) return anywheresoftware.b4a.keywords.Common.False;
- //BA.debugLineNum = 107;BA.debugLine="End Sub";
-return false;
-}
-public static String  _activity_pause(boolean _userclosed) throws Exception{
- //BA.debugLineNum = 89;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
- //BA.debugLineNum = 91;BA.debugLine="End Sub";
-return "";
-}
-public static String  _activity_resume() throws Exception{
- //BA.debugLineNum = 85;BA.debugLine="Sub Activity_Resume";
  //BA.debugLineNum = 87;BA.debugLine="End Sub";
 return "";
 }
-public static String  _actoolbarlight1_navigationitemclick() throws Exception{
- //BA.debugLineNum = 93;BA.debugLine="Sub ACToolBarLight1_NavigationItemClick";
- //BA.debugLineNum = 94;BA.debugLine="clearForm";
+public static boolean  _activity_keypress(int _keycode) throws Exception{
+ //BA.debugLineNum = 103;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
+ //BA.debugLineNum = 104;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK Then";
+if (_keycode==anywheresoftware.b4a.keywords.Common.KeyCodes.KEYCODE_BACK) { 
+ //BA.debugLineNum = 105;BA.debugLine="clearForm";
 _clearform();
- //BA.debugLineNum = 95;BA.debugLine="StartActivity(mainmenu)";
+ //BA.debugLineNum = 106;BA.debugLine="StartActivity(mainmenu)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mainmenu.getObject()));
- //BA.debugLineNum = 96;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 107;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
- //BA.debugLineNum = 97;BA.debugLine="End Sub";
+ //BA.debugLineNum = 108;BA.debugLine="Return True";
+if (true) return anywheresoftware.b4a.keywords.Common.True;
+ };
+ //BA.debugLineNum = 110;BA.debugLine="Return False";
+if (true) return anywheresoftware.b4a.keywords.Common.False;
+ //BA.debugLineNum = 111;BA.debugLine="End Sub";
+return false;
+}
+public static String  _activity_pause(boolean _userclosed) throws Exception{
+ //BA.debugLineNum = 93;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+ //BA.debugLineNum = 95;BA.debugLine="End Sub";
+return "";
+}
+public static String  _activity_resume() throws Exception{
+ //BA.debugLineNum = 89;BA.debugLine="Sub Activity_Resume";
+ //BA.debugLineNum = 91;BA.debugLine="End Sub";
+return "";
+}
+public static String  _actoolbarlight1_navigationitemclick() throws Exception{
+ //BA.debugLineNum = 97;BA.debugLine="Sub ACToolBarLight1_NavigationItemClick";
+ //BA.debugLineNum = 98;BA.debugLine="clearForm";
+_clearform();
+ //BA.debugLineNum = 99;BA.debugLine="StartActivity(mainmenu)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mainmenu.getObject()));
+ //BA.debugLineNum = 100;BA.debugLine="Activity.Finish";
+mostCurrent._activity.Finish();
+ //BA.debugLineNum = 101;BA.debugLine="End Sub";
 return "";
 }
 public static void  _browsestegoimage() throws Exception{
@@ -512,9 +518,9 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 208;BA.debugLine="Dim xui As XUI";
+ //BA.debugLineNum = 214;BA.debugLine="Dim xui As XUI";
 parent.mostCurrent._xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
- //BA.debugLineNum = 209;BA.debugLine="Wait For (FileHandler1.LoadCoverImage) Complete (";
+ //BA.debugLineNum = 215;BA.debugLine="Wait For (FileHandler1.LoadCoverImage) Complete (";
 anywheresoftware.b4a.keywords.Common.WaitFor("complete", processBA, this, parent._filehandler1._loadcoverimage /*anywheresoftware.b4a.keywords.Common.ResumableSubWrapper*/ ());
 this.state = 11;
 return;
@@ -523,7 +529,7 @@ case 11:
 this.state = 1;
 _result = (ng.dsoftlab.stegocam.filehandler._loadresult) result[0];
 ;
- //BA.debugLineNum = 210;BA.debugLine="If Result.Success Then";
+ //BA.debugLineNum = 216;BA.debugLine="If Result.Success Then";
 if (true) break;
 
 case 1:
@@ -536,7 +542,7 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
- //BA.debugLineNum = 211;BA.debugLine="Try";
+ //BA.debugLineNum = 217;BA.debugLine="Try";
 if (true) break;
 
 case 4:
@@ -550,17 +556,17 @@ case 6:
 //C
 this.state = 9;
 this.catchState = 8;
- //BA.debugLineNum = 213;BA.debugLine="imgCover.Bitmap =xui.LoadBitmapResize(Result.Di";
-parent.mostCurrent._imgcover.setBitmap((android.graphics.Bitmap)(parent.mostCurrent._xui.LoadBitmapResize(_result.Dir /*String*/ ,_result.FileName /*String*/ ,parent.mostCurrent._imgcover.getWidth(),parent.mostCurrent._imgcover.getHeight(),anywheresoftware.b4a.keywords.Common.True).getObject()));
- //BA.debugLineNum = 214;BA.debugLine="imgCover.Tag= Result.RealName 'Result.Dir & \"/\"";
-parent.mostCurrent._imgcover.setTag((Object)(_result.RealName /*String*/ ));
- //BA.debugLineNum = 215;BA.debugLine="lblErrorMsg.Text=\"\"";
+ //BA.debugLineNum = 218;BA.debugLine="imgCover.Load(Result.Dir,Result.FileName)";
+parent.mostCurrent._imgcover._load /*String*/ (_result.Dir /*String*/ ,_result.FileName /*String*/ );
+ //BA.debugLineNum = 220;BA.debugLine="imgCover.Tag= Result.RealName 'Result.Dir & \"/\"";
+parent.mostCurrent._imgcover._tag /*Object*/  = (Object)(_result.RealName /*String*/ );
+ //BA.debugLineNum = 221;BA.debugLine="lblErrorMsg.Text=\"\"";
 parent.mostCurrent._lblerrormsg.setText(BA.ObjectToCharSequence(""));
- //BA.debugLineNum = 216;BA.debugLine="txtFileName.Text=Result.FileName";
+ //BA.debugLineNum = 222;BA.debugLine="txtFileName.Text=Result.FileName";
 parent.mostCurrent._txtfilename.setText(BA.ObjectToCharSequence(_result.FileName /*String*/ ));
- //BA.debugLineNum = 217;BA.debugLine="txtFileName.Tag=\"fromfile\"";
+ //BA.debugLineNum = 223;BA.debugLine="txtFileName.Tag=\"fromfile\"";
 parent.mostCurrent._txtfilename.setTag((Object)("fromfile"));
- //BA.debugLineNum = 218;BA.debugLine="fromfile=True";
+ //BA.debugLineNum = 224;BA.debugLine="fromfile=True";
 parent._fromfile = anywheresoftware.b4a.keywords.Common.True;
  if (true) break;
 
@@ -568,19 +574,19 @@ case 8:
 //C
 this.state = 9;
 this.catchState = 0;
- //BA.debugLineNum = 220;BA.debugLine="imgCover.Bitmap=Null";
-parent.mostCurrent._imgcover.setBitmap((android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null));
- //BA.debugLineNum = 221;BA.debugLine="imgCover.Tag=\"\"";
-parent.mostCurrent._imgcover.setTag((Object)(""));
- //BA.debugLineNum = 222;BA.debugLine="txtFileName.Text=\"\"";
+ //BA.debugLineNum = 226;BA.debugLine="imgCover.Bitmap=Null";
+parent.mostCurrent._imgcover._setbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ ((anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)));
+ //BA.debugLineNum = 227;BA.debugLine="imgCover.Tag=\"\"";
+parent.mostCurrent._imgcover._tag /*Object*/  = (Object)("");
+ //BA.debugLineNum = 228;BA.debugLine="txtFileName.Text=\"\"";
 parent.mostCurrent._txtfilename.setText(BA.ObjectToCharSequence(""));
- //BA.debugLineNum = 223;BA.debugLine="txtFileName.Tag=\"\"";
+ //BA.debugLineNum = 229;BA.debugLine="txtFileName.Tag=\"\"";
 parent.mostCurrent._txtfilename.setTag((Object)(""));
- //BA.debugLineNum = 224;BA.debugLine="fromfile=False";
+ //BA.debugLineNum = 230;BA.debugLine="fromfile=False";
 parent._fromfile = anywheresoftware.b4a.keywords.Common.False;
- //BA.debugLineNum = 225;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("469271570",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
- //BA.debugLineNum = 227;BA.debugLine="config.displayMessage(LastException.Message,lbl";
+ //BA.debugLineNum = 231;BA.debugLine="Log(LastException)";
+anywheresoftware.b4a.keywords.Common.LogImpl("38323090",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+ //BA.debugLineNum = 233;BA.debugLine="config.displayMessage(LastException.Message,lbl";
 parent.mostCurrent._config._displaymessage /*String*/ (mostCurrent.activityBA,anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA).getMessage(),parent.mostCurrent._lblerrormsg,anywheresoftware.b4a.keywords.Common.False);
  if (true) break;
 if (true) break;
@@ -596,7 +602,7 @@ case 10:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 231;BA.debugLine="End Sub";
+ //BA.debugLineNum = 237;BA.debugLine="End Sub";
 if (true) break;
 }} 
        catch (Exception e0) {
@@ -612,15 +618,24 @@ processBA.setLastException(e0);}
 }
 public static void  _complete(ng.dsoftlab.stegocam.filehandler._loadresult _result) throws Exception{
 }
+public static String  _btncamera_click() throws Exception{
+ //BA.debugLineNum = 194;BA.debugLine="Private Sub btnCamera_Click";
+ //BA.debugLineNum = 195;BA.debugLine="txtMessage.Text=\"\"";
+mostCurrent._txtmessage.setText(BA.ObjectToCharSequence(""));
+ //BA.debugLineNum = 196;BA.debugLine="BrowseStegoImage";
+_browsestegoimage();
+ //BA.debugLineNum = 197;BA.debugLine="End Sub";
+return "";
+}
 public static String  _btncancel_click() throws Exception{
- //BA.debugLineNum = 111;BA.debugLine="Private Sub btnCancel_Click";
- //BA.debugLineNum = 112;BA.debugLine="clearForm";
+ //BA.debugLineNum = 115;BA.debugLine="Private Sub btnCancel_Click";
+ //BA.debugLineNum = 116;BA.debugLine="clearForm";
 _clearform();
- //BA.debugLineNum = 113;BA.debugLine="StartActivity(mainmenu)";
+ //BA.debugLineNum = 117;BA.debugLine="StartActivity(mainmenu)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mainmenu.getObject()));
- //BA.debugLineNum = 114;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 118;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
- //BA.debugLineNum = 115;BA.debugLine="End Sub";
+ //BA.debugLineNum = 119;BA.debugLine="End Sub";
 return "";
 }
 public static void  _btndecode_click() throws Exception{
@@ -647,13 +662,15 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 119;BA.debugLine="If imgCover.Bitmap=Null Then";
+ //BA.debugLineNum = 122;BA.debugLine="txtMessage.Text=\"\"";
+parent.mostCurrent._txtmessage.setText(BA.ObjectToCharSequence(""));
+ //BA.debugLineNum = 124;BA.debugLine="If imgCover.Bitmap=Null Then";
 if (true) break;
 
 case 1:
 //if
 this.state = 26;
-if (parent.mostCurrent._imgcover.getBitmap()== null) { 
+if (parent.mostCurrent._imgcover._getbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ ()== null) { 
 this.state = 3;
 }else if((parent.mostCurrent._txtkey.getText()).equals("")) { 
 this.state = 5;
@@ -666,44 +683,44 @@ this.state = 9;
 case 3:
 //C
 this.state = 26;
- //BA.debugLineNum = 121;BA.debugLine="config.displayMessage(\"Please select stego Image";
+ //BA.debugLineNum = 126;BA.debugLine="config.displayMessage(\"Please select stego Image";
 parent.mostCurrent._config._displaymessage /*String*/ (mostCurrent.activityBA,"Please select stego Image",parent.mostCurrent._lblerrormsg,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 122;BA.debugLine="ToastMessageShow(\"Please select stego Image\",Fal";
+ //BA.debugLineNum = 127;BA.debugLine="ToastMessageShow(\"Please select stego Image\",Fal";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Please select stego Image"),anywheresoftware.b4a.keywords.Common.False);
  if (true) break;
 
 case 5:
 //C
 this.state = 26;
- //BA.debugLineNum = 125;BA.debugLine="config.displayMessage(\"Please enter your decrypt";
+ //BA.debugLineNum = 130;BA.debugLine="config.displayMessage(\"Please enter your decrypt";
 parent.mostCurrent._config._displaymessage /*String*/ (mostCurrent.activityBA,"Please enter your decryption key",parent.mostCurrent._lblerrormsg,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 126;BA.debugLine="ToastMessageShow(\"Please enter your decryption k";
+ //BA.debugLineNum = 131;BA.debugLine="ToastMessageShow(\"Please enter your decryption k";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Please enter your decryption key"),anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 127;BA.debugLine="txtKey.RequestFocus";
+ //BA.debugLineNum = 132;BA.debugLine="txtKey.RequestFocus";
 parent.mostCurrent._txtkey.RequestFocus();
  if (true) break;
 
 case 7:
 //C
 this.state = 26;
- //BA.debugLineNum = 129;BA.debugLine="config.displayMessage(\"Decryption key must be 4";
+ //BA.debugLineNum = 134;BA.debugLine="config.displayMessage(\"Decryption key must be 4";
 parent.mostCurrent._config._displaymessage /*String*/ (mostCurrent.activityBA,"Decryption key must be 4 or more letters",parent.mostCurrent._lblerrormsg,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 130;BA.debugLine="ToastMessageShow(\"Decryption key must be 4 or mo";
+ //BA.debugLineNum = 135;BA.debugLine="ToastMessageShow(\"Decryption key must be 4 or mo";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Decryption key must be 4 or more letters"),anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 131;BA.debugLine="txtKey.RequestFocus";
+ //BA.debugLineNum = 136;BA.debugLine="txtKey.RequestFocus";
 parent.mostCurrent._txtkey.RequestFocus();
  if (true) break;
 
 case 9:
 //C
 this.state = 10;
- //BA.debugLineNum = 133;BA.debugLine="lblErrorMsg.Text=\"\"";
+ //BA.debugLineNum = 138;BA.debugLine="lblErrorMsg.Text=\"\"";
 parent.mostCurrent._lblerrormsg.setText(BA.ObjectToCharSequence(""));
- //BA.debugLineNum = 134;BA.debugLine="Dim stegoImageFile As String=txtFileName.Text";
+ //BA.debugLineNum = 139;BA.debugLine="Dim stegoImageFile As String=txtFileName.Text";
 _stegoimagefile = parent.mostCurrent._txtfilename.getText();
- //BA.debugLineNum = 135;BA.debugLine="Dim stegoImageFileName As String=\"stegoimage.\" &";
-_stegoimagefilename = "stegoimage."+BA.ObjectToString((((parent.mostCurrent._txtfilename.getTag()).equals((Object)("fromfile"))) ? ((Object)(parent.mostCurrent._config._getfileextension /*String*/ (mostCurrent.activityBA,BA.ObjectToString(parent.mostCurrent._imgcover.getTag())))) : ((Object)(parent.mostCurrent._config._getfileextension /*String*/ (mostCurrent.activityBA,parent.mostCurrent._txtfilename.getText())))));
- //BA.debugLineNum = 137;BA.debugLine="If fromfile=True Or txtFileName.Tag=\"fromfile\" T";
+ //BA.debugLineNum = 140;BA.debugLine="Dim stegoImageFileName As String=\"stegoimage.\" &";
+_stegoimagefilename = "stegoimage."+BA.ObjectToString((((parent.mostCurrent._txtfilename.getTag()).equals((Object)("fromfile"))) ? ((Object)(parent.mostCurrent._config._getfileextension /*String*/ (mostCurrent.activityBA,BA.ObjectToString(parent.mostCurrent._imgcover._tag /*Object*/ )))) : ((Object)(parent.mostCurrent._config._getfileextension /*String*/ (mostCurrent.activityBA,parent.mostCurrent._txtfilename.getText())))));
+ //BA.debugLineNum = 142;BA.debugLine="If fromfile=True Or txtFileName.Tag=\"fromfile\" T";
 if (true) break;
 
 case 10:
@@ -716,7 +733,7 @@ this.state = 12;
 case 12:
 //C
 this.state = 13;
- //BA.debugLineNum = 138;BA.debugLine="stegoImageFile =stegoHandler.copyFiletoTemp(txt";
+ //BA.debugLineNum = 143;BA.debugLine="stegoImageFile =stegoHandler.copyFiletoTemp(txt";
 _stegoimagefile = parent._stegohandler._copyfiletotemp /*String*/ (parent.mostCurrent._txtfilename.getText(),_stegoimagefilename);
  if (true) break;
 
@@ -724,9 +741,9 @@ case 13:
 //C
 this.state = 14;
 ;
- //BA.debugLineNum = 144;BA.debugLine="Dim newstegofile As String =stegoImageFile 'ste";
+ //BA.debugLineNum = 149;BA.debugLine="Dim newstegofile As String =stegoImageFile 'ste";
 _newstegofile = _stegoimagefile;
- //BA.debugLineNum = 145;BA.debugLine="If File.Exists(newstegofile,\"\") Then";
+ //BA.debugLineNum = 150;BA.debugLine="If File.Exists(newstegofile,\"\") Then";
 if (true) break;
 
 case 14:
@@ -741,9 +758,9 @@ this.state = 24;
 case 16:
 //C
 this.state = 17;
- //BA.debugLineNum = 146;BA.debugLine="stegoHandler.ExtractText(newstegofile,txtKey.T";
+ //BA.debugLineNum = 151;BA.debugLine="stegoHandler.ExtractText(newstegofile,txtKey.T";
 parent._stegohandler._extracttext /*String*/ (_newstegofile,parent.mostCurrent._txtkey.getText());
- //BA.debugLineNum = 148;BA.debugLine="Sleep(5)";
+ //BA.debugLineNum = 153;BA.debugLine="Sleep(5)";
 anywheresoftware.b4a.keywords.Common.Sleep(mostCurrent.activityBA,this,(int) (5));
 this.state = 27;
 return;
@@ -751,7 +768,7 @@ case 27:
 //C
 this.state = 17;
 ;
- //BA.debugLineNum = 149;BA.debugLine="If stegoHandler.extractionSuccessful Then";
+ //BA.debugLineNum = 154;BA.debugLine="If stegoHandler.extractionSuccessful Then";
 if (true) break;
 
 case 17:
@@ -766,20 +783,20 @@ this.state = 21;
 case 19:
 //C
 this.state = 22;
- //BA.debugLineNum = 150;BA.debugLine="txtMessage.Text=stegoHandler.extractedString";
+ //BA.debugLineNum = 155;BA.debugLine="txtMessage.Text=stegoHandler.extractedString";
 parent.mostCurrent._txtmessage.setText(BA.ObjectToCharSequence(parent._stegohandler._extractedstring /*String*/ ));
- //BA.debugLineNum = 151;BA.debugLine="config.displayMessage(stegoHandler.lastErrorM";
+ //BA.debugLineNum = 156;BA.debugLine="config.displayMessage(stegoHandler.lastErrorM";
 parent.mostCurrent._config._displaymessage /*String*/ (mostCurrent.activityBA,parent._stegohandler._lasterrormessage /*String*/ ,parent.mostCurrent._lblerrormsg,anywheresoftware.b4a.keywords.Common.True);
- //BA.debugLineNum = 152;BA.debugLine="ToastMessageShow(stegoHandler.lastErrorMessag";
+ //BA.debugLineNum = 157;BA.debugLine="ToastMessageShow(stegoHandler.lastErrorMessag";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence(parent._stegohandler._lasterrormessage /*String*/ ),anywheresoftware.b4a.keywords.Common.True);
  if (true) break;
 
 case 21:
 //C
 this.state = 22;
- //BA.debugLineNum = 154;BA.debugLine="config.displayMessage(stegoHandler.lastErrorM";
+ //BA.debugLineNum = 159;BA.debugLine="config.displayMessage(stegoHandler.lastErrorM";
 parent.mostCurrent._config._displaymessage /*String*/ (mostCurrent.activityBA,parent._stegohandler._lasterrormessage /*String*/ ,parent.mostCurrent._lblerrormsg,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 155;BA.debugLine="ToastMessageShow(stegoHandler.lastErrorMessag";
+ //BA.debugLineNum = 160;BA.debugLine="ToastMessageShow(stegoHandler.lastErrorMessag";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence(parent._stegohandler._lasterrormessage /*String*/ ),anywheresoftware.b4a.keywords.Common.True);
  if (true) break;
 
@@ -787,20 +804,20 @@ case 22:
 //C
 this.state = 25;
 ;
- //BA.debugLineNum = 157;BA.debugLine="stegoHandler.lastErrorMessage=\"\"";
+ //BA.debugLineNum = 162;BA.debugLine="stegoHandler.lastErrorMessage=\"\"";
 parent._stegohandler._lasterrormessage /*String*/  = "";
- //BA.debugLineNum = 158;BA.debugLine="stegoHandler.extractionSuccessful = False";
+ //BA.debugLineNum = 163;BA.debugLine="stegoHandler.extractionSuccessful = False";
 parent._stegohandler._extractionsuccessful /*boolean*/  = anywheresoftware.b4a.keywords.Common.False;
- //BA.debugLineNum = 159;BA.debugLine="stegoHandler.extractedString=\"\"";
+ //BA.debugLineNum = 164;BA.debugLine="stegoHandler.extractedString=\"\"";
 parent._stegohandler._extractedstring /*String*/  = "";
  if (true) break;
 
 case 24:
 //C
 this.state = 25;
- //BA.debugLineNum = 161;BA.debugLine="config.displayMessage(\"An error has occured pl";
+ //BA.debugLineNum = 166;BA.debugLine="config.displayMessage(\"An error has occured pl";
 parent.mostCurrent._config._displaymessage /*String*/ (mostCurrent.activityBA,"An error has occured please Try Again!",parent.mostCurrent._lblerrormsg,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 162;BA.debugLine="ToastMessageShow(\"An error has occured please";
+ //BA.debugLineNum = 167;BA.debugLine="ToastMessageShow(\"An error has occured please";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("An error has occured please Try Again!"),anywheresoftware.b4a.keywords.Common.True);
  if (true) break;
 
@@ -814,7 +831,7 @@ case 26:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 169;BA.debugLine="End Sub";
+ //BA.debugLineNum = 174;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -822,28 +839,26 @@ if (true) break;
     }
 }
 public static String  _clearform() throws Exception{
- //BA.debugLineNum = 175;BA.debugLine="Private Sub clearForm";
- //BA.debugLineNum = 176;BA.debugLine="imgCover.Bitmap=Null";
-mostCurrent._imgcover.setBitmap((android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null));
- //BA.debugLineNum = 177;BA.debugLine="txtMessage.Text=\"\"";
+ //BA.debugLineNum = 180;BA.debugLine="Private Sub clearForm";
+ //BA.debugLineNum = 182;BA.debugLine="txtMessage.Text=\"\"";
 mostCurrent._txtmessage.setText(BA.ObjectToCharSequence(""));
- //BA.debugLineNum = 178;BA.debugLine="imgCover.Tag=\"\"";
-mostCurrent._imgcover.setTag((Object)(""));
- //BA.debugLineNum = 179;BA.debugLine="txtKey.Text=\"\"";
+ //BA.debugLineNum = 183;BA.debugLine="imgCover.Tag=\"\"";
+mostCurrent._imgcover._tag /*Object*/  = (Object)("");
+ //BA.debugLineNum = 184;BA.debugLine="txtKey.Text=\"\"";
 mostCurrent._txtkey.setText(BA.ObjectToCharSequence(""));
- //BA.debugLineNum = 180;BA.debugLine="lblShowPassword.Text=config.hide";
+ //BA.debugLineNum = 185;BA.debugLine="lblShowPassword.Text=config.hide";
 mostCurrent._lblshowpassword.setText(BA.ObjectToCharSequence(mostCurrent._config._hide /*char*/ ));
- //BA.debugLineNum = 181;BA.debugLine="txtKey.PasswordMode=True";
+ //BA.debugLineNum = 186;BA.debugLine="txtKey.PasswordMode=True";
 mostCurrent._txtkey.setPasswordMode(anywheresoftware.b4a.keywords.Common.True);
- //BA.debugLineNum = 182;BA.debugLine="stegoimage=\"\"";
+ //BA.debugLineNum = 187;BA.debugLine="stegoimage=\"\"";
 _stegoimage = "";
- //BA.debugLineNum = 183;BA.debugLine="fromfile=False";
+ //BA.debugLineNum = 188;BA.debugLine="fromfile=False";
 _fromfile = anywheresoftware.b4a.keywords.Common.False;
- //BA.debugLineNum = 184;BA.debugLine="txtFileName.Text=\"\"";
+ //BA.debugLineNum = 189;BA.debugLine="txtFileName.Text=\"\"";
 mostCurrent._txtfilename.setText(BA.ObjectToCharSequence(""));
- //BA.debugLineNum = 185;BA.debugLine="txtFileName.Tag=\"\"";
+ //BA.debugLineNum = 190;BA.debugLine="txtFileName.Tag=\"\"";
 mostCurrent._txtfilename.setTag((Object)(""));
- //BA.debugLineNum = 186;BA.debugLine="End Sub";
+ //BA.debugLineNum = 191;BA.debugLine="End Sub";
 return "";
 }
 public static void  _getpermissions() throws Exception{
@@ -872,7 +887,7 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 194;BA.debugLine="For Each permission As String In Array(Starter.rp";
+ //BA.debugLineNum = 200;BA.debugLine="For Each permission As String In Array(Starter.rp";
 if (true) break;
 
 case 1:
@@ -901,9 +916,9 @@ if (true) break;
 case 3:
 //C
 this.state = 4;
- //BA.debugLineNum = 195;BA.debugLine="Starter.rp.CheckAndRequest(permission)";
+ //BA.debugLineNum = 201;BA.debugLine="Starter.rp.CheckAndRequest(permission)";
 parent.mostCurrent._starter._rp /*anywheresoftware.b4a.objects.RuntimePermissions*/ .CheckAndRequest(processBA,_permission);
- //BA.debugLineNum = 196;BA.debugLine="Wait For Activity_PermissionResult (permission A";
+ //BA.debugLineNum = 202;BA.debugLine="Wait For Activity_PermissionResult (permission A";
 anywheresoftware.b4a.keywords.Common.WaitFor("activity_permissionresult", processBA, this, null);
 this.state = 11;
 return;
@@ -913,7 +928,7 @@ this.state = 4;
 _permission = (String) result[0];
 _result = (Boolean) result[1];
 ;
- //BA.debugLineNum = 197;BA.debugLine="If Result = False Then";
+ //BA.debugLineNum = 203;BA.debugLine="If Result = False Then";
 if (true) break;
 
 case 4:
@@ -926,11 +941,11 @@ this.state = 6;
 case 6:
 //C
 this.state = 7;
- //BA.debugLineNum = 198;BA.debugLine="MsgboxAsync(\"Please grant the neccessary permis";
+ //BA.debugLineNum = 204;BA.debugLine="MsgboxAsync(\"Please grant the neccessary permis";
 anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Please grant the neccessary permission to continue"),BA.ObjectToCharSequence("No Permission granted"),processBA);
- //BA.debugLineNum = 200;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 206;BA.debugLine="Activity.Finish";
 parent.mostCurrent._activity.Finish();
- //BA.debugLineNum = 201;BA.debugLine="Return";
+ //BA.debugLineNum = 207;BA.debugLine="Return";
 if (true) return ;
  if (true) break;
 
@@ -945,7 +960,7 @@ case 8:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 205;BA.debugLine="End Sub";
+ //BA.debugLineNum = 211;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -990,8 +1005,8 @@ mostCurrent._pnlmessage = new anywheresoftware.b4a.objects.PanelWrapper();
 mostCurrent._txtkey = new anywheresoftware.b4a.objects.EditTextWrapper();
  //BA.debugLineNum = 38;BA.debugLine="Private txtMessage As EditText";
 mostCurrent._txtmessage = new anywheresoftware.b4a.objects.EditTextWrapper();
- //BA.debugLineNum = 39;BA.debugLine="Private imgCover As ImageView";
-mostCurrent._imgcover = new anywheresoftware.b4a.objects.ImageViewWrapper();
+ //BA.debugLineNum = 39;BA.debugLine="Private imgCover As B4XImageView";
+mostCurrent._imgcover = new ng.dsoftlab.stegocam.b4ximageview();
  //BA.debugLineNum = 40;BA.debugLine="Private pnlCoverImage As Panel";
 mostCurrent._pnlcoverimage = new anywheresoftware.b4a.objects.PanelWrapper();
  //BA.debugLineNum = 41;BA.debugLine="Private cboEncryption As B4XComboBox";
@@ -1030,33 +1045,28 @@ mostCurrent._pnlextract = new anywheresoftware.b4a.objects.PanelWrapper();
 mostCurrent._pnlshare = new anywheresoftware.b4a.objects.PanelWrapper();
  //BA.debugLineNum = 58;BA.debugLine="Private txtFileName As EditText";
 mostCurrent._txtfilename = new anywheresoftware.b4a.objects.EditTextWrapper();
- //BA.debugLineNum = 59;BA.debugLine="End Sub";
-return "";
-}
-public static String  _imgcover_click() throws Exception{
- //BA.debugLineNum = 189;BA.debugLine="Private Sub imgCover_Click";
- //BA.debugLineNum = 190;BA.debugLine="BrowseStegoImage";
-_browsestegoimage();
- //BA.debugLineNum = 191;BA.debugLine="End Sub";
+ //BA.debugLineNum = 59;BA.debugLine="Private btnCamera As ImageView";
+mostCurrent._btncamera = new anywheresoftware.b4a.objects.ImageViewWrapper();
+ //BA.debugLineNum = 60;BA.debugLine="End Sub";
 return "";
 }
 public static String  _lblshowpassword_click() throws Exception{
- //BA.debugLineNum = 233;BA.debugLine="Private Sub lblShowPassword_Click";
- //BA.debugLineNum = 234;BA.debugLine="If lblShowPassword.Text=config.hide Then";
+ //BA.debugLineNum = 239;BA.debugLine="Private Sub lblShowPassword_Click";
+ //BA.debugLineNum = 240;BA.debugLine="If lblShowPassword.Text=config.hide Then";
 if ((mostCurrent._lblshowpassword.getText()).equals(BA.ObjectToString(mostCurrent._config._hide /*char*/ ))) { 
- //BA.debugLineNum = 235;BA.debugLine="lblShowPassword.Text=config.show";
+ //BA.debugLineNum = 241;BA.debugLine="lblShowPassword.Text=config.show";
 mostCurrent._lblshowpassword.setText(BA.ObjectToCharSequence(mostCurrent._config._show /*char*/ ));
- //BA.debugLineNum = 236;BA.debugLine="txtKey.PasswordMode=False";
+ //BA.debugLineNum = 242;BA.debugLine="txtKey.PasswordMode=False";
 mostCurrent._txtkey.setPasswordMode(anywheresoftware.b4a.keywords.Common.False);
  }else {
- //BA.debugLineNum = 238;BA.debugLine="lblShowPassword.Text=config.hide";
+ //BA.debugLineNum = 244;BA.debugLine="lblShowPassword.Text=config.hide";
 mostCurrent._lblshowpassword.setText(BA.ObjectToCharSequence(mostCurrent._config._hide /*char*/ ));
- //BA.debugLineNum = 239;BA.debugLine="txtKey.PasswordMode=True";
+ //BA.debugLineNum = 245;BA.debugLine="txtKey.PasswordMode=True";
 mostCurrent._txtkey.setPasswordMode(anywheresoftware.b4a.keywords.Common.True);
  };
- //BA.debugLineNum = 241;BA.debugLine="txtKey.SelectionStart=txtKey.Text.Length";
+ //BA.debugLineNum = 247;BA.debugLine="txtKey.SelectionStart=txtKey.Text.Length";
 mostCurrent._txtkey.setSelectionStart(mostCurrent._txtkey.getText().length());
- //BA.debugLineNum = 242;BA.debugLine="End Sub";
+ //BA.debugLineNum = 248;BA.debugLine="End Sub";
 return "";
 }
 public static String  _process_globals() throws Exception{

@@ -41,15 +41,16 @@ public ng.dsoftlab.stegocam.starter _starter = null;
 public ng.dsoftlab.stegocam.mainmenu _mainmenu = null;
 public ng.dsoftlab.stegocam.config _config = null;
 public ng.dsoftlab.stegocam.encode _encode = null;
+public ng.dsoftlab.stegocam.history _history = null;
+public ng.dsoftlab.stegocam.decode _decode = null;
 public ng.dsoftlab.stegocam.settings _settings = null;
-public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
+public ng.dsoftlab.stegocam.pinreset _pinreset = null;
 public ng.dsoftlab.stegocam.forgotpin _forgotpin = null;
 public ng.dsoftlab.stegocam.login _login = null;
 public ng.dsoftlab.stegocam.pinchange _pinchange = null;
-public ng.dsoftlab.stegocam.pinreset _pinreset = null;
+public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
 public ng.dsoftlab.stegocam.securityquestion _securityquestion = null;
-public ng.dsoftlab.stegocam.history _history = null;
-public ng.dsoftlab.stegocam.decode _decode = null;
+public ng.dsoftlab.stegocam.stegopreview _stegopreview = null;
 public ng.dsoftlab.stegocam.b4xcollections _b4xcollections = null;
 public ng.dsoftlab.stegocam.httputils2service _httputils2service = null;
 public ng.dsoftlab.stegocam.xuiviewsutils _xuiviewsutils = null;
@@ -275,7 +276,7 @@ _imageviewheight = (float) (_mbitmap.getHeight());
  break; }
 default: {
  //BA.debugLineNum = 104;BA.debugLine="Log(\"Invalid resize mode: \"  & mResizeMode)";
-__c.LogImpl("925493531","Invalid resize mode: "+_mresizemode,0);
+__c.LogImpl("945482011","Invalid resize mode: "+_mresizemode,0);
  break; }
 }
 ;

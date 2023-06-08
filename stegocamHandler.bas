@@ -137,7 +137,7 @@ Public Sub RemoveStegoCamBytes(imageFilePath As String) As String
 	Return newFilePath
 End Sub
 
-Sub createTempCoverImage(img As ImageView)
+Sub createTempCoverImage(img As B4XImageView)
 		Dim Bitmap1 As Bitmap = img.Bitmap
 		Dim Out As OutputStream
 		'Out = File.OpenOutput(config.stegoImagePath, "stegocover.png", False)

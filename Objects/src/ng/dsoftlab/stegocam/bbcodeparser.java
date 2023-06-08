@@ -38,15 +38,16 @@ public ng.dsoftlab.stegocam.starter _starter = null;
 public ng.dsoftlab.stegocam.mainmenu _mainmenu = null;
 public ng.dsoftlab.stegocam.config _config = null;
 public ng.dsoftlab.stegocam.encode _encode = null;
+public ng.dsoftlab.stegocam.history _history = null;
+public ng.dsoftlab.stegocam.decode _decode = null;
 public ng.dsoftlab.stegocam.settings _settings = null;
-public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
+public ng.dsoftlab.stegocam.pinreset _pinreset = null;
 public ng.dsoftlab.stegocam.forgotpin _forgotpin = null;
 public ng.dsoftlab.stegocam.login _login = null;
 public ng.dsoftlab.stegocam.pinchange _pinchange = null;
-public ng.dsoftlab.stegocam.pinreset _pinreset = null;
+public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
 public ng.dsoftlab.stegocam.securityquestion _securityquestion = null;
-public ng.dsoftlab.stegocam.history _history = null;
-public ng.dsoftlab.stegocam.decode _decode = null;
+public ng.dsoftlab.stegocam.stegopreview _stegopreview = null;
 public ng.dsoftlab.stegocam.b4xcollections _b4xcollections = null;
 public ng.dsoftlab.stegocam.httputils2service _httputils2service = null;
 public ng.dsoftlab.stegocam.xuiviewsutils _xuiviewsutils = null;
@@ -201,7 +202,7 @@ String _s = "";
  //BA.debugLineNum = 155;BA.debugLine="Dim s As String = $\"Error (position - ${Start}):";
 _s = ("Error (position - "+__c.SmartStringFormatter("",(Object)(_start))+"): "+__c.SmartStringFormatter("",(Object)(_msg))+"");
  //BA.debugLineNum = 157;BA.debugLine="LogColor(s, Colors.Red)";
-__c.LogImpl("98978435",_s,__c.Colors.Red);
+__c.LogImpl("928966915",_s,__c.Colors.Red);
  //BA.debugLineNum = 161;BA.debugLine="ErrorString.Append(s).Append(CRLF)";
 _errorstring.Append(_s).Append(__c.CRLF);
  //BA.debugLineNum = 162;BA.debugLine="End Sub";
@@ -950,7 +951,7 @@ _name = BA.ObjectToString(_tag.Extra /*anywheresoftware.b4a.objects.collections.
  //BA.debugLineNum = 251;BA.debugLine="If mTextEngine.CustomFonts.ContainsKey(name) =";
 if (_mtextengine._customfonts /*anywheresoftware.b4a.objects.collections.Map*/ .ContainsKey((Object)(_name))==__c.False) { 
  //BA.debugLineNum = 252;BA.debugLine="Log(\"Font missing from TextEngine.CustomFonts";
-__c.LogImpl("99240637","Font missing from TextEngine.CustomFonts: "+_name,0);
+__c.LogImpl("929229117","Font missing from TextEngine.CustomFonts: "+_name,0);
  }else {
  //BA.debugLineNum = 254;BA.debugLine="Dim NewFont As B4XFont =  mTextEngine.CustomF";
 _newfont = (anywheresoftware.b4a.objects.B4XViewWrapper.B4XFont)(_mtextengine._customfonts /*anywheresoftware.b4a.objects.collections.Map*/ .Get((Object)(_name)));

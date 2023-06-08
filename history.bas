@@ -187,54 +187,11 @@ Sub B4XTable1_CellClicked (ColumnId As String, RowId As Long)
 	curCol=ColumnId
 	curRow = RowId
 	If img <> "" Then
-		Dim pnl As B4XView = xui.CreatePanel("")
-		'Dim iv As ImageView
-		'iv.Initialize("")
-		pnl.SetLayoutAnimated(0, 0, 0, 90%x, 80%y)
-		pnl.LoadLayout("embedDialog")
-		'pnlPreview.RemoveView
-		'pnl.AddView(pnlPreview, 0, 0, pnl.Width, pnl.Height)
-		
-		imgPreview.Width=pnlPreview.Width-20
-		imgPreview.Height=imgPreview.Width
-		imgPreview.Left=pnlPreview.Width/2 - imgPreview.Width/2
-		imgPreview.Bitmap = xui.LoadBitmapResize("", img, imgPreview.Width, imgPreview.Height, True)
-		
-		pnlExtract.Top=imgPreview.Top+imgPreview.Height+10dip
-		pnlDelete.Top=imgPreview.Top+imgPreview.Height+10dip
-		pnlShare.Top=imgPreview.Top+imgPreview.Height+10dip
-		
-		Dim panelWidth, panelSpacing As Int
-		panelSpacing = 5dip
-		panelWidth = (pnlPreview.Width / 3)
-		
-		pnlExtract.Width  = panelWidth
-		pnlDelete.Width   = panelWidth
-		pnlShare.Width    = panelWidth
-		
-		pnlExtract.Left=0
-		pnlDelete.Left=panelWidth
-		pnlShare.Left=(panelWidth * 2)
-'		pnlExtract.Color=Colors.Yellow
-'		pnlDelete.Color=Colors.Red
-'		pnlShare.Color=Colors.Blue
-		
-		imgExtract.Left=pnlExtract.Width/2-imgExtract.Width/2
-		imgDelete.Left=pnlDelete.Width/2-imgDelete.Width/2
-		imgShare.Left=pnlShare.Width/2-imgShare.Width/2
-		
-		Label1.Left=0
-		Label1.Width=pnlExtract.Width
-		
-		Label4.Left=0
-		Label4.Width=pnlDelete.Width
-		
-		Label2.Left=0
-		Label2.Width=pnlShare.Width
-		
-	
-		lblImgLocation.Text=img
-		Dialog.ShowCustom(pnl, "Close", "", "")
+		stegopreview.stegoimage= LoadBitmap("",img)
+		stegopreview.stegoImagePath=img
+		stegopreview.fromActivity="history"
+		StartActivity(stegopreview)
+		Activity.Finish
 	End If
 End Sub
 
@@ -261,42 +218,4 @@ End Sub
 
 Sub btnPrev_Click
 	B4XTable1.CurrentPage = B4XTable1.CurrentPage - 1
-End Sub
-
-
-
-Private Sub imgShare_Click
-	Try
-		Dim filename As String=lblImgLocation.Text.SubString(lblImgLocation.Text.LastIndexOf("/")+1)
-		File.Copy(lblImgLocation.Text,"", Starter.Provider.SharedFolder,filename)
-		Dim u As Uri 'ContentResolver library
-		u.Parse(Starter.Provider.GetFileUri(filename))
-		Dim inten As Intent
-		Dim tmpt As String = ""
-		inten.Initialize(inten.ACTION_SEND,"")
-		inten.SetType("image/*")
-		inten.PutExtra("android.intent.extra.STREAM",u)
-		'inten.PutExtra("android.intent.extra.TEXT",tmpt)
-		'inten.SetComponent("com.instagram.android/.activity.ShareHandlerActivity")
-		StartActivity(inten)
-	Catch
-		ToastMessageShow(LastException.Message,True)
-	End Try
-End Sub
-
-Private Sub imgExtract_Click
-	decode.fromfile=False
-	decode.stegoimage=lblImgLocation.Text
-	StartActivity(decode)
-	Activity.Finish
-End Sub
-
-Private Sub imgDelete_Click
-	Msgbox2Async("Are you sure you want to delete file?","Delete Image","Yes","No","",Null,True)
-	Wait For Msgbox_Result (Result As Int)
-	If Result = DialogResponse.POSITIVE Then
-		File.Delete(lblImgLocation.Text,"")
-		FindPictures
-		Dialog.Close(xui.DialogResponse_Cancel)
-	End If
 End Sub

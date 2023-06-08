@@ -371,14 +371,15 @@ public ng.dsoftlab.stegocam.starter _starter = null;
 public ng.dsoftlab.stegocam.mainmenu _mainmenu = null;
 public ng.dsoftlab.stegocam.config _config = null;
 public ng.dsoftlab.stegocam.encode _encode = null;
+public ng.dsoftlab.stegocam.decode _decode = null;
 public ng.dsoftlab.stegocam.settings _settings = null;
-public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
+public ng.dsoftlab.stegocam.pinreset _pinreset = null;
 public ng.dsoftlab.stegocam.forgotpin _forgotpin = null;
 public ng.dsoftlab.stegocam.login _login = null;
 public ng.dsoftlab.stegocam.pinchange _pinchange = null;
-public ng.dsoftlab.stegocam.pinreset _pinreset = null;
+public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
 public ng.dsoftlab.stegocam.securityquestion _securityquestion = null;
-public ng.dsoftlab.stegocam.decode _decode = null;
+public ng.dsoftlab.stegocam.stegopreview _stegopreview = null;
 public ng.dsoftlab.stegocam.b4xcollections _b4xcollections = null;
 public ng.dsoftlab.stegocam.httputils2service _httputils2service = null;
 public ng.dsoftlab.stegocam.xuiviewsutils _xuiviewsutils = null;
@@ -444,33 +445,33 @@ public static String  _activity_resume() throws Exception{
 return "";
 }
 public static String  _activity_touch(int _action,float _x,float _y) throws Exception{
- //BA.debugLineNum = 236;BA.debugLine="Sub Activity_Touch (Action As Int, X As Float, Y A";
- //BA.debugLineNum = 237;BA.debugLine="Select Action";
+ //BA.debugLineNum = 193;BA.debugLine="Sub Activity_Touch (Action As Int, X As Float, Y A";
+ //BA.debugLineNum = 194;BA.debugLine="Select Action";
 switch (BA.switchObjectToInt(_action,mostCurrent._activity.ACTION_DOWN,mostCurrent._activity.ACTION_UP)) {
 case 0: {
- //BA.debugLineNum = 239;BA.debugLine="startX = X";
+ //BA.debugLineNum = 196;BA.debugLine="startX = X";
 _startx = _x;
- //BA.debugLineNum = 240;BA.debugLine="startY = Y";
+ //BA.debugLineNum = 197;BA.debugLine="startY = Y";
 _starty = _y;
  break; }
 case 1: {
- //BA.debugLineNum = 242;BA.debugLine="If Abs(y - startY) > 20%y Then Return";
+ //BA.debugLineNum = 199;BA.debugLine="If Abs(y - startY) > 20%y Then Return";
 if (anywheresoftware.b4a.keywords.Common.Abs(_y-_starty)>anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (20),mostCurrent.activityBA)) { 
 if (true) return "";};
- //BA.debugLineNum = 243;BA.debugLine="If X - startX > 30%x Then";
+ //BA.debugLineNum = 200;BA.debugLine="If X - startX > 30%x Then";
 if (_x-_startx>anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (30),mostCurrent.activityBA)) { 
- //BA.debugLineNum = 244;BA.debugLine="If btnPrev.Enabled=True Then CallSub(\"\",btnPre";
+ //BA.debugLineNum = 201;BA.debugLine="If btnPrev.Enabled=True Then CallSub(\"\",btnPre";
 if (mostCurrent._btnprev.getEnabled()==anywheresoftware.b4a.keywords.Common.True) { 
 anywheresoftware.b4a.keywords.Common.CallSubNew(processBA,(Object)(""),_btnprev_click());};
  }else if(_startx-_x>anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (30),mostCurrent.activityBA)) { 
- //BA.debugLineNum = 246;BA.debugLine="If btnNext.Enabled=True Then CallSub(\"\",btnNex";
+ //BA.debugLineNum = 203;BA.debugLine="If btnNext.Enabled=True Then CallSub(\"\",btnNex";
 if (mostCurrent._btnnext.getEnabled()==anywheresoftware.b4a.keywords.Common.True) { 
 anywheresoftware.b4a.keywords.Common.CallSubNew(processBA,(Object)(""),_btnnext_click());};
  };
  break; }
 }
 ;
- //BA.debugLineNum = 250;BA.debugLine="End Sub";
+ //BA.debugLineNum = 207;BA.debugLine="End Sub";
 return "";
 }
 public static String  _actoolbarlight1_navigationitemclick() throws Exception{
@@ -484,9 +485,6 @@ return "";
 }
 public static String  _b4xtable1_cellclicked(String _columnid,long _rowid) throws Exception{
 String _img = "";
-anywheresoftware.b4a.objects.B4XViewWrapper _pnl = null;
-int _panelwidth = 0;
-int _panelspacing = 0;
  //BA.debugLineNum = 179;BA.debugLine="Sub B4XTable1_CellClicked (ColumnId As String, Row";
  //BA.debugLineNum = 180;BA.debugLine="Dim img As String = B4XTable1.GetRow(RowId).Get(C";
 _img = BA.ObjectToString(mostCurrent._b4xtable1._getrow /*anywheresoftware.b4a.objects.collections.Map*/ (_rowid).Get((Object)(_columnid)));
@@ -496,70 +494,18 @@ _curcol = (int)(Double.parseDouble(_columnid));
 _currow = (int) (_rowid);
  //BA.debugLineNum = 183;BA.debugLine="If img <> \"\" Then";
 if ((_img).equals("") == false) { 
- //BA.debugLineNum = 184;BA.debugLine="Dim pnl As B4XView = xui.CreatePanel(\"\")";
-_pnl = new anywheresoftware.b4a.objects.B4XViewWrapper();
-_pnl = mostCurrent._xui.CreatePanel(processBA,"");
- //BA.debugLineNum = 187;BA.debugLine="pnl.SetLayoutAnimated(0, 0, 0, 90%x, 80%y)";
-_pnl.SetLayoutAnimated((int) (0),(int) (0),(int) (0),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (90),mostCurrent.activityBA),anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (80),mostCurrent.activityBA));
- //BA.debugLineNum = 188;BA.debugLine="pnl.LoadLayout(\"embedDialog\")";
-_pnl.LoadLayout("embedDialog",mostCurrent.activityBA);
- //BA.debugLineNum = 192;BA.debugLine="imgPreview.Width=pnlPreview.Width-20";
-mostCurrent._imgpreview.setWidth((int) (mostCurrent._pnlpreview.getWidth()-20));
- //BA.debugLineNum = 193;BA.debugLine="imgPreview.Height=imgPreview.Width";
-mostCurrent._imgpreview.setHeight(mostCurrent._imgpreview.getWidth());
- //BA.debugLineNum = 194;BA.debugLine="imgPreview.Left=pnlPreview.Width/2 - imgPreview.";
-mostCurrent._imgpreview.setLeft((int) (mostCurrent._pnlpreview.getWidth()/(double)2-mostCurrent._imgpreview.getWidth()/(double)2));
- //BA.debugLineNum = 195;BA.debugLine="imgPreview.Bitmap = xui.LoadBitmapResize(\"\", img";
-mostCurrent._imgpreview.setBitmap((android.graphics.Bitmap)(mostCurrent._xui.LoadBitmapResize("",_img,mostCurrent._imgpreview.getWidth(),mostCurrent._imgpreview.getHeight(),anywheresoftware.b4a.keywords.Common.True).getObject()));
- //BA.debugLineNum = 197;BA.debugLine="pnlExtract.Top=imgPreview.Top+imgPreview.Height+";
-mostCurrent._pnlextract.setTop((int) (mostCurrent._imgpreview.getTop()+mostCurrent._imgpreview.getHeight()+anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10))));
- //BA.debugLineNum = 198;BA.debugLine="pnlDelete.Top=imgPreview.Top+imgPreview.Height+1";
-mostCurrent._pnldelete.setTop((int) (mostCurrent._imgpreview.getTop()+mostCurrent._imgpreview.getHeight()+anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10))));
- //BA.debugLineNum = 199;BA.debugLine="pnlShare.Top=imgPreview.Top+imgPreview.Height+10";
-mostCurrent._pnlshare.setTop((int) (mostCurrent._imgpreview.getTop()+mostCurrent._imgpreview.getHeight()+anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10))));
- //BA.debugLineNum = 201;BA.debugLine="Dim panelWidth, panelSpacing As Int";
-_panelwidth = 0;
-_panelspacing = 0;
- //BA.debugLineNum = 202;BA.debugLine="panelSpacing = 5dip";
-_panelspacing = anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (5));
- //BA.debugLineNum = 203;BA.debugLine="panelWidth = (pnlPreview.Width / 3)";
-_panelwidth = (int) ((mostCurrent._pnlpreview.getWidth()/(double)3));
- //BA.debugLineNum = 205;BA.debugLine="pnlExtract.Width  = panelWidth";
-mostCurrent._pnlextract.setWidth(_panelwidth);
- //BA.debugLineNum = 206;BA.debugLine="pnlDelete.Width   = panelWidth";
-mostCurrent._pnldelete.setWidth(_panelwidth);
- //BA.debugLineNum = 207;BA.debugLine="pnlShare.Width    = panelWidth";
-mostCurrent._pnlshare.setWidth(_panelwidth);
- //BA.debugLineNum = 209;BA.debugLine="pnlExtract.Left=0";
-mostCurrent._pnlextract.setLeft((int) (0));
- //BA.debugLineNum = 210;BA.debugLine="pnlDelete.Left=panelWidth";
-mostCurrent._pnldelete.setLeft(_panelwidth);
- //BA.debugLineNum = 211;BA.debugLine="pnlShare.Left=(panelWidth * 2)";
-mostCurrent._pnlshare.setLeft((int) ((_panelwidth*2)));
- //BA.debugLineNum = 216;BA.debugLine="imgExtract.Left=pnlExtract.Width/2-imgExtract.Wi";
-mostCurrent._imgextract.setLeft((int) (mostCurrent._pnlextract.getWidth()/(double)2-mostCurrent._imgextract.getWidth()/(double)2));
- //BA.debugLineNum = 217;BA.debugLine="imgDelete.Left=pnlDelete.Width/2-imgDelete.Width";
-mostCurrent._imgdelete.setLeft((int) (mostCurrent._pnldelete.getWidth()/(double)2-mostCurrent._imgdelete.getWidth()/(double)2));
- //BA.debugLineNum = 218;BA.debugLine="imgShare.Left=pnlShare.Width/2-imgShare.Width/2";
-mostCurrent._imgshare.setLeft((int) (mostCurrent._pnlshare.getWidth()/(double)2-mostCurrent._imgshare.getWidth()/(double)2));
- //BA.debugLineNum = 220;BA.debugLine="Label1.Left=0";
-mostCurrent._label1.setLeft((int) (0));
- //BA.debugLineNum = 221;BA.debugLine="Label1.Width=pnlExtract.Width";
-mostCurrent._label1.setWidth(mostCurrent._pnlextract.getWidth());
- //BA.debugLineNum = 223;BA.debugLine="Label4.Left=0";
-mostCurrent._label4.setLeft((int) (0));
- //BA.debugLineNum = 224;BA.debugLine="Label4.Width=pnlDelete.Width";
-mostCurrent._label4.setWidth(mostCurrent._pnldelete.getWidth());
- //BA.debugLineNum = 226;BA.debugLine="Label2.Left=0";
-mostCurrent._label2.setLeft((int) (0));
- //BA.debugLineNum = 227;BA.debugLine="Label2.Width=pnlShare.Width";
-mostCurrent._label2.setWidth(mostCurrent._pnlshare.getWidth());
- //BA.debugLineNum = 230;BA.debugLine="lblImgLocation.Text=img";
-mostCurrent._lblimglocation.setText(BA.ObjectToCharSequence(_img));
- //BA.debugLineNum = 231;BA.debugLine="Dialog.ShowCustom(pnl, \"Close\", \"\", \"\")";
-mostCurrent._dialog._showcustom /*anywheresoftware.b4a.keywords.Common.ResumableSubWrapper*/ (_pnl,(Object)("Close"),(Object)(""),(Object)(""));
+ //BA.debugLineNum = 184;BA.debugLine="stegopreview.stegoimage= LoadBitmap(\"\",img)";
+mostCurrent._stegopreview._stegoimage /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/  = (anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.LoadBitmap("",_img).getObject()));
+ //BA.debugLineNum = 185;BA.debugLine="stegopreview.stegoImagePath=img";
+mostCurrent._stegopreview._stegoimagepath /*String*/  = _img;
+ //BA.debugLineNum = 186;BA.debugLine="stegopreview.fromActivity=\"history\"";
+mostCurrent._stegopreview._fromactivity /*String*/  = "history";
+ //BA.debugLineNum = 187;BA.debugLine="StartActivity(stegopreview)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._stegopreview.getObject()));
+ //BA.debugLineNum = 188;BA.debugLine="Activity.Finish";
+mostCurrent._activity.Finish();
  };
- //BA.debugLineNum = 233;BA.debugLine="End Sub";
+ //BA.debugLineNum = 190;BA.debugLine="End Sub";
 return "";
 }
 public static String  _b4xtable1_dataupdated() throws Exception{
@@ -622,17 +568,17 @@ mostCurrent._btnprev.setEnabled(BA.ObjectToBoolean(mostCurrent._b4xtable1._lblba
 return "";
 }
 public static String  _btnnext_click() throws Exception{
- //BA.debugLineNum = 252;BA.debugLine="Sub btnNext_Click";
- //BA.debugLineNum = 253;BA.debugLine="B4XTable1.CurrentPage = B4XTable1.CurrentPage + 1";
+ //BA.debugLineNum = 209;BA.debugLine="Sub btnNext_Click";
+ //BA.debugLineNum = 210;BA.debugLine="B4XTable1.CurrentPage = B4XTable1.CurrentPage + 1";
 mostCurrent._b4xtable1._setcurrentpage /*int*/ ((int) (mostCurrent._b4xtable1._getcurrentpage /*int*/ ()+1));
- //BA.debugLineNum = 254;BA.debugLine="End Sub";
+ //BA.debugLineNum = 211;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnprev_click() throws Exception{
- //BA.debugLineNum = 256;BA.debugLine="Sub btnPrev_Click";
- //BA.debugLineNum = 257;BA.debugLine="B4XTable1.CurrentPage = B4XTable1.CurrentPage - 1";
+ //BA.debugLineNum = 213;BA.debugLine="Sub btnPrev_Click";
+ //BA.debugLineNum = 214;BA.debugLine="B4XTable1.CurrentPage = B4XTable1.CurrentPage - 1";
 mostCurrent._b4xtable1._setcurrentpage /*int*/ ((int) (mostCurrent._b4xtable1._getcurrentpage /*int*/ ()-1));
- //BA.debugLineNum = 258;BA.debugLine="End Sub";
+ //BA.debugLineNum = 215;BA.debugLine="End Sub";
 return "";
 }
 public static String  _createtable(anywheresoftware.b4a.objects.collections.List _files) throws Exception{
@@ -898,121 +844,6 @@ mostCurrent._label4 = new anywheresoftware.b4a.objects.LabelWrapper();
  //BA.debugLineNum = 43;BA.debugLine="Private Label2 As Label";
 mostCurrent._label2 = new anywheresoftware.b4a.objects.LabelWrapper();
  //BA.debugLineNum = 44;BA.debugLine="End Sub";
-return "";
-}
-public static void  _imgdelete_click() throws Exception{
-ResumableSub_imgDelete_Click rsub = new ResumableSub_imgDelete_Click(null);
-rsub.resume(processBA, null);
-}
-public static class ResumableSub_imgDelete_Click extends BA.ResumableSub {
-public ResumableSub_imgDelete_Click(ng.dsoftlab.stegocam.history parent) {
-this.parent = parent;
-}
-ng.dsoftlab.stegocam.history parent;
-int _result = 0;
-
-@Override
-public void resume(BA ba, Object[] result) throws Exception{
-
-    while (true) {
-        switch (state) {
-            case -1:
-return;
-
-case 0:
-//C
-this.state = 1;
- //BA.debugLineNum = 289;BA.debugLine="Msgbox2Async(\"Are you sure you want to delete fil";
-anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Are you sure you want to delete file?"),BA.ObjectToCharSequence("Delete Image"),"Yes","No","",(anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)),processBA,anywheresoftware.b4a.keywords.Common.True);
- //BA.debugLineNum = 290;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
-anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
-this.state = 5;
-return;
-case 5:
-//C
-this.state = 1;
-_result = (Integer) result[0];
-;
- //BA.debugLineNum = 291;BA.debugLine="If Result = DialogResponse.POSITIVE Then";
-if (true) break;
-
-case 1:
-//if
-this.state = 4;
-if (_result==anywheresoftware.b4a.keywords.Common.DialogResponse.POSITIVE) { 
-this.state = 3;
-}if (true) break;
-
-case 3:
-//C
-this.state = 4;
- //BA.debugLineNum = 292;BA.debugLine="File.Delete(lblImgLocation.Text,\"\")";
-anywheresoftware.b4a.keywords.Common.File.Delete(parent.mostCurrent._lblimglocation.getText(),"");
- //BA.debugLineNum = 293;BA.debugLine="FindPictures";
-_findpictures();
- //BA.debugLineNum = 294;BA.debugLine="Dialog.Close(xui.DialogResponse_Cancel)";
-parent.mostCurrent._dialog._close /*boolean*/ (parent.mostCurrent._xui.DialogResponse_Cancel);
- if (true) break;
-
-case 4:
-//C
-this.state = -1;
-;
- //BA.debugLineNum = 296;BA.debugLine="End Sub";
-if (true) break;
-
-            }
-        }
-    }
-}
-public static void  _msgbox_result(int _result) throws Exception{
-}
-public static String  _imgextract_click() throws Exception{
- //BA.debugLineNum = 281;BA.debugLine="Private Sub imgExtract_Click";
- //BA.debugLineNum = 282;BA.debugLine="decode.fromfile=False";
-mostCurrent._decode._fromfile /*boolean*/  = anywheresoftware.b4a.keywords.Common.False;
- //BA.debugLineNum = 283;BA.debugLine="decode.stegoimage=lblImgLocation.Text";
-mostCurrent._decode._stegoimage /*String*/  = mostCurrent._lblimglocation.getText();
- //BA.debugLineNum = 284;BA.debugLine="StartActivity(decode)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._decode.getObject()));
- //BA.debugLineNum = 285;BA.debugLine="Activity.Finish";
-mostCurrent._activity.Finish();
- //BA.debugLineNum = 286;BA.debugLine="End Sub";
-return "";
-}
-public static String  _imgshare_click() throws Exception{
-String _filename = "";
-anywheresoftware.b4a.objects.ContentResolverWrapper.UriWrapper _u = null;
-anywheresoftware.b4a.objects.IntentWrapper _inten = null;
-String _tmpt = "";
- //BA.debugLineNum = 262;BA.debugLine="Private Sub imgShare_Click";
- //BA.debugLineNum = 263;BA.debugLine="Try";
-try { //BA.debugLineNum = 264;BA.debugLine="Dim filename As String=lblImgLocation.Text.SubSt";
-_filename = mostCurrent._lblimglocation.getText().substring((int) (mostCurrent._lblimglocation.getText().lastIndexOf("/")+1));
- //BA.debugLineNum = 265;BA.debugLine="File.Copy(lblImgLocation.Text,\"\", Starter.Provid";
-anywheresoftware.b4a.keywords.Common.File.Copy(mostCurrent._lblimglocation.getText(),"",mostCurrent._starter._provider /*ng.dsoftlab.stegocam.fileprovider*/ ._sharedfolder /*String*/ ,_filename);
- //BA.debugLineNum = 266;BA.debugLine="Dim u As Uri 'ContentResolver library";
-_u = new anywheresoftware.b4a.objects.ContentResolverWrapper.UriWrapper();
- //BA.debugLineNum = 267;BA.debugLine="u.Parse(Starter.Provider.GetFileUri(filename))";
-_u.Parse(BA.ObjectToString(mostCurrent._starter._provider /*ng.dsoftlab.stegocam.fileprovider*/ ._getfileuri /*Object*/ (_filename)));
- //BA.debugLineNum = 268;BA.debugLine="Dim inten As Intent";
-_inten = new anywheresoftware.b4a.objects.IntentWrapper();
- //BA.debugLineNum = 269;BA.debugLine="Dim tmpt As String = \"\"";
-_tmpt = "";
- //BA.debugLineNum = 270;BA.debugLine="inten.Initialize(inten.ACTION_SEND,\"\")";
-_inten.Initialize(_inten.ACTION_SEND,"");
- //BA.debugLineNum = 271;BA.debugLine="inten.SetType(\"image/*\")";
-_inten.SetType("image/*");
- //BA.debugLineNum = 272;BA.debugLine="inten.PutExtra(\"android.intent.extra.STREAM\",u)";
-_inten.PutExtra("android.intent.extra.STREAM",(Object)(_u.getObject()));
- //BA.debugLineNum = 275;BA.debugLine="StartActivity(inten)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(_inten.getObject()));
- } 
-       catch (Exception e13) {
-			processBA.setLastException(e13); //BA.debugLineNum = 277;BA.debugLine="ToastMessageShow(LastException.Message,True)";
-anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA).getMessage()),anywheresoftware.b4a.keywords.Common.True);
- };
- //BA.debugLineNum = 279;BA.debugLine="End Sub";
 return "";
 }
 public static String  _loaddata(anywheresoftware.b4a.objects.collections.List _files) throws Exception{

@@ -40,15 +40,16 @@ public ng.dsoftlab.stegocam.starter _starter = null;
 public ng.dsoftlab.stegocam.mainmenu _mainmenu = null;
 public ng.dsoftlab.stegocam.config _config = null;
 public ng.dsoftlab.stegocam.encode _encode = null;
+public ng.dsoftlab.stegocam.history _history = null;
+public ng.dsoftlab.stegocam.decode _decode = null;
 public ng.dsoftlab.stegocam.settings _settings = null;
-public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
+public ng.dsoftlab.stegocam.pinreset _pinreset = null;
 public ng.dsoftlab.stegocam.forgotpin _forgotpin = null;
 public ng.dsoftlab.stegocam.login _login = null;
 public ng.dsoftlab.stegocam.pinchange _pinchange = null;
-public ng.dsoftlab.stegocam.pinreset _pinreset = null;
+public ng.dsoftlab.stegocam.pinsetup _pinsetup = null;
 public ng.dsoftlab.stegocam.securityquestion _securityquestion = null;
-public ng.dsoftlab.stegocam.history _history = null;
-public ng.dsoftlab.stegocam.decode _decode = null;
+public ng.dsoftlab.stegocam.stegopreview _stegopreview = null;
 public ng.dsoftlab.stegocam.b4xcollections _b4xcollections = null;
 public ng.dsoftlab.stegocam.httputils2service _httputils2service = null;
 public ng.dsoftlab.stegocam.xuiviewsutils _xuiviewsutils = null;
@@ -138,20 +139,20 @@ _returnfilepath = __c.File.Combine(__c.File.getDirInternalCache(),_destfile);
 			ba.setLastException(e11); //BA.debugLineNum = 188;BA.debugLine="returnFilePath=\"\"";
 _returnfilepath = "";
  //BA.debugLineNum = 190;BA.debugLine="Log(\":: issue \" & LastException)";
-__c.LogImpl("467043343",":: issue "+BA.ObjectToString(__c.LastException(getActivityBA())),0);
+__c.LogImpl("36291471",":: issue "+BA.ObjectToString(__c.LastException(getActivityBA())),0);
  };
  //BA.debugLineNum = 192;BA.debugLine="Return returnFilePath";
 if (true) return _returnfilepath;
  //BA.debugLineNum = 193;BA.debugLine="End Sub";
 return "";
 }
-public String  _createtempcoverimage(anywheresoftware.b4a.objects.ImageViewWrapper _img) throws Exception{
+public String  _createtempcoverimage(ng.dsoftlab.stegocam.b4ximageview _img) throws Exception{
 anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _bitmap1 = null;
 anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper _out = null;
- //BA.debugLineNum = 134;BA.debugLine="Sub createTempCoverImage(img As ImageView)";
+ //BA.debugLineNum = 134;BA.debugLine="Sub createTempCoverImage(img As B4XImageView)";
  //BA.debugLineNum = 135;BA.debugLine="Dim Bitmap1 As Bitmap = img.Bitmap";
 _bitmap1 = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
-_bitmap1 = (anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper(), (android.graphics.Bitmap)(_img.getBitmap()));
+_bitmap1 = (anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper(), (android.graphics.Bitmap)(_img._getbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ ().getObject()));
  //BA.debugLineNum = 136;BA.debugLine="Dim Out As OutputStream";
 _out = new anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper();
  //BA.debugLineNum = 138;BA.debugLine="Out = File.OpenOutput(File.DirInternalCache, \"st";
@@ -199,7 +200,7 @@ _lasterrormessage = "Success: Extraction completed successfully!";
  } 
        catch (Exception e5) {
 			ba.setLastException(e5); //BA.debugLineNum = 57;BA.debugLine="Log(LastException)";
-__c.LogImpl("471041031",BA.ObjectToString(__c.LastException(getActivityBA())),0);
+__c.LogImpl("35570567",BA.ObjectToString(__c.LastException(getActivityBA())),0);
  //BA.debugLineNum = 58;BA.debugLine="Dim errMessage() As String =Regex.Split(\":\", Las";
 _errmessage = __c.Regex.Split(":",__c.LastException(getActivityBA()).getMessage());
  //BA.debugLineNum = 59;BA.debugLine="If errMessage(errMessage.Length-1) =\"BAD_DECRYPT";

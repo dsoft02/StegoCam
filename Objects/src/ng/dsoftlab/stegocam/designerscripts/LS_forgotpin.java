@@ -23,7 +23,6 @@ views.get("actoolbarlight1").vw.setHeight((int)((48d * scale)));
 ;}else{ 
 ;
 views.get("actoolbarlight1").vw.setHeight((int)((48d * scale)));
-//BA.debugLineNum = 16;BA.debugLine="End If"[forgotpin/General script]
 ;};
 //BA.debugLineNum = 17;BA.debugLine="End If"[forgotpin/General script]
 ;};

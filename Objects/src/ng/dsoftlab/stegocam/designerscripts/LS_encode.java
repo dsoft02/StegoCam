@@ -11,6 +11,7 @@ java.util.Map<String, anywheresoftware.b4a.keywords.LayoutBuilder.ViewWrapperAnd
 anywheresoftware.b4a.keywords.LayoutBuilder.setScaleRate(0.3);
 anywheresoftware.b4a.keywords.LayoutBuilder.scaleAll(views);
 views.get("pnlcoverimage").vw.setLeft((int)((50d / 100 * width) - (views.get("pnlcoverimage").vw.getWidth() / 2)));
+views.get("btncamera").vw.setLeft((int)((50d / 100 * width) - (views.get("btncamera").vw.getWidth() / 2)));
 if ((anywheresoftware.b4a.keywords.LayoutBuilder.getScreenSize()>6.5d)) { 
 ;
 views.get("actoolbarlight1").vw.setHeight((int)((64d * scale)));
@@ -23,7 +24,7 @@ views.get("actoolbarlight1").vw.setHeight((int)((48d * scale)));
 ;
 views.get("actoolbarlight1").vw.setHeight((int)((48d * scale)));
 ;};
-//BA.debugLineNum = 19;BA.debugLine="End If"[encode/General script]
+//BA.debugLineNum = 20;BA.debugLine="End If"[encode/General script]
 ;};
 
 }

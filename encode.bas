@@ -15,7 +15,7 @@ Sub Process_Globals
 	'These variables can be accessed from all modules.
 	Private ion As Object
 	Private const tempImageFile As String = "stegocam_coverimage.jpg"
-	Private lastPicture As Bitmap
+	Private lastPicture As B4XBitmap
 	Private imageChooser As ContentChooser
 	Private FileHandler1 As FileHandler
 	Private stegoHandler As StegocamHandler
@@ -42,7 +42,6 @@ Sub Globals
 	Private pnlMessage As Panel
 	Private txtKey As EditText
 	Private txtMessage As EditText
-	Private imgCover As ImageView
 	Private pnlCoverImage As Panel
 	Private cboEncryption As B4XComboBox
 	Dim toast As BCToast
@@ -63,6 +62,8 @@ Sub Globals
 	Private pnlExtract As Panel
 	Private pnlShare As Panel
 	Dim sClipboard As BClipboard
+	Private imgCover As B4XImageView
+	Private btnCamera As ImageView
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -72,6 +73,7 @@ Sub Activity_Create(FirstTime As Boolean)
 	ToolbarHelper.Initialize
 	ToolbarHelper.ShowUpIndicator = True 'set to true to show the up arrow
 	ACToolBarLight1.InitMenuListener
+	'imgCover.ResizeMode="FILL_NO_DISTORTIONS"
 	clearForm
 	If lastPicture.IsInitialized Then imgCover.Bitmap = lastPicture
 	FileHandler1.Initialize
@@ -133,9 +135,13 @@ Private Sub btnEncode_Click
 			stegoHandler.EmbedText(txtMessage.Text,txtKey.Text)
 			If stegoHandler.embeddingSuccessful=True Then
 				ToastMessageShow("Secret has been hidden successfully!",True)
-				showCompleteDialog(File.Combine(config.stegoImagePath,stegoHandler.curFilename))
 				sClipboard.setText(txtKey.Text)
 				ToastMessageShow("Encryption Key has been copied to clipboard",True)
+				Msgbox2Async("Encryption Key has been copied to clipboard","Encryption Key Copied","OK","","",Null,False)
+				Wait For Msgbox_Result (Result As Int)
+				If Result = DialogResponse.POSITIVE Then
+					showCompleteDialog(File.Combine(config.stegoImagePath,stegoHandler.curFilename))
+				End If
 			Else
 				lblErrorMsg.Text=stegoHandler.lastErrorMessage
 			End If
@@ -149,60 +155,11 @@ End Sub
 
 Sub showCompleteDialog(img As String)
 	Try
-		Dim pnl As B4XView = xui.CreatePanel("")
-		'Dim iv As ImageView
-		'iv.Initialize("")
-		pnl.SetLayoutAnimated(0, 0, 0, 90%x, 80%y)
-		pnl.LoadLayout("embedDialog")
-		'pnlPreview.RemoveView
-		'pnl.AddView(pnlPreview, 0, 0, pnl.Width, pnl.Height)
-		
-		imgPreview.Width=pnlPreview.Width-20
-		imgPreview.Height=imgPreview.Width
-		imgPreview.Left=pnlPreview.Width/2 - imgPreview.Width/2
-		imgPreview.Bitmap = xui.LoadBitmapResize("", img, imgPreview.Width, imgPreview.Height, True)
-		
-		pnlExtract.Top=imgPreview.Top+imgPreview.Height+10dip
-		pnlDelete.Top=imgPreview.Top+imgPreview.Height+10dip
-		pnlShare.Top=imgPreview.Top+imgPreview.Height+10dip
-		
-		Dim panelWidth, panelSpacing As Int
-		panelSpacing = 5dip
-		panelWidth = (pnlPreview.Width / 3)
-		
-		pnlExtract.Width  = panelWidth
-		pnlDelete.Width   = panelWidth
-		pnlShare.Width    = panelWidth
-		
-		pnlExtract.Left=0
-		pnlDelete.Left=panelWidth
-		pnlShare.Left=(panelWidth * 2)
-'		pnlExtract.Color=Colors.Yellow
-'		pnlDelete.Color=Colors.Red
-'		pnlShare.Color=Colors.Blue
-		
-		imgExtract.Left=pnlExtract.Width/2-imgExtract.Width/2
-		imgDelete.Left=pnlDelete.Width/2-imgDelete.Width/2
-		imgShare.Left=pnlShare.Width/2-imgShare.Width/2
-		
-		Label1.Left=0
-		Label1.Width=pnlExtract.Width
-		
-		Label4.Left=0
-		Label4.Width=pnlDelete.Width
-		
-		Label2.Left=0
-		Label2.Width=pnlShare.Width
-		
-	
-		lblImgLocation.Text=img
-		
-		Dim rs As ResumableSub = Dialog.ShowCustom(pnl, "Ok", "", "Cancel")
-		Wait For (rs) Complete (Result As Int)
-		If Result = xui.DialogResponse_Positive Or Result = xui.DialogResponse_Cancel Then
-			'do something
-			clearForm
-		End If
+		stegopreview.stegoimage= LoadBitmap("",img)
+		stegopreview.stegoImagePath=img
+		stegopreview.fromActivity="encode"
+		StartActivity(stegopreview)
+		Activity.Finish
 	Catch
 		ToastMessageShow(LastException.Message,True)
 		Log(LastException)
@@ -212,7 +169,7 @@ End Sub
 
 Private Sub clearForm
 	lastPicture=Null
-	imgCover.Bitmap=Null
+	If imgCover.Bitmap.IsInitialized Then imgCover.Bitmap=Null
 	txtMessage.Text=""
 	imgCover.Tag=""
 	txtKey.Text=""
@@ -221,7 +178,7 @@ Private Sub clearForm
 End Sub
 
 
-Private Sub imgCover_Click
+Private Sub btnCamera_Click
 	Dim bmp As Bitmap
 	bmp.Initialize(File.DirAssets, "question.png")
 	Msgbox2Async("Click on Yes to take picture from camera, or No to browse from a file?", "Browse Cover Image", "Yes", "Cancel", "No", bmp, False)
@@ -232,6 +189,8 @@ Private Sub imgCover_Click
 		BrowseCoverImage
 	End If
 End Sub
+
+
 
 Sub getPermissions
 	For Each permission As String In Array(Starter.rp.PERMISSION_CAMERA,Starter.rp.PERMISSION_READ_EXTERNAL_STORAGE, Starter.rp.PERMISSION_WRITE_EXTERNAL_STORAGE)
@@ -252,8 +211,8 @@ Sub BrowseCoverImage
 	Wait For (FileHandler1.LoadCoverImage) Complete (Result As LoadResult)
 	If Result.Success Then
 		Try
-			'imgCover.Bitmap = LoadBitmap(Result.Dir,Result.FileName)
-			imgCover.Bitmap =xui.LoadBitmapResize(Result.Dir,Result.FileName,imgCover.Width,imgCover.Height,True)
+			imgCover.load(Result.Dir,Result.FileName)
+			'imgCover.Bitmap =xui.LoadBitmapResize(Result.Dir,Result.FileName,imgCover.Width,imgCover.Height,True)
 			imgCover.Tag= Result.FileName 'Result.Dir & "/" &  GetPathFromContentResult(Result.FileName) '
 			lblErrorMsg.Text=""
 		Catch
@@ -287,8 +246,7 @@ Sub ion_Event (MethodName As String, Args() As Object) As Object
 		Try
 			Dim in As Intent = Args(1)
 			If File.Exists(Starter.provider.SharedFolder, tempImageFile) Then
-				lastPicture = LoadBitmapSample(Starter.provider.SharedFolder, tempImageFile, imgCover.Width, imgCover.Height)
-				lastPicture =xui.LoadBitmapResize(Starter.provider.SharedFolder, tempImageFile,imgCover.Width,imgCover.Height,True)
+				lastPicture =xui.LoadBitmapResize(Starter.provider.SharedFolder, tempImageFile,imgCover.mBase.Width,imgCover.mBase.Height,True)
 				imgCover.Bitmap = lastPicture
 			Else If in.HasExtra("data") Then 'try to get thumbnail instead
 				Dim jo As JavaObject = in
@@ -329,38 +287,6 @@ Private Sub lblShowPassword_Click
 End Sub
 
 
-
-Private Sub imgShare_Click
-	Try
-		Dim filename As String=lblImgLocation.Text.SubString(lblImgLocation.Text.LastIndexOf("/")+1)
-		File.Copy(lblImgLocation.Text,"", Starter.Provider.SharedFolder,filename)
-		Dim u As Uri 'ContentResolver library
-		u.Parse(Starter.Provider.GetFileUri(filename))
-		Dim inten As Intent
-		Dim tmpt As String = ""
-		inten.Initialize(inten.ACTION_SEND,"")
-		inten.SetType("image/*")
-		inten.PutExtra("android.intent.extra.STREAM",u)
-		'inten.PutExtra("android.intent.extra.TEXT",tmpt)
-		'inten.SetComponent("com.instagram.android/.activity.ShareHandlerActivity")
-		StartActivity(inten)
-	Catch
-		ToastMessageShow(LastException.Message,True)
-	End Try
-End Sub
-
-Private Sub imgDelete_Click
-	Msgbox2Async("Are you sure you want to delete file?","Delete Image","Yes","No","",Null,True)
-	Wait For Msgbox_Result (Result As Int)
-	If Result = DialogResponse.POSITIVE Then
-		File.Delete(lblImgLocation.Text,"")
-		Dialog.Close(xui.DialogResponse_Cancel)
-	End If
-End Sub
-
-
-
-
 Sub GetPathFromContentResult(UriString As String) As String
 	If UriString.StartsWith("/") Then Return UriString 'If the user used a file manager to choose the image
 	Dim Cursor1 As Cursor
@@ -384,10 +310,3 @@ Sub GetPathFromContentResult(UriString As String) As String
 	Return res
 End Sub
 
-
-Private Sub imgExtract_Click
-	decode.fromfile=False
-	decode.stegoimage=lblImgLocation.Text
-	StartActivity(decode)
-	Activity.Finish
-End Sub

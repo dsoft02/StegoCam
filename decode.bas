@@ -42,7 +42,7 @@ Sub Globals
 	Private pnlMessage As Panel
 	Private txtKey As EditText
 	Private txtMessage As EditText
-	Private imgCover As ImageView
+	Private imgCover As B4XImageView
 	Private pnlCoverImage As Panel
 	Private cboEncryption As B4XComboBox
 	Private btnBrowse As ImageView
@@ -62,6 +62,7 @@ Sub Globals
 	Private pnlExtract As Panel
 	Private pnlShare As Panel
 	Private txtFileName As EditText
+	Private btnCamera As ImageView
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -74,6 +75,8 @@ Sub Activity_Create(FirstTime As Boolean)
 	Dim jo As JavaObject = txtMessage
 	txtMessage.InputType=txtMessage.INPUT_TYPE_NONE
 	jo.RunMethod("setTextIsSelectable", Array(True))
+	txtMessage.SingleLine=False
+	txtMessage.Wrap=True
 	FileHandler1.Initialize
 	stegoHandler.Initialize
 	Dialog.Initialize(Activity)
@@ -82,7 +85,8 @@ Sub Activity_Create(FirstTime As Boolean)
 	If fromfile=False And stegoimage <>"" Then
 		txtFileName.Text=stegoimage
 		txtFileName.Tag=""
-		imgCover.Bitmap =xui.LoadBitmapResize(stegoimage,"",imgCover.Width,imgCover.Height,True)
+		'imgCover.Bitmap =xui.LoadBitmapResize(stegoimage,"",imgCover.Width,imgCover.Height,True)
+		imgCover.Load(stegoimage,"")
 	Else
 		clearForm
 	End If
@@ -121,6 +125,7 @@ Private Sub btnCancel_Click
 End Sub
 
 Private Sub btnDecode_Click
+	txtMessage.Text=""
 	'Msgbox("_STEGOCAM_" & CRLF & "_STEGOCAM_".GetBytes("UTF8"),"TEST")
 	If imgCover.Bitmap=Null Then
 		'lblErrorMsg.Text="Please select stego Image"
@@ -179,7 +184,7 @@ End Sub
 
 
 Private Sub clearForm
-	imgCover.Bitmap=Null
+	'If imgCover.Bitmap.IsInitialized Then imgCover.Bitmap=Null
 	txtMessage.Text=""
 	imgCover.Tag=""
 	txtKey.Text=""
@@ -192,7 +197,8 @@ Private Sub clearForm
 End Sub
 
 
-Private Sub imgCover_Click
+Private Sub btnCamera_Click
+	txtMessage.Text=""
 	BrowseStegoImage
 End Sub
 
@@ -215,8 +221,8 @@ Sub BrowseStegoImage
 	Wait For (FileHandler1.LoadCoverImage) Complete (Result As LoadResult)
 	If Result.Success Then
 		Try
-			'imgCover.Bitmap = LoadBitmap(Result.Dir,Result.FileName)
-			imgCover.Bitmap =xui.LoadBitmapResize(Result.Dir,Result.FileName,imgCover.Width,imgCover.Height,True)
+			imgCover.Load(Result.Dir,Result.FileName)
+			'imgCover.Bitmap =xui.LoadBitmapResize(Result.Dir,Result.FileName,imgCover.Width,imgCover.Height,True)
 			imgCover.Tag= Result.RealName 'Result.Dir & "/" &  GetPathFromContentResult(Result.FileName) '
 			lblErrorMsg.Text=""
 			txtFileName.Text=Result.FileName
